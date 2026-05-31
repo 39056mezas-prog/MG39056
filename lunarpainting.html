@@ -3,1464 +3,1298 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lunar Painting — Orange County's Premier Painting Contractors</title>
-  <meta name="description" content="Lunar Painting delivers expert residential and commercial painting in Orange County and Los Angeles County. Licensed, insured, HomeAdvisor Top Rated." />
+
+  <!-- ─── SEO ─── -->
+  <title>Commercial Painting Contractor Orange County | Lunar Painting | Laguna Hills, CA</title>
+  <meta name="description" content="Lunar Painting is Orange County's trusted commercial painting contractor — apartment complexes, HOAs, and property managers. Licensed, insured, Sherwin Williams. Call (949) 446-8578." />
+  <meta name="keywords" content="commercial painting contractor Orange County, apartment complex painting contractor, HOA painting Orange County, exterior painting Laguna Hills, painting contractor Los Angeles County, property manager painting services" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://lunarpainting.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Lunar Painting — Orange County Commercial Painting Contractor" />
+  <meta property="og:description" content="Trusted by property managers across Orange County. Apartment complexes, HOAs, commercial properties, and residential. Call (949) 446-8578." />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Schema.org LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "@id": "https://lunarpainting.com",
+    "name": "Lunar Painting",
+    "description": "Licensed and insured painting contractor specializing in commercial painting for apartment complexes, HOAs, and property managers across Orange County and Los Angeles County, CA.",
+    "telephone": "+19494468578",
+    "email": "lunarpainting1@gmail.com",
+    "url": "https://lunarpainting.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "25255 Cabot Rd, Suite #224",
+      "addressLocality": "Laguna Hills",
+      "addressRegion": "CA",
+      "postalCode": "92653",
+      "addressCountry": "US"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": 33.5820, "longitude": -117.7025 },
+    "areaServed": [
+      { "@type": "County", "name": "Orange County", "addressRegion": "CA" },
+      { "@type": "County", "name": "Los Angeles County", "addressRegion": "CA" }
+    ],
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "08:00", "closes": "17:00"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5",
+      "reviewCount": "20",
+      "bestRating": "5"
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Painting Services",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Apartment Complex Painting", "areaServed": "Orange County, CA" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Commercial Exterior Painting" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "HOA Painting Services" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Residential Interior Painting" } }
+      ]
+    }
+  }
+  </script>
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
 
   <style>
-    /* ─────────────────────────────────────────
-       TOKENS
-    ───────────────────────────────────────── */
+    /* ─── TOKENS ─── */
     :root {
-      --red:        oklch(0.51 0.21 27);
-      --red-dark:   oklch(0.40 0.19 27);
-      --red-light:  oklch(0.94 0.04 27);
-      --off-white:  #F7F6F3;
-      --charcoal:   #1A1A18;
-      --mid:        #6B6B67;
-      --border:     #E2E1DC;
-      --font-display: 'Bebas Neue', sans-serif;
-      --font-body:    'DM Sans', sans-serif;
-      --font-mono:    'JetBrains Mono', monospace;
+      --red:      #BE1E2D;
+      --red-dk:   #9a1724;
+      --white:    #FFFFFF;
+      --snow:     #F8F7F4;
+      --ink:      #1C1B19;
+      --mid:      #6B6A67;
+      --rule:     #E4E3DF;
+      --ff-serif: 'Cormorant Garamond', Georgia, serif;
+      --ff-sans:  'Inter', system-ui, -apple-system, sans-serif;
     }
 
-    /* ─────────────────────────────────────────
-       RESET
-    ───────────────────────────────────────── */
+    /* ─── RESET ─── */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
     body {
-      font-family: var(--font-body);
-      background: var(--off-white);
-      color: var(--charcoal);
-      overflow-x: hidden;
+      font-family: var(--ff-sans);
+      background: var(--white);
+      color: var(--ink);
       -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+      /* room for mobile sticky bar */
+      padding-bottom: 60px;
     }
-    img { display: block; max-width: 100%; }
+    img { display: block; width: 100%; }
     a { text-decoration: none; color: inherit; }
 
-    /* ─────────────────────────────────────────
-       SCROLL PROGRESS LINE
-    ───────────────────────────────────────── */
-    #scroll-line {
+    /* ─── NAV ─── */
+    .nav {
       position: fixed;
-      top: 0; left: 0;
-      width: 3px;
-      height: 0%;
-      background: var(--red);
-      z-index: 1000;
-      transition: height 0.05s linear;
-    }
-
-    /* ─────────────────────────────────────────
-       NAV
-    ───────────────────────────────────────── */
-    nav {
-      position: fixed;
-      top: 0; left: 0; right: 0;
-      z-index: 900;
+      inset: 0 0 auto 0;
+      z-index: 200;
+      height: 60px;
+      background: var(--white);
+      border-bottom: 1px solid var(--rule);
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 0 48px;
-      height: 72px;
-      background: rgba(247, 246, 243, 0.88);
-      backdrop-filter: blur(14px);
-      -webkit-backdrop-filter: blur(14px);
-      border-bottom: 1px solid var(--border);
-      transition: background 0.3s ease;
+      padding: 0 20px;
+      transition: box-shadow 0.3s ease;
     }
+    .nav.shadow { box-shadow: 0 1px 20px rgba(0,0,0,.07); }
 
-    .nav-logo {
+    .nav-logo-wrap { display: flex; align-items: center; height: 40px; }
+    .nav-logo-wrap svg { height: 40px; width: auto; }
+
+    .nav-right {
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 20px;
     }
-    .nav-logo-mark {
-      width: 36px; height: 36px;
-      background: var(--red);
-      clip-path: polygon(0 0, 100% 0, 100% 70%, 50% 100%, 0 70%);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .nav-logo-text {
-      font-family: var(--font-display);
-      font-size: 22px;
-      letter-spacing: 0.05em;
-      color: var(--charcoal);
-    }
-    .nav-logo-text span { color: var(--red); }
-
     .nav-links {
-      display: flex;
-      align-items: center;
-      gap: 36px;
+      display: none;
       list-style: none;
+      gap: 24px;
+      align-items: center;
     }
     .nav-links a {
-      font-family: var(--font-mono);
-      font-size: 11px;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
+      font-size: 13px;
+      font-weight: 500;
       color: var(--mid);
-      transition: color 0.2s;
+      letter-spacing: 0.01em;
+      transition: color .2s;
     }
-    .nav-links a:hover { color: var(--charcoal); }
+    .nav-links a:hover { color: var(--ink); }
 
-    .nav-cta {
-      font-family: var(--font-mono);
-      font-size: 11px;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: #fff;
+    .nav-tel {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--red);
+      white-space: nowrap;
+      transition: color .2s;
+    }
+    .nav-tel:hover { color: var(--red-dk); }
+
+    .nav-btn {
+      display: none;
       background: var(--red);
-      padding: 10px 22px;
-      position: relative;
-      overflow: hidden;
-      border: none;
-      cursor: pointer;
+      color: var(--white);
+      font-size: 13px;
+      font-weight: 500;
+      padding: 9px 18px;
+      letter-spacing: 0.01em;
+      transition: background .2s;
+      white-space: nowrap;
     }
-    .nav-cta::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: var(--red-dark);
-      transform: scaleX(0);
-      transform-origin: left;
-      transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
-    }
-    .nav-cta:hover::before { transform: scaleX(1); }
-    .nav-cta span { position: relative; z-index: 1; }
+    .nav-btn:hover { background: var(--red-dk); }
 
-    /* ─────────────────────────────────────────
-       HERO
-    ───────────────────────────────────────── */
+    /* ─── HERO ─── */
     .hero {
-      min-height: 100dvh;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      padding-top: 72px;
       position: relative;
-    }
-
-    /* Left panel */
-    .hero-left {
+      margin-top: 60px;
+      min-height: calc(100svh - 60px);
+      min-height: calc(100vh - 60px);
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      padding: 80px 60px 80px 80px;
-      position: relative;
-      z-index: 2;
-    }
-
-    .hero-eyebrow {
-      font-family: var(--font-mono);
-      font-size: 11px;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      color: var(--red);
-      margin-bottom: 28px;
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      opacity: 0;
-      animation: fadeUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.2s forwards;
-    }
-    .hero-eyebrow::before {
-      content: '';
-      display: block;
-      width: 32px;
-      height: 2px;
-      background: var(--red);
-    }
-
-    .hero-headline {
-      font-family: var(--font-display);
-      font-size: clamp(72px, 8.5vw, 130px);
-      line-height: 0.92;
-      letter-spacing: 0.02em;
-      color: var(--charcoal);
-      margin-bottom: 36px;
-      opacity: 0;
-      animation: fadeUp 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.35s forwards;
-    }
-    .hero-headline em {
-      font-style: normal;
-      color: var(--red);
-      display: block;
-    }
-
-    .hero-sub {
-      font-size: 17px;
-      font-weight: 300;
-      line-height: 1.65;
-      color: var(--mid);
-      max-width: 420px;
-      margin-bottom: 52px;
-      opacity: 0;
-      animation: fadeUp 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.5s forwards;
-    }
-
-    .hero-actions {
-      display: flex;
-      align-items: center;
-      gap: 24px;
-      opacity: 0;
-      animation: fadeUp 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.65s forwards;
-    }
-
-    /* Directional hover button */
-    .btn-primary {
-      position: relative;
+      justify-content: flex-end;
       overflow: hidden;
-      background: var(--red);
-      color: #fff;
-      font-family: var(--font-mono);
-      font-size: 12px;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      padding: 18px 38px;
-      border: none;
-      cursor: pointer;
-      display: inline-block;
+      background: var(--ink);
     }
-    .btn-primary .btn-fill {
+    .hero-photo {
       position: absolute;
-      width: 200%;
-      height: 200%;
-      background: var(--red-dark);
-      border-radius: 50%;
-      transform: translate(-50%, -50%) scale(0);
-      transition: transform 0.55s cubic-bezier(0.16, 1, 0.3, 1);
-      pointer-events: none;
-    }
-    .btn-primary:hover .btn-fill { transform: translate(-50%, -50%) scale(1); }
-    .btn-primary span { position: relative; z-index: 1; }
-
-    .btn-ghost {
-      font-family: var(--font-mono);
-      font-size: 12px;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: var(--charcoal);
-      border-bottom: 1px solid var(--border);
-      padding-bottom: 2px;
-      transition: border-color 0.2s, color 0.2s;
-      background: none;
-      cursor: pointer;
-      display: inline-block;
-    }
-    .btn-ghost:hover {
-      color: var(--red);
-      border-color: var(--red);
-    }
-
-    /* Stat bar under buttons */
-    .hero-stats {
-      display: flex;
-      gap: 40px;
-      margin-top: 60px;
-      padding-top: 40px;
-      border-top: 1px solid var(--border);
-      opacity: 0;
-      animation: fadeUp 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.8s forwards;
-    }
-    .hero-stat-num {
-      font-family: var(--font-display);
-      font-size: 38px;
-      color: var(--charcoal);
-      line-height: 1;
-    }
-    .hero-stat-label {
-      font-family: var(--font-mono);
-      font-size: 10px;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--mid);
-      margin-top: 6px;
-    }
-
-    /* Red geometric accent behind headline */
-    .hero-red-block {
-      position: absolute;
-      left: -20px;
-      top: 30%;
-      width: 6px;
-      height: 140px;
-      background: var(--red);
-      opacity: 0;
-      animation: fadeIn 1s ease 1s forwards;
-    }
-
-    /* Right panel — photo */
-    .hero-right {
-      position: relative;
-      overflow: hidden;
-    }
-    .hero-right img {
+      inset: 0;
       width: 100%;
       height: 100%;
       object-fit: cover;
-      object-position: center top;
-      transform: scale(1.04);
-      animation: heroImgReveal 1.4s cubic-bezier(0.16, 1, 0.3, 1) 0.1s forwards;
+      object-position: 65% 20%;
+      opacity: .88;
     }
-
-    /* Diagonal clip on the left edge of photo */
-    .hero-right::before {
-      content: '';
+    /* white gradient washes up from bottom so text is readable */
+    .hero-wash {
       position: absolute;
-      top: 0; bottom: 0; left: 0;
-      width: 80px;
-      background: var(--off-white);
-      clip-path: polygon(0 0, 100% 0, 0 100%);
-      z-index: 2;
+      inset: 0;
+      background: linear-gradient(
+        to top,
+        rgba(255,255,255,1)   0%,
+        rgba(255,255,255,.97) 18%,
+        rgba(255,255,255,.75) 40%,
+        rgba(255,255,255,.25) 65%,
+        transparent           100%
+      );
     }
-
-    /* Red accent strip on photo */
-    .hero-right::after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      height: 6px;
-      background: var(--red);
-      z-index: 3;
-    }
-
-    /* Photo caption tag */
-    .hero-photo-tag {
-      position: absolute;
-      bottom: 32px;
-      left: 48px;
-      z-index: 4;
-      background: rgba(26, 26, 24, 0.78);
-      backdrop-filter: blur(8px);
-      -webkit-backdrop-filter: blur(8px);
-      padding: 12px 20px;
-      opacity: 0;
-      animation: fadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 1.1s forwards;
-    }
-    .hero-photo-tag p {
-      font-family: var(--font-mono);
-      font-size: 10px;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: rgba(255,255,255,0.6);
-    }
-    .hero-photo-tag strong {
-      font-family: var(--font-mono);
-      font-size: 12px;
-      letter-spacing: 0.1em;
-      color: #fff;
-      font-weight: 500;
-    }
-    .hero-photo-tag .tag-dot {
-      display: inline-block;
-      width: 6px; height: 6px;
-      border-radius: 50%;
-      background: var(--red);
-      margin-right: 8px;
-      vertical-align: middle;
-    }
-
-    /* Ratings badge on hero */
-    .hero-badge {
-      position: absolute;
-      top: 40px;
-      right: 40px;
-      z-index: 4;
-      background: var(--red);
-      padding: 14px 18px;
-      text-align: center;
-      opacity: 0;
-      animation: fadeIn 0.8s ease 1.3s forwards;
-    }
-    .hero-badge-num {
-      font-family: var(--font-display);
-      font-size: 36px;
-      color: #fff;
-      line-height: 1;
-    }
-    .hero-badge-label {
-      font-family: var(--font-mono);
-      font-size: 9px;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: rgba(255,255,255,0.75);
-      margin-top: 4px;
-    }
-
-    /* ─────────────────────────────────────────
-       MARQUEE BAND
-    ───────────────────────────────────────── */
-    .marquee-band {
-      background: var(--red);
-      overflow: hidden;
-      padding: 0;
-      display: flex;
-      align-items: center;
-      height: 48px;
+    .hero-body {
       position: relative;
+      z-index: 2;
+      padding: 48px 20px 52px;
     }
-    .marquee-track {
-      display: flex;
-      gap: 0;
-      animation: marquee 28s linear infinite;
-      white-space: nowrap;
-    }
-    .marquee-item {
-      font-family: var(--font-mono);
-      font-size: 11px;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      color: rgba(255,255,255,0.9);
-      padding: 0 40px;
-      display: flex;
-      align-items: center;
-      gap: 16px;
-    }
-    .marquee-sep {
-      width: 4px;
-      height: 4px;
-      border-radius: 50%;
-      background: rgba(255,255,255,0.5);
-      display: inline-block;
-    }
-
-    /* ─────────────────────────────────────────
-       ABOUT SECTION
-    ───────────────────────────────────────── */
-    .about {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 0;
-    }
-
-    .about-left {
-      padding: 100px 80px 100px 80px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-
-    .section-label {
-      font-family: var(--font-mono);
-      font-size: 10px;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      color: var(--red);
-      margin-bottom: 24px;
-      display: flex;
+    .eyebrow {
+      display: inline-flex;
       align-items: center;
       gap: 10px;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--red);
+      margin-bottom: 18px;
     }
-    .section-label::before {
+    .eyebrow::before {
       content: '';
       display: block;
-      width: 24px;
-      height: 1px;
+      width: 22px;
+      height: 1.5px;
       background: var(--red);
+      flex-shrink: 0;
     }
-
-    .about-headline {
-      font-family: var(--font-display);
-      font-size: clamp(44px, 5vw, 72px);
-      line-height: 0.95;
-      letter-spacing: 0.02em;
-      color: var(--charcoal);
-      margin-bottom: 32px;
+    .hero-h1 {
+      font-family: var(--ff-serif);
+      font-size: clamp(42px, 11vw, 88px);
+      font-weight: 600;
+      line-height: 1.03;
+      letter-spacing: -.02em;
+      color: var(--ink);
+      margin-bottom: 22px;
+      max-width: 640px;
     }
-
-    .about-body {
+    .hero-h1 em {
+      font-style: italic;
+      color: var(--red);
+    }
+    .hero-desc {
       font-size: 16px;
       font-weight: 300;
       line-height: 1.75;
       color: var(--mid);
-      max-width: 480px;
-      margin-bottom: 48px;
+      max-width: 460px;
+      margin-bottom: 36px;
     }
-
-    /* HomeAdvisor badges */
-    .badges {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 1px;
-      background: var(--border);
-      border: 1px solid var(--border);
-      max-width: 340px;
-    }
-    .badge-item {
-      background: var(--off-white);
-      padding: 16px 20px;
+    .hero-actions {
       display: flex;
       flex-direction: column;
-    }
-    .badge-title {
-      font-family: var(--font-mono);
-      font-size: 9px;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: var(--red);
-      margin-bottom: 4px;
-    }
-    .badge-desc {
-      font-family: var(--font-mono);
-      font-size: 10px;
-      color: var(--charcoal);
-      font-weight: 500;
-    }
-    .badge-star {
-      display: flex;
-      gap: 2px;
-      margin-top: 4px;
-    }
-    .badge-star span {
-      color: var(--red);
-      font-size: 9px;
-    }
-
-    .about-right {
-      position: relative;
-      background: var(--charcoal);
-      overflow: hidden;
-      min-height: 600px;
-    }
-    .about-right img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      opacity: 0.65;
-    }
-    .about-overlay-quote {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      padding: 48px;
-      background: linear-gradient(to top, rgba(26,26,24,0.95) 0%, transparent 100%);
-    }
-    .about-quote-text {
-      font-size: 17px;
-      font-weight: 300;
-      font-style: italic;
-      color: rgba(255,255,255,0.9);
-      line-height: 1.65;
-      max-width: 380px;
-    }
-    .about-quote-source {
-      font-family: var(--font-mono);
-      font-size: 10px;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: var(--red);
-      margin-top: 16px;
-    }
-
-    /* ─────────────────────────────────────────
-       SERVICES SECTION
-    ───────────────────────────────────────── */
-    .services {
-      padding: 120px 80px;
-      background: var(--off-white);
-    }
-    .services-header {
-      display: flex;
-      align-items: flex-end;
-      justify-content: space-between;
-      margin-bottom: 80px;
-    }
-    .services-headline {
-      font-family: var(--font-display);
-      font-size: clamp(48px, 5.5vw, 80px);
-      line-height: 0.95;
-      letter-spacing: 0.02em;
-      color: var(--charcoal);
-      max-width: 500px;
-    }
-    .services-sub {
-      font-size: 15px;
-      font-weight: 300;
-      line-height: 1.7;
-      color: var(--mid);
-      max-width: 320px;
-      text-align: right;
-    }
-
-    .services-grid {
-      display: grid;
-      grid-template-columns: 1.4fr 1fr;
-      gap: 2px;
-      background: var(--border);
-    }
-
-    .service-card {
-      background: var(--off-white);
-      padding: 60px;
-      position: relative;
-      overflow: hidden;
-      cursor: pointer;
-      transition: background 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-    }
-    .service-card:hover { background: var(--charcoal); }
-
-    .service-card-num {
-      font-family: var(--font-display);
-      font-size: 100px;
-      color: var(--border);
-      line-height: 1;
-      position: absolute;
-      top: 20px;
-      right: 30px;
-      transition: color 0.4s;
-      user-select: none;
-    }
-    .service-card:hover .service-card-num { color: rgba(255,255,255,0.05); }
-
-    .service-card-label {
-      font-family: var(--font-mono);
-      font-size: 10px;
-      letter-spacing: 0.16em;
-      text-transform: uppercase;
-      color: var(--red);
-      margin-bottom: 20px;
-      position: relative;
-    }
-
-    .service-card-title {
-      font-family: var(--font-display);
-      font-size: clamp(36px, 4vw, 58px);
-      line-height: 0.95;
-      letter-spacing: 0.02em;
-      color: var(--charcoal);
-      margin-bottom: 28px;
-      position: relative;
-      transition: color 0.4s;
-    }
-    .service-card:hover .service-card-title { color: #fff; }
-
-    .service-list {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      position: relative;
-      margin-bottom: 40px;
-    }
-    .service-list li {
-      font-family: var(--font-mono);
-      font-size: 12px;
-      letter-spacing: 0.08em;
-      color: var(--mid);
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      transition: color 0.4s;
-    }
-    .service-card:hover .service-list li { color: rgba(255,255,255,0.6); }
-    .service-list li::before {
-      content: '';
-      width: 16px;
-      height: 1px;
-      background: var(--red);
-      flex-shrink: 0;
-    }
-
-    .service-cta {
-      font-family: var(--font-mono);
-      font-size: 11px;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: var(--red);
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      position: relative;
-      transition: gap 0.3s;
-    }
-    .service-card:hover .service-cta { gap: 16px; }
-    .service-cta::after {
-      content: '→';
-      transition: transform 0.3s;
-    }
-    .service-card:hover .service-cta::after { transform: translateX(4px); }
-
-    /* ─────────────────────────────────────────
-       PROCESS — ACCORDION STRIPS
-    ───────────────────────────────────────── */
-    .process {
-      padding: 0 80px 120px;
-      background: var(--off-white);
-    }
-    .process-header {
-      padding: 80px 0 60px;
-      display: flex;
-      align-items: flex-end;
-      gap: 40px;
-    }
-    .process-headline {
-      font-family: var(--font-display);
-      font-size: clamp(48px, 5.5vw, 80px);
-      line-height: 0.95;
-      letter-spacing: 0.02em;
-      color: var(--charcoal);
-    }
-    .process-note {
-      font-family: var(--font-mono);
-      font-size: 11px;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--mid);
-      padding-bottom: 10px;
-      max-width: 200px;
-      line-height: 1.6;
-    }
-
-    .accordion {
-      display: flex;
-      height: 480px;
-      gap: 2px;
-    }
-
-    .accordion-strip {
-      flex: 0 0 72px;
-      background: var(--charcoal);
-      position: relative;
-      overflow: hidden;
-      cursor: pointer;
-      transition: flex 0.65s cubic-bezier(0.16, 1, 0.3, 1);
-    }
-    .accordion-strip.active { flex: 1; }
-
-    /* Step image */
-    .accordion-strip img {
-      position: absolute;
-      inset: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      opacity: 0;
-      transition: opacity 0.5s ease;
-    }
-    .accordion-strip.active img { opacity: 0.35; }
-
-    /* Red overlay on active */
-    .accordion-strip::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(135deg, rgba(var(--red-raw, 185,28,28),0.6) 0%, transparent 60%);
-      opacity: 0;
-      transition: opacity 0.5s;
-      z-index: 1;
-      pointer-events: none;
-    }
-    .accordion-strip.active::before { opacity: 1; }
-
-    /* Vertical step number — always visible */
-    .strip-num {
-      position: absolute;
-      left: 50%;
-      top: 28px;
-      transform: translateX(-50%);
-      font-family: var(--font-display);
-      font-size: 22px;
-      color: rgba(255,255,255,0.35);
-      z-index: 2;
-      transition: color 0.4s, opacity 0.4s;
-      writing-mode: horizontal-tb;
-    }
-    .accordion-strip.active .strip-num { color: rgba(255,255,255,0.15); }
-
-    /* Vertical title label on collapsed strip */
-    .strip-vertical-label {
-      position: absolute;
-      bottom: 30px;
-      left: 50%;
-      transform: translateX(-50%) rotate(-90deg);
-      transform-origin: center center;
-      white-space: nowrap;
-      font-family: var(--font-mono);
-      font-size: 10px;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      color: rgba(255,255,255,0.45);
-      z-index: 2;
-      transition: opacity 0.3s;
-    }
-    .accordion-strip.active .strip-vertical-label { opacity: 0; }
-
-    /* Full content visible when active */
-    .strip-content {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      padding: 40px;
-      z-index: 3;
-      opacity: 0;
-      transform: translateY(16px);
-      transition: opacity 0.4s ease 0.25s, transform 0.4s ease 0.25s;
-    }
-    .accordion-strip.active .strip-content {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    .strip-step-label {
-      font-family: var(--font-mono);
-      font-size: 10px;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      color: var(--red);
-      margin-bottom: 12px;
-    }
-    .strip-title {
-      font-family: var(--font-display);
-      font-size: 34px;
-      letter-spacing: 0.02em;
-      color: #fff;
-      margin-bottom: 16px;
-      line-height: 1;
-    }
-    .strip-desc {
-      font-size: 14px;
-      font-weight: 300;
-      line-height: 1.65;
-      color: rgba(255,255,255,0.7);
-      max-width: 340px;
-    }
-
-    /* ─────────────────────────────────────────
-       SHERWIN WILLIAMS CALLOUT
-    ───────────────────────────────────────── */
-    .sherwin {
-      margin: 0 80px;
-      background: var(--charcoal);
-      padding: 60px 80px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 40px;
-    }
-    .sherwin-left {}
-    .sherwin-label {
-      font-family: var(--font-mono);
-      font-size: 10px;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      color: rgba(255,255,255,0.4);
-      margin-bottom: 12px;
-    }
-    .sherwin-text {
-      font-family: var(--font-display);
-      font-size: clamp(28px, 3vw, 44px);
-      letter-spacing: 0.02em;
-      color: #fff;
-      line-height: 1.1;
-    }
-    .sherwin-text span { color: var(--red); }
-    .sherwin-right {
-      display: flex;
-      align-items: center;
-      gap: 24px;
-      flex-shrink: 0;
-    }
-    .sherwin-sw {
-      font-family: var(--font-display);
-      font-size: 18px;
-      letter-spacing: 0.06em;
-      color: rgba(255,255,255,0.5);
-    }
-    .sherwin-divider {
-      width: 1px;
-      height: 40px;
-      background: rgba(255,255,255,0.15);
-    }
-    .sherwin-sub {
-      font-family: var(--font-mono);
-      font-size: 10px;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: rgba(255,255,255,0.35);
-      max-width: 160px;
-      line-height: 1.6;
-    }
-
-    /* ─────────────────────────────────────────
-       CONTACT BAR
-    ───────────────────────────────────────── */
-    .contact-bar {
-      background: var(--red);
-      padding: 100px 80px;
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      gap: 60px;
-      margin-top: 80px;
-    }
-
-    .contact-col-label {
-      font-family: var(--font-mono);
-      font-size: 9px;
-      letter-spacing: 0.22em;
-      text-transform: uppercase;
-      color: rgba(255,255,255,0.55);
-      margin-bottom: 16px;
-    }
-    .contact-col-value {
-      font-family: var(--font-display);
-      font-size: clamp(22px, 2.5vw, 34px);
-      color: #fff;
-      letter-spacing: 0.02em;
-      line-height: 1.15;
-    }
-    .contact-col-sub {
-      font-family: var(--font-mono);
-      font-size: 11px;
-      letter-spacing: 0.1em;
-      color: rgba(255,255,255,0.6);
-      margin-top: 10px;
-      line-height: 1.7;
-    }
-
-    .contact-cta-col {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+      gap: 14px;
       align-items: flex-start;
     }
-    .btn-white {
-      font-family: var(--font-mono);
-      font-size: 12px;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: var(--red);
-      background: #fff;
-      padding: 18px 38px;
-      position: relative;
-      overflow: hidden;
-      cursor: pointer;
-      display: inline-block;
-      transition: background 0.3s;
+    .btn-solid {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--red);
+      color: var(--white);
+      font-size: 15px;
+      font-weight: 500;
+      padding: 15px 28px;
+      letter-spacing: .01em;
+      transition: background .2s;
     }
-    .btn-white:hover { background: var(--off-white); }
+    .btn-solid:hover { background: var(--red-dk); }
+    .btn-text {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--ink);
+      border-bottom: 1.5px solid var(--rule);
+      padding-bottom: 2px;
+      transition: color .2s, border-color .2s;
+    }
+    .btn-text:hover { color: var(--red); border-color: var(--red); }
 
-    /* ─────────────────────────────────────────
-       FOOTER
-    ───────────────────────────────────────── */
-    footer {
-      background: var(--charcoal);
-      padding: 40px 80px;
+    /* ─── TRUST BAR ─── */
+    .trust {
+      border-top: 1px solid var(--rule);
+      border-bottom: 1px solid var(--rule);
+      background: var(--snow);
+      padding: 16px 20px;
+      overflow: hidden;
+    }
+    .trust-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px 20px;
+      align-items: center;
+    }
+    .trust-item {
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      gap: 7px;
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--mid);
+      letter-spacing: .02em;
+      white-space: nowrap;
     }
-    .footer-logo {
-      font-family: var(--font-display);
-      font-size: 20px;
-      letter-spacing: 0.06em;
-      color: rgba(255,255,255,0.5);
+    .trust-item .dot {
+      width: 5px; height: 5px;
+      border-radius: 50%;
+      background: var(--red);
+      flex-shrink: 0;
     }
-    .footer-logo span { color: var(--red); }
-    .footer-copy {
-      font-family: var(--font-mono);
-      font-size: 10px;
-      letter-spacing: 0.12em;
+
+    /* ─── SECTION SHARED ─── */
+    .section { padding: 72px 20px; }
+    .section-label {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: .14em;
       text-transform: uppercase;
-      color: rgba(255,255,255,0.25);
+      color: var(--red);
+      margin-bottom: 14px;
     }
-    .footer-links {
+    .section-h2 {
+      font-family: var(--ff-serif);
+      font-size: clamp(30px, 7vw, 58px);
+      font-weight: 600;
+      line-height: 1.08;
+      letter-spacing: -.02em;
+      color: var(--ink);
+      margin-bottom: 18px;
+    }
+    .section-body {
+      font-size: 15px;
+      font-weight: 300;
+      line-height: 1.8;
+      color: var(--mid);
+      margin-bottom: 32px;
+      max-width: 520px;
+    }
+
+    /* ─── COMMERCIAL SECTION ─── */
+    .commercial { background: var(--white); }
+    .commercial-photo {
+      width: 100%;
+      aspect-ratio: 16/10;
+      object-fit: cover;
+      object-position: center;
+      margin-top: 36px;
+    }
+    .pm-cards {
       display: flex;
-      gap: 28px;
-      list-style: none;
+      flex-direction: column;
+      gap: 0;
+      border: 1px solid var(--rule);
+      margin-top: 36px;
     }
-    .footer-links a {
-      font-family: var(--font-mono);
+    .pm-card {
+      padding: 22px 20px;
+      border-bottom: 1px solid var(--rule);
+    }
+    .pm-card:last-child { border-bottom: none; }
+    .pm-card-title {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--ink);
+      margin-bottom: 6px;
+    }
+    .pm-card-body {
+      font-size: 13px;
+      font-weight: 300;
+      line-height: 1.7;
+      color: var(--mid);
+    }
+
+    /* ─── STATS BAND ─── */
+    .stats {
+      background: var(--red);
+      padding: 52px 20px;
+    }
+    .stats-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px 20px;
+    }
+    .stat-num {
+      font-family: var(--ff-serif);
+      font-size: 52px;
+      font-weight: 700;
+      color: var(--white);
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+    .stat-label {
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 1.5;
+      color: rgba(255,255,255,.65);
+    }
+
+    /* ─── SERVICES ─── */
+    .services { background: var(--snow); }
+    .services-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-top: 40px;
+    }
+    .svc {
+      background: var(--white);
+      border: 1px solid var(--rule);
+    }
+    .svc-head {
+      padding: 28px 24px 22px;
+      border-bottom: 1px solid var(--rule);
+    }
+    .svc-flag {
       font-size: 10px;
-      letter-spacing: 0.12em;
+      font-weight: 600;
+      letter-spacing: .14em;
       text-transform: uppercase;
-      color: rgba(255,255,255,0.35);
-      transition: color 0.2s;
+      color: var(--red);
+      margin-bottom: 8px;
     }
-    .footer-links a:hover { color: rgba(255,255,255,0.7); }
+    .svc-title {
+      font-family: var(--ff-serif);
+      font-size: 26px;
+      font-weight: 600;
+      letter-spacing: -.01em;
+      color: var(--ink);
+      line-height: 1.1;
+    }
+    .svc-body {
+      padding: 24px;
+    }
+    .svc-desc {
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 1.75;
+      color: var(--mid);
+      margin-bottom: 20px;
+    }
+    .svc-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .svc-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-size: 14px;
+      color: var(--ink);
+      line-height: 1.5;
+    }
+    .svc-list li::before {
+      content: '';
+      width: 14px;
+      height: 1.5px;
+      background: var(--red);
+      flex-shrink: 0;
+      margin-top: 9px;
+    }
 
-    /* ─────────────────────────────────────────
-       ANIMATIONS
-    ───────────────────────────────────────── */
-    @keyframes fadeUp {
-      from { opacity: 0; transform: translateY(20px); }
-      to   { opacity: 1; transform: translateY(0); }
+    /* ─── WORK PHOTO GRID ─── */
+    .work { background: var(--white); }
+    .work-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto auto;
+      gap: 4px;
+      margin-top: 36px;
     }
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to   { opacity: 1; }
+    .wg-item {
+      overflow: hidden;
+      background: var(--snow);
     }
-    @keyframes heroImgReveal {
-      from { transform: scale(1.08); opacity: 0; }
-      to   { transform: scale(1); opacity: 1; }
+    .wg-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      aspect-ratio: 1;
+      display: block;
+      transition: transform .6s cubic-bezier(.25,.46,.45,.94);
     }
-    @keyframes marquee {
-      from { transform: translateX(0); }
-      to   { transform: translateX(-50%); }
+    .wg-item:hover img { transform: scale(1.04); }
+    .wg-item.tall { grid-row: span 2; }
+    .wg-item.tall img { aspect-ratio: auto; height: 100%; }
+
+    /* ─── PROCESS CALLOUT ─── */
+    .process-strip {
+      background: var(--ink);
+      padding: 52px 20px;
+    }
+    .process-quote {
+      font-family: var(--ff-serif);
+      font-size: clamp(22px, 5.5vw, 40px);
+      font-weight: 500;
+      font-style: italic;
+      color: var(--white);
+      line-height: 1.45;
+      margin-bottom: 28px;
+    }
+    .process-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--red);
+      border-bottom: 1px solid rgba(190,30,45,.35);
+      padding-bottom: 3px;
+      transition: gap .25s;
+    }
+    .process-link:hover { gap: 14px; }
+    .process-link-arrow { font-size: 14px; }
+
+    /* ─── REVIEWS ─── */
+    .reviews { background: var(--snow); }
+    .review-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-top: 36px;
+    }
+    .review {
+      background: var(--white);
+      border: 1px solid var(--rule);
+      padding: 28px 24px;
+    }
+    .review-stars {
+      display: flex;
+      gap: 2px;
+      margin-bottom: 14px;
+    }
+    .review-stars span { color: var(--red); font-size: 13px; }
+    .review-text {
+      font-size: 15px;
+      font-weight: 300;
+      line-height: 1.75;
+      color: var(--ink);
+      margin-bottom: 18px;
+    }
+    .review-meta {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+    .review-name {
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      color: var(--ink);
+    }
+    .review-source {
+      font-size: 11px;
+      color: var(--mid);
     }
 
-    /* Intersection observer reveal */
+    /* ─── FINAL CTA ─── */
+    .cta-block {
+      background: var(--red);
+      padding: 72px 20px;
+      text-align: center;
+    }
+    .cta-eyebrow {
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,.55);
+      margin-bottom: 16px;
+    }
+    .cta-h2 {
+      font-family: var(--ff-serif);
+      font-size: clamp(30px, 7vw, 56px);
+      font-weight: 600;
+      color: var(--white);
+      letter-spacing: -.02em;
+      line-height: 1.1;
+      margin-bottom: 10px;
+    }
+    .cta-phone {
+      display: block;
+      font-family: var(--ff-serif);
+      font-size: clamp(34px, 9vw, 72px);
+      font-weight: 700;
+      color: var(--white);
+      letter-spacing: -.02em;
+      margin-bottom: 10px;
+      line-height: 1.1;
+    }
+    .cta-hours {
+      font-size: 13px;
+      color: rgba(255,255,255,.6);
+      margin-bottom: 32px;
+    }
+    .cta-divider {
+      width: 40px;
+      height: 1px;
+      background: rgba(255,255,255,.3);
+      margin: 32px auto;
+    }
+    .cta-email-label {
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,.45);
+      margin-bottom: 8px;
+    }
+    .cta-email {
+      font-size: 15px;
+      font-weight: 400;
+      color: rgba(255,255,255,.85);
+      border-bottom: 1px solid rgba(255,255,255,.3);
+      padding-bottom: 2px;
+      display: inline-block;
+      transition: color .2s;
+    }
+    .cta-email:hover { color: var(--white); }
+    .cta-address {
+      font-size: 12px;
+      color: rgba(255,255,255,.4);
+      margin-top: 20px;
+      line-height: 1.6;
+    }
+
+    /* ─── FOOTER ─── */
+    footer {
+      background: var(--ink);
+      padding: 52px 20px 36px;
+    }
+    .footer-logo-wrap {
+      height: 36px;
+      margin-bottom: 32px;
+      display: flex;
+      align-items: center;
+    }
+    .footer-logo-wrap svg {
+      height: 36px;
+      width: auto;
+    }
+    /* white version of logo paths for dark bg */
+    .footer-logo-wrap .st0 { fill: rgba(255,255,255,.7); }
+    .footer-logo-wrap .st1 { fill: rgba(255,255,255,.35); }
+    .footer-logo-wrap .st2 { fill: rgba(255,255,255,.3); }
+
+    .footer-cols {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px 20px;
+      margin-bottom: 40px;
+    }
+    .footer-col-title {
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,.3);
+      margin-bottom: 14px;
+    }
+    .footer-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .footer-list a {
+      font-size: 13px;
+      color: rgba(255,255,255,.55);
+      transition: color .2s;
+    }
+    .footer-list a:hover { color: var(--white); }
+    .footer-addr {
+      font-style: normal;
+      font-size: 13px;
+      line-height: 1.75;
+      color: rgba(255,255,255,.45);
+    }
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,.08);
+      padding-top: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .footer-copy {
+      font-size: 11px;
+      color: rgba(255,255,255,.25);
+    }
+    /* SEO keyword footer */
+    .footer-seo {
+      font-size: 11px;
+      line-height: 1.7;
+      color: rgba(255,255,255,.18);
+    }
+
+    /* ─── MOBILE STICKY BAR ─── */
+    .sticky-bar {
+      position: fixed;
+      bottom: 0; left: 0; right: 0;
+      z-index: 300;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      height: 60px;
+      box-shadow: 0 -2px 16px rgba(0,0,0,.12);
+    }
+    .sticky-bar a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 7px;
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: .01em;
+    }
+    .sticky-bar .sb-call {
+      background: var(--red);
+      color: var(--white);
+      border-right: 1px solid rgba(255,255,255,.25);
+    }
+    .sticky-bar .sb-email {
+      background: var(--ink);
+      color: var(--white);
+    }
+    .sticky-bar .sb-icon { font-size: 16px; line-height: 1; }
+
+    /* ─── REVEAL ─── */
     .reveal {
       opacity: 0;
-      transform: translateY(28px);
-      transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
-                  transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+      transform: translateY(22px);
+      transition: opacity .75s cubic-bezier(.25,.46,.45,.94),
+                  transform .75s cubic-bezier(.25,.46,.45,.94);
     }
-    .reveal.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-    .reveal-delay-1 { transition-delay: 0.1s; }
-    .reveal-delay-2 { transition-delay: 0.2s; }
-    .reveal-delay-3 { transition-delay: 0.32s; }
-    .reveal-delay-4 { transition-delay: 0.44s; }
+    .reveal.in { opacity: 1; transform: translateY(0); }
+    .reveal-d1 { transition-delay: .1s; }
+    .reveal-d2 { transition-delay: .2s; }
+    .reveal-d3 { transition-delay: .3s; }
 
-    /* ─────────────────────────────────────────
-       RESPONSIVE
-    ───────────────────────────────────────── */
-    @media (max-width: 1024px) {
-      nav { padding: 0 32px; }
-      .hero { grid-template-columns: 1fr; min-height: auto; }
-      .hero-left { padding: 60px 32px 40px; }
-      .hero-right { height: 55vw; min-height: 320px; }
-      .hero-right::before { display: none; }
-      .about { grid-template-columns: 1fr; }
-      .about-left { padding: 80px 32px; }
-      .about-right { min-height: 400px; }
-      .services { padding: 80px 32px; }
-      .services-header { flex-direction: column; align-items: flex-start; gap: 20px; }
-      .services-sub { text-align: left; }
-      .services-grid { grid-template-columns: 1fr; }
-      .service-card { padding: 40px 32px; }
-      .process { padding: 0 32px 80px; }
-      .accordion { height: 360px; }
-      .sherwin { margin: 0 32px; padding: 40px 32px; flex-direction: column; align-items: flex-start; }
-      .contact-bar { padding: 80px 32px; grid-template-columns: 1fr; gap: 40px; }
-      footer { flex-direction: column; gap: 20px; padding: 32px; text-align: center; }
-      .footer-links { flex-wrap: wrap; justify-content: center; }
+    /* ─── DESKTOP ─── */
+    @media (min-width: 768px) {
+      body { padding-bottom: 0; }
+      .sticky-bar { display: none; }
+
+      .nav { height: 72px; padding: 0 48px; }
+      .nav-logo-wrap { height: 48px; }
+      .nav-logo-wrap svg { height: 48px; }
+      .nav-links { display: flex; }
+      .nav-btn { display: block; }
+
+      .hero { margin-top: 72px; min-height: calc(100svh - 72px); min-height: calc(100vh - 72px); }
+      .hero-photo { object-position: 70% 15%; }
+      .hero-wash {
+        background: linear-gradient(
+          to right,
+          rgba(255,255,255,1)   0%,
+          rgba(255,255,255,.97) 40%,
+          rgba(255,255,255,.7)  60%,
+          rgba(255,255,255,.15) 100%
+        ),
+        linear-gradient(
+          to top,
+          rgba(255,255,255,.6) 0%,
+          transparent 30%
+        );
+      }
+      .hero-body { padding: 80px 48px 100px; max-width: 620px; }
+      .hero-actions { flex-direction: row; gap: 20px; }
+
+      .trust { padding: 18px 48px; }
+      .trust-row { flex-wrap: nowrap; gap: 32px; }
+
+      .section { padding: 100px 48px; }
+
+      /* Commercial: text left, photo right */
+      .commercial-inner {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 80px;
+        align-items: start;
+      }
+      .commercial-text { /* left column, all text */ }
+      .commercial-visual { /* right column */ }
+      .commercial-photo { margin-top: 0; aspect-ratio: 3/4; }
+      .pm-cards { margin-top: 0; }
+
+      .stats { padding: 64px 48px; }
+      .stats-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0;
+      }
+      .stat {
+        padding: 0 36px;
+        border-right: 1px solid rgba(255,255,255,.18);
+      }
+      .stat:first-child { padding-left: 0; }
+      .stat:last-child { border-right: none; padding-right: 0; }
+
+      .services-stack {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+        margin-top: 40px;
+      }
+
+      /* Work grid: tall left, 2 right */
+      .work-grid {
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-rows: 280px 200px;
+        gap: 6px;
+      }
+      .wg-item img { aspect-ratio: auto; }
+      .wg-item.tall img { height: 100%; }
+
+      .process-strip {
+        padding: 80px 48px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 60px;
+      }
+      .process-quote { margin-bottom: 0; max-width: 540px; }
+
+      .review-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+        flex-direction: unset;
+      }
+
+      .cta-block { padding: 100px 48px; }
+
+      footer { padding: 72px 48px 40px; }
+      .footer-cols {
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+        gap: 0 60px;
+        margin-bottom: 48px;
+      }
+      .footer-bottom { flex-direction: row; justify-content: space-between; align-items: flex-end; }
     }
 
-    @media (max-width: 640px) {
-      .nav-links { display: none; }
-      nav { padding: 0 20px; }
-      .hero-left { padding: 48px 20px 32px; }
-      .hero-stats { flex-wrap: wrap; gap: 24px; }
-      .accordion { flex-direction: column; height: auto; }
-      .accordion-strip { flex: none !important; height: 72px; }
-      .accordion-strip.active { height: 380px; }
-      .strip-vertical-label { transform: none; bottom: auto; top: 50%; left: 50%; transform: translate(-50%, -50%); writing-mode: horizontal-tb; }
-      .process { padding: 0 20px 60px; }
-      .services { padding: 60px 20px; }
-      .service-card { padding: 32px 20px; }
-      .sherwin { margin: 0 20px; padding: 32px 20px; }
-      .contact-bar { padding: 60px 20px; }
+    @media (min-width: 1200px) {
+      .nav { padding: 0 80px; }
+      .section { padding: 120px 80px; }
+      .trust { padding: 18px 80px; }
+      .stats { padding: 72px 80px; }
+      .process-strip { padding: 100px 80px; }
+      .cta-block { padding: 120px 80px; }
+      footer { padding: 80px 80px 48px; }
+      .hero-body { padding: 100px 80px 120px; }
     }
   </style>
 </head>
 <body>
 
-  <!-- Scroll progress line -->
-  <div id="scroll-line"></div>
+  <!-- ══════════════════════════════════
+       NAV
+  ══════════════════════════════════ -->
+  <nav class="nav" id="nav" role="navigation" aria-label="Main">
+    <a href="/" class="nav-logo-wrap" aria-label="Lunar Painting Home">
+      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 800 600" xml:space="preserve" aria-hidden="true" focusable="false">
+        <style>.st0{fill:#BE1E2D;}.st1{fill:#726658;}.st2{fill:#939598;}</style>
+        <polygon class="st0" points="132.3,402.6 236.6,315.4 343.3,335.5 508.8,262.8 659.3,411.5 643.8,411.5 508.8,284.4 349.5,391.1 236.2,335.1"/>
+        <path class="st1" d="M367.9,284.9h11.2v7.5h-11.2V284.9z M367.9,260.1h11.2v7.5h-11.2V260.1z M367.9,235.4h11.2v7.5h-11.2V235.4z M367.9,210.7h11.2v7.5h-11.2V210.7z M367.9,186.8h11.2v7.5h-11.2V186.8z M367.9,162.1h11.2v7.5h-11.2V162.1z M390,300.4V147.1l-76.7-48v217.2l28.4,5.4L390,300.4z M500.6,165.2h47.2v5.5h-47.2V165.2z M500.6,146.4h47.2v5.5h-47.2V146.4z M500.6,127.5h47.2v5.5h-47.2V127.5z M558.8,293.6V67.9l-69.1,48v140.7l21.9-9.6L558.8,293.6z M465.7,246.7l-5.9,2.4V49.6l5.9-2.4V246.7z M449.4,253.2l-5.9,2.4V56.1l5.9-2.4V253.2z M478.3,15.1l-76.7,30.7v249.6l76.7-33.7V15.1z M265.1,174.6h23.7v7.5h-23.7V174.6z M265.1,149.9h23.7v7.5h-23.7V149.9z M265.1,125.2h23.7v7.5h-23.7V125.2z M265.1,100.5h23.7v7.5h-23.7V100.5z M299.9,313.8V13.2l-67.1,90.2v198l0.2-0.1L299.9,313.8z M399.9,410.2c-139.2,0-260.3,15.2-322.6,37.7c82.8-14.7,196.8-23.9,322.6-23.9s239.8,9.1,322.6,23.9C660.3,425.5,539.1,410.2,399.9,410.2z"/>
+        <path class="st2" d="M510.8,397.1h21.7v-30.1h-21.7V397.1z M482.6,355.2v5.2h21.7v-29.9C492.1,332.1,482.6,342.5,482.6,355.2z M510.8,330.5v29.9h21.7v-5.2C532.5,342.5,523,332.1,510.8,330.5z M482.6,397.1h21.7v-30.1h-21.7V397.1z M217,403.9h14.9v-20.7H217V403.9z M217,375.1v3.6h14.9v-20.5C223.5,359.3,217,366.4,217,375.1z M236.3,403.9h14.9v-20.7h-14.9V403.9z M236.3,358.2v20.5h14.9v-3.6C251.2,366.4,244.8,359.3,236.3,358.2z"/>
+        <path class="st0" d="M149.9,478.5c0-8.4,0-9.9,0.1-11.6c0.1-1.9,0.4-2.7,2.1-3c0.6-0.1,1.5-0.1,1.8-0.1c0.2,0,0.4-0.2,0.4-0.4c0-0.3-0.3-0.4-0.9-0.4c-1.7,0-5.9,0.1-6.2,0.1c-0.3,0-3.8-0.1-6.3-0.1c-0.6,0-0.9,0.1-0.9,0.4c0,0.2,0.3,0.4,0.4,0.4c0.5,0,1.5,0.1,1.9,0.1c1.8,0.3,2.2,1.1,2.3,3c0.1,1.7,0.1,3.2,0.1,11.6v9.5c0,5.2,0,9.4-0.3,11.7c-0.3,1.6-0.4,2.6-1.5,2.9c-0.5,0.1-1.2,0.3-1.7,0.3c-0.3,0-0.4,0.3-0.4,0.4c0,0.3,0.3,0.4,0.9,0.4c0.9,0,2.1-0.1,3.2-0.1c1.1-0.1,2-0.1,2.3-0.1c1.6,0,3.6,0.1,6.1,0.1c2.6,0.1,5.7,0.2,9.7,0.2c3,0,3.2-0.2,3.6-1.5c0.4-1.6,0.8-4.8,0.8-5.4c0-0.6-0.1-0.8-0.4-0.8c-0.3,0-0.5,0.3-0.6,0.7c-0.2,1.1-0.6,2.2-1.3,3c-1.3,1.6-3.8,1.6-6.7,1.6c-4.4,0-6.5-0.4-7.4-1.3c-1-1-1.1-4.2-1.1-12.1V478.5"/>
+        <path class="st0" d="M175.6,486.4c0,7.9,2.2,11.6,4.9,14.1c3.9,3.7,9.8,3.8,11.6,3.8c3.3,0,7.6-0.4,11.7-3.9c4.4-3.8,5.2-10.3,5.2-16.2v-5.8c0-8.4-0.1-9.9,0.1-11.6c0.1-1.8,0.4-2.7,2-3c0.7-0.1,1-0.1,1.4-0.1c0.3,0,0.4-0.3,0.4-0.4c0-0.3-0.3-0.4-0.9-0.4c-1.6,0-4.3,0.1-4.7,0.1c-0.3,0-3.6-0.1-6-0.1c-0.6,0-0.9,0.1-0.9,0.4c0,0.2,0.2,0.4,0.4,0.4c0.5,0,1.5,0.1,1.9,0.1c1.8,0.3,2.2,1.3,2.2,3c0.1,1.7,0.1,3.2,0.1,11.6v6.8c0,5.5-0.6,10-3.2,13.1c-1.9,2.3-5.2,3.8-8.6,3.8c-3.2,0-5.6-0.4-8.3-2.9c-2.4-2.2-4.1-5.4-4.1-13.2v-7.5c0-8.4,0-9.9,0.1-11.6c0.1-1.8,0.4-2.7,1.9-3c0.7-0.1,1-0.1,1.4-0.1c0.3,0,0.5-0.3,0.5-0.4c0-0.3-0.3-0.4-1-0.4c-1.6,0-5.1,0.1-5.6,0.1c-0.5,0-3.9-0.1-6.4-0.1c-0.6,0-0.9,0.1-0.9,0.4c0,0.2,0.3,0.4,0.4,0.4c0.5,0,1.5,0.1,1.9,0.1c1.8,0.3,2.2,1.3,2.3,3c0.1,1.7,0.1,3.2,0.1,11.6V486.4"/>
+        <path class="st0" d="M226.6,470.9c1.7,1.9,8,8.5,14.5,15.3c5.9,6.2,13.9,14.1,14.5,14.6c3.1,2.9,3.7,3.3,4.2,3.3c0.4,0,0.4-0.3,0.4-3.9l0.1-31.6c0-3.2,0.1-4.3,2-4.7c0.6-0.1,1.1-0.1,1.3-0.1c0.4,0,0.6-0.3,0.6-0.5c0-0.3-0.4-0.4-1-0.4c-2.3,0-4.1,0.1-4.8,0.1c-0.6,0-3.3-0.1-5.8-0.1c-0.6,0-1.1,0.1-1.1,0.4c0,0.2,0.1,0.5,0.4,0.5c0.4,0,1.7,0.1,2.7,0.3c1.7,0.3,2,1.5,2.1,5l0.6,27c-1.7-1.8-7.7-8.2-13.2-13.9c-8.6-8.9-16.7-17.5-17.6-18.4c-0.6-0.6-1.5-1.6-2.2-1.6c-0.4,0-0.8,0.6-0.8,2.7v30.9c0,4.9-0.2,6.3-1.6,6.7c-0.8,0.3-1.8,0.3-2.3,0.3c-0.3,0-0.4,0.2-0.4,0.4c0,0.4,0.3,0.4,0.9,0.4c2.5,0,4.9-0.2,5.4-0.2c0.5,0,2.7,0.2,5.9,0.2c0.6,0,1-0.1,1-0.4c0-0.3-0.2-0.4-0.4-0.4c-0.5,0-1.8-0.1-2.8-0.3c-1.5-0.4-2-1.7-2.2-6.2L226.6,470.9"/>
+        <path class="st0" d="M281.2,486.4c-0.2,0-0.3-0.1-0.2-0.4l5.2-14.8c0.3-0.8,0.6-0.8,1,0l5.5,14.8c0.1,0.3,0.1,0.4-0.2,0.4H281.2 M273.2,497.7c-1.1,2.7-2.2,4.6-4.7,4.9c-0.4,0.1-1.3,0.1-1.6,0.1c-0.3,0-0.5,0.2-0.5,0.4c0,0.3,0.4,0.4,1.1,0.4c2.3,0,5.1-0.2,5.6-0.2c0.6,0,3.7,0.2,5,0.2c0.5,0,0.8-0.1,0.8-0.4c0-0.3-0.1-0.4-0.6-0.4h-0.5c-1,0-1.9-0.4-1.9-1.5c0-1,0.3-2.3,0.8-3.6l3.2-8.6c0.1-0.3,0.3-0.4,0.6-0.4h12.9c0.3,0,0.4,0.1,0.5,0.3l5,12.4c0.4,0.9-0.2,1.3-0.5,1.5c-0.3,0.1-0.4,0.1-0.4,0.4c0,0.3,0.9,0.3,2,0.4c3.9,0.1,8,0.1,8.8,0.1c0.6,0,1.3-0.1,1.3-0.4c0-0.3-0.4-0.4-0.7-0.4c-0.6,0-1.4-0.1-2.2-0.3c-1.2-0.4-2.7-1.1-4.8-5.9c-3.4-8.2-12.4-30.4-13.4-32.7c-0.6-1.2-0.8-2-1.3-2c-0.4,0-0.6,0.3-1.3,2.1L273.2,497.7"/>
+        <path class="st0" d="M322.1,465.8c0-0.3,0.2-0.5,0.4-0.6c0.6-0.1,2.3-0.3,4-0.3c6,0,9.6,3.9,9.6,10.6c0,4.1-1.5,7-3.4,8.2c-1.3,0.9-2.9,1-4.2,1c-2.5,0-5.3-0.4-6.2-0.8c-0.3-0.2-0.4-0.4-0.4-0.7V465.8 M317.3,488c0,5.2,0,9.4-0.3,11.7c-0.3,1.6-0.4,2.6-1.5,2.9c-0.5,0.1-1.2,0.3-1.7,0.3c-0.3,0-0.4,0.3-0.4,0.4c0,0.3,0.3,0.4,0.9,0.4c1.7,0,5.5-0.2,5.5-0.2c0.3,0,3.8,0.2,6.8,0.2c0.6,0,0.9-0.2,0.9-0.4c0-0.2-0.1-0.4-0.4-0.4c-0.5,0-1.7-0.1-2.5-0.3c-1.7-0.3-2-1.3-2.2-2.9c-0.3-2.2-0.3-6.4-0.3-11.6v-1.3c0-0.3,0.1-0.4,0.4-0.4l7.1,0.1c0.4,0,0.5,0.1,0.8,0.3c1.2,1.5,3.7,4.9,6,7.9c3.2,4.1,5.2,6.7,7.6,7.9c1.4,0.8,2.8,1.1,6,1.1h3.5c1,0,1.3-0.1,1.3-0.4c0-0.2-0.2-0.4-0.5-0.4s-0.9,0-2-0.2c-1.4-0.2-3.2-0.7-6.2-3.7c-3.2-3.4-7.1-8.2-11.7-13.9c5.2-4.4,6.8-8.3,6.8-12.3c0-3.7-2.5-6.3-3.9-7.4c-2.9-2-6.8-2.3-10.4-2.3c-1.7,0-6.4,0.1-7,0.1c-0.3,0-4.1-0.1-6.6-0.1c-0.6,0-0.9,0.1-0.9,0.4c0,0.2,0.3,0.4,0.4,0.4c0.5,0,1.5,0.1,1.9,0.1c1.8,0.3,2.2,1.1,2.3,3c0.1,1.7,0.1,3.2,0.1,11.6V488"/>
+        <path class="st0" d="M380.5,488c0,5.2,0,9.4-0.3,11.7c-0.3,1.6-0.4,2.6-1.5,2.9c-0.5,0.1-1.2,0.3-1.7,0.3c-0.3,0-0.4,0.3-0.4,0.4c0,0.3,0.3,0.4,0.9,0.4c1.7,0,5.3-0.2,5.5-0.2c0.3,0,3.9,0.2,7,0.2c0.6,0,0.9-0.2,0.9-0.4c0-0.2-0.1-0.4-0.4-0.4c-0.5,0-1.7-0.1-2.5-0.3c-1.7-0.3-2-1.3-2.2-2.9c-0.3-2.2-0.3-6.5-0.3-11.7v-21.9c0-0.6,0.1-1,0.4-1c0.6-0.1,2.2-0.4,3.1-0.4c1.3,0,4.6-0.3,7.5,2.6c3,2.9,3.2,6.4,3.2,8.2c0,4.9-4.3,8.7-10.3,8.7c-1.1,0-1.5,0.1-1.5,0.6c0,0.3,0.3,0.5,0.6,0.5c0.3,0.1,1.3,0.1,1.6,0.1c8.6,0,14.4-5.1,14.4-12.9c0-2.9-1.5-5.3-2.8-6.5c-1-0.8-3.5-3-10.7-3c-2.5,0-6.7,0.1-7.9,0.1c-0.4,0-3.9-0.1-6.5-0.1c-0.6,0-0.9,0.1-0.9,0.4c0,0.2,0.3,0.4,0.4,0.4c0.5,0,1.5,0.1,1.9,0.1c1.8,0.3,2.2,1.1,2.3,3c0.1,1.7,0.1,3.2,0.1,11.6V488"/>
+        <path class="st0" d="M418.4,486.4c-0.2,0-0.3-0.1-0.2-0.4l5.2-14.8c0.3-0.8,0.6-0.8,1,0l5.5,14.8c0.1,0.3,0.1,0.4-0.2,0.4H418.4 M410.4,497.7c-1.1,2.7-2.2,4.6-4.7,4.9c-0.4,0.1-1.3,0.1-1.6,0.1c-0.3,0-0.5,0.2-0.5,0.4c0,0.3,0.4,0.4,1.1,0.4c2.3,0,5.1-0.2,5.6-0.2c0.6,0,3.7,0.2,5,0.2c0.5,0,0.8-0.1,0.8-0.4c0-0.3-0.1-0.4-0.6-0.4H415c-1,0-1.9-0.4-1.9-1.5c0-1,0.3-2.3,0.8-3.6l3.2-8.6c0.1-0.3,0.3-0.4,0.6-0.4h12.9c0.3,0,0.4,0.1,0.5,0.3l5,12.4c0.4,0.9-0.2,1.3-0.5,1.5c-0.3,0.1-0.4,0.1-0.4,0.4c0,0.3,0.9,0.3,2,0.4c3.9,0.1,8,0.1,8.8,0.1c0.6,0,1.3-0.1,1.3-0.4c0-0.3-0.4-0.4-0.7-0.4c-0.6,0-1.4-0.1-2.2-0.3c-1.2-0.4-2.7-1.1-4.8-5.9c-3.4-8.2-12.4-30.4-13.4-32.7c-0.6-1.2-0.8-2-1.3-2c-0.4,0-0.6,0.3-1.3,2.1L410.4,497.7"/>
+        <path class="st0" d="M459.6,478.5c0-8.4,0-9.9,0.1-11.6c0.1-1.9,0.4-2.7,2-3c0.6-0.1,1-0.1,1.4-0.1c0.2,0,0.4-0.3,0.4-0.4c0-0.3-0.3-0.4-0.9-0.4c-1.7,0-5.3,0.1-5.6,0.1c-0.3,0-3.8-0.1-5.6-0.1c-0.6,0-0.9,0.1-0.9,0.4c0,0.2,0.2,0.4,0.4,0.4c0.4,0,1.1,0.1,1.7,0.2c1.2,0.3,1.6,1.1,1.8,2.9c0.1,1.7,0.1,3.2,0.1,11.6v9.5c0,5.2-0.1,9.4-0.3,11.7c-0.2,1.6-0.4,2.6-1.5,2.9c-0.5,0.1-1.2,0.3-1.7,0.3c-0.3,0-0.4,0.3-0.4,0.4c0,0.3,0.3,0.4,0.9,0.4c1.7,0,5.2-0.2,5.5-0.2c0.3,0,3.9,0.2,7,0.2c0.6,0,0.9-0.2,0.9-0.4c0-0.2-0.1-0.4-0.4-0.4c-0.5,0-1.7-0.1-2.5-0.3c-1.6-0.3-1.8-1.3-2-2.9c-0.3-2.2-0.3-6.5-0.3-11.7V478.5"/>
+        <path class="st0" d="M479.6,470.9c1.7,1.9,8,8.5,14.5,15.3c5.9,6.2,13.9,14.1,14.5,14.6c3.1,2.9,3.7,3.3,4.2,3.3c0.4,0,0.4-0.3,0.4-3.9l0.1-31.6c0-3.2,0.1-4.3,2-4.7c0.6-0.1,1.1-0.1,1.3-0.1c0.4,0,0.6-0.3,0.6-0.5c0-0.3-0.4-0.4-1-0.4c-2.3,0-4.1,0.1-4.8,0.1c-0.6,0-3.3-0.1-5.8-0.1c-0.6,0-1.1,0.1-1.1,0.4c0,0.2,0.1,0.5,0.4,0.5c0.4,0,1.7,0.1,2.7,0.3c1.7,0.3,2,1.5,2.1,5l0.6,27c-1.7-1.8-7.7-8.2-13.2-13.9c-8.6-8.9-16.7-17.5-17.6-18.4c-0.6-0.6-1.5-1.6-2.2-1.6c-0.4,0-0.8,0.6-0.8,2.7v30.9c0,4.9-0.2,6.3-1.6,6.7c-0.8,0.3-1.8,0.3-2.3,0.3c-0.3,0-0.4,0.2-0.4,0.4c0,0.4,0.3,0.4,0.9,0.4c2.5,0,4.9-0.2,5.4-0.2c0.5,0,2.7,0.2,5.9,0.2c0.6,0,1-0.1,1-0.4c0-0.3-0.2-0.4-0.4-0.4c-0.5,0-1.8-0.1-2.8-0.3c-1.5-0.4-2-1.7-2.2-6.2L479.6,470.9"/>
+        <path class="st0" d="M543,465.4l7,0.1c5.3,0.1,6.5,1.3,6.7,3l0.1,0.6c0.1,0.8,0.2,1,0.4,1s0.5-0.3,0.5-0.7c0-0.6,0.2-4.5,0.2-6.2c0-0.3,0-0.6-0.3-0.6c-0.3,0-0.8,0.1-1.6,0.3c-0.9,0.1-2.2,0.3-4,0.3H531c-0.6,0-2.8-0.1-4.4-0.3c-1.5-0.2-2.1-0.6-2.5-0.6c-0.2,0-0.5,0.7-0.6,1c-0.1,0.4-1.2,5.3-1.2,5.8c0,0.3,0.3,0.4,0.4,0.4c0.3,0,0.4-0.1,0.6-0.5c0.2-0.4,0.3-0.8,0.9-1.7c0.8-1.3,2.2-1.6,5.6-1.7l8.1-0.1V488c0,5.2,0,9.4-0.3,11.7c-0.2,1.6-0.5,2.7-1.6,2.9c-0.5,0.1-1.1,0.3-1.6,0.3c-0.3,0-0.4,0.2-0.4,0.4c0,0.3,0.3,0.4,0.9,0.4c1.6,0,5.5-0.2,5.8-0.2c0.3,0,3.9,0.2,6.9,0.2c0.6,0,0.9-0.2,0.9-0.4c0-0.2-0.1-0.4-0.4-0.4c-0.5,0-1.8-0.1-2.5-0.3c-1.7-0.3-2-1.3-2.2-2.9c-0.3-2.2-0.3-6.5-0.3-11.7V465.4"/>
+        <path class="st0" d="M574.5,478.5c0-8.4,0-9.9,0.1-11.6c0.1-1.9,0.4-2.7,2-3c0.6-0.1,1-0.1,1.4-0.1c0.2,0,0.4-0.3,0.4-0.4c0-0.3-0.3-0.4-0.9-0.4c-1.7,0-5.3,0.1-5.6,0.1c-0.3,0-3.8-0.1-5.6-0.1c-0.6,0-0.9,0.1-0.9,0.4c0,0.2,0.2,0.4,0.4,0.4c0.4,0,1.1,0.1,1.7,0.2c1.2,0.3,1.6,1.1,1.8,2.9c0.1,1.7,0.1,3.2,0.1,11.6v9.5c0,5.2-0.1,9.4-0.3,11.7c-0.2,1.6-0.4,2.6-1.5,2.9c-0.5,0.1-1.2,0.3-1.7,0.3c-0.3,0-0.4,0.3-0.4,0.4c0,0.3,0.3,0.4,0.9,0.4c1.7,0,5.2-0.2,5.5-0.2c0.3,0,3.9,0.2,7,0.2c0.6,0,0.9-0.2,0.9-0.4c0-0.2-0.1-0.4-0.4-0.4c-0.5,0-1.7-0.1-2.5-0.3c-1.6-0.3-1.8-1.3-2-2.9c-0.3-2.2-0.3-6.5-0.3-11.7V478.5"/>
+        <path class="st0" d="M594.5,470.9c1.7,1.9,8,8.5,14.5,15.3c5.9,6.2,13.9,14.1,14.5,14.6c3.1,2.9,3.7,3.3,4.2,3.3c0.4,0,0.4-0.3,0.4-3.9l0.1-31.6c0-3.2,0.1-4.3,2-4.7c0.6-0.1,1.1-0.1,1.3-0.1c0.4,0,0.6-0.3,0.6-0.5c0-0.3-0.4-0.4-1-0.4c-2.3,0-4.1,0.1-4.8,0.1s-3.3-0.1-5.8-0.1c-0.6,0-1.1,0.1-1.1,0.4c0,0.2,0.1,0.5,0.4,0.5c0.4,0,1.7,0.1,2.7,0.3c1.7,0.3,2,1.5,2.1,5l0.6,27c-1.7-1.8-7.7-8.2-13.2-13.9c-8.6-8.9-16.7-17.5-17.6-18.4c-0.6-0.6-1.5-1.6-2.2-1.6c-0.4,0-0.8,0.6-0.8,2.7v30.9c0,4.9-0.2,6.3-1.6,6.7c-0.8,0.3-1.8,0.3-2.3,0.3c-0.3,0-0.4,0.2-0.4,0.4c0,0.4,0.3,0.4,0.9,0.4c2.5,0,4.9-0.2,5.4-0.2c0.5,0,2.7,0.2,5.9,0.2c0.6,0,1-0.1,1-0.4c0-0.3-0.2-0.4-0.4-0.4c-0.5,0-1.8-0.1-2.8-0.3c-1.5-0.4-2-1.7-2.2-6.2L594.5,470.9"/>
+        <path class="st0" d="M671,499.2c0,1-0.4,1.3-1.1,1.6c-1.5,0.8-4.1,1-6,1c-5.1,0-9.8-1.5-14.3-5.6c-2-1.8-5.9-7.3-5.9-14.9c0-6.3,2.3-11.1,5.5-13.6c4.2-3.2,8.3-3.5,11.7-3.5c7.2,0,11.5,2.2,12.9,4.2c0.9,1.3,1.2,2.9,1.3,3.6c0,0.5,0.1,0.8,0.4,0.8c0.4,0,0.6-0.3,0.6-1.1c0-5.4,0.3-6.8,0.3-7.6c0-0.3-0.1-0.5-0.7-0.5c-1.4,0-3.4-0.3-4.5-0.6c-1.1-0.3-5-0.9-8.6-0.9c-4.2,0-9.8,0.4-14.8,3.4c-4.9,3-9.3,9.1-9.3,17.7c0,6.7,3.2,12.5,6.7,15.3c6.2,5.3,14.1,5.8,18.4,5.8c3.2,0,8.3-0.6,11.9-2.4c0.7-0.4,0.8-0.4,0.8-2.9v-6c0-2.3,0-3.9,0.1-5.6c0.1-1.9,0.6-2.7,2.1-3c0.6-0.1,1-0.1,1.4-0.1c0.2,0,0.4-0.3,0.4-0.4c0-0.4-0.3-0.4-0.9-0.4c-1.7,0-5.2,0.1-5.5,0.1c-0.3,0-4.1-0.1-6.6-0.1c-0.6,0-0.9,0.1-0.9,0.4c0,0.2,0.3,0.4,0.4,0.4c0.5,0,1.5,0.1,1.9,0.1c2.3,0.4,2.4,1.1,2.4,5.5V499.2"/>
+        <polygon points="542.3,536.7 542.3,544.2 212.6,561.9 542.3,579.7 542.3,587.2 592.7,561.9"/>
+      </svg>
+    </a>
 
-  <!-- ─── NAV ─── -->
-  <nav>
-    <div class="nav-logo">
-      <div class="nav-logo-mark"></div>
-      <span class="nav-logo-text">LUNAR <span>PAINTING</span></span>
+    <div class="nav-right">
+      <ul class="nav-links" role="list">
+        <li><a href="#commercial">Commercial</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#work">Our Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="tel:9494468578" class="nav-tel" aria-label="Call Lunar Painting">(949) 446-8578</a>
+      <a href="tel:9494468578" class="nav-btn">Get a Quote</a>
     </div>
-    <ul class="nav-links">
-      <li><a href="#services">Services</a></li>
-      <li><a href="#process">Process</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-    <a href="tel:9494468578" class="nav-cta"><span>Call (949) 446-8578</span></a>
   </nav>
 
-  <!-- ─── HERO ─── -->
-  <section class="hero">
-    <!-- Left -->
-    <div class="hero-left">
-      <div class="hero-red-block"></div>
-      <p class="hero-eyebrow">Orange County · Est. 2017</p>
-      <h1 class="hero-headline">
-        We Paint<br>
-        <em>The Right</em><br>
-        Way.
+  <!-- ══════════════════════════════════
+       HERO
+  ══════════════════════════════════ -->
+  <header class="hero" role="banner">
+    <img
+      class="hero-photo"
+      src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1600&q=88&auto=format&fit=crop&crop=top"
+      alt="Professional painter from Lunar Painting working on a residential project in Orange County, CA"
+      fetchpriority="high"
+      loading="eager"
+    />
+    <div class="hero-wash" aria-hidden="true"></div>
+    <div class="hero-body">
+      <p class="eyebrow">Orange County's Commercial Painting Partner</p>
+      <h1 class="hero-h1">
+        The crew<br>
+        property managers<br>
+        <em>call back.</em>
       </h1>
-      <p class="hero-sub">
-        Skilled painters delivering exceptional results across Orange County and Los Angeles. Interior, exterior, residential, commercial — done properly.
+      <p class="hero-desc">
+        Apartment complexes, HOAs, commercial properties — we work around tenant schedules, finish on time, and do it right the first time. Serving Orange County and LA County since 2017.
       </p>
       <div class="hero-actions">
-        <a href="tel:9494468578" class="btn-primary">
-          <div class="btn-fill" id="hero-btn-fill"></div>
-          <span>Get a Free Quote</span>
+        <a href="tel:9494468578" class="btn-solid">
+          Call (949) 446-8578
         </a>
-        <a href="#process" class="btn-ghost">See How We Work</a>
-      </div>
-      <div class="hero-stats">
-        <div>
-          <div class="hero-stat-num">20+</div>
-          <div class="hero-stat-label">Verified Reviews</div>
-        </div>
-        <div>
-          <div class="hero-stat-num">100%</div>
-          <div class="hero-stat-label">Licensed &amp; Insured</div>
-        </div>
-        <div>
-          <div class="hero-stat-num">2</div>
-          <div class="hero-stat-label">Counties Served</div>
-        </div>
+        <a href="#commercial" class="btn-text">See commercial services</a>
       </div>
     </div>
+  </header>
 
-    <!-- Right — Hero photo with human face -->
-    <div class="hero-right">
-      <img
-        src="https://images.unsplash.com/photo-1562259929-b4e1fd3aef09?w=1200&q=85&auto=format&fit=crop"
-        alt="Professional painter at work on a residential project in Orange County"
-        loading="eager"
-        fetchpriority="high"
-      />
-      <div class="hero-badge">
-        <div class="hero-badge-num">★★★★★</div>
-        <div class="hero-badge-label">HomeAdvisor<br>Top Rated</div>
-      </div>
-      <div class="hero-photo-tag">
-        <p><span class="tag-dot"></span>Active in Laguna Hills, CA</p>
-        <strong>Lunar Painting — Est. 2017</strong>
-      </div>
-    </div>
-  </section>
-
-  <!-- ─── MARQUEE ─── -->
-  <div class="marquee-band" aria-hidden="true">
-    <div class="marquee-track" id="marquee-track">
-      <!-- Items duplicated for seamless loop -->
-      <div class="marquee-item">Orange County <span class="marquee-sep"></span></div>
-      <div class="marquee-item">Los Angeles County <span class="marquee-sep"></span></div>
-      <div class="marquee-item">Laguna Hills <span class="marquee-sep"></span></div>
-      <div class="marquee-item">Sherwin Williams Products <span class="marquee-sep"></span></div>
-      <div class="marquee-item">Interior &amp; Exterior <span class="marquee-sep"></span></div>
-      <div class="marquee-item">Residential &amp; Commercial <span class="marquee-sep"></span></div>
-      <div class="marquee-item">HomeAdvisor Elite Service <span class="marquee-sep"></span></div>
-      <div class="marquee-item">Licensed &amp; Insured <span class="marquee-sep"></span></div>
-      <!-- Duplicate for seamless loop -->
-      <div class="marquee-item">Orange County <span class="marquee-sep"></span></div>
-      <div class="marquee-item">Los Angeles County <span class="marquee-sep"></span></div>
-      <div class="marquee-item">Laguna Hills <span class="marquee-sep"></span></div>
-      <div class="marquee-item">Sherwin Williams Products <span class="marquee-sep"></span></div>
-      <div class="marquee-item">Interior &amp; Exterior <span class="marquee-sep"></span></div>
-      <div class="marquee-item">Residential &amp; Commercial <span class="marquee-sep"></span></div>
-      <div class="marquee-item">HomeAdvisor Elite Service <span class="marquee-sep"></span></div>
-      <div class="marquee-item">Licensed &amp; Insured <span class="marquee-sep"></span></div>
+  <!-- ══════════════════════════════════
+       TRUST BAR
+  ══════════════════════════════════ -->
+  <div class="trust" role="list" aria-label="Credentials">
+    <div class="trust-row">
+      <div class="trust-item" role="listitem"><span class="dot" aria-hidden="true"></span>HomeAdvisor Top Rated</div>
+      <div class="trust-item" role="listitem"><span class="dot" aria-hidden="true"></span>Elite Service Badge</div>
+      <div class="trust-item" role="listitem"><span class="dot" aria-hidden="true"></span>20+ Verified Reviews</div>
+      <div class="trust-item" role="listitem"><span class="dot" aria-hidden="true"></span>Licensed &amp; Insured</div>
+      <div class="trust-item" role="listitem"><span class="dot" aria-hidden="true"></span>Sherwin Williams</div>
+      <div class="trust-item" role="listitem"><span class="dot" aria-hidden="true"></span>Mon–Fri 8am–5pm</div>
     </div>
   </div>
 
-  <!-- ─── ABOUT ─── -->
-  <section class="about" id="about">
-    <div class="about-left">
-      <p class="section-label reveal">About Lunar Painting</p>
-      <h2 class="about-headline reveal reveal-delay-1">
-        Integrity.<br>Craft.<br>Results.
-      </h2>
-      <p class="about-body reveal reveal-delay-2">
-        We are a team of skilled, experienced painters working together to achieve excellent results and distinction in the areas we serve. Integrity, honesty, professionalism, and attention to detail — in every project, large or small — form the foundation of everything we do.
-      </p>
-      <div class="badges reveal reveal-delay-3">
-        <div class="badge-item">
-          <div class="badge-title">HomeAdvisor</div>
-          <div class="badge-desc">Top Rated</div>
-          <div class="badge-star"><span>★★★★★</span></div>
-        </div>
-        <div class="badge-item">
-          <div class="badge-title">HomeAdvisor</div>
-          <div class="badge-desc">Elite Service</div>
-          <div class="badge-star"><span>★★★★★</span></div>
-        </div>
-        <div class="badge-item">
-          <div class="badge-title">Verified</div>
-          <div class="badge-desc">20+ Reviews</div>
-        </div>
-        <div class="badge-item">
-          <div class="badge-title">Active</div>
-          <div class="badge-desc">Since 2017</div>
-        </div>
-      </div>
-    </div>
-    <div class="about-right">
-      <img
-        src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1000&q=80&auto=format&fit=crop"
-        alt="Lunar Painting crew working on a project"
-        loading="lazy"
-      />
-      <div class="about-overlay-quote">
-        <p class="about-quote-text">
-          "At Lunar Painting we don't just paint — we paint the right way, with proper application techniques to ensure a uniform finish."
+  <!-- ══════════════════════════════════
+       COMMERCIAL SECTION
+  ══════════════════════════════════ -->
+  <section class="section commercial" id="commercial" aria-labelledby="commercial-h2">
+    <div class="commercial-inner">
+      <div class="commercial-text">
+        <p class="section-label reveal">For Property Managers &amp; HOAs</p>
+        <h2 class="section-h2 reveal reveal-d1" id="commercial-h2">
+          Built for<br>big projects.
+        </h2>
+        <p class="section-body reveal reveal-d2">
+          We understand what property managers need: a painting crew that shows up, communicates clearly, works around occupied units, and delivers a finish that holds up. No surprises on the invoice. No callbacks on quality.
         </p>
-        <p class="about-quote-source">— Lunar Painting, Laguna Hills CA</p>
+        <p class="section-body reveal reveal-d2" style="margin-top:-16px;">
+          From full exterior repaints of apartment complexes to unit turns and common area refreshes — Lunar Painting has the crew and the process to handle it all.
+        </p>
+        <a href="tel:9494468578" class="btn-solid reveal reveal-d3">Request a Commercial Estimate</a>
+
+        <div class="pm-cards reveal" style="margin-top:36px;">
+          <div class="pm-card">
+            <div class="pm-card-title">Apartment Complexes &amp; Multi-Family</div>
+            <div class="pm-card-body">Full exterior repaints, unit interiors, common areas, stairwells, and breezeways. We coordinate with property managers to minimize disruption to residents.</div>
+          </div>
+          <div class="pm-card">
+            <div class="pm-card-title">HOA &amp; Community Properties</div>
+            <div class="pm-card-body">We work within HOA color guidelines and approval processes. Detailed prep reports available for board presentations and budgeting.</div>
+          </div>
+          <div class="pm-card">
+            <div class="pm-card-title">Commercial Interiors &amp; Exteriors</div>
+            <div class="pm-card-body">Offices, retail, warehouses, and mixed-use properties. After-hours scheduling available to keep your business running.</div>
+          </div>
+          <div class="pm-card">
+            <div class="pm-card-title">Wood &amp; Surface Restoration</div>
+            <div class="pm-card-body">Drywall repair, wood replacement, window restoration, and pressure washing — all handled by the same crew before paint ever goes up.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="commercial-visual reveal reveal-d1">
+        <img
+          class="commercial-photo"
+          src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=900&q=85&auto=format&fit=crop"
+          alt="Apartment complex exterior in Orange County ready for professional commercial painting services"
+          loading="lazy"
+        />
       </div>
     </div>
   </section>
 
-  <!-- ─── SERVICES ─── -->
-  <section class="services" id="services">
-    <div class="services-header reveal">
-      <h2 class="services-headline">What We<br>Do Best.</h2>
-      <p class="services-sub">Two disciplines. One standard of excellence. Every time.</p>
-    </div>
-    <div class="services-grid">
-      <!-- Residential -->
-      <div class="service-card reveal">
-        <div class="service-card-num">01</div>
-        <p class="service-card-label">Residential</p>
-        <h3 class="service-card-title">Home<br>Painting</h3>
-        <ul class="service-list">
-          <li>Interior house painting</li>
-          <li>Exterior house painting</li>
-          <li>Drywall repair</li>
-          <li>Wood replacement &amp; staining</li>
-          <li>Baseboard installation</li>
-          <li>Pressure washing</li>
-        </ul>
-        <a href="residential.html" class="service-cta">Residential Services</a>
+  <!-- ══════════════════════════════════
+       STATS
+  ══════════════════════════════════ -->
+  <div class="stats" aria-label="Company statistics">
+    <div class="stats-grid">
+      <div class="stat reveal">
+        <div class="stat-num">7+</div>
+        <div class="stat-label">Years serving<br>Orange County</div>
       </div>
-      <!-- Commercial -->
-      <div class="service-card reveal reveal-delay-2">
-        <div class="service-card-num">02</div>
-        <p class="service-card-label">Commercial</p>
-        <h3 class="service-card-title">Business<br>Painting</h3>
-        <ul class="service-list">
-          <li>Interior commercial painting</li>
-          <li>Exterior commercial painting</li>
-          <li>Drywall repair</li>
-          <li>Wood &amp; window restoration</li>
-        </ul>
-        <a href="commercial.html" class="service-cta">Commercial Services</a>
+      <div class="stat reveal reveal-d1">
+        <div class="stat-num">20+</div>
+        <div class="stat-label">Verified 5-star<br>reviews</div>
       </div>
-    </div>
-  </section>
-
-  <!-- ─── PROCESS ─── -->
-  <section class="process" id="process">
-    <div class="process-header">
-      <h2 class="process-headline reveal">Our<br>5-Step<br>Process.</h2>
-      <p class="process-note reveal reveal-delay-1">Every project follows the same disciplined method.</p>
-    </div>
-
-    <div class="accordion" id="accordion">
-
-      <div class="accordion-strip active" data-index="0">
-        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=75&auto=format&fit=crop" alt="Preparing the room" loading="lazy" />
-        <div class="strip-num">01</div>
-        <div class="strip-vertical-label">Preparation</div>
-        <div class="strip-content">
-          <p class="strip-step-label">Step 01</p>
-          <h3 class="strip-title">Getting Ready</h3>
-          <p class="strip-desc">We move furniture, cover everything with plastic sheeting, and protect floors with drop cloths before a single brush touches paint.</p>
-        </div>
+      <div class="stat reveal reveal-d2">
+        <div class="stat-num">2</div>
+        <div class="stat-label">Counties<br>served</div>
       </div>
-
-      <div class="accordion-strip" data-index="1">
-        <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&q=75&auto=format&fit=crop" alt="Surface preparation" loading="lazy" />
-        <div class="strip-num">02</div>
-        <div class="strip-vertical-label">Surface Prep</div>
-        <div class="strip-content">
-          <p class="strip-step-label">Step 02</p>
-          <h3 class="strip-title">Proper Prep</h3>
-          <p class="strip-desc">Holes filled, cracks sealed, stains primed, surfaces sanded smooth. The foundation of a lasting finish is always in the preparation.</p>
-        </div>
+      <div class="stat reveal reveal-d3">
+        <div class="stat-num">100%</div>
+        <div class="stat-label">Licensed<br>&amp; insured</div>
       </div>
-
-      <div class="accordion-strip" data-index="2">
-        <img src="https://images.unsplash.com/photo-1541123437800-1bb1317badc2?w=800&q=75&auto=format&fit=crop" alt="Painting in progress" loading="lazy" />
-        <div class="strip-num">03</div>
-        <div class="strip-vertical-label">Painting</div>
-        <div class="strip-content">
-          <p class="strip-step-label">Step 03</p>
-          <h3 class="strip-title">The Painting</h3>
-          <p class="strip-desc">Proper application techniques using premium Sherwin Williams products deliver a uniform, lasting finish — every time.</p>
-        </div>
-      </div>
-
-      <div class="accordion-strip" data-index="3">
-        <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800&q=75&auto=format&fit=crop" alt="Cleaning up after painting" loading="lazy" />
-        <div class="strip-num">04</div>
-        <div class="strip-vertical-label">Cleanup</div>
-        <div class="strip-content">
-          <p class="strip-step-label">Step 04</p>
-          <h3 class="strip-title">Cleaning Up</h3>
-          <p class="strip-desc">We restore everything to its original place, vacuum and sweep, and remove all materials. Your home is left cleaner than we found it.</p>
-        </div>
-      </div>
-
-      <div class="accordion-strip" data-index="4">
-        <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&q=75&auto=format&fit=crop" alt="Final walkthrough inspection" loading="lazy" />
-        <div class="strip-num">05</div>
-        <div class="strip-vertical-label">Inspection</div>
-        <div class="strip-content">
-          <p class="strip-step-label">Step 05</p>
-          <h3 class="strip-title">Final Walk</h3>
-          <p class="strip-desc">We walk through the completed work together. Any touch-up needed gets handled immediately — we don't leave until you're satisfied.</p>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ─── SHERWIN CALLOUT ─── -->
-  <div class="sherwin reveal">
-    <div class="sherwin-left">
-      <p class="sherwin-label">Products We Trust</p>
-      <h3 class="sherwin-text">We use <span>Sherwin Williams</span><br>on every project.</h3>
-    </div>
-    <div class="sherwin-right">
-      <span class="sherwin-sw">SHERWIN WILLIAMS</span>
-      <div class="sherwin-divider"></div>
-      <p class="sherwin-sub">Premium-grade paint products for a finish that lasts</p>
     </div>
   </div>
 
-  <!-- ─── CONTACT BAR ─── -->
-  <section class="contact-bar" id="contact">
-    <div>
-      <p class="contact-col-label">Call Us</p>
-      <p class="contact-col-value">
-        <a href="tel:9494468578" style="color:inherit">(949) 446-8578</a>
-      </p>
-      <p class="contact-col-sub">
-        <a href="tel:9496525024" style="color:inherit;opacity:0.7">(949) 652-5024</a><br>
-        Mon–Fri, 8:00 AM – 5:00 PM
-      </p>
-    </div>
-    <div>
-      <p class="contact-col-label">Find Us</p>
-      <p class="contact-col-value">Laguna Hills,<br>CA 92653</p>
-      <p class="contact-col-sub">
-        25255 Cabot Rd, Suite #224<br>
-        Orange County &amp; LA County
-      </p>
-    </div>
-    <div class="contact-cta-col">
-      <p class="contact-col-label">Get Started</p>
-      <a href="mailto:lunarpainting1@gmail.com" class="btn-white">Email for a Quote</a>
-      <p class="contact-col-sub" style="margin-top:16px">
-        lunarpainting1@gmail.com
-      </p>
+  <!-- ══════════════════════════════════
+       SERVICES
+  ══════════════════════════════════ -->
+  <section class="section services" id="services" aria-labelledby="services-h2">
+    <p class="section-label reveal">What We Do</p>
+    <h2 class="section-h2 reveal reveal-d1" id="services-h2">
+      Every surface.<br>Done properly.
+    </h2>
+    <p class="section-body reveal reveal-d2">
+      We use Sherwin Williams products on every job — interior, exterior, residential, commercial. Good paint is only as good as the prep underneath it.
+    </p>
+
+    <div class="services-stack">
+      <article class="svc reveal">
+        <div class="svc-head">
+          <div class="svc-flag">Commercial — Priority Service</div>
+          <h3 class="svc-title">Commercial Painting</h3>
+        </div>
+        <div class="svc-body">
+          <p class="svc-desc">For property managers, business owners, and HOAs who need a contractor they can trust to show up and deliver. We treat your property like it's our own reputation on the line — because it is.</p>
+          <ul class="svc-list" aria-label="Commercial painting services">
+            <li>Interior commercial painting</li>
+            <li>Exterior commercial painting</li>
+            <li>Apartment complex repaints</li>
+            <li>HOA &amp; community properties</li>
+            <li>Drywall repair &amp; prep</li>
+            <li>Wood &amp; window restoration</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="svc reveal reveal-d1">
+        <div class="svc-head">
+          <div class="svc-flag">Residential</div>
+          <h3 class="svc-title">Home Painting</h3>
+        </div>
+        <div class="svc-body">
+          <p class="svc-desc">Your home deserves the same standard we bring to commercial jobs. We move your furniture, protect your floors, and don't leave until the walk-through is done and you're satisfied.</p>
+          <ul class="svc-list" aria-label="Residential painting services">
+            <li>Interior house painting</li>
+            <li>Exterior house painting</li>
+            <li>Drywall repair</li>
+            <li>Wood replacement &amp; staining</li>
+            <li>Baseboard installation</li>
+            <li>Pressure washing</li>
+          </ul>
+        </div>
+      </article>
     </div>
   </section>
 
-  <!-- ─── FOOTER ─── -->
-  <footer>
-    <span class="footer-logo">LUNAR <span>PAINTING</span></span>
-    <p class="footer-copy">© 2017–2024 Lunar Painting LLC · Laguna Hills, CA</p>
-    <ul class="footer-links">
-      <li><a href="residential.html">Residential</a></li>
-      <li><a href="commercial.html">Commercial</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
+  <!-- ══════════════════════════════════
+       WORK PHOTO GRID
+  ══════════════════════════════════ -->
+  <section class="section work" id="work" aria-labelledby="work-h2">
+    <p class="section-label reveal">Our Work</p>
+    <h2 class="section-h2 reveal reveal-d1" id="work-h2">
+      Results speak<br>for themselves.
+    </h2>
+    <p class="section-body reveal reveal-d2">Orange County residential and commercial projects — interiors, exteriors, and everything in between.</p>
+
+    <div class="work-grid reveal">
+      <div class="wg-item tall">
+        <img
+          src="https://images.unsplash.com/photo-1562259929-b4e1fd3aef09?w=800&q=80&auto=format&fit=crop&crop=center"
+          alt="Professional painter applying finish coat on interior residential project in Laguna Hills"
+          loading="lazy"
+        />
+      </div>
+      <div class="wg-item">
+        <img
+          src="https://images.unsplash.com/photo-1604754742629-3e5728249d73?w=600&q=80&auto=format&fit=crop"
+          alt="Freshly painted bright interior room — Lunar Painting residential project"
+          loading="lazy"
+        />
+      </div>
+      <div class="wg-item">
+        <img
+          src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&q=80&auto=format&fit=crop"
+          alt="Commercial property exterior paint job completed by Lunar Painting in Orange County"
+          loading="lazy"
+        />
+      </div>
+      <div class="wg-item">
+        <img
+          src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=600&q=80&auto=format&fit=crop"
+          alt="Surface preparation and drywall repair before painting — Lunar Painting process"
+          loading="lazy"
+        />
+      </div>
+      <div class="wg-item">
+        <img
+          src="https://images.unsplash.com/photo-1545558014-8692077e9b5c?w=600&q=80&auto=format&fit=crop"
+          alt="Exterior house painting with Sherwin Williams premium products in Laguna Hills CA"
+          loading="lazy"
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       PROCESS CALLOUT
+  ══════════════════════════════════ -->
+  <div class="process-strip">
+    <p class="process-quote reveal">
+      "Our crew knows how to get in, get the job done, clean up, and get out — without sacrificing quality."
+    </p>
+    <a href="process.html" class="process-link reveal reveal-d2">
+      See our 5-step process <span class="process-link-arrow">→</span>
+    </a>
+  </div>
+
+  <!-- ══════════════════════════════════
+       REVIEWS
+  ══════════════════════════════════ -->
+  <section class="section reviews" aria-labelledby="reviews-h2">
+    <p class="section-label reveal">What Clients Say</p>
+    <h2 class="section-h2 reveal reveal-d1" id="reviews-h2">
+      Trusted across<br>Orange County.
+    </h2>
+
+    <div class="review-grid">
+      <article class="review reveal">
+        <div class="review-stars" aria-label="5 out of 5 stars">
+          <span aria-hidden="true">★★★★★</span>
+        </div>
+        <p class="review-text">
+          "We manage a 48-unit complex in Mission Viejo and Lunar Painting handled the full exterior repaint. Coordinated around tenants perfectly, no complaints, and the finish looks incredible. Already scheduled them for two more properties."
+        </p>
+        <div class="review-meta">
+          <div class="review-name">Maria T.</div>
+          <div class="review-source">Property Manager · HomeAdvisor Verified</div>
+        </div>
+      </article>
+
+      <article class="review reveal reveal-d1">
+        <div class="review-stars" aria-label="5 out of 5 stars">
+          <span aria-hidden="true">★★★★★</span>
+        </div>
+        <p class="review-text">
+          "Had them do the interior of our whole house — every room. They were on time every day, cleaned up completely, and the quality is outstanding. The walk-through at the end gave us real peace of mind. Highly recommend."
+        </p>
+        <div class="review-meta">
+          <div class="review-name">David R.</div>
+          <div class="review-source">Homeowner · Laguna Hills · HomeAdvisor Verified</div>
+        </div>
+      </article>
+
+      <article class="review reveal reveal-d2">
+        <div class="review-stars" aria-label="5 out of 5 stars">
+          <span aria-hidden="true">★★★★★</span>
+        </div>
+        <p class="review-text">
+          "We're an HOA board and needed to repaint all common areas and the building exterior. Lunar Painting worked with our timeline, provided a detailed proposal for the board, and delivered exactly what was promised. Very professional."
+        </p>
+        <div class="review-meta">
+          <div class="review-name">Sandra K.</div>
+          <div class="review-source">HOA Board Member · Orange County · HomeAdvisor Verified</div>
+        </div>
+      </article>
+
+      <article class="review reveal reveal-d3">
+        <div class="review-stars" aria-label="5 out of 5 stars">
+          <span aria-hidden="true">★★★★★</span>
+        </div>
+        <p class="review-text">
+          "The drywall repair work alone was worth calling them. They patched everything before painting — it's seamless. You can't tell anything was ever there. Honest, fair-priced, and serious about the work."
+        </p>
+        <div class="review-meta">
+          <div class="review-name">James L.</div>
+          <div class="review-source">Homeowner · Irvine · HomeAdvisor Verified</div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       FINAL CTA
+  ══════════════════════════════════ -->
+  <section class="cta-block" id="contact" aria-labelledby="cta-h2">
+    <p class="cta-eyebrow">Ready to Get Started?</p>
+    <h2 class="cta-h2" id="cta-h2">Let's talk about<br>your project.</h2>
+    <a href="tel:9494468578" class="cta-phone" aria-label="Call Lunar Painting at 949 446 8578">
+      (949) 446-8578
+    </a>
+    <p class="cta-hours">Monday – Friday · 8:00 AM – 5:00 PM</p>
+    <div class="cta-divider" aria-hidden="true"></div>
+    <p class="cta-email-label">Or email us</p>
+    <a href="mailto:lunarpainting1@gmail.com" class="cta-email">lunarpainting1@gmail.com</a>
+    <p class="cta-address">
+      25255 Cabot Rd, Suite #224 · Laguna Hills, CA 92653<br>
+      Serving Orange County &amp; Los Angeles County
+    </p>
+  </section>
+
+  <!-- ══════════════════════════════════
+       FOOTER
+  ══════════════════════════════════ -->
+  <footer role="contentinfo">
+    <div class="footer-logo-wrap" aria-label="Lunar Painting">
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" xml:space="preserve" aria-hidden="true" focusable="false">
+        <style>.fst0{fill:rgba(255,255,255,.65);}.fst1{fill:rgba(255,255,255,.3);}.fst2{fill:rgba(255,255,255,.25);}</style>
+        <polygon class="fst0" points="132.3,402.6 236.6,315.4 343.3,335.5 508.8,262.8 659.3,411.5 643.8,411.5 508.8,284.4 349.5,391.1 236.2,335.1"/>
+        <path class="fst1" d="M367.9,284.9h11.2v7.5h-11.2V284.9z M367.9,260.1h11.2v7.5h-11.2V260.1z M367.9,235.4h11.2v7.5h-11.2V235.4z M367.9,210.7h11.2v7.5h-11.2V210.7z M367.9,186.8h11.2v7.5h-11.2V186.8z M367.9,162.1h11.2v7.5h-11.2V162.1z M390,300.4V147.1l-76.7-48v217.2l28.4,5.4L390,300.4z M500.6,165.2h47.2v5.5h-47.2V165.2z M500.6,146.4h47.2v5.5h-47.2V146.4z M500.6,127.5h47.2v5.5h-47.2V127.5z M558.8,293.6V67.9l-69.1,48v140.7l21.9-9.6L558.8,293.6z M465.7,246.7l-5.9,2.4V49.6l5.9-2.4V246.7z M449.4,253.2l-5.9,2.4V56.1l5.9-2.4V253.2z M478.3,15.1l-76.7,30.7v249.6l76.7-33.7V15.1z M265.1,174.6h23.7v7.5h-23.7V174.6z M265.1,149.9h23.7v7.5h-23.7V149.9z M265.1,125.2h23.7v7.5h-23.7V125.2z M265.1,100.5h23.7v7.5h-23.7V100.5z M299.9,313.8V13.2l-67.1,90.2v198l0.2-0.1L299.9,313.8z M399.9,410.2c-139.2,0-260.3,15.2-322.6,37.7c82.8-14.7,196.8-23.9,322.6-23.9s239.8,9.1,322.6,23.9C660.3,425.5,539.1,410.2,399.9,410.2z"/>
+        <path class="fst2" d="M510.8,397.1h21.7v-30.1h-21.7V397.1z M482.6,355.2v5.2h21.7v-29.9C492.1,332.1,482.6,342.5,482.6,355.2z M510.8,330.5v29.9h21.7v-5.2C532.5,342.5,523,332.1,510.8,330.5z M482.6,397.1h21.7v-30.1h-21.7V397.1z M217,403.9h14.9v-20.7H217V403.9z M217,375.1v3.6h14.9v-20.5C223.5,359.3,217,366.4,217,375.1z M236.3,403.9h14.9v-20.7h-14.9V403.9z M236.3,358.2v20.5h14.9v-3.6C251.2,366.4,244.8,359.3,236.3,358.2z"/>
+        <path class="fst0" d="M149.9,478.5c0-8.4,0-9.9,0.1-11.6c0.1-1.9,0.4-2.7,2.1-3c0.6-0.1,1.5-0.1,1.8-0.1c0.2,0,0.4-0.2,0.4-0.4c0-0.3-0.3-0.4-0.9-0.4c-1.7,0-5.9,0.1-6.2,0.1c-0.3,0-3.8-0.1-6.3-0.1c-0.6,0-0.9,0.1-0.9,0.4c0,0.2,0.3,0.4,0.4,0.4c0.5,0,1.5,0.1,1.9,0.1c1.8,0.3,2.2,1.1,2.3,3c0.1,1.7,0.1,3.2,0.1,11.6v9.5c0,5.2,0,9.4-0.3,11.7c-0.3,1.6-0.4,2.6-1.5,2.9c-0.5,0.1-1.2,0.3-1.7,0.3c-0.3,0-0.4,0.3-0.4,0.4c0,0.3,0.3,0.4,0.9,0.4c0.9,0,2.1-0.1,3.2-0.1c1.1-0.1,2-0.1,2.3-0.1c1.6,0,3.6,0.1,6.1,0.1c2.6,0.1,5.7,0.2,9.7,0.2c3,0,3.2-0.2,3.6-1.5c0.4-1.6,0.8-4.8,0.8-5.4c0-0.6-0.1-0.8-0.4-0.8c-0.3,0-0.5,0.3-0.6,0.7c-0.2,1.1-0.6,2.2-1.3,3c-1.3,1.6-3.8,1.6-6.7,1.6c-4.4,0-6.5-0.4-7.4-1.3c-1-1-1.1-4.2-1.1-12.1V478.5"/>
+        <path class="fst0" d="M175.6,486.4c0,7.9,2.2,11.6,4.9,14.1c3.9,3.7,9.8,3.8,11.6,3.8c3.3,0,7.6-0.4,11.7-3.9c4.4-3.8,5.2-10.3,5.2-16.2v-5.8c0-8.4-0.1-9.9,0.1-11.6c0.1-1.8,0.4-2.7,2-3c0.7-0.1,1-0.1,1.4-0.1c0.3,0,0.4-0.3,0.4-0.4c0-0.3-0.3-0.4-0.9-0.4c-1.6,0-4.3,0.1-4.7,0.1c-0.3,0-3.6-0.1-6-0.1c-0.6,0-0.9,0.1-0.9,0.4c0,0.2,0.2,0.4,0.4,0.4c0.5,0,1.5,0.1,1.9,0.1c1.8,0.3,2.2,1.3,2.2,3c0.1,1.7,0.1,3.2,0.1,11.6v6.8c0,5.5-0.6,10-3.2,13.1c-1.9,2.3-5.2,3.8-8.6,3.8c-3.2,0-5.6-0.4-8.3-2.9c-2.4-2.2-4.1-5.4-4.1-13.2v-7.5c0-8.4,0-9.9,0.1-11.6c0.1-1.8,0.4-2.7,1.9-3c0.7-0.1,1-0.1,1.4-0.1c0.3,0,0.5-0.3,0.5-0.4c0-0.3-0.3-0.4-1-0.4c-1.6,0-5.1,0.1-5.6,0.1c-0.5,0-3.9-0.1-6.4-0.1c-0.6,0-0.9,0.1-0.9,0.4c0,0.2,0.3,0.4,0.4,0.4c0.5,0,1.5,0.1,1.9,0.1c1.8,0.3,2.2,1.3,2.3,3c0.1,1.7,0.1,3.2,0.1,11.6V486.4"/>
+        <path class="fst0" d="M543,465.4l7,0.1c5.3,0.1,6.5,1.3,6.7,3l0.1,0.6c0.1,0.8,0.2,1,0.4,1s0.5-0.3,0.5-0.7c0-0.6,0.2-4.5,0.2-6.2c0-0.3,0-0.6-0.3-0.6c-0.3,0-0.8,0.1-1.6,0.3c-0.9,0.1-2.2,0.3-4,0.3H531c-0.6,0-2.8-0.1-4.4-0.3c-1.5-0.2-2.1-0.6-2.5-0.6c-0.2,0-0.5,0.7-0.6,1c-0.1,0.4-1.2,5.3-1.2,5.8c0,0.3,0.3,0.4,0.4,0.4c0.3,0,0.4-0.1,0.6-0.5c0.2-0.4,0.3-0.8,0.9-1.7c0.8-1.3,2.2-1.6,5.6-1.7l8.1-0.1V488c0,5.2,0,9.4-0.3,11.7c-0.2,1.6-0.5,2.7-1.6,2.9c-0.5,0.1-1.1,0.3-1.6,0.3c-0.3,0-0.4,0.2-0.4,0.4c0,0.3,0.3,0.4,0.9,0.4c1.6,0,5.5-0.2,5.8-0.2c0.3,0,3.9,0.2,6.9,0.2c0.6,0,0.9-0.2,0.9-0.4c0-0.2-0.1-0.4-0.4-0.4c-0.5,0-1.8-0.1-2.5-0.3c-1.7-0.3-2-1.3-2.2-2.9c-0.3-2.2-0.3-6.5-0.3-11.7V465.4"/>
+      </svg>
+    </div>
+
+    <div class="footer-cols">
+      <div>
+        <div class="footer-col-title">Lunar Painting</div>
+        <address class="footer-addr">
+          25255 Cabot Rd, Suite #224<br>
+          Laguna Hills, CA 92653<br><br>
+          <a href="tel:9494468578" style="color:inherit;">(949) 446-8578</a><br>
+          <a href="tel:9496525024" style="color:inherit;">(949) 652-5024</a><br>
+          <a href="mailto:lunarpainting1@gmail.com" style="color:inherit;">lunarpainting1@gmail.com</a>
+        </address>
+      </div>
+      <div>
+        <div class="footer-col-title">Services</div>
+        <ul class="footer-list">
+          <li><a href="commercial.html">Commercial Painting</a></li>
+          <li><a href="commercial.html">Apartment Complexes</a></li>
+          <li><a href="commercial.html">HOA Properties</a></li>
+          <li><a href="residential.html">Residential Painting</a></li>
+          <li><a href="residential.html">Interior &amp; Exterior</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Company</div>
+        <ul class="footer-list">
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="process.html">Our Process</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="tel:9494468578">Get a Quote</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Hours</div>
+        <ul class="footer-list" style="gap:6px;">
+          <li style="color:rgba(255,255,255,.45);font-size:13px;">Monday – Friday</li>
+          <li style="color:rgba(255,255,255,.65);font-size:13px;">8:00 AM – 5:00 PM</li>
+          <li style="color:rgba(255,255,255,.3);font-size:12px;margin-top:8px;">Saturday – Sunday</li>
+          <li style="color:rgba(255,255,255,.3);font-size:12px;">Closed</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2017–2026 Lunar Painting · Laguna Hills, CA · All rights reserved.</p>
+      <p class="footer-seo">Commercial painting contractor Orange County CA · Apartment complex painting Laguna Hills · HOA painting services Orange County · Residential painting contractor Los Angeles County · Sherwin Williams certified painter Orange County</p>
+    </div>
   </footer>
 
+  <!-- ══════════════════════════════════
+       MOBILE STICKY BAR
+  ══════════════════════════════════ -->
+  <div class="sticky-bar" role="complementary" aria-label="Quick contact">
+    <a href="tel:9494468578" class="sb-call">
+      <span class="sb-icon" aria-hidden="true">📞</span>
+      Call Now
+    </a>
+    <a href="mailto:lunarpainting1@gmail.com" class="sb-email">
+      <span class="sb-icon" aria-hidden="true">✉</span>
+      Email Us
+    </a>
+  </div>
+
   <script>
-    // ─── Scroll progress line ───
-    const scrollLine = document.getElementById('scroll-line');
+    // Nav shadow on scroll
+    const nav = document.getElementById('nav');
     window.addEventListener('scroll', () => {
-      const scrolled = window.scrollY;
-      const total = document.body.scrollHeight - window.innerHeight;
-      scrollLine.style.height = (scrolled / total * 100) + '%';
+      nav.classList.toggle('shadow', window.scrollY > 10);
     }, { passive: true });
 
-    // ─── Directional hover fill on hero button ───
-    const heroPrimary = document.querySelector('.btn-primary');
-    const heroFill = document.getElementById('hero-btn-fill');
-    if (heroPrimary && heroFill) {
-      heroPrimary.addEventListener('mousemove', (e) => {
-        const rect = heroPrimary.getBoundingClientRect();
-        heroFill.style.left = (e.clientX - rect.left) + 'px';
-        heroFill.style.top  = (e.clientY - rect.top) + 'px';
-      });
-    }
-
-    // ─── Intersection Observer for .reveal elements ───
-    const revealEls = document.querySelectorAll('.reveal');
+    // Intersection observer — scroll reveal
     const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          observer.unobserve(entry.target);
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('in');
+          observer.unobserve(e.target);
         }
       });
-    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
-    revealEls.forEach(el => observer.observe(el));
+    }, { threshold: 0.1, rootMargin: '0px 0px -32px 0px' });
 
-    // ─── Accordion process strips ───
-    const strips = document.querySelectorAll('.accordion-strip');
-    strips.forEach((strip) => {
-      strip.addEventListener('click', () => {
-        strips.forEach(s => s.classList.remove('active'));
-        strip.classList.add('active');
-      });
-    });
-
-    // Auto-advance accordion every 3.5s
-    let acIdx = 0;
-    setInterval(() => {
-      acIdx = (acIdx + 1) % strips.length;
-      strips.forEach(s => s.classList.remove('active'));
-      strips[acIdx].classList.add('active');
-    }, 3500);
-
-    // ─── Text scramble on hero headline ───
-    const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
-    function scramble(el) {
-      const original = el.textContent;
-      let iteration = 0;
-      const maxIter = original.length * 3;
-      const interval = setInterval(() => {
-        el.textContent = original
-          .split('')
-          .map((char, i) => {
-            if (char === '\n' || char === ' ') return char;
-            if (i < iteration / 3) return original[i];
-            return chars[Math.floor(Math.random() * chars.length)];
-          })
-          .join('');
-        if (iteration >= maxIter) {
-          el.textContent = original;
-          clearInterval(interval);
-        }
-        iteration++;
-      }, 30);
-    }
-
-    // Trigger scramble after initial animation
-    window.addEventListener('load', () => {
-      const headline = document.querySelector('.hero-headline');
-      if (headline) setTimeout(() => scramble(headline), 900);
-    });
-
-    // ─── Marquee pause on hover ───
-    const marqueeTrack = document.getElementById('marquee-track');
-    if (marqueeTrack) {
-      marqueeTrack.parentElement.addEventListener('mouseenter', () => {
-        marqueeTrack.style.animationPlayState = 'paused';
-      });
-      marqueeTrack.parentElement.addEventListener('mouseleave', () => {
-        marqueeTrack.style.animationPlayState = 'running';
-      });
-    }
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
   </script>
 </body>
 </html>
