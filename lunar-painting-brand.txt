@@ -1,0 +1,574 @@
+================================================================================
+LUNAR PAINTING — BRAND & CONTEXT DOCUMENT
+For use in future Claude sessions to maintain visual and strategic consistency.
+Last updated: May 2026
+================================================================================
+
+INSTRUCTIONS FOR CLAUDE
+------------------------
+When this file is loaded, treat it as the ground truth for all design, copy,
+and strategic decisions for Lunar Painting. Do not default to your standard
+website templates. Every decision — layout, type, color, copy tone, section
+order — must be checked against this document first. If something in a prompt
+contradicts this document, ask for clarification before proceeding.
+
+The owner has already built 3 websites with Claude and is frustrated that they
+all look the same. Do not reuse: marquee tickers, text scramble effects, dark
+card hover reveals with number color changes, accordion strip processes,
+backdrop-blur navbars, or split-column heroes with geometric clip shapes.
+
+
+================================================================================
+SECTION 1 — BUSINESS INFORMATION
+================================================================================
+
+Company Name:       Lunar Painting
+Type:               Licensed & insured painting contractor
+Founded:            2017
+Primary Location:   25255 Cabot Rd, Suite #224, Laguna Hills, CA 92653
+Primary Market:     Orange County, CA
+Secondary Market:   Los Angeles County, CA
+Phone 1:            (949) 446-8578   [primary — always displayed largest]
+Phone 2:            (949) 652-5024   [secondary]
+Email:              lunarpainting1@gmail.com
+Hours:              Monday–Friday, 8:00 AM – 5:00 PM
+                    Saturday & Sunday: Closed
+Website:            lunarpainting.com
+
+
+================================================================================
+SECTION 2 — BUSINESS STRATEGY (CRITICAL — READ THIS FIRST)
+================================================================================
+
+PRIMARY GOAL
+The owner's ideal client is a PROPERTY MANAGER or HOA board member who manages
+apartment complexes and multi-unit residential or commercial buildings. They are
+trying to win large, recurring commercial contracts — full exterior repaints of
+apartment complexes, common area refreshes, unit turns at scale.
+
+SECONDARY GOAL
+Residential clients (homeowners) are how the business currently pays its bills.
+They should be served but positioned as a secondary offering. Never lead with
+residential. Never bury commercial.
+
+POSITIONING STATEMENT (for copy reference)
+Lunar Painting is the painting contractor that property managers trust because
+they show up, work around occupied units, communicate clearly, and deliver a
+finish that holds up. Not the cheapest. Not the flashiest. The most reliable.
+
+TARGET CLIENT — COMMERCIAL
+- Property managers at management companies
+- HOA board members
+- Apartment complex owners (10+ units)
+- Commercial real estate owners (offices, retail, mixed-use)
+Pain points: contractors who ghost, quality issues, tenant complaints,
+             cost overruns, crews that don't clean up after themselves.
+What they need to hear: reliability, process, communication, references,
+                        minimal disruption, on-time delivery.
+
+TARGET CLIENT — RESIDENTIAL
+- Homeowners in Orange County / Laguna Hills area
+- Mid-to-high-end properties, not budget hunters
+Pain points: mess, unknown crews, quality inconsistency.
+What they need to hear: clean, careful, professional, walk-through guarantee.
+
+SEO KEYWORD TARGETS (use naturally in copy and headers)
+Primary:
+  - commercial painting contractor Orange County
+  - apartment complex painting contractor Orange County
+  - HOA painting Orange County
+Secondary:
+  - exterior painting Laguna Hills
+  - painting contractor Los Angeles County
+  - property manager painting services Orange County
+  - residential painting Laguna Hills CA
+  - Sherwin Williams painting contractor Orange County
+
+
+================================================================================
+SECTION 3 — SERVICES OFFERED
+================================================================================
+
+COMMERCIAL (lead with this)
+  - Interior commercial painting
+  - Exterior commercial painting
+  - Apartment complex repaints (full building exterior)
+  - HOA & community property painting
+  - Common area & breezeway painting
+  - Unit turn painting
+  - Drywall repair & prep
+  - Wood & window restoration
+
+RESIDENTIAL
+  - Interior house painting
+  - Exterior house painting
+  - Drywall repair
+  - Wood replacement & staining
+  - Baseboard installation
+  - Pressure washing
+
+PRODUCTS: Sherwin Williams — always name this. It signals quality to clients.
+
+PROCESS (5 steps — link to a dedicated page, don't feature heavily on home)
+  1. Getting Ready — furniture moved, plastic sheeting, drop cloths
+  2. Proper Prep — fill holes, seal stains, sand surfaces
+  3. The Painting — proper application, Sherwin Williams products
+  4. Cleaning Up — full cleanup, furnishings returned, floors swept
+  5. Final Walk-Through — together with client, touch-ups done on the spot
+
+
+================================================================================
+SECTION 4 — TRUST & CREDENTIALS
+================================================================================
+
+  - HomeAdvisor Top Rated
+  - HomeAdvisor Elite Service
+  - HomeAdvisor 20+ Verified Reviews (all 5-star)
+  - 1+ Year on HomeAdvisor (now 7+ years since 2017)
+  - Licensed & Insured
+  - Sherwin Williams products on every job
+
+Display credentials as a quiet, confident trust bar — not as loud badge graphics.
+Let the facts do the work. No animation on the trust bar.
+
+
+================================================================================
+SECTION 5 — BRAND IDENTITY
+================================================================================
+
+LOGO
+The logo is an SVG file (lunar-painting-logo.svg). It contains:
+  - A skyline/wave illustration (the "lunar" element — a horizon line over
+    geometric building silhouettes)
+  - The wordmark "LUNAR PAINTING" in a serif/display treatment
+  - A chevron/arrow element at the bottom right
+
+SVG color classes:
+  .st0 { fill: #BE1E2D; }   — Red (primary brand color, used on wordmark + wave)
+  .st1 { fill: #726658; }   — Taupe (building silhouettes)
+  .st2 { fill: #939598; }   — Gray (architectural details)
+
+For dark backgrounds, use a reversed version:
+  .fst0 { fill: rgba(255,255,255,0.65); }
+  .fst1 { fill: rgba(255,255,255,0.30); }
+  .fst2 { fill: rgba(255,255,255,0.25); }
+
+ALWAYS embed the SVG inline — never use an <img> tag for the logo. This ensures
+it scales perfectly and allows color class overrides.
+Logo height in nav: 40px mobile / 48px desktop.
+Never distort the aspect ratio. viewBox is 0 0 800 600.
+
+
+================================================================================
+SECTION 6 — COLOR SYSTEM
+================================================================================
+
+--red:        #BE1E2D   Primary brand color. PS1-era red. Bold but not garish.
+                         Use for: CTAs, eyebrow labels, accent lines, sticky bar,
+                         stats section background, process strip link color,
+                         trust bar dots, review stars, service flags.
+                         Do NOT overuse. Maximum impact through restraint.
+
+--red-dark:   #9A1724   Hover state for red elements only.
+
+--white:      #FFFFFF   Page background default.
+
+--snow:       #F8F7F4   Warm off-white. Use for alternating section backgrounds,
+                         trust bar, service panels. Prevents visual fatigue from
+                         pure white.
+
+--ink:        #1C1B19   Near-black. All body text, nav links. Never pure #000000.
+                         Also used as dark section background (process strip,
+                         footer, mobile sticky email button).
+
+--mid:        #6B6A67   Secondary text. Descriptions, metadata, timestamps.
+
+--rule:       #E4E3DF   Borders, dividers, panel outlines. Warm toned — matches
+                         the off-white palette, never cool gray.
+
+COLOR PHILOSOPHY
+The palette is intentionally minimal: red, white, and near-black. This is the
+PS1-era color DNA (bold red + clean white) refined into something modern and
+professional. The red carries ALL the visual weight. Every other color exists to
+give the red room to breathe.
+
+Never add new colors without owner approval. No blues, no greens, no gradients
+on text. The logo taupe (#726658) appears only within the SVG itself.
+
+
+================================================================================
+SECTION 7 — TYPOGRAPHY
+================================================================================
+
+HEADING FONT: Cormorant Garamond
+  - Weights used: 500, 600, 700 (italic variants too)
+  - Google Fonts: family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700
+  - Used for: H1, H2, H3, large pull quotes, CTA phone number, stat numbers
+  - Character: editorial, premium, serious — not playful
+  - Letter-spacing: -0.02em on large sizes (tight)
+  - Line-height: 1.03–1.1 on headlines
+
+BODY FONT: Inter
+  - Weights used: 300, 400, 500, 600
+  - Google Fonts: family=Inter:wght@300;400;500;600
+  - Used for: all body copy, nav links, trust bar, section labels, buttons,
+              review meta, footer links
+  - Character: clean, neutral, technical — workmanlike, like the business itself
+
+FONT PAIRING RATIONALE
+Cormorant brings elegance and differentiates from typical contractor sites.
+Inter keeps it grounded and readable. Together they signal: professional and
+trustworthy, not a budget operation. This combination should NOT be changed
+without owner sign-off — it's a key differentiator from the previous websites.
+
+TYPE SCALE (fluid — use clamp())
+  H1 hero:        clamp(42px, 11vw, 88px) — Cormorant 600
+  H2 sections:    clamp(30px, 7vw, 58px)  — Cormorant 600
+  H3 cards:       26px                    — Cormorant 600
+  Section label:  11px, 600, 0.14em tracking, uppercase — Inter (red)
+  Body large:     16–17px, 300 weight     — Inter
+  Body default:   14–15px, 300–400 weight — Inter
+  Body small:     12–13px                 — Inter
+  CTA phone:      clamp(34px, 9vw, 72px)  — Cormorant 700
+  Stat numbers:   52px                    — Cormorant 700
+  Eyebrow:        11px, 600, 0.14em, uppercase — Inter (red)
+  Button text:    13–15px, 500            — Inter
+  Footer labels:  10px, 600, 0.14em, uppercase — Inter
+
+
+================================================================================
+SECTION 8 — LAYOUT PRINCIPLES
+================================================================================
+
+MOBILE FIRST
+Always design for mobile first. The majority of clients will arrive on a phone.
+Mobile breakpoint is the base. Tablet/desktop are enhancements, not assumptions.
+
+STICKY MOBILE CTA BAR
+Every page must have a sticky bottom bar on mobile (hidden on desktop):
+  - Left half: "Call Now" — red background, white text, phone icon
+  - Right half: "Email Us" — ink background, white text, email icon
+  - Height: 60px
+  - z-index: 300
+  - body { padding-bottom: 60px } on mobile to prevent content hiding behind it
+
+PHONE NUMBER PROMINENCE
+The primary phone (949) 446-8578 must:
+  - Appear in the nav (red, slightly larger than nav links)
+  - Appear as the hero CTA button on mobile
+  - Be the largest element in the final CTA section (Cormorant, huge)
+  - Be in the footer
+  - Be both call links (href="tel:9494468578") — never just plain text
+
+NAV
+  - Fixed, full-width, white background
+  - Height: 60px mobile / 72px desktop
+  - Logo left, nav links + phone + CTA button right
+  - Nav links hidden on mobile (hamburger optional for future iteration)
+  - Adds box-shadow on scroll (via JS class toggle)
+  - No backdrop-filter blur — this has been used on previous sites
+
+SECTION PADDING
+  - Mobile: 72px vertical, 20px horizontal
+  - Desktop 768px+: 100px vertical, 48px horizontal
+  - Desktop 1200px+: 120px vertical, 80px horizontal
+
+SECTION ALTERNATION
+Alternate backgrounds between sections for visual rhythm:
+  white → snow → red (stats) → white → snow → ink (process) → snow → red (CTA) → ink (footer)
+  Never put two identical backgrounds adjacent.
+
+GRID BEHAVIOR
+  - Desktop: 2-column layouts use CSS Grid with gap, not flexbox hacks
+  - Cards/panels: use border: 1px solid var(--rule), no box-shadow
+  - No rounded corners anywhere — this brand is clean and architectural
+  - Photo grids: use CSS Grid with gap: 4–6px, no border-radius on images
+
+
+================================================================================
+SECTION 9 — COMPONENT LIBRARY
+================================================================================
+
+BUTTONS
+
+  .btn-solid — Primary CTA
+    background: #BE1E2D, color: white, font: Inter 500 15px
+    padding: 15px 28px, no border-radius, transition: background to #9A1724
+    Used for: "Call Now", "Get a Quote", "Request Commercial Estimate"
+
+  .btn-text — Secondary action
+    No background, color: ink, border-bottom: 1.5px solid var(--rule)
+    On hover: color red, border-color red
+    Used for: "See commercial services", "Learn more"
+
+  .btn-white — On red backgrounds only
+    background: white, color: red, same sizing as btn-solid
+    Used in: contact/CTA sections on red background
+
+TRUST BAR
+  Single horizontal row. Background: snow. Border top + bottom: rule.
+  Items: flex row, gap 20–32px. Each item: dot (5px red circle) + text.
+  Font: Inter 12px 500 mid-color. No animation. No icons other than the dot.
+
+SECTION LABEL (eyebrow)
+  display: inline-flex, align-items: center
+  Font: Inter 11px 600 uppercase 0.14em tracking, color: red
+  Optional: small red line before text (width 22px, height 1.5px)
+
+STATS BAND
+  Full-width, background: red
+  4-column grid on desktop, 2x2 on mobile
+  Numbers: Cormorant 52px 700 white
+  Labels: Inter 13px rgba(255,255,255,0.65)
+  Desktop: vertical dividers between stats (rgba white 0.18)
+
+SERVICE PANELS
+  White background, border: 1px solid rule
+  Header section (label + title) separated from body by border
+  Service flag: Inter 10px 600 uppercase red
+  Title: Cormorant 26px 600 ink
+  List items: line (14px red) + text, Inter 14px ink
+  No hover background changes. No number color effects.
+
+PHOTO GRID (work section)
+  CSS Grid, gap: 4–6px
+  Mobile: 2 columns
+  Desktop: 3 columns — tall anchor image spanning 2 rows left, 2x2 right
+  Images: object-fit cover, no border-radius, subtle hover scale (1.04)
+  Alt text must be SEO-optimized and descriptive
+
+PROCESS STRIP
+  Background: ink (#1C1B19)
+  Pull quote: Cormorant 22–40px 500 italic white
+  Link: Inter 13px 500 uppercase red, border-bottom red, arrow gap animation
+  Desktop: quote left, link right in flexbox
+  This is NOT a full process breakdown — just a teaser with a link to process.html
+
+REVIEW CARDS
+  Background: white, border: 1px solid rule, padding: 28px 24px
+  Stars: red, 13px, flex row (no Unicode issues — use ★★★★★ directly)
+  Review text: Inter 15px 300 ink, line-height 1.75
+  Reviewer name: Inter 12px 600 uppercase ink
+  Source: Inter 11px mid
+  Desktop: 2-column grid
+  Reviews should reference real client types: property manager, HOA board,
+  homeowner. Make them sound like real people, not marketing copy.
+
+CTA BLOCK
+  Background: red, text centered
+  Eyebrow: Inter 11px 500 uppercase rgba(white, 0.55)
+  H2: Cormorant, white
+  Phone number: Cormorant clamp(34px,9vw,72px) 700 white — this is the hero
+  Hours: Inter 13px rgba(white, 0.6)
+  Divider: thin white line
+  Email: Inter 15px rgba(white, 0.85), border-bottom, hover to full white
+  Address: Inter 12px rgba(white, 0.4)
+
+FOOTER
+  Background: ink
+  Logo: reversed SVG version (white tones)
+  4-column grid desktop / 2-column mobile
+  Column labels: Inter 10px 600 uppercase rgba(white, 0.30)
+  Links: Inter 13px rgba(white, 0.55) → rgba(white, 1.0) on hover
+  Address: font-style normal (override browser italic for <address>)
+  Bottom row: copyright + SEO keyword string (very low opacity — for crawlers)
+  SEO keywords at bottom: rgba(white, 0.18) — visible to crawlers, not intrusive
+
+
+================================================================================
+SECTION 10 — COPY VOICE & TONE
+================================================================================
+
+VOICE
+Direct. Confident. No filler. Sounds like the owner talking, not a marketing
+department. Uses "we" — never third person ("Lunar Painting is...").
+
+TONE BY AUDIENCE
+  Property managers: Professional peer-to-peer. Speak their language.
+                     ("We work around tenant schedules", "coordinate with your
+                     management timeline", "minimal disruption to residents",
+                     "detailed prep report for board presentations")
+  HOA boards:        Formal enough for board context. Process-oriented.
+                     ("within HOA color guidelines", "board-ready documentation")
+  Homeowners:        Warm but never fluffy. Practical reassurance.
+                     ("we don't leave until the walk-through is done")
+
+PHRASES TO USE (from original site, use sparingly)
+  - "We paint the right way."
+  - "Proper application techniques to ensure a uniform finish."
+  - "Get in, get the job done, clean up, and get out — without sacrificing quality."
+  - "Integrity, honesty, professionalism, and attention to detail."
+
+PHRASES TO NEVER USE
+  - "Transform your space"
+  - "Bring your vision to life"
+  - "Our team of experts"
+  - "Industry-leading"
+  - "Best-in-class"
+  - "Elevate your property"
+  - Any sentence starting with "Whether you're looking to..."
+  - Any sentence starting with "At Lunar Painting, we believe..."
+  - Anything with exclamation marks in body copy
+
+CTA COPY
+  Primary:   "Call (949) 446-8578"  /  "Request a Commercial Estimate"
+  Secondary: "See commercial services"  /  "See how we work"
+  Never:     "Get started today!"  /  "Contact us now!"  /  "Learn more about us"
+
+HEADLINE STYLE
+  Use line breaks intentionally. Short, declarative, punchy.
+  Good: "The crew / property managers / call back."
+  Good: "Built for / big projects."
+  Good: "Every surface. / Done properly."
+  Bad:  "Orange County's Premier Full-Service Painting Contractor"
+  Bad:  "Quality You Can Trust for Every Project"
+
+
+================================================================================
+SECTION 11 — PAGE STRUCTURE (HOME PAGE)
+================================================================================
+
+Order and purpose of each section:
+
+1.  NAV          Fixed. Logo + links + phone + CTA button.
+2.  HERO         Full-bleed photo. White gradient wash up from bottom.
+                 H1 speaks to commercial clients first. Phone CTA + secondary link.
+                 Photo: warm, approachable, human face — smiling painter, natural
+                 light, residential feel. NOT staged stock photography.
+3.  TRUST BAR    One quiet row. Credentials only. No animation.
+4.  COMMERCIAL   Lead section. Text left, photo right (desktop).
+                 PM cards listing specific commercial services.
+                 CTA: "Request a Commercial Estimate"
+5.  STATS        Red background. 4 numbers: 7+ years, 20+ reviews, 2 counties, 100%
+6.  SERVICES     Snow background. Commercial first (featured), then residential.
+                 Plain bordered panels. No gimmicks.
+7.  WORK GRID    White background. Photo grid. SEO alt text. Brief intro copy.
+8.  PROCESS      Ink background. Pull quote + link to process.html. That's it.
+9.  REVIEWS      Snow background. 4 reviews (2-col desktop). Real client types.
+10. CTA BLOCK    Red background. Phone number enormous. Email. Address.
+11. FOOTER       Ink background. Logo reversed + 4 cols + SEO keywords.
+12. STICKY BAR   Mobile only. Fixed bottom. Call + Email.
+
+FUTURE PAGES TO BUILD
+  - residential.html    (full residential services, process, before/after)
+  - commercial.html     (deep dive into commercial, apartment complex focus,
+                         what property managers need to know, quote process)
+  - gallery.html        (photo grid of completed work, filterable by type)
+  - process.html        (5-step process, explained fully)
+  - contact.html        (form + map + hours + both phone numbers)
+
+
+================================================================================
+SECTION 12 — INTERACTIONS & ANIMATIONS
+================================================================================
+
+WHAT IS ALLOWED
+  - Scroll reveal: simple opacity + translateY via IntersectionObserver
+    (.reveal class → .in class, threshold 0.1, translateY 22px → 0)
+  - Staggered delays: .reveal-d1 (.1s), .reveal-d2 (.2s), .reveal-d3 (.3s)
+  - Photo hover: subtle scale(1.04) on work grid images, transition .6s ease
+  - Nav shadow on scroll: box-shadow added via JS class toggle on scroll > 10px
+  - Button hover: background color transition to darker red (.2s ease)
+  - Link hover: color + border-color transition
+  - Process strip link: arrow gap increase on hover (gap animation)
+
+WHAT IS BANNED (owner has seen these on too many Claude-built sites)
+  - Marquee / ticker tape scrolling text bands
+  - Text scramble / decode letter effects
+  - Number color changes on hover
+  - Accordion image strips / panels
+  - Dark card hover reveals
+  - backdrop-filter: blur() on the navbar
+  - Split-column hero with geometric clip-path shapes
+  - Parallax scrolling effects
+  - Typewriter effects
+  - Counting number animations on stats
+  - Any animation that distracts from the content or feels like a demo
+
+ANIMATION TIMING
+  All transitions: cubic-bezier(.25,.46,.45,.94) — ease-out curve
+  Fast interactions (buttons, links): 0.2s
+  Scroll reveals: 0.75s
+  Photo scale: 0.6s
+  Never use linear easing except for infinite loops (which are banned anyway)
+
+
+================================================================================
+SECTION 13 — SEO TECHNICAL REQUIREMENTS
+================================================================================
+
+Every page must include:
+
+  <title>       [Primary Keyword] | Lunar Painting | Laguna Hills, CA
+  <meta name="description"> — 150–160 chars, include city + main service
+  <meta name="keywords">    — 5–8 relevant terms
+  <link rel="canonical">    — full URL
+  <meta property="og:*>     — minimum: type, title, description, locale
+
+HOME PAGE schema.org markup (LocalBusiness):
+  @type: LocalBusiness
+  name, description, telephone, email, url
+  address (PostalAddress with full details)
+  geo (GeoCoordinates: lat 33.5820, lng -117.7025)
+  areaServed: Orange County CA + Los Angeles County CA
+  openingHoursSpecification: Mon-Fri 08:00-17:00
+  aggregateRating: 5.0 / 20 reviews
+  hasOfferCatalog with individual service @Offer items
+
+IMAGE ALT TEXT FORMAT
+  "[descriptive action] — Lunar Painting [service type] in [location]"
+  Example: "Professional painter applying exterior coat on apartment complex
+            — Lunar Painting commercial painting in Laguna Hills CA"
+
+FOOTER SEO KEYWORDS (low-opacity, last element in footer)
+  "Commercial painting contractor Orange County CA · Apartment complex painting
+   Laguna Hills · HOA painting services Orange County · Residential painting
+   contractor Los Angeles County · Sherwin Williams painting contractor Orange
+   County"
+
+
+================================================================================
+SECTION 14 — WHAT NOT TO DO (HARD RULES)
+================================================================================
+
+1.  Do not use the same layout as any other Claude-built website for this owner.
+    The owner has 3+ other sites. Assume any "standard" Claude pattern is banned.
+
+2.  Do not add rounded corners anywhere — not on buttons, cards, images, or
+    containers. This brand is clean, sharp, and architectural.
+
+3.  Do not use box-shadow on cards or panels. Use border: 1px solid var(--rule).
+
+4.  Do not use gradients on text (no -webkit-background-clip text tricks).
+
+5.  Do not center-align body copy. Left-aligned only.
+
+6.  Do not put the process section as a featured home page section. It gets one
+    line and a link. The full 5-step process lives on process.html.
+
+7.  Do not use emojis in UI except the sticky mobile bar (phone/email icons).
+
+8.  Do not add decorative SVG shapes, blobs, or wavy section dividers.
+
+9.  Do not use any color outside the defined palette without owner approval.
+
+10. Do not write AI-sounding copy ("Transform your space", "Our dedicated team
+    of experts", "Whether you're looking to..."). Write like a real contractor.
+
+11. Do not use <img> for the logo — always inline SVG.
+
+12. Do not hide the phone number. It must be prominent on every page.
+
+13. Do not add sections that aren't in the approved page structure without
+    asking the owner first.
+
+14. Do not use different fonts than Cormorant Garamond + Inter. This pairing
+    was chosen deliberately to differentiate from previous sites.
+
+
+================================================================================
+END OF DOCUMENT
+================================================================================
+Questions or updates? Paste this file at the start of any new Claude session
+and say "Load Lunar Painting brand context." Claude will apply everything above.
+================================================================================
