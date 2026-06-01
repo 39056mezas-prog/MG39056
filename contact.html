@@ -1,317 +1,372 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact Lunar Painting — Orange County Painting Contractor | (949) 446-8578</title>
-  <meta name="description" content="Contact Lunar Painting for residential and commercial painting estimates in Orange County and LA County. Call (949) 446-8578 or email lunarpainting1@gmail.com. Laguna Hills, CA." />
-  <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://lunarpainting.com/contact.html" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
-  <style>
-    :root { --red:#BE1E2D;--red-dk:#9a1724;--white:#FFFFFF;--snow:#F8F7F4;--ink:#1C1B19;--mid:#6B6A67;--rule:#E4E3DF;--ff-serif:'Cormorant Garamond',Georgia,serif;--ff-sans:'Inter',system-ui,sans-serif; }
-    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-    html{scroll-behavior:smooth}
-    body{font-family:var(--ff-sans);background:var(--white);color:var(--ink);-webkit-font-smoothing:antialiased;overflow-x:hidden;padding-bottom:60px}
-    img{display:block;width:100%} a{text-decoration:none;color:inherit}
-    .nav{position:fixed;inset:0 0 auto 0;z-index:200;height:60px;background:var(--white);border-bottom:1px solid var(--rule);display:flex;align-items:center;justify-content:space-between;padding:0 20px;transition:box-shadow .3s ease}
-    .nav.shadow{box-shadow:0 1px 20px rgba(0,0,0,.07)}
-    .nav-logo-wrap{display:flex;align-items:center;height:40px} .nav-logo-wrap svg{height:40px;width:auto}
-    .nav-right{display:flex;align-items:center;gap:20px}
-    .nav-links{display:none;list-style:none;gap:24px;align-items:center}
-    .nav-links a{font-size:13px;font-weight:500;color:var(--mid);transition:color .2s} .nav-links a:hover,.nav-links a.active{color:var(--ink)}
-    .nav-tel{font-size:14px;font-weight:600;color:var(--red)} .nav-tel:hover{color:var(--red-dk)}
-    .nav-btn{display:none;background:var(--red);color:var(--white);font-size:13px;font-weight:500;padding:9px 18px;transition:background .2s} .nav-btn:hover{background:var(--red-dk)}
-    .eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--red);margin-bottom:18px}
-    .eyebrow::before{content:'';display:block;width:22px;height:1.5px;background:var(--red);flex-shrink:0}
-    /* PAGE HERO — no photo, type-driven */
-    .page-hero{margin-top:60px;padding:72px 20px 56px;background:var(--white);border-bottom:1px solid var(--rule)}
-    .page-h1{font-family:var(--ff-serif);font-size:clamp(40px,10vw,82px);font-weight:600;line-height:1.03;letter-spacing:-.02em;color:var(--ink);margin-bottom:18px}
-    .page-h1 em{font-style:italic;color:var(--red)}
-    .page-sub{font-size:16px;font-weight:300;line-height:1.75;color:var(--mid);max-width:480px}
-    /* CONTACT GRID */
-    .contact-body{display:flex;flex-direction:column;gap:0}
-    /* Left — info */
-    .contact-info{padding:52px 20px;background:var(--white)}
-    .info-block{margin-bottom:44px}
-    .info-block:last-child{margin-bottom:0}
-    .info-label{font-size:10px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--red);margin-bottom:14px}
-    .info-value{font-family:var(--ff-serif);font-size:clamp(22px,5vw,36px);font-weight:600;color:var(--ink);letter-spacing:-.01em;line-height:1.15;margin-bottom:6px}
-    .info-value a{transition:color .2s} .info-value a:hover{color:var(--red)}
-    .info-sub{font-size:14px;font-weight:300;line-height:1.75;color:var(--mid)}
-    .info-divider{width:100%;height:1px;background:var(--rule);margin:36px 0}
-    /* Hours table */
-    .hours-table{display:flex;flex-direction:column;gap:0;border:1px solid var(--rule)}
-    .hours-row{display:flex;justify-content:space-between;align-items:center;padding:14px 18px;border-bottom:1px solid var(--rule)}
-    .hours-row:last-child{border-bottom:none}
-    .hours-day{font-size:13px;font-weight:500;color:var(--ink)}
-    .hours-time{font-size:13px;font-weight:400;color:var(--mid)}
-    .hours-closed{font-size:13px;color:var(--rule)}
-    /* Right — form */
-    .contact-form-wrap{padding:52px 20px;background:var(--snow);border-top:1px solid var(--rule)}
-    .form-title{font-family:var(--ff-serif);font-size:clamp(24px,5vw,36px);font-weight:600;letter-spacing:-.01em;color:var(--ink);margin-bottom:8px;line-height:1.1}
-    .form-sub{font-size:14px;font-weight:300;color:var(--mid);margin-bottom:36px;line-height:1.7}
-    .form{display:flex;flex-direction:column;gap:0}
-    .field{display:flex;flex-direction:column;margin-bottom:0;border-bottom:1px solid var(--rule)}
-    .field:first-of-type{border-top:1px solid var(--rule)}
-    .field label{font-size:10px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--red);padding:14px 0 4px;display:block}
-    .field input,.field select,.field textarea{font-family:var(--ff-sans);font-size:15px;font-weight:400;color:var(--ink);background:transparent;border:none;outline:none;padding:0 0 14px;width:100%;resize:none;-webkit-appearance:none;appearance:none}
-    .field input::placeholder,.field textarea::placeholder{color:var(--rule)}
-    .field select{cursor:pointer;color:var(--ink)}
-    .field select option{color:var(--ink)}
-    .field textarea{min-height:100px;line-height:1.6}
-    .form-row{display:grid;grid-template-columns:1fr;gap:0}
-    .form-note{font-size:12px;color:var(--mid);margin:20px 0 24px;line-height:1.6}
-    .btn-submit{display:flex;align-items:center;justify-content:center;gap:10px;background:var(--red);color:var(--white);font-family:var(--ff-sans);font-size:15px;font-weight:500;padding:17px 32px;border:none;cursor:pointer;transition:background .2s;width:100%}
-    .btn-submit:hover{background:var(--red-dk)}
-    /* SERVICE AREA STRIP */
-    .area-strip{background:var(--ink);padding:52px 20px}
-    .area-h2{font-family:var(--ff-serif);font-size:clamp(26px,5.5vw,44px);font-weight:600;color:var(--white);letter-spacing:-.02em;line-height:1.1;margin-bottom:8px}
-    .area-h2 em{font-style:italic;color:var(--red)}
-    .area-sub{font-size:14px;font-weight:300;color:rgba(255,255,255,.45);margin-bottom:40px;line-height:1.75;max-width:480px}
-    .area-cols{display:flex;flex-direction:column;gap:32px}
-    .area-col-title{font-size:10px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.3);margin-bottom:16px}
-    .city-tags{display:flex;flex-wrap:wrap;gap:8px}
-    .city-tag{font-size:12px;font-weight:400;color:rgba(255,255,255,.5);padding:6px 14px;border:1px solid rgba(255,255,255,.1);transition:border-color .2s,color .2s}
-    .city-tag:hover{color:rgba(255,255,255,.85);border-color:rgba(255,255,255,.3)}
-    .city-tag.base{border-color:var(--red);color:rgba(255,255,255,.8)}
-    /* MAP PLACEHOLDER */
-    .map-section{background:var(--snow);padding:0}
-    .map-embed{width:100%;height:320px;border:0;display:block;filter:grayscale(20%)}
-    .map-label{padding:20px;background:var(--snow);border-top:1px solid var(--rule);display:flex;flex-direction:column;gap:4px}
-    .map-label-title{font-size:13px;font-weight:600;color:var(--ink)}
-    .map-label-addr{font-size:13px;font-weight:300;color:var(--mid)}
-    /* FOOTER */
-    footer{background:var(--ink);padding:52px 20px 36px}
-    .footer-logo-wrap{height:34px;margin-bottom:32px;display:flex;align-items:center}
-    .footer-logo-wrap svg{height:34px;width:auto}
-    .footer-cols{display:grid;grid-template-columns:1fr 1fr;gap:32px 20px;margin-bottom:40px}
-    .footer-col-title{font-size:10px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.3);margin-bottom:14px}
-    .footer-list{list-style:none;display:flex;flex-direction:column;gap:10px}
-    .footer-list a{font-size:13px;color:rgba(255,255,255,.55);transition:color .2s} .footer-list a:hover{color:var(--white)}
-    .footer-addr{font-style:normal;font-size:13px;line-height:1.75;color:rgba(255,255,255,.45)}
-    .footer-bottom{border-top:1px solid rgba(255,255,255,.08);padding-top:24px;display:flex;flex-direction:column;gap:10px}
-    .footer-copy{font-size:11px;color:rgba(255,255,255,.25)}
-    .footer-seo{font-size:11px;line-height:1.7;color:rgba(255,255,255,.15)}
-    .sticky-bar{position:fixed;bottom:0;left:0;right:0;z-index:300;display:grid;grid-template-columns:1fr 1fr;height:60px;box-shadow:0 -2px 16px rgba(0,0,0,.12)}
-    .sticky-bar a{display:flex;align-items:center;justify-content:center;gap:7px;font-size:14px;font-weight:600}
-    .sb-call{background:var(--red);color:var(--white);border-right:1px solid rgba(255,255,255,.2)}
-    .sb-email{background:var(--ink);color:var(--white)}
-    .reveal{opacity:0;transform:translateY(22px);transition:opacity .75s cubic-bezier(.25,.46,.45,.94),transform .75s cubic-bezier(.25,.46,.45,.94)}
-    .reveal.in{opacity:1;transform:translateY(0)}
-    .reveal-d1{transition-delay:.1s} .reveal-d2{transition-delay:.2s}
-    /* success state */
-    .form-success{display:none;padding:32px 24px;border:1px solid var(--rule);background:var(--white);text-align:center}
-    .form-success.show{display:block}
-    .success-icon{font-size:32px;margin-bottom:16px}
-    .success-title{font-family:var(--ff-serif);font-size:26px;font-weight:600;color:var(--ink);margin-bottom:10px}
-    .success-sub{font-size:14px;font-weight:300;color:var(--mid);line-height:1.7}
-    @media(min-width:768px){
-      body{padding-bottom:0} .sticky-bar{display:none}
-      .nav{height:72px;padding:0 48px} .nav-logo-wrap{height:48px} .nav-logo-wrap svg{height:48px}
-      .nav-links{display:flex} .nav-btn{display:block}
-      .page-hero{margin-top:72px;padding:100px 48px 80px}
-      .contact-body{display:grid;grid-template-columns:1fr 1fr;align-items:start}
-      .contact-info{padding:80px 48px;border-right:1px solid var(--rule)}
-      .contact-form-wrap{padding:80px 48px;border-top:none}
-      .form-row{grid-template-columns:1fr 1fr;gap:0}
-      .form-row .field{border-right:1px solid var(--rule)} .form-row .field:last-child{border-right:none}
-      .area-strip{padding:80px 48px}
-      .area-cols{display:grid;grid-template-columns:1fr 1fr;gap:40px}
-      .map-embed{height:420px}
-      .map-label{flex-direction:row;align-items:center;justify-content:space-between;padding:20px 48px}
-      footer{padding:72px 48px 40px}
-      .footer-cols{grid-template-columns:2fr 1fr 1fr 1fr;gap:0 60px;margin-bottom:48px}
-      .footer-bottom{flex-direction:row;justify-content:space-between;align-items:flex-end}
-    }
-    @media(min-width:1200px){
-      .nav{padding:0 80px} .page-hero{padding:120px 80px 100px}
-      .contact-info{padding:100px 80px} .contact-form-wrap{padding:100px 80px}
-      .area-strip{padding:100px 80px} footer{padding:80px 80px 48px}
-    }
-  
-    /* ── HAMBURGER & MOBILE NAV ── */
-    .nav-hamburger {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 5px;
-      width: 40px;
-      height: 40px;
-      background: none;
-      border: none;
-      cursor: pointer;
-      padding: 8px;
-      flex-shrink: 0;
-      z-index: 210;
-    }
-    .nav-hamburger span {
-      display: block;
-      width: 22px;
-      height: 1.5px;
-      background: var(--ink);
-      transition: transform 0.35s cubic-bezier(0.16,1,0.3,1), opacity 0.25s ease;
-      transform-origin: center;
-    }
-    .nav-hamburger.open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
-    .nav-hamburger.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
-    .nav-hamburger.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
-    .mobile-nav {
-      position: fixed;
-      inset: 0;
-      z-index: 205;
-      background: var(--white);
-      transform: translateX(100%);
-      transition: transform 0.45s cubic-bezier(0.16,1,0.3,1);
-      overflow-y: auto;
-      -webkit-overflow-scrolling: touch;
-    }
-    .mobile-nav.open { transform: translateX(0); }
-    .mobile-nav-inner {
-      display: flex;
-      flex-direction: column;
-      min-height: 100%;
-      padding: 0 24px 52px;
-    }
-    .mobile-nav-top {
-      height: 60px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      border-bottom: 1px solid var(--rule);
-      flex-shrink: 0;
-    }
-    .mobile-nav-logo-wrap { display: flex; align-items: center; height: 34px; }
-    .mobile-nav-logo-wrap svg { height: 34px; width: auto; }
-    .mobile-nav-close {
-      width: 40px; height: 40px;
-      background: none; border: none;
-      cursor: pointer; font-size: 20px;
-      color: var(--mid);
-      display: flex; align-items: center; justify-content: center;
-      transition: color .2s;
-    }
-    .mobile-nav-close:hover { color: var(--ink); }
-    .mobile-nav-links {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      gap: 0;
-      flex: 1;
-      padding-top: 4px;
-    }
-    .mobile-nav-links li { border-bottom: 1px solid var(--rule); }
-    .mobile-nav-links li a {
-      display: block;
-      font-family: var(--ff-serif);
-      font-size: clamp(30px, 9vw, 42px);
-      font-weight: 600;
-      letter-spacing: -.02em;
-      color: var(--ink);
-      padding: 16px 0;
-      line-height: 1.15;
-      transition: color .2s;
-    }
-    .mobile-nav-links li a:hover,
-    .mobile-nav-links li a.m-active { color: var(--red); }
-    .mobile-nav-bottom {
-      padding-top: 32px;
-      margin-top: auto;
-    }
-    .mobile-nav-tel {
-      font-family: var(--ff-serif);
-      font-size: clamp(24px, 7vw, 32px);
-      font-weight: 700;
-      color: var(--red);
-      letter-spacing: -.02em;
-      display: block;
-      margin-bottom: 6px;
-      line-height: 1.1;
-    }
-    .mobile-nav-hours {
-      font-size: 12px;
-      color: var(--mid);
-      margin-bottom: 22px;
-    }
-    .mobile-nav-cta {
-      display: block;
-      background: var(--red);
-      color: var(--white);
-      font-size: 14px;
-      font-weight: 500;
-      padding: 15px 24px;
-      text-align: center;
-      transition: background .2s;
-    }
-    .mobile-nav-cta:hover { background: var(--red-dk); }
-    @media (min-width: 768px) {
-      .nav-hamburger { display: none; }
-      .mobile-nav { display: none !important; }
-    }
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  </style>
+<title>Contact Lunar Painting — Orange County Painting Contractor | +1 (949) 446-8578</title>
+<meta name="description" content="Contact Lunar Painting for residential and commercial painting estimates in Orange County and LA County. Call +1 (949) 446-8578 or email lunarpainting1@gmail.com. Laguna Hills, CA." />
+<meta name="robots" content="index, follow" />
+<link rel="canonical" href="https://lunarpainting.com/contact" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Contact Lunar Painting — Orange County Painting Contractor" />
+<meta property="og:description" content="Request a commercial or residential painting estimate. Call +1 (949) 446-8578 or fill out our form. Serving Orange County and LA County." />
+<meta property="og:url" content="https://lunarpainting.com/contact" />
+<meta property="og:site_name" content="Lunar Painting" />
+<meta property="og:image" content="https://lunarpainting.com/og-preview.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://lunarpainting.com/og-preview.jpg" />
+
+<!-- Favicon — same as index.html -->
+<link rel="icon" type="image/svg+xml" href="lunar-painting-logo.svg" />
+<link rel="icon" type="image/x-icon" href="favicon.ico" />
+<link rel="apple-touch-icon" href="apple-touch-icon.png" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+<style>
+:root {
+  --red: #BE1E2D;
+  --red-dk: #9a1724;
+  --white: #FFFFFF;
+  --snow: #F8F7F4;
+  --ink: #1C1B19;
+  --mid: #6B6A67;
+  --rule: #E4E3DF;
+  --ff-serif: 'Cormorant Garamond', Georgia, serif;
+  --ff-sans: 'Inter', system-ui, sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { font-family: var(--ff-sans); background: var(--white); color: var(--ink); -webkit-font-smoothing: antialiased; overflow-x: hidden; padding-bottom: 60px; }
+img { display: block; width: 100%; }
+a { text-decoration: none; color: inherit; }
+
+/* ── NAV ── */
+.nav { position: fixed; inset: 0 0 auto 0; z-index: 200; height: 60px; background: var(--white); border-bottom: 1px solid var(--rule); display: flex; align-items: center; justify-content: space-between; padding: 0 20px; transition: box-shadow .3s ease; }
+.nav.shadow { box-shadow: 0 1px 20px rgba(0,0,0,.07); }
+.nav-logo-wrap { display: flex; align-items: center; height: 40px; }
+.nav-logo-wrap svg { height: 40px; width: auto; }
+.nav-right { display: flex; align-items: center; gap: 20px; }
+.nav-links { display: none; list-style: none; gap: 24px; align-items: center; }
+.nav-links a { font-size: 13px; font-weight: 500; color: var(--mid); transition: color .2s; }
+.nav-links a:hover, .nav-links a.active { color: var(--ink); }
+
+/* Phone in nav — Inter, no serif */
+.nav-tel {
+  font-family: var(--ff-sans);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--red);
+  letter-spacing: 0;
+  transition: color .2s;
+}
+.nav-tel:hover { color: var(--red-dk); }
+.nav-btn { display: none; background: var(--red); color: var(--white); font-size: 13px; font-weight: 500; padding: 9px 18px; transition: background .2s; }
+.nav-btn:hover { background: var(--red-dk); }
+
+.eyebrow { display: inline-flex; align-items: center; gap: 10px; font-size: 11px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--red); margin-bottom: 18px; }
+.eyebrow::before { content: ''; display: block; width: 22px; height: 1.5px; background: var(--red); flex-shrink: 0; }
+
+/* ── PAGE HERO ── */
+.page-hero { margin-top: 60px; padding: 72px 20px 56px; background: var(--white); border-bottom: 1px solid var(--rule); }
+.page-h1 { font-family: var(--ff-serif); font-size: clamp(40px, 10vw, 82px); font-weight: 600; line-height: 1.03; letter-spacing: -.02em; color: var(--ink); margin-bottom: 18px; }
+.page-h1 em { font-style: italic; color: var(--red); }
+.page-sub { font-size: 16px; font-weight: 300; line-height: 1.75; color: var(--mid); max-width: 480px; }
+
+/* ── CONTACT LAYOUT ── */
+.contact-body { display: flex; flex-direction: column; gap: 0; }
+.contact-info { padding: 52px 20px; background: var(--white); }
+
+.info-block { margin-bottom: 44px; }
+.info-block:last-child { margin-bottom: 0; }
+.info-label { font-size: 10px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: var(--red); margin-bottom: 14px; }
+
+/* Phone numbers in contact info — Inter, large but legible */
+.info-phone {
+  font-family: var(--ff-sans);
+  font-size: clamp(22px, 5vw, 36px);
+  font-weight: 700;
+  color: var(--ink);
+  letter-spacing: -.01em;
+  line-height: 1.15;
+  margin-bottom: 6px;
+  display: block;
+}
+.info-phone a { color: inherit; transition: color .2s; }
+.info-phone a:hover { color: var(--red); }
+.info-phone-secondary {
+  font-family: var(--ff-sans);
+  font-size: clamp(17px, 3.5vw, 24px);
+  font-weight: 600;
+  color: var(--mid);
+  letter-spacing: -.01em;
+  line-height: 1.15;
+  margin-bottom: 6px;
+  display: block;
+  margin-top: 10px;
+}
+.info-phone-secondary a { color: inherit; transition: color .2s; }
+.info-phone-secondary a:hover { color: var(--red); }
+
+/* Email — Inter, clear */
+.info-email {
+  font-family: var(--ff-sans);
+  font-size: clamp(14px, 3vw, 20px);
+  font-weight: 500;
+  color: var(--ink);
+  display: block;
+  margin-bottom: 6px;
+}
+.info-email a { color: inherit; transition: color .2s; }
+.info-email a:hover { color: var(--red); }
+
+/* Address — Cormorant is fine for non-clickable info */
+.info-address {
+  font-family: var(--ff-serif);
+  font-size: clamp(18px, 3.5vw, 28px);
+  font-weight: 600;
+  color: var(--ink);
+  letter-spacing: -.01em;
+  line-height: 1.15;
+  margin-bottom: 6px;
+}
+
+.info-sub { font-size: 14px; font-weight: 300; line-height: 1.75; color: var(--mid); }
+.info-divider { width: 100%; height: 1px; background: var(--rule); margin: 36px 0; }
+
+/* Hours table */
+.hours-table { display: flex; flex-direction: column; gap: 0; border: 1px solid var(--rule); }
+.hours-row { display: flex; justify-content: space-between; align-items: center; padding: 14px 18px; border-bottom: 1px solid var(--rule); }
+.hours-row:last-child { border-bottom: none; }
+.hours-day { font-size: 14px; font-weight: 500; color: var(--ink); }
+.hours-time { font-size: 14px; font-weight: 400; color: var(--mid); }
+.hours-closed { font-size: 14px; color: var(--rule); }
+
+/* ── FORM SIDE ── */
+.contact-form-wrap { padding: 52px 20px; background: var(--snow); border-top: 1px solid var(--rule); }
+.form-title { font-family: var(--ff-serif); font-size: clamp(24px, 5vw, 36px); font-weight: 600; letter-spacing: -.01em; color: var(--ink); margin-bottom: 8px; line-height: 1.1; }
+.form-sub { font-size: 14px; font-weight: 300; color: var(--mid); margin-bottom: 36px; line-height: 1.7; }
+.form { display: flex; flex-direction: column; gap: 0; }
+.field { display: flex; flex-direction: column; margin-bottom: 0; border-bottom: 1px solid var(--rule); }
+.field:first-of-type { border-top: 1px solid var(--rule); }
+.field label { font-size: 10px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--red); padding: 14px 0 4px; display: block; }
+.field input, .field select, .field textarea { font-family: var(--ff-sans); font-size: 15px; font-weight: 400; color: var(--ink); background: transparent; border: none; outline: none; padding: 0 0 14px; width: 100%; resize: none; -webkit-appearance: none; appearance: none; }
+.field input::placeholder, .field textarea::placeholder { color: var(--rule); }
+.field select { cursor: pointer; color: var(--ink); }
+.field select option { color: var(--ink); }
+.field textarea { min-height: 100px; line-height: 1.6; }
+.form-row { display: grid; grid-template-columns: 1fr; gap: 0; }
+.form-note { font-size: 13px; color: var(--mid); margin: 20px 0 24px; line-height: 1.7; }
+.btn-submit { display: flex; align-items: center; justify-content: center; gap: 10px; background: var(--red); color: var(--white); font-family: var(--ff-sans); font-size: 15px; font-weight: 500; padding: 17px 32px; border: none; cursor: pointer; transition: background .2s; width: 100%; }
+.btn-submit:hover { background: var(--red-dk); }
+
+/* mailto notice */
+.mailto-notice {
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--mid);
+  line-height: 1.6;
+  padding: 16px 0 0;
+  border-top: 1px solid var(--rule);
+  margin-top: 16px;
+}
+.mailto-notice strong { color: var(--ink); font-weight: 600; }
+
+/* Success state */
+.form-success { display: none; padding: 32px 24px; border: 1px solid var(--rule); background: var(--white); text-align: center; }
+.form-success.show { display: block; }
+.success-icon { font-size: 32px; margin-bottom: 16px; }
+.success-title { font-family: var(--ff-serif); font-size: 26px; font-weight: 600; color: var(--ink); margin-bottom: 10px; }
+.success-sub { font-size: 14px; font-weight: 300; color: var(--mid); line-height: 1.7; }
+
+/* ── AREA STRIP ── */
+.area-strip { background: var(--ink); padding: 52px 20px; }
+.area-h2 { font-family: var(--ff-serif); font-size: clamp(26px, 5.5vw, 44px); font-weight: 600; color: var(--white); letter-spacing: -.02em; line-height: 1.1; margin-bottom: 8px; }
+.area-h2 em { font-style: italic; color: var(--red); }
+.area-sub { font-size: 14px; font-weight: 300; color: rgba(255,255,255,.45); margin-bottom: 40px; line-height: 1.75; max-width: 480px; }
+.area-cols { display: flex; flex-direction: column; gap: 32px; }
+.area-col-title { font-size: 10px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: rgba(255,255,255,.3); margin-bottom: 16px; }
+.city-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+.city-tag { font-size: 12px; font-weight: 400; color: rgba(255,255,255,.5); padding: 6px 14px; border: 1px solid rgba(255,255,255,.1); transition: border-color .2s, color .2s; }
+.city-tag:hover { color: rgba(255,255,255,.85); border-color: rgba(255,255,255,.3); }
+.city-tag.base { border-color: var(--red); color: rgba(255,255,255,.8); }
+
+/* ── MAP ── */
+.map-section { background: var(--snow); padding: 0; }
+.map-embed { width: 100%; height: 320px; border: 0; display: block; filter: grayscale(20%); }
+.map-label { padding: 20px; background: var(--snow); border-top: 1px solid var(--rule); display: flex; flex-direction: column; gap: 4px; }
+.map-label-title { font-size: 13px; font-weight: 600; color: var(--ink); }
+.map-label-addr { font-size: 13px; font-weight: 300; color: var(--mid); }
+
+/* ── FOOTER ── */
+footer { background: var(--ink); padding: 52px 20px 36px; }
+.footer-logo-wrap { height: 34px; margin-bottom: 32px; display: flex; align-items: center; }
+.footer-logo-wrap svg { height: 34px; width: auto; }
+/* Keep original brand colors in footer — NOT white */
+.footer-logo-wrap .fst0 { fill: #BE1E2D; }
+.footer-logo-wrap .fst1 { fill: #726658; }
+
+.footer-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 32px 20px; margin-bottom: 40px; }
+.footer-col-title { font-size: 10px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: rgba(255,255,255,.3); margin-bottom: 14px; }
+.footer-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+.footer-list a { font-size: 13px; color: rgba(255,255,255,.55); transition: color .2s; }
+.footer-list a:hover { color: var(--white); }
+.footer-addr { font-style: normal; font-size: 13px; line-height: 1.75; color: rgba(255,255,255,.45); }
+.footer-bottom { border-top: 1px solid rgba(255,255,255,.08); padding-top: 24px; display: flex; flex-direction: column; gap: 10px; }
+.footer-copy { font-size: 11px; color: rgba(255,255,255,.25); }
+.footer-seo { font-size: 11px; line-height: 1.7; color: rgba(255,255,255,.15); }
+
+/* ── STICKY BAR ── */
+.sticky-bar { position: fixed; bottom: 0; left: 0; right: 0; z-index: 300; display: grid; grid-template-columns: 1fr 1fr; height: 60px; box-shadow: 0 -2px 16px rgba(0,0,0,.12); }
+.sticky-bar a { display: flex; align-items: center; justify-content: center; gap: 7px; font-size: 14px; font-weight: 600; }
+.sb-call { background: var(--red); color: var(--white); border-right: 1px solid rgba(255,255,255,.2); }
+.sb-email { background: var(--ink); color: var(--white); }
+
+/* ── REVEAL ── */
+.reveal { opacity: 0; transform: translateY(22px); transition: opacity .75s cubic-bezier(.25,.46,.45,.94), transform .75s cubic-bezier(.25,.46,.45,.94); }
+.reveal.in { opacity: 1; transform: translateY(0); }
+.reveal-d1 { transition-delay: .1s; }
+.reveal-d2 { transition-delay: .2s; }
+
+/* ── DESKTOP ── */
+@media (min-width: 768px) {
+  body { padding-bottom: 0; }
+  .sticky-bar { display: none; }
+  .nav { height: 72px; padding: 0 48px; }
+  .nav-logo-wrap { height: 48px; }
+  .nav-logo-wrap svg { height: 48px; }
+  .nav-links { display: flex; }
+  .nav-btn { display: block; }
+  .page-hero { margin-top: 72px; padding: 100px 48px 80px; }
+  .contact-body { display: grid; grid-template-columns: 1fr 1fr; align-items: start; }
+  .contact-info { padding: 80px 48px; border-right: 1px solid var(--rule); }
+  .contact-form-wrap { padding: 80px 48px; border-top: none; }
+  .form-row { grid-template-columns: 1fr 1fr; gap: 0; }
+  .form-row .field { border-right: 1px solid var(--rule); }
+  .form-row .field:last-child { border-right: none; }
+  .area-strip { padding: 80px 48px; }
+  .area-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+  .map-embed { height: 420px; }
+  .map-label { flex-direction: row; align-items: center; justify-content: space-between; padding: 20px 48px; }
+  footer { padding: 72px 48px 40px; }
+  .footer-cols { grid-template-columns: 2fr 1fr 1fr 1fr; gap: 0 60px; margin-bottom: 48px; }
+  .footer-bottom { flex-direction: row; justify-content: space-between; align-items: flex-end; }
+}
+
+@media (min-width: 1200px) {
+  .nav { padding: 0 80px; }
+  .page-hero { padding: 120px 80px 100px; }
+  .contact-info { padding: 100px 80px; }
+  .contact-form-wrap { padding: 100px 80px; }
+  .area-strip { padding: 100px 80px; }
+  footer { padding: 80px 80px 48px; }
+}
+
+/* ── HAMBURGER & MOBILE NAV ── */
+.nav-hamburger { display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 5px; width: 40px; height: 40px; background: none; border: none; cursor: pointer; padding: 8px; flex-shrink: 0; z-index: 210; }
+.nav-hamburger span { display: block; width: 22px; height: 1.5px; background: var(--ink); transition: transform 0.35s cubic-bezier(0.16,1,0.3,1), opacity 0.25s ease; transform-origin: center; }
+.nav-hamburger.open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+.nav-hamburger.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+.nav-hamburger.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+
+.mobile-nav { position: fixed; inset: 0; z-index: 205; background: var(--white); transform: translateX(100%); transition: transform 0.45s cubic-bezier(0.16,1,0.3,1); overflow-y: auto; -webkit-overflow-scrolling: touch; }
+.mobile-nav.open { transform: translateX(0); }
+.mobile-nav-inner { display: flex; flex-direction: column; min-height: 100%; padding: 0 24px 52px; }
+.mobile-nav-top { height: 60px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--rule); flex-shrink: 0; }
+.mobile-nav-logo-wrap { display: flex; align-items: center; height: 34px; }
+.mobile-nav-logo-wrap svg { height: 34px; width: auto; }
+.mobile-nav-close { width: 40px; height: 40px; background: none; border: none; cursor: pointer; font-size: 20px; color: var(--mid); display: flex; align-items: center; justify-content: center; transition: color .2s; }
+.mobile-nav-close:hover { color: var(--ink); }
+.mobile-nav-links { list-style: none; display: flex; flex-direction: column; gap: 0; flex: 1; padding-top: 4px; }
+.mobile-nav-links li { border-bottom: 1px solid var(--rule); }
+.mobile-nav-links li a { display: block; font-family: var(--ff-serif); font-size: clamp(30px, 9vw, 42px); font-weight: 600; letter-spacing: -.02em; color: var(--ink); padding: 16px 0; line-height: 1.15; transition: color .2s; }
+.mobile-nav-links li a:hover, .mobile-nav-links li a.m-active { color: var(--red); }
+.mobile-nav-bottom { padding-top: 32px; margin-top: auto; }
+
+/* Mobile nav phone — Inter, legible */
+.mobile-nav-tel {
+  font-family: var(--ff-sans);
+  font-size: clamp(22px, 6vw, 30px);
+  font-weight: 700;
+  color: var(--red);
+  letter-spacing: -.01em;
+  display: block;
+  margin-bottom: 6px;
+  line-height: 1.1;
+}
+.mobile-nav-hours { font-size: 12px; color: var(--mid); margin-bottom: 22px; }
+.mobile-nav-cta { display: block; background: var(--red); color: var(--white); font-size: 14px; font-weight: 500; padding: 15px 24px; text-align: center; transition: background .2s; }
+.mobile-nav-cta:hover { background: var(--red-dk); }
+
+@media (min-width: 768px) {
+  .nav-hamburger { display: none; }
+  .mobile-nav { display: none !important; }
+}
+</style>
 </head>
+
 <body>
 
 <nav class="nav" id="nav">
-  <a href="index.html" class="nav-logo-wrap" aria-label="Lunar Painting Home">
+  <a href="/" class="nav-logo-wrap" aria-label="Lunar Painting Home">
     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" xml:space="preserve" aria-hidden="true">
       <style>.st0{fill:#BE1E2D}.st1{fill:#726658}.st2{fill:#939598}</style>
       <polygon class="st0" points="132.3,402.6 236.6,315.4 343.3,335.5 508.8,262.8 659.3,411.5 643.8,411.5 508.8,284.4 349.5,391.1 236.2,335.1"/>
       <path class="st1" d="M390,300.4V147.1l-76.7-48v217.2l28.4,5.4L390,300.4z M478.3,15.1l-76.7,30.7v249.6l76.7-33.7V15.1z M299.9,313.8V13.2l-67.1,90.2v198l0.2-0.1L299.9,313.8z M399.9,410.2c-139.2,0-260.3,15.2-322.6,37.7c82.8-14.7,196.8-23.9,322.6-23.9s239.8,9.1,322.6,23.9C660.3,425.5,539.1,410.2,399.9,410.2z"/>
-      <path class="st0" d="M149.9,478.5c0-8.4,0-9.9,0.1-11.6c0.1-1.9,0.4-2.7,2.1-3c0.6-0.1,1.5-0.1,1.8-0.1c0.2,0,0.4-0.2,0.4-0.4c0-0.3-0.3-0.4-0.9-0.4c-1.7,0-5.9,0.1-6.2,0.1c-0.3,0-3.8-0.1-6.3-0.1c-0.6,0-0.9,0.1-0.9,0.4c0,0.2,0.3,0.4,0.4,0.4c0.5,0,1.5,0.1,1.9,0.1c1.8,0.3,2.2,1.1,2.3,3c0.1,1.7,0.1,3.2,0.1,11.6v9.5c0,5.2,0,9.4-0.3,11.7c-0.3,1.6-0.4,2.6-1.5,2.9c-0.5,0.1-1.2,0.3-1.7,0.3c-0.3,0-0.4,0.3-0.4,0.4c0,0.3,0.3,0.4,0.9,0.4c0.9,0,2.1-0.1,3.2-0.1c1.1-0.1,2-0.1,2.3-0.1c1.6,0,3.6,0.1,6.1,0.1c2.6,0.1,5.7,0.2,9.7,0.2c3,0,3.2-0.2,3.6-1.5c0.4-1.6,0.8-4.8,0.8-5.4c0-0.6-0.1-0.8-0.4-0.8c-0.3,0-0.5,0.3-0.6,0.7c-0.2,1.1-0.6,2.2-1.3,3c-1.3,1.6-3.8,1.6-6.7,1.6c-4.4,0-6.5-0.4-7.4-1.3c-1-1-1.1-4.2-1.1-12.1V478.5"/>
-      <path class="st0" d="M543,465.4l7,0.1c5.3,0.1,6.5,1.3,6.7,3l0.1,0.6c0.1,0.8,0.2,1,0.4,1s0.5-0.3,0.5-0.7c0-0.6,0.2-4.5,0.2-6.2c0-0.3,0-0.6-0.3-0.6c-0.3,0-0.8,0.1-1.6,0.3c-0.9,0.1-2.2,0.3-4,0.3H531c-0.6,0-2.8-0.1-4.4-0.3c-1.5-0.2-2.1-0.6-2.5-0.6c-0.2,0-0.5,0.7-0.6,1c-0.1,0.4-1.2,5.3-1.2,5.8c0,0.3,0.3,0.4,0.4,0.4c0.3,0,0.4-0.1,0.6-0.5c0.2-0.4,0.3-0.8,0.9-1.7c0.8-1.3,2.2-1.6,5.6-1.7l8.1-0.1V488c0,5.2,0,9.4-0.3,11.7c-0.2,1.6-0.5,2.7-1.6,2.9c-0.5,0.1-1.1,0.3-1.6,0.3c-0.3,0-0.4,0.2-0.4,0.4c0,0.3,0.3,0.4,0.9,0.4c1.6,0,5.5-0.2,5.8-0.2c0.3,0,3.9,0.2,6.9,0.2c0.6,0,0.9-0.2,0.9-0.4c0-0.2-0.1-0.4-0.4-0.4c-0.5,0-1.8-0.1-2.5-0.3c-1.7-0.3-2-1.3-2.2-2.9c-0.3-2.2-0.3-6.5-0.3-11.7V465.4"/>
     </svg>
   </a>
+
   <div class="nav-right">
     <ul class="nav-links">
-      <li><a href="commercial.html">Commercial</a></li>
-      <li><a href="residential.html">Residential</a></li>
-      <li><a href="index.html#work">Our Work</a></li>
-      <li><a href="contact.html" class="active">Contact</a></li>
+      <li><a href="/commercial">Commercial</a></li>
+      <li><a href="/residential">Residential</a></li>
+      <li><a href="/">Our Work</a></li>
+      <li><a href="/contact" class="active">Contact</a></li>
     </ul>
-      <button class="nav-hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-nav">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-
-    <a href="tel:9494468578" class="nav-tel">(949) 446-8578</a>
+    <button class="nav-hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-nav">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="tel:+19494468578" class="nav-tel">+1 (949) 446-8578</a>
     <a href="#form" class="nav-btn">Get a Quote</a>
   </div>
 </nav>
+
+<!-- MOBILE NAV -->
 <div class="mobile-nav" id="mobile-nav" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Site navigation">
   <div class="mobile-nav-inner">
     <div class="mobile-nav-top">
-      <a href="index.html" class="mobile-nav-logo-wrap" aria-label="Lunar Painting — Home">
+      <a href="/" class="mobile-nav-logo-wrap" aria-label="Lunar Painting — Home">
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" xml:space="preserve" aria-hidden="true">
           <polygon style="fill:#BE1E2D" points="132.3,402.6 236.6,315.4 343.3,335.5 508.8,262.8 659.3,411.5 643.8,411.5 508.8,284.4 349.5,391.1 236.2,335.1"/>
           <path style="fill:#726658" d="M390,300.4V147.1l-76.7-48v217.2l28.4,5.4L390,300.4z M478.3,15.1l-76.7,30.7v249.6l76.7-33.7V15.1z M299.9,313.8V13.2l-67.1,90.2v198l0.2-0.1L299.9,313.8z M399.9,410.2c-139.2,0-260.3,15.2-322.6,37.7c82.8-14.7,196.8-23.9,322.6-23.9s239.8,9.1,322.6,23.9C660.3,425.5,539.1,410.2,399.9,410.2z"/>
-          <path style="fill:#BE1E2D" d="M149.9,478.5c0-8.4,0-9.9,0.1-11.6c0.1-1.9,0.4-2.7,2.1-3c0.6-0.1,1.5-0.1,1.8-0.1c0.2,0,0.4-0.2,0.4-0.4c0-0.3-0.3-0.4-0.9-0.4c-1.7,0-5.9,0.1-6.2,0.1c-0.3,0-3.8-0.1-6.3-0.1c-0.6,0-0.9,0.1-0.9,0.4c0,0.2,0.3,0.4,0.4,0.4c0.5,0,1.5,0.1,1.9,0.1c1.8,0.3,2.2,1.1,2.3,3c0.1,1.7,0.1,3.2,0.1,11.6v9.5c0,5.2,0,9.4-0.3,11.7c-0.3,1.6-0.4,2.6-1.5,2.9c-0.5,0.1-1.2,0.3-1.7,0.3c-0.3,0-0.4,0.3-0.4,0.4c0,0.3,0.3,0.4,0.9,0.4c0.9,0,2.1-0.1,3.2-0.1c1.1-0.1,2-0.1,2.3-0.1c1.6,0,3.6,0.1,6.1,0.1c2.6,0.1,5.7,0.2,9.7,0.2c3,0,3.2-0.2,3.6-1.5c0.4-1.6,0.8-4.8,0.8-5.4c0-0.6-0.1-0.8-0.4-0.8c-0.3,0-0.5,0.3-0.6,0.7c-0.2,1.1-0.6,2.2-1.3,3c-1.3,1.6-3.8,1.6-6.7,1.6c-4.4,0-6.5-0.4-7.4-1.3c-1-1-1.1-4.2-1.1-12.1V478.5"/>
-          <path style="fill:#BE1E2D" d="M543,465.4l7,0.1c5.3,0.1,6.5,1.3,6.7,3l0.1,0.6c0.1,0.8,0.2,1,0.4,1s0.5-0.3,0.5-0.7c0-0.6,0.2-4.5,0.2-6.2c0-0.3,0-0.6-0.3-0.6c-0.3,0-0.8,0.1-1.6,0.3c-0.9,0.1-2.2,0.3-4,0.3H531c-0.6,0-2.8-0.1-4.4-0.3c-1.5-0.2-2.1-0.6-2.5-0.6c-0.2,0-0.5,0.7-0.6,1c-0.1,0.4-1.2,5.3-1.2,5.8c0,0.3,0.3,0.4,0.4,0.4c0.3,0,0.4-0.1,0.6-0.5c0.2-0.4,0.3-0.8,0.9-1.7c0.8-1.3,2.2-1.6,5.6-1.7l8.1-0.1V488c0,5.2,0,9.4-0.3,11.7c-0.2,1.6-0.5,2.7-1.6,2.9c-0.5,0.1-1.1,0.3-1.6,0.3c-0.3,0-0.4,0.2-0.4,0.4c0,0.3,0.3,0.4,0.9,0.4c1.6,0,5.5-0.2,5.8-0.2c0.3,0,3.9,0.2,6.9,0.2c0.6,0,0.9-0.2,0.9-0.4c0-0.2-0.1-0.4-0.4-0.4c-0.5,0-1.8-0.1-2.5-0.3c-1.7-0.3-2-1.3-2.2-2.9c-0.3-2.2-0.3-6.5-0.3-11.7V465.4"/>
         </svg>
       </a>
       <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Close navigation">&#10005;</button>
     </div>
     <ul class="mobile-nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="commercial.html">Commercial</a></li>
-      <li><a href="residential.html">Residential</a></li>
-      <li><a href="index.html#work">Our Work</a></li>
-      <li><a href="contact.html" class="m-active">Contact</a></li>
+      <li><a href="/">Home</a></li>
+      <li><a href="/commercial">Commercial</a></li>
+      <li><a href="/residential">Residential</a></li>
+      <li><a href="/">Our Work</a></li>
+      <li><a href="/contact" class="m-active">Contact</a></li>
     </ul>
     <div class="mobile-nav-bottom">
-      <a href="tel:9494468578" class="mobile-nav-tel">(949) 446-8578</a>
+      <a href="tel:+19494468578" class="mobile-nav-tel">+1 (949) 446-8578</a>
       <p class="mobile-nav-hours">Mon – Fri &nbsp;&middot;&nbsp; 8:00 AM – 5:00 PM</p>
-      <a href="contact.html" class="mobile-nav-cta">Request a Free Estimate &rarr;</a>
+      <a href="#form" class="mobile-nav-cta">Request a Free Estimate &rarr;</a>
     </div>
   </div>
 </div>
 
-<!-- PAGE HERO — type-driven, no photo -->
+<!-- PAGE HERO -->
 <div class="page-hero">
   <p class="eyebrow">Get in Touch</p>
   <h1 class="page-h1">Let's talk about<br>your <em>project.</em></h1>
@@ -326,9 +381,9 @@
 
     <div class="info-block reveal">
       <div class="info-label">Call Us</div>
-      <div class="info-value"><a href="tel:9494468578">(949) 446-8578</a></div>
+      <span class="info-phone"><a href="tel:+19494468578">+1 (949) 446-8578</a></span>
       <div class="info-sub">Primary line — call or text</div>
-      <div class="info-value" style="font-size:clamp(18px,3.5vw,26px);margin-top:10px"><a href="tel:9496525024">(949) 652-5024</a></div>
+      <span class="info-phone-secondary"><a href="tel:+19496525024">+1 (949) 652-5024</a></span>
       <div class="info-sub">Secondary line</div>
     </div>
 
@@ -336,7 +391,7 @@
 
     <div class="info-block reveal reveal-d1">
       <div class="info-label">Email</div>
-      <div class="info-value" style="font-size:clamp(16px,3vw,22px)"><a href="mailto:lunarpainting1@gmail.com">lunarpainting1@gmail.com</a></div>
+      <span class="info-email"><a href="mailto:lunarpainting1@gmail.com">lunarpainting1@gmail.com</a></span>
       <div class="info-sub">We respond within one business day</div>
     </div>
 
@@ -344,7 +399,7 @@
 
     <div class="info-block reveal reveal-d1">
       <div class="info-label">Office</div>
-      <div class="info-value" style="font-size:clamp(18px,3.5vw,28px)">Laguna Hills, CA</div>
+      <div class="info-address">Laguna Hills, CA</div>
       <div class="info-sub">25255 Cabot Rd, Suite #224<br>Laguna Hills, CA 92653</div>
     </div>
 
@@ -353,34 +408,13 @@
     <div class="reveal reveal-d2">
       <div class="info-label" style="margin-bottom:16px">Hours</div>
       <div class="hours-table">
-        <div class="hours-row">
-          <span class="hours-day">Monday</span>
-          <span class="hours-time">8:00 AM – 5:00 PM</span>
-        </div>
-        <div class="hours-row">
-          <span class="hours-day">Tuesday</span>
-          <span class="hours-time">8:00 AM – 5:00 PM</span>
-        </div>
-        <div class="hours-row">
-          <span class="hours-day">Wednesday</span>
-          <span class="hours-time">8:00 AM – 5:00 PM</span>
-        </div>
-        <div class="hours-row">
-          <span class="hours-day">Thursday</span>
-          <span class="hours-time">8:00 AM – 5:00 PM</span>
-        </div>
-        <div class="hours-row">
-          <span class="hours-day">Friday</span>
-          <span class="hours-time">8:00 AM – 5:00 PM</span>
-        </div>
-        <div class="hours-row">
-          <span class="hours-day">Saturday</span>
-          <span class="hours-closed">Closed</span>
-        </div>
-        <div class="hours-row" style="border-bottom:none">
-          <span class="hours-day">Sunday</span>
-          <span class="hours-closed">Closed</span>
-        </div>
+        <div class="hours-row"><span class="hours-day">Monday</span><span class="hours-time">8:00 AM – 5:00 PM</span></div>
+        <div class="hours-row"><span class="hours-day">Tuesday</span><span class="hours-time">8:00 AM – 5:00 PM</span></div>
+        <div class="hours-row"><span class="hours-day">Wednesday</span><span class="hours-time">8:00 AM – 5:00 PM</span></div>
+        <div class="hours-row"><span class="hours-day">Thursday</span><span class="hours-time">8:00 AM – 5:00 PM</span></div>
+        <div class="hours-row"><span class="hours-day">Friday</span><span class="hours-time">8:00 AM – 5:00 PM</span></div>
+        <div class="hours-row"><span class="hours-day">Saturday</span><span class="hours-closed">Closed</span></div>
+        <div class="hours-row"><span class="hours-day">Sunday</span><span class="hours-closed">Closed</span></div>
       </div>
     </div>
 
@@ -389,22 +423,15 @@
   <!-- FORM SIDE -->
   <div class="contact-form-wrap" id="form">
     <h2 class="form-title reveal">Request an estimate.</h2>
-    <p class="form-sub reveal reveal-d1">Fill this out and we'll get back to you within one business day with next steps. For commercial projects, we'll schedule a site walk before quoting.</p>
+    <p class="form-sub reveal reveal-d1">Fill this out and your email app will open with everything pre-filled — just hit send. For commercial projects, we'll schedule a site walk before quoting.</p>
 
     <div class="form-success" id="form-success">
       <div class="success-icon">✓</div>
-      <div class="success-title">Message received.</div>
-      <p class="success-sub">We'll follow up within one business day. For faster service, call us at <a href="tel:9494468578" style="color:var(--red)">(949) 446-8578</a>.</p>
+      <div class="success-title">Your email app is opening.</div>
+      <p class="success-sub">A pre-filled email is ready to send to lunarpainting1@gmail.com. Just hit send in your email app. For faster service, call <a href="tel:+19494468578" style="color:var(--red)">+1 (949) 446-8578</a>.</p>
     </div>
 
-    <!-- ═══════════════════════════════════════════════════════
-     FORM API — TO CONNECT:
-     Option A (Formspree): add action="https://formspree.io/f/YOUR_ID" method="POST"
-     Option B (Netlify):   add data-netlify="true" name="contact"
-     Option C (custom):    update the fetch() call in the <script> below
-     ═══════════════════════════════════════════════════════ -->
-    <form class="form reveal reveal-d1" id="contact-form" novalidate
-          data-api-endpoint="REPLACE_WITH_YOUR_ENDPOINT">
+    <form class="form reveal reveal-d1" id="contact-form" novalidate>
       <div class="form-row">
         <div class="field">
           <label for="fname">First Name</label>
@@ -417,7 +444,7 @@
       </div>
       <div class="field">
         <label for="phone">Phone Number</label>
-        <input type="tel" id="phone" name="phone" placeholder="(949) 555-0000" autocomplete="tel" required />
+        <input type="tel" id="phone" name="phone" placeholder="+1 (949) 555-0000" autocomplete="tel" required />
       </div>
       <div class="field">
         <label for="email">Email Address</label>
@@ -444,11 +471,15 @@
         <label for="message">Tell us about the project</label>
         <textarea id="message" name="message" placeholder="Approximate size, timeline, any specific needs…"></textarea>
       </div>
-      <p class="form-note">We'll review your request and follow up within one business day. For urgent matters, call <a href="tel:9494468578" style="color:var(--red)">(949) 446-8578</a>.</p>
-      <button type="submit" class="btn-submit">Send Request →</button>
+
+      <p class="form-note">
+        Pressing "Send Estimate Request" will open your email app with everything pre-filled.<br>
+        Just review and hit send — no account or login needed.<br><br>
+        Prefer to call? Reach us at <a href="tel:+19494468578" style="color:var(--red);font-weight:500">+1 (949) 446-8578</a>.
+      </p>
+      <button type="submit" class="btn-submit">Send Estimate Request →</button>
     </form>
   </div>
-
 </div>
 
 <!-- AREAS SERVED -->
@@ -460,45 +491,29 @@
       <div class="area-col-title">Orange County — Primary Area</div>
       <div class="city-tags">
         <span class="city-tag base">Laguna Hills</span>
-        <span class="city-tag">Irvine</span>
-        <span class="city-tag">Mission Viejo</span>
-        <span class="city-tag">Lake Forest</span>
-        <span class="city-tag">Aliso Viejo</span>
-        <span class="city-tag">Laguna Niguel</span>
-        <span class="city-tag">Laguna Beach</span>
-        <span class="city-tag">Newport Beach</span>
-        <span class="city-tag">Newport Coast</span>
-        <span class="city-tag">Dana Point</span>
-        <span class="city-tag">San Clemente</span>
+        <span class="city-tag">Irvine</span><span class="city-tag">Mission Viejo</span>
+        <span class="city-tag">Lake Forest</span><span class="city-tag">Aliso Viejo</span>
+        <span class="city-tag">Laguna Niguel</span><span class="city-tag">Laguna Beach</span>
+        <span class="city-tag">Newport Beach</span><span class="city-tag">Newport Coast</span>
+        <span class="city-tag">Dana Point</span><span class="city-tag">San Clemente</span>
         <span class="city-tag">San Juan Capistrano</span>
         <span class="city-tag">Rancho Santa Margarita</span>
-        <span class="city-tag">Coto de Caza</span>
-        <span class="city-tag">Foothill Ranch</span>
-        <span class="city-tag">Trabuco Canyon</span>
-        <span class="city-tag">Huntington Beach</span>
-        <span class="city-tag">Costa Mesa</span>
-        <span class="city-tag">Tustin</span>
-        <span class="city-tag">Orange</span>
-        <span class="city-tag">Anaheim Hills</span>
-        <span class="city-tag">Fullerton</span>
-        <span class="city-tag">Santa Ana</span>
+        <span class="city-tag">Coto de Caza</span><span class="city-tag">Foothill Ranch</span>
+        <span class="city-tag">Trabuco Canyon</span><span class="city-tag">Huntington Beach</span>
+        <span class="city-tag">Costa Mesa</span><span class="city-tag">Tustin</span>
+        <span class="city-tag">Orange</span><span class="city-tag">Anaheim Hills</span>
+        <span class="city-tag">Fullerton</span><span class="city-tag">Santa Ana</span>
       </div>
     </div>
     <div>
       <div class="area-col-title">Los Angeles County — Secondary Area</div>
       <div class="city-tags">
-        <span class="city-tag">Long Beach</span>
-        <span class="city-tag">Torrance</span>
-        <span class="city-tag">Rancho Palos Verdes</span>
-        <span class="city-tag">San Pedro</span>
-        <span class="city-tag">Carson</span>
-        <span class="city-tag">Lakewood</span>
-        <span class="city-tag">Cerritos</span>
-        <span class="city-tag">Signal Hill</span>
-        <span class="city-tag">La Mirada</span>
-        <span class="city-tag">Downey</span>
-        <span class="city-tag">Whittier</span>
-        <span class="city-tag">Norwalk</span>
+        <span class="city-tag">Long Beach</span><span class="city-tag">Torrance</span>
+        <span class="city-tag">Rancho Palos Verdes</span><span class="city-tag">San Pedro</span>
+        <span class="city-tag">Carson</span><span class="city-tag">Lakewood</span>
+        <span class="city-tag">Cerritos</span><span class="city-tag">Signal Hill</span>
+        <span class="city-tag">La Mirada</span><span class="city-tag">Downey</span>
+        <span class="city-tag">Whittier</span><span class="city-tag">Norwalk</span>
       </div>
     </div>
   </div>
@@ -506,7 +521,9 @@
 
 <!-- MAP -->
 <div class="map-section">
-  <iframe class="map-embed" title="Lunar Painting — 25255 Cabot Rd, Laguna Hills CA" src="https://maps.google.com/maps?q=25255+Cabot+Rd+%23224+Laguna+Hills+CA+92653&output=embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <iframe class="map-embed" title="Lunar Painting — 25255 Cabot Rd, Laguna Hills CA"
+    src="https://maps.google.com/maps?q=25255+Cabot+Rd+%23224+Laguna+Hills+CA+92653&output=embed"
+    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   <div class="map-label">
     <div>
       <div class="map-label-title">Lunar Painting</div>
@@ -516,46 +533,54 @@
   </div>
 </div>
 
+<!-- FOOTER -->
 <footer>
   <div class="footer-logo-wrap">
-    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" xml:space="preserve" aria-hidden="true">
-      <polygon style="fill:rgba(255,255,255,.6)" points="132.3,402.6 236.6,315.4 343.3,335.5 508.8,262.8 659.3,411.5 643.8,411.5 508.8,284.4 349.5,391.1 236.2,335.1"/>
-      <path style="fill:rgba(255,255,255,.25)" d="M399.9,410.2c-139.2,0-260.3,15.2-322.6,37.7c82.8-14.7,196.8-23.9,322.6-23.9s239.8,9.1,322.6,23.9C660.3,425.5,539.1,410.2,399.9,410.2z M478.3,15.1l-76.7,30.7v249.6l76.7-33.7V15.1z M299.9,313.8V13.2l-67.1,90.2v198l0.2-0.1L299.9,313.8z M390,300.4V147.1l-76.7-48v217.2l28.4,5.4L390,300.4z"/>
-      <path style="fill:rgba(255,255,255,.55)" d="M149.9,478.5c0-8.4,0-9.9,0.1-11.6c0.1-1.9,0.4-2.7,2.1-3c0.6-0.1,1.5-0.1,1.8-0.1c0.2,0,0.4-0.2,0.4-0.4c0-0.3-0.3-0.4-0.9-0.4c-1.7,0-5.9,0.1-6.2,0.1c-0.3,0-3.8-0.1-6.3-0.1c-0.6,0-0.9,0.1-0.9,0.4c0,0.2,0.3,0.4,0.4,0.4c0.5,0,1.5,0.1,1.9,0.1c1.8,0.3,2.2,1.1,2.3,3c0.1,1.7,0.1,3.2,0.1,11.6v9.5c0,5.2,0,9.4-0.3,11.7c-0.3,1.6-0.4,2.6-1.5,2.9c-0.5,0.1-1.2,0.3-1.7,0.3c-0.3,0-0.4,0.3-0.4,0.4c0,0.3,0.3,0.4,0.9,0.4c0.9,0,2.1-0.1,3.2-0.1c1.1-0.1,2-0.1,2.3-0.1c1.6,0,3.6,0.1,6.1,0.1c2.6,0.1,5.7,0.2,9.7,0.2c3,0,3.2-0.2,3.6-1.5c0.4-1.6,0.8-4.8,0.8-5.4c0-0.6-0.1-0.8-0.4-0.8c-0.3,0-0.5,0.3-0.6,0.7c-0.2,1.1-0.6,2.2-1.3,3c-1.3,1.6-3.8,1.6-6.7,1.6c-4.4,0-6.5-0.4-7.4-1.3c-1-1-1.1-4.2-1.1-12.1V478.5"/>
+    <!-- Original brand colors — same as nav logo -->
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" xml:space="preserve" aria-label="Lunar Painting">
+      <style>.fst0{fill:#BE1E2D;}.fst1{fill:#726658;}</style>
+      <polygon class="fst0" points="132.3,402.6 236.6,315.4 343.3,335.5 508.8,262.8 659.3,411.5 643.8,411.5 508.8,284.4 349.5,391.1 236.2,335.1"/>
+      <path class="fst1" d="M390,300.4V147.1l-76.7-48v217.2l28.4,5.4L390,300.4z M478.3,15.1l-76.7,30.7v249.6l76.7-33.7V15.1z M299.9,313.8V13.2l-67.1,90.2v198l0.2-0.1L299.9,313.8z M399.9,410.2c-139.2,0-260.3,15.2-322.6,37.7c82.8-14.7,196.8-23.9,322.6-23.9s239.8,9.1,322.6,23.9C660.3,425.5,539.1,410.2,399.9,410.2z"/>
+      <path class="fst0" d="M149.9,478.5c0-8.4,0-9.9,0.1-11.6c0.1-1.9,0.4-2.7,2.1-3c0.6-0.1,1.5-0.1,1.8-0.1c0.2,0,0.4-0.2,0.4-0.4c0-0.3-0.3-0.4-0.9-0.4c-1.7,0-5.9,0.1-6.2,0.1c-0.3,0-3.8-0.1-6.3-0.1c-0.6,0-0.9,0.1-0.9,0.4c0,0.2,0.3,0.4,0.4,0.4c0.5,0,1.5,0.1,1.9,0.1c1.8,0.3,2.2,1.1,2.3,3c0.1,1.7,0.1,3.2,0.1,11.6v9.5c0,5.2,0,9.4-0.3,11.7c-0.3,1.6-0.4,2.6-1.5,2.9c-0.5,0.1-1.2,0.3-1.7,0.3c-0.3,0-0.4,0.3-0.4,0.4c0,0.3,0.3,0.4,0.9,0.4c0.9,0,2.1-0.1,3.2-0.1c1.1-0.1,2-0.1,2.3-0.1c1.6,0,3.6,0.1,6.1,0.1c2.6,0.1,5.7,0.2,9.7,0.2c3,0,3.2-0.2,3.6-1.5c0.4-1.6,0.8-4.8,0.8-5.4c0-0.6-0.1-0.8-0.4-0.8c-0.3,0-0.5,0.3-0.6,0.7c-0.2,1.1-0.6,2.2-1.3,3c-1.3,1.6-3.8,1.6-6.7,1.6c-4.4,0-6.5-0.4-7.4-1.3c-1-1-1.1-4.2-1.1-12.1V478.5"/>
     </svg>
   </div>
+
   <div class="footer-cols">
     <div>
       <div class="footer-col-title">Lunar Painting</div>
-      <address class="footer-addr">25255 Cabot Rd, Suite #224<br>Laguna Hills, CA 92653<br><br>
-        <a href="tel:9494468578" style="color:inherit">(949) 446-8578</a><br>
+      <address class="footer-addr">
+        25255 Cabot Rd, Suite #224<br>Laguna Hills, CA 92653<br><br>
+        <a href="tel:+19494468578" style="color:inherit;font-family:var(--ff-sans)">+1 (949) 446-8578</a><br>
+        <a href="tel:+19496525024" style="color:inherit;font-family:var(--ff-sans)">+1 (949) 652-5024</a><br>
         <a href="mailto:lunarpainting1@gmail.com" style="color:inherit">lunarpainting1@gmail.com</a>
       </address>
     </div>
     <div>
       <div class="footer-col-title">Services</div>
       <ul class="footer-list">
-        <li><a href="commercial.html">Commercial</a></li>
-        <li><a href="residential.html">Residential</a></li>
+        <li><a href="/commercial">Commercial</a></li>
+        <li><a href="/residential">Residential</a></li>
       </ul>
     </div>
     <div>
       <div class="footer-col-title">Navigate</div>
       <ul class="footer-list">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="index.html#work">Our Work</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="/">Home</a></li>
+        <li><a href="/">Our Work</a></li>
+        <li><a href="/contact">Contact</a></li>
       </ul>
     </div>
     <div>
-      <div class="footer-col-title">Hours</div>
-      <ul class="footer-list" style="gap:6px">
-        <li style="color:rgba(255,255,255,.45);font-size:13px">Monday – Friday</li>
-        <li style="color:rgba(255,255,255,.65);font-size:13px">8:00 AM – 5:00 PM</li>
-        <li style="color:rgba(255,255,255,.3);font-size:12px;margin-top:6px">Weekends: Closed</li>
+      <div class="footer-col-title">Find Us</div>
+      <ul class="footer-list">
+        <li><a href="https://www.instagram.com/lunarpainting/" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="https://www.yelp.com/biz/lunar-painting-laguna-hills" target="_blank" rel="noopener">Yelp</a></li>
+        <li><a href="https://www.bbb.org/us/ca/laguna-hills/profile/painting-contractors/lunar-painting-1126-1000063467" target="_blank" rel="noopener">BBB A+</a></li>
+        <li><a href="https://www.mapquest.com/us/california/lunar-painting-448956065" target="_blank" rel="noopener">MapQuest</a></li>
       </ul>
     </div>
   </div>
+
   <div class="footer-bottom">
     <p class="footer-copy">© 2017–2026 Lunar Painting · Laguna Hills, CA</p>
     <p class="footer-seo">Contact painting contractor Orange County · Painting estimate Laguna Hills CA · Commercial painting quote Orange County · Residential painting estimate Irvine Mission Viejo</p>
@@ -563,74 +588,127 @@
 </footer>
 
 <div class="sticky-bar">
-  <a href="tel:9494468578" class="sb-call">📞 Call Now</a>
-  <a href="#form" class="sb-email">✉ Email Us</a>
+  <a href="tel:+19494468578" class="sb-call">📞 Call Now</a>
+  <a href="#form" class="sb-email">✉ Get a Quote</a>
 </div>
 
 <script>
-  const nav = document.getElementById('nav');
-  window.addEventListener('scroll', () => { nav.classList.toggle('shadow', window.scrollY > 10); }, { passive: true });
-  const observer = new IntersectionObserver((e) => { e.forEach(x => { if (x.isIntersecting) { x.target.classList.add('in'); observer.unobserve(x.target); } }); }, { threshold: 0.1, rootMargin: '0px 0px -32px 0px' });
-  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-  // ── Form submission ──
-  // Currently shows success UI immediately.
-  // To wire up: replace the endpoint variable below with your Formspree/Netlify/custom URL.
-  var FORM_ENDPOINT = ''; // e.g. 'https://formspree.io/f/YOUR_ID'
-  document.getElementById('contact-form').addEventListener('submit', function(e) {
-    e.preventDefault();
-    var form = this;
-    var btn = form.querySelector('.btn-submit');
-    btn.textContent = 'Sending…';
-    btn.style.opacity = '0.7';
-    if (FORM_ENDPOINT) {
-      fetch(FORM_ENDPOINT, {
-        method: 'POST',
-        body: new FormData(form),
-        headers: { 'Accept': 'application/json' }
-      })
-      .then(function(r) {
-        if (r.ok) { showSuccess(form); }
-        else { btn.textContent = 'Send Request →'; btn.style.opacity = '1'; alert('Something went wrong. Please call us directly at (949) 446-8578.'); }
-      })
-      .catch(function() { btn.textContent = 'Send Request →'; btn.style.opacity = '1'; alert('Something went wrong. Please call us directly at (949) 446-8578.'); });
-    } else {
-      // No endpoint yet — show success UI for preview purposes
-      showSuccess(form);
-    }
+// ── Clean URL on load ──
+(function() {
+  var path = window.location.pathname;
+  if (path.endsWith('.html')) {
+    history.replaceState(null, '', path.replace('.html', ''));
+  }
+})();
+
+// ── Nav shadow ──
+var nav = document.getElementById('nav');
+window.addEventListener('scroll', function() {
+  nav.classList.toggle('shadow', window.scrollY > 10);
+}, { passive: true });
+
+// ── Scroll reveal ──
+var observer = new IntersectionObserver(function(entries) {
+  entries.forEach(function(x) {
+    if (x.isIntersecting) { x.target.classList.add('in'); observer.unobserve(x.target); }
   });
-  function showSuccess(form) {
-    form.style.display = 'none';
-    document.getElementById('form-success').classList.add('show');
-    window.scrollTo({ top: document.getElementById('form').offsetTop - 80, behavior: 'smooth' });
+}, { threshold: 0.1, rootMargin: '0px 0px -32px 0px' });
+document.querySelectorAll('.reveal').forEach(function(el) { observer.observe(el); });
+
+// ── Form: builds mailto link and opens user's email app ──
+document.getElementById('contact-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+  var fname   = document.getElementById('fname').value.trim();
+  var lname   = document.getElementById('lname').value.trim();
+  var phone   = document.getElementById('phone').value.trim();
+  var email   = document.getElementById('email').value.trim();
+  var service = document.getElementById('service').value;
+  var city    = document.getElementById('city').value.trim();
+  var message = document.getElementById('message').value.trim();
+
+  // Basic validation
+  if (!fname || !lname || !phone || !email) {
+    alert('Please fill in your name, phone, and email before sending.');
+    return;
   }
 
-  // ── Hamburger menu ──
-  (function() {
-    var btn = document.getElementById('hamburger');
-    var nav = document.getElementById('mobile-nav');
-    var cls = document.getElementById('mobile-nav-close');
-    function openMenu() {
-      btn.classList.add('open');
-      nav.classList.add('open');
-      btn.setAttribute('aria-expanded','true');
-      nav.setAttribute('aria-hidden','false');
-      document.body.style.overflow = 'hidden';
-    }
-    function closeMenu() {
-      btn.classList.remove('open');
-      nav.classList.remove('open');
-      btn.setAttribute('aria-expanded','false');
-      nav.setAttribute('aria-hidden','true');
-      document.body.style.overflow = '';
-    }
-    if (btn) btn.addEventListener('click', function() {
-      btn.classList.contains('open') ? closeMenu() : openMenu();
-    });
-    if (cls) cls.addEventListener('click', closeMenu);
-    if (nav) nav.querySelectorAll('a').forEach(function(a){ a.addEventListener('click', closeMenu); });
-    document.addEventListener('keydown', function(e){ if(e.key==='Escape') closeMenu(); });
-  })();
+  // Build the email body
+  var serviceLabels = {
+    'commercial-apartment': 'Commercial — Apartment Complex',
+    'commercial-hoa':       'Commercial — HOA / Community',
+    'commercial-office':    'Commercial — Office / Retail',
+    'residential-interior': 'Residential — Interior',
+    'residential-exterior': 'Residential — Exterior',
+    'residential-both':     'Residential — Interior & Exterior',
+    'other':                'Other / Not sure yet'
+  };
 
+  var body = [
+    'Hello Lunar Painting,',
+    '',
+    'I would like to request a painting estimate.',
+    '',
+    '--- CONTACT INFO ---',
+    'Name:    ' + fname + ' ' + lname,
+    'Phone:   ' + phone,
+    'Email:   ' + email,
+    '',
+    '--- PROJECT DETAILS ---',
+    'Project Type: ' + (serviceLabels[service] || service || 'Not specified'),
+    'Location:     ' + (city || 'Not specified'),
+    '',
+    '--- MESSAGE ---',
+    message || 'No additional details provided.',
+    '',
+    'Thank you,'
+  ].join('\n');
+
+  var subject = 'Painting Estimate Request — ' + fname + ' ' + lname;
+  var mailto = 'mailto:lunarpainting1@gmail.com'
+    + '?subject=' + encodeURIComponent(subject)
+    + '&body=' + encodeURIComponent(body);
+
+  // Open the user's mail client
+  window.location.href = mailto;
+
+  // Show success state after a short delay
+  setTimeout(function() {
+    document.getElementById('contact-form').style.display = 'none';
+    var success = document.getElementById('form-success');
+    success.classList.add('show');
+    window.scrollTo({ top: document.getElementById('form').offsetTop - 80, behavior: 'smooth' });
+  }, 400);
+});
+
+// ── Hamburger menu ──
+(function() {
+  var btn = document.getElementById('hamburger');
+  var mobileNav = document.getElementById('mobile-nav');
+  var cls = document.getElementById('mobile-nav-close');
+
+  function openMenu() {
+    btn.classList.add('open');
+    mobileNav.classList.add('open');
+    btn.setAttribute('aria-expanded', 'true');
+    mobileNav.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeMenu() {
+    btn.classList.remove('open');
+    mobileNav.classList.remove('open');
+    btn.setAttribute('aria-expanded', 'false');
+    mobileNav.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+  }
+
+  if (btn) btn.addEventListener('click', function() {
+    btn.classList.contains('open') ? closeMenu() : openMenu();
+  });
+  if (cls) cls.addEventListener('click', closeMenu);
+  if (mobileNav) mobileNav.querySelectorAll('a').forEach(function(a) { a.addEventListener('click', closeMenu); });
+  document.addEventListener('keydown', function(e) { if (e.key === 'Escape') closeMenu(); });
+})();
 </script>
+
 </body>
 </html>
