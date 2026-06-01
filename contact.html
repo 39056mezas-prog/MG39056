@@ -3,217 +3,179 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-<title>Contact Lunar Painting — Orange County Painting Contractor | +1 (949) 446-8578</title>
-<meta name="description" content="Contact Lunar Painting for residential and commercial painting estimates in Orange County and LA County. Call +1 (949) 446-8578 or email lunarpainting1@gmail.com. Laguna Hills, CA." />
+<title>Contact Lunar Painting — Orange County Painting Contractor | (949) 446-8578</title>
+<meta name="description" content="Contact Lunar Painting for residential and commercial painting estimates in Orange County and LA County. Call (949) 446-8578 or email lunarpainting1@gmail.com. Laguna Hills, CA." />
 <meta name="robots" content="index, follow" />
 <link rel="canonical" href="https://lunarpainting.com/contact" />
-
-<!-- Open Graph -->
+<link rel="icon" type="image/webp" href="https://raw.githubusercontent.com/39056mezas-prog/MG39056/main/favicon.webp" />
+<link rel="shortcut icon" href="https://raw.githubusercontent.com/39056mezas-prog/MG39056/main/favicon.webp" />
 <meta property="og:type" content="website" />
-<meta property="og:title" content="Contact Lunar Painting — Orange County Painting Contractor" />
-<meta property="og:description" content="Request a commercial or residential painting estimate. Call +1 (949) 446-8578 or fill out our form. Serving Orange County and LA County." />
-<meta property="og:url" content="https://lunarpainting.com/contact" />
-<meta property="og:site_name" content="Lunar Painting" />
+<meta property="og:title" content="Contact Lunar Painting — Orange County Painting Contractor | (949) 446-8578" />
+<meta property="og:description" content="Contact Lunar Painting for residential and commercial painting estimates in Orange County and LA County. Call (949) 446-8578 or email lunarpainting1@gmail.com. Laguna Hills, CA." />
 <meta property="og:image" content="https://lunarpainting.com/og-preview.jpg" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="https://lunarpainting.com/og-preview.jpg" />
-
-<!-- Favicon — same as index.html -->
-<link rel="icon" type="image/svg+xml" href="lunar-painting-logo.svg" />
-<link rel="icon" type="image/x-icon" href="favicon.ico" />
-<link rel="apple-touch-icon" href="apple-touch-icon.png" />
-
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
-
 <style>
 :root {
-  --red: #BE1E2D;
-  --red-dk: #9a1724;
-  --white: #FFFFFF;
-  --snow: #F8F7F4;
-  --ink: #1C1B19;
-  --mid: #6B6A67;
-  --rule: #E4E3DF;
+  --red: #BE1E2D; --red-dk: #9a1724;
+  --white: #FFFFFF; --snow: #F8F7F4;
+  --ink: #1C1B19; --mid: #6B6A67; --rule: #E4E3DF;
   --ff-serif: 'Cormorant Garamond', Georgia, serif;
-  --ff-sans: 'Inter', system-ui, sans-serif;
+  --ff-sans: 'Inter', system-ui, -apple-system, sans-serif;
 }
-
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
 body { font-family: var(--ff-sans); background: var(--white); color: var(--ink); -webkit-font-smoothing: antialiased; overflow-x: hidden; padding-bottom: 60px; }
 img { display: block; width: 100%; }
 a { text-decoration: none; color: inherit; }
 
-/* ── NAV ── */
-.nav { position: fixed; inset: 0 0 auto 0; z-index: 200; height: 60px; background: var(--white); border-bottom: 1px solid var(--rule); display: flex; align-items: center; justify-content: space-between; padding: 0 20px; transition: box-shadow .3s ease; }
+/* ─── NAV ─── */
+.nav { position: fixed; inset: 0 0 auto 0; z-index: 200; height: 60px; background: var(--white); border-bottom: 1px solid var(--rule); display: flex; align-items: center; justify-content: space-between; padding: 0 20px; transition: box-shadow 0.3s ease; }
 .nav.shadow { box-shadow: 0 1px 20px rgba(0,0,0,.07); }
 .nav-logo-wrap { display: flex; align-items: center; height: 40px; }
-.nav-logo-wrap svg { height: 40px; width: auto; }
+.logo-img { height: 40px; width: auto; display: block; }
 .nav-right { display: flex; align-items: center; gap: 20px; }
 .nav-links { display: none; list-style: none; gap: 24px; align-items: center; }
-.nav-links a { font-size: 13px; font-weight: 500; color: var(--mid); transition: color .2s; }
-.nav-links a:hover, .nav-links a.active { color: var(--ink); }
-
-/* Phone in nav — Inter, no serif */
-.nav-tel {
-  font-family: var(--ff-sans);
-  font-size: 14px;
-  font-weight: 600;
-  color: var(--red);
-  letter-spacing: 0;
-  transition: color .2s;
-}
+.nav-links a { font-size: 13px; font-weight: 500; color: var(--mid); letter-spacing: 0.01em; transition: color .2s; }
+.nav-links a:hover { color: var(--ink); }
+.nav-tel { font-family: var(--ff-sans); font-size: 14px; font-weight: 600; color: var(--red); white-space: nowrap; transition: color .2s; }
 .nav-tel:hover { color: var(--red-dk); }
-.nav-btn { display: none; background: var(--red); color: var(--white); font-size: 13px; font-weight: 500; padding: 9px 18px; transition: background .2s; }
+.nav-btn { display: none; background: var(--red); color: var(--white); font-size: 13px; font-weight: 500; padding: 9px 18px; letter-spacing: 0.01em; transition: background .2s; white-space: nowrap; }
 .nav-btn:hover { background: var(--red-dk); }
 
+/* ─── HAMBURGER ─── */
+.nav-hamburger { display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 5px; width: 40px; height: 40px; background: none; border: none; cursor: pointer; padding: 8px; flex-shrink: 0; z-index: 210; }
+.nav-hamburger span { display: block; width: 22px; height: 1.5px; background: var(--ink); transition: transform 0.35s cubic-bezier(0.16,1,0.3,1), opacity 0.25s ease; transform-origin: center; }
+.nav-hamburger.open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+.nav-hamburger.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+.nav-hamburger.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+
+/* ─── MOBILE NAV — centered, premium ─── */
+.mobile-nav { position: fixed; inset: 0; z-index: 205; background: var(--white); transform: translateX(100%); transition: transform 0.45s cubic-bezier(0.16,1,0.3,1); overflow-y: auto; -webkit-overflow-scrolling: touch; }
+.mobile-nav.open { transform: translateX(0); }
+.mobile-nav-inner { display: flex; flex-direction: column; align-items: center; min-height: 100%; padding: 0 24px 52px; text-align: center; }
+.mobile-nav-top { width: 100%; height: 60px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--rule); flex-shrink: 0; margin-bottom: auto; }
+.mobile-nav-logo-wrap { display: flex; align-items: center; height: 34px; }
+.mobile-nav-logo-wrap .logo-img { height: 34px; width: auto; }
+.mobile-nav-close { width: 40px; height: 40px; background: none; border: none; cursor: pointer; font-size: 20px; color: var(--mid); display: flex; align-items: center; justify-content: center; transition: color .2s; }
+.mobile-nav-close:hover { color: var(--ink); }
+
+/* centered nav links */
+.mobile-nav-links { list-style: none; display: flex; flex-direction: column; align-items: center; gap: 0; width: 100%; padding-top: 0; flex: 1; justify-content: center; }
+.mobile-nav-links li { width: 100%; text-align: center; border-bottom: 1px solid var(--rule); }
+.mobile-nav-links li:first-child { border-top: 1px solid var(--rule); }
+.mobile-nav-links li a { display: block; font-family: var(--ff-serif); font-size: clamp(32px, 9vw, 48px); font-weight: 600; letter-spacing: -.02em; color: var(--ink); padding: 18px 0; line-height: 1.15; transition: color .2s; }
+.mobile-nav-links li a:hover, .mobile-nav-links li a.m-active { color: var(--red); }
+
+/* centered bottom section */
+.mobile-nav-bottom { padding-top: 36px; width: 100%; display: flex; flex-direction: column; align-items: center; }
+.mobile-nav-tel { font-family: var(--ff-sans); font-size: clamp(22px, 6vw, 28px); font-weight: 700; color: var(--red); letter-spacing: -.01em; display: block; margin-bottom: 6px; line-height: 1.1; }
+.mobile-nav-hours { font-size: 12px; color: var(--mid); margin-bottom: 22px; }
+.mobile-nav-cta { display: block; background: var(--red); color: var(--white); font-size: 14px; font-weight: 500; padding: 15px 40px; text-align: center; transition: background .2s; }
+.mobile-nav-cta:hover { background: var(--red-dk); }
+
+/* ─── HERO ─── */
+.hero { position: relative; margin-top: 60px; min-height: calc(100svh - 60px); min-height: calc(100vh - 60px); display: flex; flex-direction: column; justify-content: flex-end; overflow: hidden; background: var(--ink); }
+.hero-photo { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 65% 20%; opacity: .88; }
+.hero-wash { position: absolute; inset: 0; background: linear-gradient(to top, rgba(255,255,255,1) 0%, rgba(255,255,255,.97) 18%, rgba(255,255,255,.75) 40%, rgba(255,255,255,.25) 65%, transparent 100%); }
+.hero-body { position: relative; z-index: 2; padding: 48px 20px 52px; }
 .eyebrow { display: inline-flex; align-items: center; gap: 10px; font-size: 11px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--red); margin-bottom: 18px; }
 .eyebrow::before { content: ''; display: block; width: 22px; height: 1.5px; background: var(--red); flex-shrink: 0; }
+.hero-h1 { font-family: var(--ff-serif); font-size: clamp(42px, 11vw, 88px); font-weight: 600; line-height: 1.03; letter-spacing: -.02em; color: var(--ink); margin-bottom: 22px; max-width: 640px; }
+.hero-h1 em { font-style: italic; color: var(--red); }
+.hero-desc { font-size: 16px; font-weight: 300; line-height: 1.75; color: var(--mid); max-width: 460px; margin-bottom: 36px; }
+.hero-actions { display: flex; flex-direction: column; gap: 14px; align-items: flex-start; }
+.btn-solid { display: inline-flex; align-items: center; gap: 8px; background: var(--red); color: var(--white); font-size: 15px; font-weight: 500; padding: 15px 28px; letter-spacing: .01em; transition: background .2s; }
+.btn-solid:hover { background: var(--red-dk); }
+.btn-text { font-size: 14px; font-weight: 500; color: var(--ink); border-bottom: 1.5px solid var(--rule); padding-bottom: 2px; transition: color .2s, border-color .2s; }
+.btn-text:hover { color: var(--red); border-color: var(--red); }
 
-/* ── PAGE HERO ── */
-.page-hero { margin-top: 60px; padding: 72px 20px 56px; background: var(--white); border-bottom: 1px solid var(--rule); }
-.page-h1 { font-family: var(--ff-serif); font-size: clamp(40px, 10vw, 82px); font-weight: 600; line-height: 1.03; letter-spacing: -.02em; color: var(--ink); margin-bottom: 18px; }
-.page-h1 em { font-style: italic; color: var(--red); }
-.page-sub { font-size: 16px; font-weight: 300; line-height: 1.75; color: var(--mid); max-width: 480px; }
+/* ─── TRUST BAR ─── */
+.trust { border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); background: var(--snow); padding: 16px 20px; overflow: hidden; }
+.trust-row { display: flex; flex-wrap: wrap; gap: 12px 20px; align-items: center; }
+.trust-item { display: flex; align-items: center; gap: 7px; font-size: 12px; font-weight: 500; color: var(--mid); letter-spacing: .02em; white-space: nowrap; }
+.trust-item .dot { width: 5px; height: 5px; border-radius: 50%; background: var(--red); flex-shrink: 0; }
 
-/* ── CONTACT LAYOUT ── */
-.contact-body { display: flex; flex-direction: column; gap: 0; }
-.contact-info { padding: 52px 20px; background: var(--white); }
+/* ─── SECTIONS ─── */
+.section { padding: 72px 20px; }
+.section-label { font-size: 11px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--red); margin-bottom: 14px; }
+.section-h2 { font-family: var(--ff-serif); font-size: clamp(30px, 7vw, 58px); font-weight: 600; line-height: 1.08; letter-spacing: -.02em; color: var(--ink); margin-bottom: 18px; }
+.section-body { font-size: 15px; font-weight: 300; line-height: 1.8; color: var(--mid); margin-bottom: 32px; max-width: 520px; }
 
-.info-block { margin-bottom: 44px; }
-.info-block:last-child { margin-bottom: 0; }
-.info-label { font-size: 10px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: var(--red); margin-bottom: 14px; }
+/* ─── COMMERCIAL ─── */
+.commercial { background: var(--white); }
+.commercial-photo { width: 100%; aspect-ratio: 16/10; object-fit: cover; object-position: center; margin-top: 36px; }
+.pm-cards { display: flex; flex-direction: column; gap: 0; border: 1px solid var(--rule); margin-top: 36px; }
+.pm-card { padding: 22px 20px; border-bottom: 1px solid var(--rule); }
+.pm-card:last-child { border-bottom: none; }
+.pm-card-title { font-size: 15px; font-weight: 600; color: var(--ink); margin-bottom: 6px; }
+.pm-card-body { font-size: 13px; font-weight: 300; line-height: 1.7; color: var(--mid); }
 
-/* Phone numbers in contact info — Inter, large but legible */
-.info-phone {
-  font-family: var(--ff-sans);
-  font-size: clamp(22px, 5vw, 36px);
-  font-weight: 700;
-  color: var(--ink);
-  letter-spacing: -.01em;
-  line-height: 1.15;
-  margin-bottom: 6px;
-  display: block;
-}
-.info-phone a { color: inherit; transition: color .2s; }
-.info-phone a:hover { color: var(--red); }
-.info-phone-secondary {
-  font-family: var(--ff-sans);
-  font-size: clamp(17px, 3.5vw, 24px);
-  font-weight: 600;
-  color: var(--mid);
-  letter-spacing: -.01em;
-  line-height: 1.15;
-  margin-bottom: 6px;
-  display: block;
-  margin-top: 10px;
-}
-.info-phone-secondary a { color: inherit; transition: color .2s; }
-.info-phone-secondary a:hover { color: var(--red); }
+/* ─── STATS ─── */
+.stats { background: var(--red); padding: 52px 20px; }
+.stats-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px 20px; }
+.stat-num { font-family: var(--ff-serif); font-size: 52px; font-weight: 700; color: var(--white); line-height: 1; margin-bottom: 6px; }
+.stat-label { font-size: 13px; font-weight: 400; line-height: 1.5; color: rgba(255,255,255,.65); }
 
-/* Email — Inter, clear */
-.info-email {
-  font-family: var(--ff-sans);
-  font-size: clamp(14px, 3vw, 20px);
-  font-weight: 500;
-  color: var(--ink);
-  display: block;
-  margin-bottom: 6px;
-}
-.info-email a { color: inherit; transition: color .2s; }
-.info-email a:hover { color: var(--red); }
+/* ─── SERVICES ─── */
+.services { background: var(--snow); }
+.services-stack { display: flex; flex-direction: column; gap: 16px; margin-top: 40px; }
+.svc { background: var(--white); border: 1px solid var(--rule); }
+.svc-head { padding: 28px 24px 22px; border-bottom: 1px solid var(--rule); }
+.svc-flag { font-size: 10px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--red); margin-bottom: 8px; }
+.svc-title { font-family: var(--ff-serif); font-size: 26px; font-weight: 600; letter-spacing: -.01em; color: var(--ink); line-height: 1.1; }
+.svc-body { padding: 24px; }
+.svc-desc { font-size: 14px; font-weight: 300; line-height: 1.75; color: var(--mid); margin-bottom: 20px; }
+.svc-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+.svc-list li { display: flex; align-items: flex-start; gap: 12px; font-size: 14px; color: var(--ink); line-height: 1.5; }
+.svc-list li::before { content: ''; width: 14px; height: 1.5px; background: var(--red); flex-shrink: 0; margin-top: 9px; }
 
-/* Address — Cormorant is fine for non-clickable info */
-.info-address {
-  font-family: var(--ff-serif);
-  font-size: clamp(18px, 3.5vw, 28px);
-  font-weight: 600;
-  color: var(--ink);
-  letter-spacing: -.01em;
-  line-height: 1.15;
-  margin-bottom: 6px;
-}
+/* ─── WORK GRID ─── */
+.work { background: var(--white); }
+.work-grid { display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: auto auto; gap: 4px; margin-top: 36px; }
+.wg-item { overflow: hidden; background: var(--snow); }
+.wg-item img { width: 100%; height: 100%; object-fit: cover; aspect-ratio: 1; display: block; transition: transform .6s cubic-bezier(.25,.46,.45,.94); }
+.wg-item:hover img { transform: scale(1.04); }
+.wg-item.tall { grid-row: span 2; }
+.wg-item.tall img { aspect-ratio: auto; height: 100%; }
 
-.info-sub { font-size: 14px; font-weight: 300; line-height: 1.75; color: var(--mid); }
-.info-divider { width: 100%; height: 1px; background: var(--rule); margin: 36px 0; }
+/* ─── PROCESS STRIP ─── */
+.process-strip { background: var(--ink); padding: 52px 20px; }
+.process-quote { font-family: var(--ff-serif); font-size: clamp(22px, 5.5vw, 40px); font-weight: 500; font-style: italic; color: var(--white); line-height: 1.45; margin-bottom: 28px; }
+.process-link { display: inline-flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 500; letter-spacing: .08em; text-transform: uppercase; color: var(--red); border-bottom: 1px solid rgba(190,30,45,.35); padding-bottom: 3px; transition: gap .25s; }
+.process-link:hover { gap: 14px; }
 
-/* Hours table */
-.hours-table { display: flex; flex-direction: column; gap: 0; border: 1px solid var(--rule); }
-.hours-row { display: flex; justify-content: space-between; align-items: center; padding: 14px 18px; border-bottom: 1px solid var(--rule); }
-.hours-row:last-child { border-bottom: none; }
-.hours-day { font-size: 14px; font-weight: 500; color: var(--ink); }
-.hours-time { font-size: 14px; font-weight: 400; color: var(--mid); }
-.hours-closed { font-size: 14px; color: var(--rule); }
+/* ─── REVIEWS — 3 max ─── */
+.reviews { background: var(--snow); }
+.review-grid { display: flex; flex-direction: column; gap: 16px; margin-top: 36px; }
+.review { background: var(--white); border: 1px solid var(--rule); padding: 28px 24px; }
+.review-stars { display: flex; gap: 2px; margin-bottom: 14px; }
+.review-stars span { color: var(--red); font-size: 13px; }
+.review-text { font-size: 15px; font-weight: 300; line-height: 1.75; color: var(--ink); margin-bottom: 18px; }
+.review-meta { display: flex; flex-direction: column; gap: 3px; }
+.review-name { font-size: 12px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--ink); }
+.review-source { font-size: 11px; color: var(--mid); }
 
-/* ── FORM SIDE ── */
-.contact-form-wrap { padding: 52px 20px; background: var(--snow); border-top: 1px solid var(--rule); }
-.form-title { font-family: var(--ff-serif); font-size: clamp(24px, 5vw, 36px); font-weight: 600; letter-spacing: -.01em; color: var(--ink); margin-bottom: 8px; line-height: 1.1; }
-.form-sub { font-size: 14px; font-weight: 300; color: var(--mid); margin-bottom: 36px; line-height: 1.7; }
-.form { display: flex; flex-direction: column; gap: 0; }
-.field { display: flex; flex-direction: column; margin-bottom: 0; border-bottom: 1px solid var(--rule); }
-.field:first-of-type { border-top: 1px solid var(--rule); }
-.field label { font-size: 10px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--red); padding: 14px 0 4px; display: block; }
-.field input, .field select, .field textarea { font-family: var(--ff-sans); font-size: 15px; font-weight: 400; color: var(--ink); background: transparent; border: none; outline: none; padding: 0 0 14px; width: 100%; resize: none; -webkit-appearance: none; appearance: none; }
-.field input::placeholder, .field textarea::placeholder { color: var(--rule); }
-.field select { cursor: pointer; color: var(--ink); }
-.field select option { color: var(--ink); }
-.field textarea { min-height: 100px; line-height: 1.6; }
-.form-row { display: grid; grid-template-columns: 1fr; gap: 0; }
-.form-note { font-size: 13px; color: var(--mid); margin: 20px 0 24px; line-height: 1.7; }
-.btn-submit { display: flex; align-items: center; justify-content: center; gap: 10px; background: var(--red); color: var(--white); font-family: var(--ff-sans); font-size: 15px; font-weight: 500; padding: 17px 32px; border: none; cursor: pointer; transition: background .2s; width: 100%; }
-.btn-submit:hover { background: var(--red-dk); }
+/* ─── CTA ─── */
+.cta-block { background: var(--red); padding: 72px 20px; text-align: center; }
+.cta-eyebrow { font-size: 11px; font-weight: 500; letter-spacing: .14em; text-transform: uppercase; color: rgba(255,255,255,.55); margin-bottom: 16px; }
+.cta-h2 { font-family: var(--ff-serif); font-size: clamp(30px, 7vw, 56px); font-weight: 600; color: var(--white); letter-spacing: -.02em; line-height: 1.1; margin-bottom: 10px; }
+/* CTA phone — Inter, no serif */
+.cta-phone { display: block; font-family: var(--ff-sans); font-size: clamp(28px, 7vw, 58px); font-weight: 700; color: var(--white); letter-spacing: -.01em; margin-bottom: 10px; line-height: 1.1; }
+.cta-hours { font-size: 13px; color: rgba(255,255,255,.6); margin-bottom: 32px; }
+.cta-divider { width: 40px; height: 1px; background: rgba(255,255,255,.3); margin: 32px auto; }
+.cta-email-label { font-size: 11px; font-weight: 500; letter-spacing: .12em; text-transform: uppercase; color: rgba(255,255,255,.45); margin-bottom: 8px; }
+.cta-email { font-size: 15px; font-weight: 400; color: rgba(255,255,255,.85); border-bottom: 1px solid rgba(255,255,255,.3); padding-bottom: 2px; display: inline-block; transition: color .2s; }
+.cta-email:hover { color: var(--white); }
+.cta-address { font-size: 12px; color: rgba(255,255,255,.4); margin-top: 20px; line-height: 1.6; }
 
-/* mailto notice */
-.mailto-notice {
-  font-size: 13px;
-  font-weight: 400;
-  color: var(--mid);
-  line-height: 1.6;
-  padding: 16px 0 0;
-  border-top: 1px solid var(--rule);
-  margin-top: 16px;
-}
-.mailto-notice strong { color: var(--ink); font-weight: 600; }
-
-/* Success state */
-.form-success { display: none; padding: 32px 24px; border: 1px solid var(--rule); background: var(--white); text-align: center; }
-.form-success.show { display: block; }
-.success-icon { font-size: 32px; margin-bottom: 16px; }
-.success-title { font-family: var(--ff-serif); font-size: 26px; font-weight: 600; color: var(--ink); margin-bottom: 10px; }
-.success-sub { font-size: 14px; font-weight: 300; color: var(--mid); line-height: 1.7; }
-
-/* ── AREA STRIP ── */
-.area-strip { background: var(--ink); padding: 52px 20px; }
-.area-h2 { font-family: var(--ff-serif); font-size: clamp(26px, 5.5vw, 44px); font-weight: 600; color: var(--white); letter-spacing: -.02em; line-height: 1.1; margin-bottom: 8px; }
-.area-h2 em { font-style: italic; color: var(--red); }
-.area-sub { font-size: 14px; font-weight: 300; color: rgba(255,255,255,.45); margin-bottom: 40px; line-height: 1.75; max-width: 480px; }
-.area-cols { display: flex; flex-direction: column; gap: 32px; }
-.area-col-title { font-size: 10px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: rgba(255,255,255,.3); margin-bottom: 16px; }
-.city-tags { display: flex; flex-wrap: wrap; gap: 8px; }
-.city-tag { font-size: 12px; font-weight: 400; color: rgba(255,255,255,.5); padding: 6px 14px; border: 1px solid rgba(255,255,255,.1); transition: border-color .2s, color .2s; }
-.city-tag:hover { color: rgba(255,255,255,.85); border-color: rgba(255,255,255,.3); }
-.city-tag.base { border-color: var(--red); color: rgba(255,255,255,.8); }
-
-/* ── MAP ── */
-.map-section { background: var(--snow); padding: 0; }
-.map-embed { width: 100%; height: 320px; border: 0; display: block; filter: grayscale(20%); }
-.map-label { padding: 20px; background: var(--snow); border-top: 1px solid var(--rule); display: flex; flex-direction: column; gap: 4px; }
-.map-label-title { font-size: 13px; font-weight: 600; color: var(--ink); }
-.map-label-addr { font-size: 13px; font-weight: 300; color: var(--mid); }
-
-/* ── FOOTER ── */
+/* ─── FOOTER ─── */
 footer { background: var(--ink); padding: 52px 20px 36px; }
-.footer-logo-wrap { height: 34px; margin-bottom: 32px; display: flex; align-items: center; }
-.footer-logo-wrap svg { height: 34px; width: auto; }
-/* Keep original brand colors in footer — NOT white */
-.footer-logo-wrap .fst0 { fill: #BE1E2D; }
-.footer-logo-wrap .fst1 { fill: #726658; }
-
+.footer-logo-wrap { height: 36px; margin-bottom: 32px; display: flex; align-items: center; }
+.footer-logo-wrap .logo-img { height: 36px; width: auto; }
 .footer-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 32px 20px; margin-bottom: 40px; }
 .footer-col-title { font-size: 10px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: rgba(255,255,255,.3); margin-bottom: 14px; }
 .footer-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
@@ -222,168 +184,311 @@ footer { background: var(--ink); padding: 52px 20px 36px; }
 .footer-addr { font-style: normal; font-size: 13px; line-height: 1.75; color: rgba(255,255,255,.45); }
 .footer-bottom { border-top: 1px solid rgba(255,255,255,.08); padding-top: 24px; display: flex; flex-direction: column; gap: 10px; }
 .footer-copy { font-size: 11px; color: rgba(255,255,255,.25); }
-.footer-seo { font-size: 11px; line-height: 1.7; color: rgba(255,255,255,.15); }
+.footer-seo { font-size: 11px; line-height: 1.7; color: rgba(255,255,255,.18); }
 
-/* ── STICKY BAR ── */
+/* ─── STICKY BAR ─── */
 .sticky-bar { position: fixed; bottom: 0; left: 0; right: 0; z-index: 300; display: grid; grid-template-columns: 1fr 1fr; height: 60px; box-shadow: 0 -2px 16px rgba(0,0,0,.12); }
-.sticky-bar a { display: flex; align-items: center; justify-content: center; gap: 7px; font-size: 14px; font-weight: 600; }
-.sb-call { background: var(--red); color: var(--white); border-right: 1px solid rgba(255,255,255,.2); }
-.sb-email { background: var(--ink); color: var(--white); }
+.sticky-bar a { display: flex; align-items: center; justify-content: center; gap: 7px; font-size: 14px; font-weight: 600; letter-spacing: .01em; }
+.sticky-bar .sb-call { background: var(--red); color: var(--white); border-right: 1px solid rgba(255,255,255,.25); }
+.sticky-bar .sb-email { background: var(--ink); color: var(--white); }
+.sticky-bar .sb-icon { font-size: 16px; line-height: 1; }
 
-/* ── REVEAL ── */
+/* ─── REVEAL ─── */
 .reveal { opacity: 0; transform: translateY(22px); transition: opacity .75s cubic-bezier(.25,.46,.45,.94), transform .75s cubic-bezier(.25,.46,.45,.94); }
 .reveal.in { opacity: 1; transform: translateY(0); }
-.reveal-d1 { transition-delay: .1s; }
-.reveal-d2 { transition-delay: .2s; }
+.reveal-d1 { transition-delay: .1s; } .reveal-d2 { transition-delay: .2s; } .reveal-d3 { transition-delay: .3s; }
 
-/* ── DESKTOP ── */
+/* ─── DESKTOP ─── */
 @media (min-width: 768px) {
   body { padding-bottom: 0; }
   .sticky-bar { display: none; }
   .nav { height: 72px; padding: 0 48px; }
-  .nav-logo-wrap { height: 48px; }
-  .nav-logo-wrap svg { height: 48px; }
+  .nav-logo-wrap { height: 48px; } .logo-img { height: 48px; }
   .nav-links { display: flex; }
   .nav-btn { display: block; }
-  .page-hero { margin-top: 72px; padding: 100px 48px 80px; }
-  .contact-body { display: grid; grid-template-columns: 1fr 1fr; align-items: start; }
-  .contact-info { padding: 80px 48px; border-right: 1px solid var(--rule); }
-  .contact-form-wrap { padding: 80px 48px; border-top: none; }
-  .form-row { grid-template-columns: 1fr 1fr; gap: 0; }
-  .form-row .field { border-right: 1px solid var(--rule); }
-  .form-row .field:last-child { border-right: none; }
-  .area-strip { padding: 80px 48px; }
-  .area-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
-  .map-embed { height: 420px; }
-  .map-label { flex-direction: row; align-items: center; justify-content: space-between; padding: 20px 48px; }
+  .hero { margin-top: 72px; min-height: calc(100svh - 72px); min-height: calc(100vh - 72px); }
+  .hero-photo { object-position: 70% 15%; }
+  .hero-wash { background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,.97) 40%, rgba(255,255,255,.7) 60%, rgba(255,255,255,.15) 100%), linear-gradient(to top, rgba(255,255,255,.6) 0%, transparent 30%); }
+  .hero-body { padding: 80px 48px 100px; max-width: 620px; }
+  .hero-actions { flex-direction: row; gap: 20px; }
+  .trust { padding: 18px 48px; }
+  .trust-row { flex-wrap: nowrap; gap: 32px; }
+  .section { padding: 100px 48px; }
+  .commercial-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
+  .commercial-photo { margin-top: 0; aspect-ratio: 3/4; }
+  .pm-cards { margin-top: 0; }
+  .stats { padding: 64px 48px; }
+  .stats-grid { grid-template-columns: repeat(4, 1fr); gap: 0; }
+  .stat { padding: 0 36px; border-right: 1px solid rgba(255,255,255,.18); }
+  .stat:first-child { padding-left: 0; }
+  .stat:last-child { border-right: none; padding-right: 0; }
+  .services-stack { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 40px; }
+  .work-grid { grid-template-columns: 2fr 1fr 1fr; grid-template-rows: 280px 200px; gap: 6px; }
+  .wg-item img { aspect-ratio: auto; }
+  .wg-item.tall img { height: 100%; }
+  .process-strip { padding: 80px 48px; display: flex; align-items: center; justify-content: space-between; gap: 60px; }
+  .process-quote { margin-bottom: 0; max-width: 540px; }
+  /* 3 reviews in a row on desktop */
+  .review-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; flex-direction: unset; }
+  .cta-block { padding: 100px 48px; }
   footer { padding: 72px 48px 40px; }
+  .footer-logo-wrap .logo-img { height: 36px; }
   .footer-cols { grid-template-columns: 2fr 1fr 1fr 1fr; gap: 0 60px; margin-bottom: 48px; }
   .footer-bottom { flex-direction: row; justify-content: space-between; align-items: flex-end; }
-}
-
-@media (min-width: 1200px) {
-  .nav { padding: 0 80px; }
-  .page-hero { padding: 120px 80px 100px; }
-  .contact-info { padding: 100px 80px; }
-  .contact-form-wrap { padding: 100px 80px; }
-  .area-strip { padding: 100px 80px; }
-  footer { padding: 80px 80px 48px; }
-}
-
-/* ── HAMBURGER & MOBILE NAV ── */
-.nav-hamburger { display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 5px; width: 40px; height: 40px; background: none; border: none; cursor: pointer; padding: 8px; flex-shrink: 0; z-index: 210; }
-.nav-hamburger span { display: block; width: 22px; height: 1.5px; background: var(--ink); transition: transform 0.35s cubic-bezier(0.16,1,0.3,1), opacity 0.25s ease; transform-origin: center; }
-.nav-hamburger.open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
-.nav-hamburger.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
-.nav-hamburger.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
-
-.mobile-nav { position: fixed; inset: 0; z-index: 205; background: var(--white); transform: translateX(100%); transition: transform 0.45s cubic-bezier(0.16,1,0.3,1); overflow-y: auto; -webkit-overflow-scrolling: touch; }
-.mobile-nav.open { transform: translateX(0); }
-.mobile-nav-inner { display: flex; flex-direction: column; min-height: 100%; padding: 0 24px 52px; }
-.mobile-nav-top { height: 60px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--rule); flex-shrink: 0; }
-.mobile-nav-logo-wrap { display: flex; align-items: center; height: 34px; }
-.mobile-nav-logo-wrap svg { height: 34px; width: auto; }
-.mobile-nav-close { width: 40px; height: 40px; background: none; border: none; cursor: pointer; font-size: 20px; color: var(--mid); display: flex; align-items: center; justify-content: center; transition: color .2s; }
-.mobile-nav-close:hover { color: var(--ink); }
-.mobile-nav-links { list-style: none; display: flex; flex-direction: column; gap: 0; flex: 1; padding-top: 4px; }
-.mobile-nav-links li { border-bottom: 1px solid var(--rule); }
-.mobile-nav-links li a { display: block; font-family: var(--ff-serif); font-size: clamp(30px, 9vw, 42px); font-weight: 600; letter-spacing: -.02em; color: var(--ink); padding: 16px 0; line-height: 1.15; transition: color .2s; }
-.mobile-nav-links li a:hover, .mobile-nav-links li a.m-active { color: var(--red); }
-.mobile-nav-bottom { padding-top: 32px; margin-top: auto; }
-
-/* Mobile nav phone — Inter, legible */
-.mobile-nav-tel {
-  font-family: var(--ff-sans);
-  font-size: clamp(22px, 6vw, 30px);
-  font-weight: 700;
-  color: var(--red);
-  letter-spacing: -.01em;
-  display: block;
-  margin-bottom: 6px;
-  line-height: 1.1;
-}
-.mobile-nav-hours { font-size: 12px; color: var(--mid); margin-bottom: 22px; }
-.mobile-nav-cta { display: block; background: var(--red); color: var(--white); font-size: 14px; font-weight: 500; padding: 15px 24px; text-align: center; transition: background .2s; }
-.mobile-nav-cta:hover { background: var(--red-dk); }
-
-@media (min-width: 768px) {
   .nav-hamburger { display: none; }
   .mobile-nav { display: none !important; }
 }
+@media (min-width: 1200px) {
+  .nav { padding: 0 80px; } .section { padding: 120px 80px; }
+  .trust { padding: 18px 80px; } .stats { padding: 72px 80px; }
+  .process-strip { padding: 100px 80px; } .cta-block { padding: 120px 80px; }
+  footer { padding: 80px 80px 48px; } .hero-body { padding: 100px 80px 120px; }
+}
+</style>
+<style>
+  /* ─── PAGE HERO (no photo) ─── */
+  .page-hero { margin-top: 60px; padding: 72px 20px 56px; background: var(--white); border-bottom: 1px solid var(--rule); }
+  .page-h1 { font-family: var(--ff-serif); font-size: clamp(40px, 10vw, 82px); font-weight: 600; line-height: 1.03; letter-spacing: -.02em; color: var(--ink); margin-bottom: 18px; }
+  .page-h1 em { font-style: italic; color: var(--red); }
+  .page-sub { font-size: 16px; font-weight: 300; line-height: 1.75; color: var(--mid); max-width: 480px; }
+  /* ─── PM INTRO ─── */
+  .hero { position: relative; margin-top: 60px; min-height: calc(100svh - 60px); min-height: calc(100vh - 60px); display: flex; flex-direction: column; justify-content: flex-end; overflow: hidden; background: var(--ink); }
+  .hero-photo { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 40%; opacity: .8; }
+  .hero-wash { position: absolute; inset: 0; background: linear-gradient(to top, rgba(255,255,255,1) 0%, rgba(255,255,255,.97) 22%, rgba(255,255,255,.72) 45%, rgba(255,255,255,.18) 70%, transparent 100%); }
+  .hero-body { position: relative; z-index: 2; padding: 48px 20px 52px; }
+  .hero-h1 { font-family: var(--ff-serif); font-size: clamp(40px, 10vw, 86px); font-weight: 600; line-height: 1.03; letter-spacing: -.02em; color: var(--ink); margin-bottom: 22px; max-width: 680px; }
+  .hero-h1 em { font-style: italic; color: var(--red); }
+  .hero-desc { font-size: 16px; font-weight: 300; line-height: 1.75; color: var(--mid); max-width: 480px; margin-bottom: 36px; }
+  .hero-actions { display: flex; flex-direction: column; gap: 14px; align-items: flex-start; }
+  .pm-intro { background: var(--white); }
+  .pm-inner { display: flex; flex-direction: column; gap: 40px; }
+  .pm-photo { aspect-ratio: 16/9; overflow: hidden; }
+  .pm-photo img { width: 100%; height: 100%; object-fit: cover; }
+  /* WHY US */
+  .why-us { background: var(--snow); }
+  .why-table { margin-top: 40px; border: 1px solid var(--rule); display: flex; flex-direction: column; }
+  .why-row { display: grid; grid-template-columns: 48px 1fr; gap: 0; padding: 28px 24px; border-bottom: 1px solid var(--rule); align-items: start; }
+  .why-row:last-child { border-bottom: none; }
+  .why-num { font-family: var(--ff-serif); font-size: 32px; font-weight: 700; color: var(--rule); line-height: 1; padding-top: 2px; transition: color .3s; }
+  .why-row:hover .why-num { color: var(--red); }
+  .why-title { font-family: var(--ff-serif); font-size: 20px; font-weight: 600; color: var(--ink); margin-bottom: 8px; letter-spacing: -.01em; }
+  .why-desc { font-size: 14px; font-weight: 300; line-height: 1.75; color: var(--mid); }
+  /* SVC CARDS */
+  .comm-services { background: var(--white); }
+  .svc-cards { display: flex; flex-direction: column; gap: 2px; margin-top: 40px; }
+  .svc-card { background: var(--snow); border: 1px solid var(--rule); padding: 32px 28px; }
+  .svc-flag { font-size: 10px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--red); margin-bottom: 10px; }
+  .svc-card .svc-title { font-family: var(--ff-serif); font-size: clamp(22px, 4vw, 32px); font-weight: 600; color: var(--ink); margin-bottom: 14px; letter-spacing: -.01em; line-height: 1.1; }
+  .svc-desc { font-size: 14px; font-weight: 300; line-height: 1.75; color: var(--mid); margin-bottom: 20px; }
+  .svc-list { list-style: none; display: flex; flex-direction: column; gap: 9px; }
+  .svc-list li { display: flex; align-items: flex-start; gap: 12px; font-size: 14px; color: var(--ink); line-height: 1.5; }
+  .svc-list li::before { content: ''; width: 14px; height: 1.5px; background: var(--red); flex-shrink: 0; margin-top: 9px; }
+  /* APARTMENT DEEP DIVE */
+  .apt-section { background: var(--ink); padding: 72px 20px; }
+  .apt-h2 { font-family: var(--ff-serif); font-size: clamp(28px, 6vw, 52px); font-weight: 600; color: var(--white); letter-spacing: -.02em; line-height: 1.1; margin-bottom: 20px; }
+  .apt-h2 em { font-style: italic; color: var(--red); }
+  .apt-body { font-size: 15px; font-weight: 300; line-height: 1.8; color: rgba(255,255,255,.55); margin-bottom: 40px; max-width: 560px; }
+  .apt-points { display: flex; flex-direction: column; gap: 0; border-top: 1px solid rgba(255,255,255,.1); }
+  .apt-point { padding: 22px 0; border-bottom: 1px solid rgba(255,255,255,.08); display: grid; grid-template-columns: 28px 1fr; gap: 0 18px; align-items: start; }
+  .apt-check { color: var(--red); font-size: 14px; font-weight: 600; padding-top: 1px; }
+  .apt-point-title { font-size: 15px; font-weight: 500; color: var(--white); margin-bottom: 6px; }
+  .apt-point-desc { font-size: 13px; font-weight: 300; line-height: 1.7; color: rgba(255,255,255,.45); }
+  /* AREAS */
+  .areas { background: var(--snow); }
+  .areas-intro { font-size: 15px; font-weight: 300; line-height: 1.8; color: var(--mid); max-width: 560px; margin-bottom: 48px; }
+  .areas-counties { display: flex; flex-direction: column; gap: 32px; }
+  .county-block { border: 1px solid var(--rule); background: var(--white); }
+  .county-head { padding: 18px 24px; border-bottom: 1px solid var(--rule); display: flex; align-items: center; justify-content: space-between; background: var(--snow); }
+  .county-name { font-family: var(--ff-serif); font-size: 20px; font-weight: 600; letter-spacing: -.01em; color: var(--ink); }
+  .county-tag { font-size: 10px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--red); }
+  .county-cities { padding: 20px 24px; display: grid; grid-template-columns: 1fr 1fr; gap: 10px 16px; }
+  .city-item { display: flex; align-items: center; gap: 10px; font-size: 13px; color: var(--ink); }
+  .city-item::before { content: ''; width: 5px; height: 5px; border-radius: 50%; background: var(--rule); flex-shrink: 0; transition: background .2s; }
+  .city-item.home::before { background: var(--red); }
+  .county-note { padding: 14px 24px; border-top: 1px solid var(--rule); font-size: 12px; color: var(--mid); font-style: italic; }
+  /* PROCESS (residential) */
+  .process-section { background: var(--snow); }
+  .process-steps { margin-top: 48px; display: flex; flex-direction: column; gap: 0; }
+  .process-step { display: grid; grid-template-columns: 56px 1fr; gap: 0 24px; padding: 32px 0; border-bottom: 1px solid var(--rule); align-items: start; }
+  .process-step:last-child { border-bottom: none; }
+  .step-num { font-family: var(--ff-serif); font-size: 48px; font-weight: 700; color: var(--rule); line-height: 1; padding-top: 2px; transition: color .3s; }
+  .process-step:hover .step-num { color: var(--red); }
+  .step-title { font-family: var(--ff-serif); font-size: 22px; font-weight: 600; letter-spacing: -.01em; color: var(--ink); margin-bottom: 10px; line-height: 1.1; }
+  .step-desc { font-size: 14px; font-weight: 300; line-height: 1.75; color: var(--mid); }
+  /* SVC DETAIL ROW (residential) */
+  .svc-detail { background: var(--white); }
+  .svc-grid { display: flex; flex-direction: column; gap: 0; margin-top: 48px; border: 1px solid var(--rule); }
+  .svc-row { display: grid; grid-template-columns: 1fr; border-bottom: 1px solid var(--rule); }
+  .svc-row:last-child { border-bottom: none; }
+  .svc-row-inner { padding: 32px 24px; }
+  .svc-row-photo { overflow: hidden; background: var(--snow); min-height: 200px; }
+  .svc-row-photo img { width: 100%; height: 100%; object-fit: cover; min-height: 200px; transition: transform .6s cubic-bezier(.25,.46,.45,.94); }
+  .svc-row:hover .svc-row-photo img { transform: scale(1.03); }
+  .svc-row-flag { font-size: 10px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--red); margin-bottom: 8px; }
+  .svc-row-title { font-family: var(--ff-serif); font-size: clamp(22px, 5vw, 34px); font-weight: 600; letter-spacing: -.01em; color: var(--ink); margin-bottom: 14px; line-height: 1.1; }
+  .svc-row-desc { font-size: 14px; font-weight: 300; line-height: 1.75; color: var(--mid); margin-bottom: 20px; }
+  .svc-row-list { list-style: none; display: flex; flex-direction: column; gap: 9px; }
+  .svc-row-list li { display: flex; align-items: flex-start; gap: 12px; font-size: 14px; color: var(--ink); line-height: 1.5; }
+  .svc-row-list li::before { content: ''; width: 14px; height: 1.5px; background: var(--red); flex-shrink: 0; margin-top: 9px; }
+  /* SHERWIN STRIP */
+  .sherwin { background: var(--ink); padding: 52px 20px; display: flex; flex-direction: column; gap: 20px; }
+  .sherwin-label { font-size: 11px; font-weight: 500; letter-spacing: .14em; text-transform: uppercase; color: rgba(255,255,255,.35); }
+  .sherwin-text { font-family: var(--ff-serif); font-size: clamp(26px, 5vw, 44px); font-weight: 600; color: var(--white); letter-spacing: -.02em; line-height: 1.1; }
+  .sherwin-text span { color: var(--red); }
+  .sherwin-sub { font-size: 14px; font-weight: 300; line-height: 1.75; color: rgba(255,255,255,.45); max-width: 480px; }
+  /* CONTACT PAGE */
+  .contact-body { display: flex; flex-direction: column; gap: 0; }
+  .contact-info { padding: 52px 20px; background: var(--white); }
+  .info-block { margin-bottom: 44px; }
+  .info-block:last-child { margin-bottom: 0; }
+  .info-label { font-size: 10px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: var(--red); margin-bottom: 14px; }
+  .info-phone { font-family: var(--ff-sans); font-size: clamp(22px, 5vw, 36px); font-weight: 700; color: var(--ink); letter-spacing: -.01em; line-height: 1.15; margin-bottom: 6px; display: block; }
+  .info-phone a { color: inherit; transition: color .2s; }
+  .info-phone a:hover { color: var(--red); }
+  .info-phone-secondary { font-family: var(--ff-sans); font-size: clamp(17px, 3.5vw, 24px); font-weight: 600; color: var(--mid); letter-spacing: -.01em; line-height: 1.15; margin-bottom: 6px; display: block; margin-top: 10px; }
+  .info-phone-secondary a { color: inherit; transition: color .2s; }
+  .info-phone-secondary a:hover { color: var(--red); }
+  .info-email { font-family: var(--ff-sans); font-size: clamp(14px, 3vw, 20px); font-weight: 500; color: var(--ink); display: block; margin-bottom: 6px; }
+  .info-email a { color: inherit; transition: color .2s; }
+  .info-email a:hover { color: var(--red); }
+  .info-address { font-family: var(--ff-serif); font-size: clamp(18px, 3.5vw, 28px); font-weight: 600; color: var(--ink); letter-spacing: -.01em; line-height: 1.15; margin-bottom: 6px; }
+  .info-sub { font-size: 14px; font-weight: 300; line-height: 1.75; color: var(--mid); }
+  .info-divider { width: 100%; height: 1px; background: var(--rule); margin: 36px 0; }
+  .hours-table { display: flex; flex-direction: column; gap: 0; border: 1px solid var(--rule); }
+  .hours-row { display: flex; justify-content: space-between; align-items: center; padding: 14px 18px; border-bottom: 1px solid var(--rule); }
+  .hours-row:last-child { border-bottom: none; }
+  .hours-day { font-size: 14px; font-weight: 500; color: var(--ink); }
+  .hours-time { font-size: 14px; font-weight: 400; color: var(--mid); }
+  .hours-closed { font-size: 14px; color: var(--rule); }
+  .contact-form-wrap { padding: 52px 20px; background: var(--snow); border-top: 1px solid var(--rule); }
+  .form-title { font-family: var(--ff-serif); font-size: clamp(24px, 5vw, 36px); font-weight: 600; letter-spacing: -.01em; color: var(--ink); margin-bottom: 8px; line-height: 1.1; }
+  .form-sub { font-size: 14px; font-weight: 300; color: var(--mid); margin-bottom: 36px; line-height: 1.7; }
+  .form { display: flex; flex-direction: column; gap: 0; }
+  .field { display: flex; flex-direction: column; margin-bottom: 0; border-bottom: 1px solid var(--rule); }
+  .field:first-of-type { border-top: 1px solid var(--rule); }
+  .field label { font-size: 10px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--red); padding: 14px 0 4px; display: block; }
+  .field input, .field select, .field textarea { font-family: var(--ff-sans); font-size: 15px; font-weight: 400; color: var(--ink); background: transparent; border: none; outline: none; padding: 0 0 14px; width: 100%; resize: none; -webkit-appearance: none; appearance: none; }
+  .field input::placeholder, .field textarea::placeholder { color: var(--rule); }
+  .field select { cursor: pointer; color: var(--ink); }
+  .field textarea { min-height: 100px; line-height: 1.6; }
+  .form-row { display: grid; grid-template-columns: 1fr; gap: 0; }
+  .form-note { font-size: 13px; color: var(--mid); margin: 20px 0 24px; line-height: 1.7; }
+  .btn-submit { display: flex; align-items: center; justify-content: center; gap: 10px; background: var(--red); color: var(--white); font-family: var(--ff-sans); font-size: 15px; font-weight: 500; padding: 17px 32px; border: none; cursor: pointer; transition: background .2s; width: 100%; }
+  .btn-submit:hover { background: var(--red-dk); }
+  .form-success { display: none; padding: 32px 24px; border: 1px solid var(--rule); background: var(--white); text-align: center; }
+  .form-success.show { display: block; }
+  .success-icon { font-size: 32px; margin-bottom: 16px; }
+  .success-title { font-family: var(--ff-serif); font-size: 26px; font-weight: 600; color: var(--ink); margin-bottom: 10px; }
+  .success-sub { font-size: 14px; font-weight: 300; color: var(--mid); line-height: 1.7; }
+  .area-strip { background: var(--ink); padding: 52px 20px; }
+  .area-h2 { font-family: var(--ff-serif); font-size: clamp(26px, 5.5vw, 44px); font-weight: 600; color: var(--white); letter-spacing: -.02em; line-height: 1.1; margin-bottom: 8px; }
+  .area-h2 em { font-style: italic; color: var(--red); }
+  .area-sub { font-size: 14px; font-weight: 300; color: rgba(255,255,255,.45); margin-bottom: 40px; line-height: 1.75; max-width: 480px; }
+  .area-cols { display: flex; flex-direction: column; gap: 32px; }
+  .area-col-title { font-size: 10px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: rgba(255,255,255,.3); margin-bottom: 16px; }
+  .city-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+  .city-tag { font-size: 12px; font-weight: 400; color: rgba(255,255,255,.5); padding: 6px 14px; border: 1px solid rgba(255,255,255,.1); transition: border-color .2s, color .2s; }
+  .city-tag.base { border-color: var(--red); color: rgba(255,255,255,.8); }
+  .map-section { background: var(--snow); padding: 0; }
+  .map-embed { width: 100%; height: 320px; border: 0; display: block; filter: grayscale(20%); }
+  .map-label { padding: 20px; background: var(--snow); border-top: 1px solid var(--rule); display: flex; flex-direction: column; gap: 4px; }
+  .map-label-title { font-size: 13px; font-weight: 600; color: var(--ink); }
+  .map-label-addr { font-size: 13px; font-weight: 300; color: var(--mid); }
+  /* DESKTOP overrides for inner pages */
+  @media (min-width: 768px) {
+    .page-hero { margin-top: 72px; padding: 100px 48px 80px; }
+    .pm-inner { flex-direction: row; gap: 80px; align-items: start; }
+    .pm-photo { flex: 0 0 45%; aspect-ratio: 3/4; order: 2; }
+    .pm-text { flex: 1; order: 1; }
+    .why-table { max-width: 680px; }
+    .svc-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .apt-section { padding: 100px 48px; }
+    .apt-points { display: grid; grid-template-columns: 1fr 1fr; gap: 0 40px; }
+    .areas-counties { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+    .county-cities { grid-template-columns: 1fr 1fr 1fr; }
+    .contact-body { display: grid; grid-template-columns: 1fr 1fr; align-items: start; }
+    .contact-info { padding: 80px 48px; border-right: 1px solid var(--rule); }
+    .contact-form-wrap { padding: 80px 48px; border-top: none; }
+    .form-row { grid-template-columns: 1fr 1fr; gap: 0; }
+    .form-row .field { border-right: 1px solid var(--rule); }
+    .form-row .field:last-child { border-right: none; }
+    .area-strip { padding: 80px 48px; }
+    .area-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+    .map-embed { height: 420px; }
+    .map-label { flex-direction: row; align-items: center; justify-content: space-between; padding: 20px 48px; }
+    .sherwin { padding: 72px 48px; flex-direction: row; align-items: center; justify-content: space-between; }
+    .svc-row { grid-template-columns: 1fr 1fr; }
+    .svc-row.reverse { direction: rtl; }
+    .svc-row.reverse > * { direction: ltr; }
+    .svc-row-photo { min-height: 360px; }
+    .svc-row-inner { padding: 48px; display: flex; flex-direction: column; justify-content: center; }
+    .process-steps { max-width: 700px; }
+  }
+  @media (min-width: 1200px) {
+    .page-hero { padding: 120px 80px 100px; }
+    .contact-info { padding: 100px 80px; }
+    .contact-form-wrap { padding: 100px 80px; }
+    .area-strip { padding: 100px 80px; }
+    .apt-section { padding: 120px 80px; }
+  }
 </style>
 </head>
-
 <body>
-
-<nav class="nav" id="nav">
-  <a href="/" class="nav-logo-wrap" aria-label="Lunar Painting Home">
-    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" xml:space="preserve" aria-hidden="true">
-      <style>.st0{fill:#BE1E2D}.st1{fill:#726658}.st2{fill:#939598}</style>
-      <polygon class="st0" points="132.3,402.6 236.6,315.4 343.3,335.5 508.8,262.8 659.3,411.5 643.8,411.5 508.8,284.4 349.5,391.1 236.2,335.1"/>
-      <path class="st1" d="M390,300.4V147.1l-76.7-48v217.2l28.4,5.4L390,300.4z M478.3,15.1l-76.7,30.7v249.6l76.7-33.7V15.1z M299.9,313.8V13.2l-67.1,90.2v198l0.2-0.1L299.9,313.8z M399.9,410.2c-139.2,0-260.3,15.2-322.6,37.7c82.8-14.7,196.8-23.9,322.6-23.9s239.8,9.1,322.6,23.9C660.3,425.5,539.1,410.2,399.9,410.2z"/>
-    </svg>
+<nav class="nav" id="nav" role="navigation" aria-label="Main">
+  <a href="index.html" class="nav-logo-wrap" aria-label="Lunar Painting Home">
+    <img src="https://raw.githubusercontent.com/39056mezas-prog/MG39056/main/lunarpaintinglogo.svg" alt="Lunar Painting" class="logo-img" />
   </a>
-
   <div class="nav-right">
-    <ul class="nav-links">
-      <li><a href="/commercial">Commercial</a></li>
-      <li><a href="/residential">Residential</a></li>
-      <li><a href="/">Our Work</a></li>
-      <li><a href="/contact" class="active">Contact</a></li>
+    <ul class="nav-links" role="list">
+      <li><a href="commercial.html">Commercial</a></li>
+      <li><a href="residential.html">Residential</a></li>
+      <li><a href="index.html#work">Our Work</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
     </ul>
     <button class="nav-hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-nav">
       <span></span><span></span><span></span>
     </button>
-    <a href="tel:+19494468578" class="nav-tel">+1 (949) 446-8578</a>
+    <a href="tel:+19494468578" class="nav-tel">(949) 446-8578</a>
     <a href="#form" class="nav-btn">Get a Quote</a>
   </div>
 </nav>
-
-<!-- MOBILE NAV -->
 <div class="mobile-nav" id="mobile-nav" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Site navigation">
   <div class="mobile-nav-inner">
     <div class="mobile-nav-top">
-      <a href="/" class="mobile-nav-logo-wrap" aria-label="Lunar Painting — Home">
-        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" xml:space="preserve" aria-hidden="true">
-          <polygon style="fill:#BE1E2D" points="132.3,402.6 236.6,315.4 343.3,335.5 508.8,262.8 659.3,411.5 643.8,411.5 508.8,284.4 349.5,391.1 236.2,335.1"/>
-          <path style="fill:#726658" d="M390,300.4V147.1l-76.7-48v217.2l28.4,5.4L390,300.4z M478.3,15.1l-76.7,30.7v249.6l76.7-33.7V15.1z M299.9,313.8V13.2l-67.1,90.2v198l0.2-0.1L299.9,313.8z M399.9,410.2c-139.2,0-260.3,15.2-322.6,37.7c82.8-14.7,196.8-23.9,322.6-23.9s239.8,9.1,322.6,23.9C660.3,425.5,539.1,410.2,399.9,410.2z"/>
-        </svg>
+      <a href="index.html" class="mobile-nav-logo-wrap" aria-label="Lunar Painting — Home">
+        <img src="https://raw.githubusercontent.com/39056mezas-prog/MG39056/main/lunarpaintinglogo.svg" alt="Lunar Painting" class="logo-img" />
       </a>
       <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Close navigation">&#10005;</button>
     </div>
     <ul class="mobile-nav-links">
-      <li><a href="/">Home</a></li>
-      <li><a href="/commercial">Commercial</a></li>
-      <li><a href="/residential">Residential</a></li>
-      <li><a href="/">Our Work</a></li>
-      <li><a href="/contact" class="m-active">Contact</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="commercial.html">Commercial</a></li>
+      <li><a href="residential.html">Residential</a></li>
+      <li><a href="index.html#work">Our Work</a></li>
+      <li><a href="contact.html" class="m-active">Contact</a></li>
     </ul>
     <div class="mobile-nav-bottom">
-      <a href="tel:+19494468578" class="mobile-nav-tel">+1 (949) 446-8578</a>
-      <p class="mobile-nav-hours">Mon – Fri &nbsp;&middot;&nbsp; 8:00 AM – 5:00 PM</p>
+      <a href="tel:+19494468578" class="mobile-nav-tel">(949) 446-8578</a>
+      <p class="mobile-nav-hours">Mon &ndash; Fri &nbsp;&middot;&nbsp; 8:00 AM &ndash; 5:00 PM</p>
       <a href="#form" class="mobile-nav-cta">Request a Free Estimate &rarr;</a>
     </div>
   </div>
 </div>
 
-<!-- PAGE HERO -->
 <div class="page-hero">
   <p class="eyebrow">Get in Touch</p>
   <h1 class="page-h1">Let's talk about<br>your <em>project.</em></h1>
   <p class="page-sub">We respond to all inquiries within one business day. For faster service, call us directly — we pick up.</p>
 </div>
 
-<!-- CONTACT BODY -->
 <div class="contact-body">
-
-  <!-- INFO SIDE -->
   <div class="contact-info">
 
     <div class="info-block reveal">
       <div class="info-label">Call Us</div>
-      <span class="info-phone"><a href="tel:+19494468578">+1 (949) 446-8578</a></span>
+      <span class="info-phone"><a href="tel:+19494468578">(949) 446-8578</a></span>
       <div class="info-sub">Primary line — call or text</div>
-      <span class="info-phone-secondary"><a href="tel:+19496525024">+1 (949) 652-5024</a></span>
+      <span class="info-phone-secondary"><a href="tel:+19496525024">(949) 652-5024</a></span>
       <div class="info-sub">Secondary line</div>
     </div>
 
@@ -420,72 +525,47 @@ footer { background: var(--ink); padding: 52px 20px 36px; }
 
   </div>
 
-  <!-- FORM SIDE -->
   <div class="contact-form-wrap" id="form">
     <h2 class="form-title reveal">Request an estimate.</h2>
-    <p class="form-sub reveal reveal-d1">Fill this out and your email app will open with everything pre-filled — just hit send. For commercial projects, we'll schedule a site walk before quoting.</p>
+    <p class="form-sub reveal reveal-d1">Fill this out and your email app will open with everything pre-filled — just hit send.</p>
 
     <div class="form-success" id="form-success">
-      <div class="success-icon">✓</div>
+      <div class="success-icon">&#10003;</div>
       <div class="success-title">Your email app is opening.</div>
-      <p class="success-sub">A pre-filled email is ready to send to lunarpainting1@gmail.com. Just hit send in your email app. For faster service, call <a href="tel:+19494468578" style="color:var(--red)">+1 (949) 446-8578</a>.</p>
+      <p class="success-sub">A pre-filled email is ready to send to lunarpainting1@gmail.com. For faster service, call <a href="tel:+19494468578" style="color:var(--red)">(949) 446-8578</a>.</p>
     </div>
 
     <form class="form reveal reveal-d1" id="contact-form" novalidate>
       <div class="form-row">
-        <div class="field">
-          <label for="fname">First Name</label>
-          <input type="text" id="fname" name="fname" placeholder="Jane" autocomplete="given-name" required />
-        </div>
-        <div class="field">
-          <label for="lname">Last Name</label>
-          <input type="text" id="lname" name="lname" placeholder="Smith" autocomplete="family-name" required />
-        </div>
+        <div class="field"><label for="fname">First Name</label><input type="text" id="fname" name="fname" placeholder="Jane" autocomplete="given-name" required /></div>
+        <div class="field"><label for="lname">Last Name</label><input type="text" id="lname" name="lname" placeholder="Smith" autocomplete="family-name" required /></div>
       </div>
-      <div class="field">
-        <label for="phone">Phone Number</label>
-        <input type="tel" id="phone" name="phone" placeholder="+1 (949) 555-0000" autocomplete="tel" required />
-      </div>
-      <div class="field">
-        <label for="email">Email Address</label>
-        <input type="email" id="email" name="email" placeholder="jane@email.com" autocomplete="email" required />
-      </div>
+      <div class="field"><label for="phone">Phone Number</label><input type="tel" id="phone" name="phone" placeholder="(949) 555-0000" autocomplete="tel" required /></div>
+      <div class="field"><label for="email">Email Address</label><input type="email" id="email" name="email" placeholder="jane@email.com" autocomplete="email" required /></div>
       <div class="field">
         <label for="service">Type of Project</label>
         <select id="service" name="service" required>
-          <option value="" disabled selected>Select one…</option>
-          <option value="commercial-apartment">Commercial — Apartment Complex</option>
-          <option value="commercial-hoa">Commercial — HOA / Community</option>
-          <option value="commercial-office">Commercial — Office / Retail</option>
-          <option value="residential-interior">Residential — Interior</option>
-          <option value="residential-exterior">Residential — Exterior</option>
-          <option value="residential-both">Residential — Interior &amp; Exterior</option>
+          <option value="" disabled selected>Select one&hellip;</option>
+          <option value="commercial-apartment">Commercial &mdash; Apartment Complex</option>
+          <option value="commercial-hoa">Commercial &mdash; HOA / Community</option>
+          <option value="commercial-office">Commercial &mdash; Office / Retail</option>
+          <option value="residential-interior">Residential &mdash; Interior</option>
+          <option value="residential-exterior">Residential &mdash; Exterior</option>
+          <option value="residential-both">Residential &mdash; Interior &amp; Exterior</option>
           <option value="other">Other / Not sure yet</option>
         </select>
       </div>
-      <div class="field">
-        <label for="city">City / Property Location</label>
-        <input type="text" id="city" name="city" placeholder="Laguna Hills, Irvine, Mission Viejo…" />
-      </div>
-      <div class="field">
-        <label for="message">Tell us about the project</label>
-        <textarea id="message" name="message" placeholder="Approximate size, timeline, any specific needs…"></textarea>
-      </div>
-
-      <p class="form-note">
-        Pressing "Send Estimate Request" will open your email app with everything pre-filled.<br>
-        Just review and hit send — no account or login needed.<br><br>
-        Prefer to call? Reach us at <a href="tel:+19494468578" style="color:var(--red);font-weight:500">+1 (949) 446-8578</a>.
-      </p>
-      <button type="submit" class="btn-submit">Send Estimate Request →</button>
+      <div class="field"><label for="city">City / Property Location</label><input type="text" id="city" name="city" placeholder="Laguna Hills, Irvine, Mission Viejo&hellip;" /></div>
+      <div class="field"><label for="message">Tell us about the project</label><textarea id="message" name="message" placeholder="Approximate size, timeline, any specific needs&hellip;"></textarea></div>
+      <p class="form-note">Pressing &ldquo;Send Estimate Request&rdquo; will open your email app with everything pre-filled. Just review and hit send.<br><br>Prefer to call? <a href="tel:+19494468578" style="color:var(--red);font-weight:500">(949) 446-8578</a></p>
+      <button type="submit" class="btn-submit">Send Estimate Request &rarr;</button>
     </form>
   </div>
 </div>
 
-<!-- AREAS SERVED -->
 <section class="area-strip" id="areas">
   <h2 class="area-h2 reveal">Painting <em>your neighborhood.</em></h2>
-  <p class="area-sub reveal reveal-d1">Based in Laguna Hills, we serve Orange County and Los Angeles County. Don't see your city? Call us — we likely cover it.</p>
+  <p class="area-sub reveal reveal-d1">Based in Laguna Hills, we serve Orange County and Los Angeles County. Don't see your city? Call us.</p>
   <div class="area-cols reveal reveal-d1">
     <div>
       <div class="area-col-title">Orange County — Primary Area</div>
@@ -493,33 +573,24 @@ footer { background: var(--ink); padding: 52px 20px 36px; }
         <span class="city-tag base">Laguna Hills</span>
         <span class="city-tag">Irvine</span><span class="city-tag">Mission Viejo</span>
         <span class="city-tag">Lake Forest</span><span class="city-tag">Aliso Viejo</span>
-        <span class="city-tag">Laguna Niguel</span><span class="city-tag">Laguna Beach</span>
-        <span class="city-tag">Newport Beach</span><span class="city-tag">Newport Coast</span>
+        <span class="city-tag">Laguna Niguel</span><span class="city-tag">Newport Beach</span>
         <span class="city-tag">Dana Point</span><span class="city-tag">San Clemente</span>
-        <span class="city-tag">San Juan Capistrano</span>
-        <span class="city-tag">Rancho Santa Margarita</span>
-        <span class="city-tag">Coto de Caza</span><span class="city-tag">Foothill Ranch</span>
-        <span class="city-tag">Trabuco Canyon</span><span class="city-tag">Huntington Beach</span>
-        <span class="city-tag">Costa Mesa</span><span class="city-tag">Tustin</span>
-        <span class="city-tag">Orange</span><span class="city-tag">Anaheim Hills</span>
-        <span class="city-tag">Fullerton</span><span class="city-tag">Santa Ana</span>
+        <span class="city-tag">Huntington Beach</span><span class="city-tag">Costa Mesa</span>
+        <span class="city-tag">Tustin</span><span class="city-tag">Orange</span>
       </div>
     </div>
     <div>
       <div class="area-col-title">Los Angeles County — Secondary Area</div>
       <div class="city-tags">
         <span class="city-tag">Long Beach</span><span class="city-tag">Torrance</span>
-        <span class="city-tag">Rancho Palos Verdes</span><span class="city-tag">San Pedro</span>
-        <span class="city-tag">Carson</span><span class="city-tag">Lakewood</span>
-        <span class="city-tag">Cerritos</span><span class="city-tag">Signal Hill</span>
-        <span class="city-tag">La Mirada</span><span class="city-tag">Downey</span>
-        <span class="city-tag">Whittier</span><span class="city-tag">Norwalk</span>
+        <span class="city-tag">Rancho Palos Verdes</span><span class="city-tag">Carson</span>
+        <span class="city-tag">Lakewood</span><span class="city-tag">Cerritos</span>
+        <span class="city-tag">Downey</span><span class="city-tag">Whittier</span>
       </div>
     </div>
   </div>
 </section>
 
-<!-- MAP -->
 <div class="map-section">
   <iframe class="map-embed" title="Lunar Painting — 25255 Cabot Rd, Laguna Hills CA"
     src="https://maps.google.com/maps?q=25255+Cabot+Rd+%23224+Laguna+Hills+CA+92653&output=embed"
@@ -527,47 +598,39 @@ footer { background: var(--ink); padding: 52px 20px 36px; }
   <div class="map-label">
     <div>
       <div class="map-label-title">Lunar Painting</div>
-      <div class="map-label-addr">25255 Cabot Rd, Suite #224 · Laguna Hills, CA 92653</div>
+      <div class="map-label-addr">25255 Cabot Rd, Suite #224 &middot; Laguna Hills, CA 92653</div>
     </div>
-    <a href="https://maps.google.com/?q=25255+Cabot+Rd+Suite+224+Laguna+Hills+CA+92653" target="_blank" rel="noopener" style="font-size:12px;font-weight:500;color:var(--red);white-space:nowrap">Open in Maps →</a>
+    <a href="https://maps.google.com/?q=25255+Cabot+Rd+Suite+224+Laguna+Hills+CA+92653" target="_blank" rel="noopener" style="font-size:12px;font-weight:500;color:var(--red);white-space:nowrap">Open in Maps &rarr;</a>
   </div>
 </div>
 
-<!-- FOOTER -->
 <footer>
   <div class="footer-logo-wrap">
-    <!-- Original brand colors — same as nav logo -->
-    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" xml:space="preserve" aria-label="Lunar Painting">
-      <style>.fst0{fill:#BE1E2D;}.fst1{fill:#726658;}</style>
-      <polygon class="fst0" points="132.3,402.6 236.6,315.4 343.3,335.5 508.8,262.8 659.3,411.5 643.8,411.5 508.8,284.4 349.5,391.1 236.2,335.1"/>
-      <path class="fst1" d="M390,300.4V147.1l-76.7-48v217.2l28.4,5.4L390,300.4z M478.3,15.1l-76.7,30.7v249.6l76.7-33.7V15.1z M299.9,313.8V13.2l-67.1,90.2v198l0.2-0.1L299.9,313.8z M399.9,410.2c-139.2,0-260.3,15.2-322.6,37.7c82.8-14.7,196.8-23.9,322.6-23.9s239.8,9.1,322.6,23.9C660.3,425.5,539.1,410.2,399.9,410.2z"/>
-      <path class="fst0" d="M149.9,478.5c0-8.4,0-9.9,0.1-11.6c0.1-1.9,0.4-2.7,2.1-3c0.6-0.1,1.5-0.1,1.8-0.1c0.2,0,0.4-0.2,0.4-0.4c0-0.3-0.3-0.4-0.9-0.4c-1.7,0-5.9,0.1-6.2,0.1c-0.3,0-3.8-0.1-6.3-0.1c-0.6,0-0.9,0.1-0.9,0.4c0,0.2,0.3,0.4,0.4,0.4c0.5,0,1.5,0.1,1.9,0.1c1.8,0.3,2.2,1.1,2.3,3c0.1,1.7,0.1,3.2,0.1,11.6v9.5c0,5.2,0,9.4-0.3,11.7c-0.3,1.6-0.4,2.6-1.5,2.9c-0.5,0.1-1.2,0.3-1.7,0.3c-0.3,0-0.4,0.3-0.4,0.4c0,0.3,0.3,0.4,0.9,0.4c0.9,0,2.1-0.1,3.2-0.1c1.1-0.1,2-0.1,2.3-0.1c1.6,0,3.6,0.1,6.1,0.1c2.6,0.1,5.7,0.2,9.7,0.2c3,0,3.2-0.2,3.6-1.5c0.4-1.6,0.8-4.8,0.8-5.4c0-0.6-0.1-0.8-0.4-0.8c-0.3,0-0.5,0.3-0.6,0.7c-0.2,1.1-0.6,2.2-1.3,3c-1.3,1.6-3.8,1.6-6.7,1.6c-4.4,0-6.5-0.4-7.4-1.3c-1-1-1.1-4.2-1.1-12.1V478.5"/>
-    </svg>
+    <img src="https://raw.githubusercontent.com/39056mezas-prog/MG39056/main/lunarpaintinglogo.svg" alt="Lunar Painting" class="logo-img" />
   </div>
-
   <div class="footer-cols">
     <div>
       <div class="footer-col-title">Lunar Painting</div>
       <address class="footer-addr">
         25255 Cabot Rd, Suite #224<br>Laguna Hills, CA 92653<br><br>
-        <a href="tel:+19494468578" style="color:inherit;font-family:var(--ff-sans)">+1 (949) 446-8578</a><br>
-        <a href="tel:+19496525024" style="color:inherit;font-family:var(--ff-sans)">+1 (949) 652-5024</a><br>
+        <a href="tel:+19494468578" style="color:inherit;font-family:var(--ff-sans)">(949) 446-8578</a><br>
+        <a href="tel:+19496525024" style="color:inherit;font-family:var(--ff-sans)">(949) 652-5024</a><br>
         <a href="mailto:lunarpainting1@gmail.com" style="color:inherit">lunarpainting1@gmail.com</a>
       </address>
     </div>
     <div>
       <div class="footer-col-title">Services</div>
       <ul class="footer-list">
-        <li><a href="/commercial">Commercial</a></li>
-        <li><a href="/residential">Residential</a></li>
+        <li><a href="commercial.html">Commercial</a></li>
+        <li><a href="residential.html">Residential</a></li>
       </ul>
     </div>
     <div>
       <div class="footer-col-title">Navigate</div>
       <ul class="footer-list">
-        <li><a href="/">Home</a></li>
-        <li><a href="/">Our Work</a></li>
-        <li><a href="/contact">Contact</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#work">Our Work</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </div>
     <div>
@@ -580,135 +643,50 @@ footer { background: var(--ink); padding: 52px 20px 36px; }
       </ul>
     </div>
   </div>
-
   <div class="footer-bottom">
-    <p class="footer-copy">© 2017–2026 Lunar Painting · Laguna Hills, CA</p>
-    <p class="footer-seo">Contact painting contractor Orange County · Painting estimate Laguna Hills CA · Commercial painting quote Orange County · Residential painting estimate Irvine Mission Viejo</p>
+    <p class="footer-copy">&copy; 2017&ndash;2026 Lunar Painting &nbsp;&middot;&nbsp; Laguna Hills, CA</p>
+    <p class="footer-seo">Contact painting contractor Orange County &middot; Painting estimate Laguna Hills CA &middot; Commercial painting quote Orange County &middot; Residential painting estimate Irvine Mission Viejo</p>
   </div>
 </footer>
-
-<div class="sticky-bar">
-  <a href="tel:+19494468578" class="sb-call">📞 Call Now</a>
-  <a href="#form" class="sb-email">✉ Get a Quote</a>
-</div>
-
-<script>
-// ── Clean URL on load ──
-(function() {
-  var path = window.location.pathname;
-  if (path.endsWith('.html')) {
-    history.replaceState(null, '', path.replace('.html', ''));
-  }
+<div class="sticky-bar" role="complementary" aria-label="Quick contact">
+  <a href="tel:+19494468578" class="sb-call"><span class="sb-icon">&#128222;</span> Call Now</a>
+  <a href="#form" class="sb-email"><span class="sb-icon">&#x2709;</span> Get a Quote</a>
+</div><script>
+(function(){ var p=window.location.pathname; if(p.endsWith('.html')) history.replaceState(null,'',p.replace('.html','')); })();
+var nav=document.getElementById('nav');
+window.addEventListener('scroll',function(){ nav.classList.toggle('shadow',window.scrollY>10); },{passive:true});
+var obs=new IntersectionObserver(function(e){ e.forEach(function(x){ if(x.isIntersecting){ x.target.classList.add('in'); obs.unobserve(x.target); } }); },{threshold:0.1,rootMargin:'0px 0px -32px 0px'});
+document.querySelectorAll('.reveal').forEach(function(el){ obs.observe(el); });
+(function(){
+  var btn=document.getElementById('hamburger'),mn=document.getElementById('mobile-nav'),cls=document.getElementById('mobile-nav-close');
+  function openMenu(){ btn.classList.add('open'); mn.classList.add('open'); btn.setAttribute('aria-expanded','true'); mn.setAttribute('aria-hidden','false'); document.body.style.overflow='hidden'; }
+  window.closeMobileNav=function(){ btn.classList.remove('open'); mn.classList.remove('open'); btn.setAttribute('aria-expanded','false'); mn.setAttribute('aria-hidden','true'); document.body.style.overflow=''; };
+  if(btn) btn.addEventListener('click',function(){ btn.classList.contains('open')?closeMobileNav():openMenu(); });
+  if(cls) cls.addEventListener('click',closeMobileNav);
+  document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeMobileNav(); });
 })();
-
-// ── Nav shadow ──
-var nav = document.getElementById('nav');
-window.addEventListener('scroll', function() {
-  nav.classList.toggle('shadow', window.scrollY > 10);
-}, { passive: true });
-
-// ── Scroll reveal ──
-var observer = new IntersectionObserver(function(entries) {
-  entries.forEach(function(x) {
-    if (x.isIntersecting) { x.target.classList.add('in'); observer.unobserve(x.target); }
-  });
-}, { threshold: 0.1, rootMargin: '0px 0px -32px 0px' });
-document.querySelectorAll('.reveal').forEach(function(el) { observer.observe(el); });
-
-// ── Form: builds mailto link and opens user's email app ──
+// Form: builds mailto and opens mail app
 document.getElementById('contact-form').addEventListener('submit', function(e) {
   e.preventDefault();
-  var fname   = document.getElementById('fname').value.trim();
-  var lname   = document.getElementById('lname').value.trim();
-  var phone   = document.getElementById('phone').value.trim();
-  var email   = document.getElementById('email').value.trim();
-  var service = document.getElementById('service').value;
-  var city    = document.getElementById('city').value.trim();
-  var message = document.getElementById('message').value.trim();
-
-  // Basic validation
-  if (!fname || !lname || !phone || !email) {
-    alert('Please fill in your name, phone, and email before sending.');
-    return;
-  }
-
-  // Build the email body
-  var serviceLabels = {
-    'commercial-apartment': 'Commercial — Apartment Complex',
-    'commercial-hoa':       'Commercial — HOA / Community',
-    'commercial-office':    'Commercial — Office / Retail',
-    'residential-interior': 'Residential — Interior',
-    'residential-exterior': 'Residential — Exterior',
-    'residential-both':     'Residential — Interior & Exterior',
-    'other':                'Other / Not sure yet'
-  };
-
-  var body = [
-    'Hello Lunar Painting,',
-    '',
-    'I would like to request a painting estimate.',
-    '',
-    '--- CONTACT INFO ---',
-    'Name:    ' + fname + ' ' + lname,
-    'Phone:   ' + phone,
-    'Email:   ' + email,
-    '',
-    '--- PROJECT DETAILS ---',
-    'Project Type: ' + (serviceLabels[service] || service || 'Not specified'),
-    'Location:     ' + (city || 'Not specified'),
-    '',
-    '--- MESSAGE ---',
-    message || 'No additional details provided.',
-    '',
-    'Thank you,'
-  ].join('\n');
-
-  var subject = 'Painting Estimate Request — ' + fname + ' ' + lname;
-  var mailto = 'mailto:lunarpainting1@gmail.com'
-    + '?subject=' + encodeURIComponent(subject)
-    + '&body=' + encodeURIComponent(body);
-
-  // Open the user's mail client
-  window.location.href = mailto;
-
-  // Show success state after a short delay
-  setTimeout(function() {
-    document.getElementById('contact-form').style.display = 'none';
-    var success = document.getElementById('form-success');
-    success.classList.add('show');
-    window.scrollTo({ top: document.getElementById('form').offsetTop - 80, behavior: 'smooth' });
-  }, 400);
+  var fname=document.getElementById('fname').value.trim();
+  var lname=document.getElementById('lname').value.trim();
+  var phone=document.getElementById('phone').value.trim();
+  var email=document.getElementById('email').value.trim();
+  var service=document.getElementById('service').value;
+  var city=document.getElementById('city').value.trim();
+  var message=document.getElementById('message').value.trim();
+  if(!fname||!lname||!phone||!email){ alert('Please fill in your name, phone, and email before sending.'); return; }
+  var labels={'commercial-apartment':'Commercial — Apartment Complex','commercial-hoa':'Commercial — HOA / Community','commercial-office':'Commercial — Office / Retail','residential-interior':'Residential — Interior','residential-exterior':'Residential — Exterior','residential-both':'Residential — Interior & Exterior','other':'Other / Not sure yet'};
+  var body=['Hello Lunar Painting,','','I would like to request a painting estimate.','','--- CONTACT INFO ---','Name:    '+fname+' '+lname,'Phone:   '+phone,'Email:   '+email,'','--- PROJECT DETAILS ---','Project Type: '+(labels[service]||service||'Not specified'),'Location:     '+(city||'Not specified'),'','--- MESSAGE ---',message||'No additional details provided.','','Thank you,'].join('\n');
+  var subject='Painting Estimate Request — '+fname+' '+lname;
+  window.location.href='mailto:lunarpainting1@gmail.com?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
+  setTimeout(function(){
+    document.getElementById('contact-form').style.display='none';
+    var s=document.getElementById('form-success');
+    s.classList.add('show');
+    window.scrollTo({top:document.getElementById('form').offsetTop-80,behavior:'smooth'});
+  },400);
 });
-
-// ── Hamburger menu ──
-(function() {
-  var btn = document.getElementById('hamburger');
-  var mobileNav = document.getElementById('mobile-nav');
-  var cls = document.getElementById('mobile-nav-close');
-
-  function openMenu() {
-    btn.classList.add('open');
-    mobileNav.classList.add('open');
-    btn.setAttribute('aria-expanded', 'true');
-    mobileNav.setAttribute('aria-hidden', 'false');
-    document.body.style.overflow = 'hidden';
-  }
-  function closeMenu() {
-    btn.classList.remove('open');
-    mobileNav.classList.remove('open');
-    btn.setAttribute('aria-expanded', 'false');
-    mobileNav.setAttribute('aria-hidden', 'true');
-    document.body.style.overflow = '';
-  }
-
-  if (btn) btn.addEventListener('click', function() {
-    btn.classList.contains('open') ? closeMenu() : openMenu();
-  });
-  if (cls) cls.addEventListener('click', closeMenu);
-  if (mobileNav) mobileNav.querySelectorAll('a').forEach(function(a) { a.addEventListener('click', closeMenu); });
-  document.addEventListener('keydown', function(e) { if (e.key === 'Escape') closeMenu(); });
-})();
 </script>
-
 </body>
 </html>

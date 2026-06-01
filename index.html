@@ -3,37 +3,30 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-<!-- ─── SEO ─── -->
 <title>Commercial Painting Contractor Orange County | Lunar Painting | Laguna Hills, CA</title>
 <meta name="description" content="Lunar Painting is Orange County's trusted commercial painting contractor — apartment complexes, HOAs, and property managers. Licensed, insured, Sherwin Williams. Call (949) 446-8578." />
 <meta name="keywords" content="commercial painting contractor Orange County, apartment complex painting contractor, HOA painting Orange County, exterior painting Laguna Hills, painting contractor Los Angeles County, property manager painting services" />
 <meta name="robots" content="index, follow" />
 <link rel="canonical" href="https://lunarpainting.com/" />
 
+<!-- Favicon — linked from repo -->
+<link rel="icon" type="image/webp" href="https://raw.githubusercontent.com/39056mezas-prog/MG39056/main/favicon.webp" />
+<link rel="shortcut icon" href="https://raw.githubusercontent.com/39056mezas-prog/MG39056/main/favicon.webp" />
+
 <!-- Open Graph / Google preview -->
 <meta property="og:type" content="website" />
 <meta property="og:title" content="Lunar Painting — Orange County Commercial Painting Contractor" />
-<meta property="og:description" content="Trusted by property managers across Orange County. Apartment complexes, HOAs, commercial properties, and residential. Call +1 (949) 446-8578." />
+<meta property="og:description" content="Trusted by property managers across Orange County. Apartment complexes, HOAs, commercial properties, and residential. Call (949) 446-8578." />
 <meta property="og:locale" content="en_US" />
 <meta property="og:url" content="https://lunarpainting.com/" />
 <meta property="og:site_name" content="Lunar Painting" />
-<!-- REPLACE the og:image path below with your actual preview image (1200x630px recommended) -->
 <meta property="og:image" content="https://lunarpainting.com/og-preview.jpg" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Lunar Painting — Orange County Commercial Painting Contractor" />
-<meta name="twitter:description" content="Trusted by property managers across Orange County. Licensed, insured, Sherwin Williams. Call +1 (949) 446-8578." />
+<meta name="twitter:description" content="Trusted by property managers across Orange County. Licensed, insured, Sherwin Williams. Call (949) 446-8578." />
 <meta name="twitter:image" content="https://lunarpainting.com/og-preview.jpg" />
-
-<!-- ─── FAVICON — drop your SVG/ICO files into the root and these tags activate ─── -->
-<!-- INSTRUCTIONS: Create a favicon.svg (just your logo SVG file renamed) and a favicon.ico (16x16 fallback).
-     Place both in the same folder as index.html. These tags are already correct. -->
-<link rel="icon" type="image/svg+xml" href="lunar-painting-logo.svg" />
-<link rel="icon" type="image/x-icon" href="favicon.ico" />
-<link rel="apple-touch-icon" href="apple-touch-icon.png" />
-<!-- apple-touch-icon.png should be 180x180px — export from your logo SVG -->
 
 <!-- Schema.org LocalBusiness -->
 <script type="application/ld+json">
@@ -64,296 +57,119 @@
     "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
     "opens": "08:00", "closes": "17:00"
   },
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "5",
-    "reviewCount": "20",
-    "bestRating": "5"
-  },
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5", "reviewCount": "20", "bestRating": "5" },
   "sameAs": [
     "https://www.instagram.com/lunarpainting/",
     "https://www.yelp.com/biz/lunar-painting-laguna-hills",
     "https://www.bbb.org/us/ca/laguna-hills/profile/painting-contractors/lunar-painting-1126-1000063467"
-  ],
-  "hasOfferCatalog": {
-    "@type": "OfferCatalog",
-    "name": "Painting Services",
-    "itemListElement": [
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Apartment Complex Painting", "areaServed": "Orange County, CA" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Commercial Exterior Painting" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "HOA Painting Services" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Residential Interior Painting" } }
-    ]
-  }
+  ]
 }
 </script>
 
-<!-- Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
 
 <style>
-/* ─── TOKENS ─── */
 :root {
-  --red: #BE1E2D;
-  --red-dk: #9a1724;
-  --white: #FFFFFF;
-  --snow: #F8F7F4;
-  --ink: #1C1B19;
-  --mid: #6B6A67;
-  --rule: #E4E3DF;
+  --red: #BE1E2D; --red-dk: #9a1724;
+  --white: #FFFFFF; --snow: #F8F7F4;
+  --ink: #1C1B19; --mid: #6B6A67; --rule: #E4E3DF;
   --ff-serif: 'Cormorant Garamond', Georgia, serif;
   --ff-sans: 'Inter', system-ui, -apple-system, sans-serif;
 }
-
-/* ─── RESET ─── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
-body {
-  font-family: var(--ff-sans);
-  background: var(--white);
-  color: var(--ink);
-  -webkit-font-smoothing: antialiased;
-  overflow-x: hidden;
-  padding-bottom: 60px;
-}
+body { font-family: var(--ff-sans); background: var(--white); color: var(--ink); -webkit-font-smoothing: antialiased; overflow-x: hidden; padding-bottom: 60px; }
 img { display: block; width: 100%; }
 a { text-decoration: none; color: inherit; }
 
 /* ─── NAV ─── */
-.nav {
-  position: fixed;
-  inset: 0 0 auto 0;
-  z-index: 200;
-  height: 60px;
-  background: var(--white);
-  border-bottom: 1px solid var(--rule);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 20px;
-  transition: box-shadow 0.3s ease;
-}
+.nav { position: fixed; inset: 0 0 auto 0; z-index: 200; height: 60px; background: var(--white); border-bottom: 1px solid var(--rule); display: flex; align-items: center; justify-content: space-between; padding: 0 20px; transition: box-shadow 0.3s ease; }
 .nav.shadow { box-shadow: 0 1px 20px rgba(0,0,0,.07); }
 .nav-logo-wrap { display: flex; align-items: center; height: 40px; }
-.nav-logo-wrap svg { height: 40px; width: auto; }
+.logo-img { height: 40px; width: auto; display: block; }
 .nav-right { display: flex; align-items: center; gap: 20px; }
 .nav-links { display: none; list-style: none; gap: 24px; align-items: center; }
-.nav-links a {
-  font-size: 13px;
-  font-weight: 500;
-  color: var(--mid);
-  letter-spacing: 0.01em;
-  transition: color .2s;
-}
+.nav-links a { font-size: 13px; font-weight: 500; color: var(--mid); letter-spacing: 0.01em; transition: color .2s; }
 .nav-links a:hover { color: var(--ink); }
-
-/* Phone in nav — Inter only, no serif */
-.nav-tel {
-  font-family: var(--ff-sans);
-  font-size: 14px;
-  font-weight: 600;
-  color: var(--red);
-  white-space: nowrap;
-  transition: color .2s;
-  letter-spacing: 0;
-}
+.nav-tel { font-family: var(--ff-sans); font-size: 14px; font-weight: 600; color: var(--red); white-space: nowrap; transition: color .2s; }
 .nav-tel:hover { color: var(--red-dk); }
-
-.nav-btn {
-  display: none;
-  background: var(--red);
-  color: var(--white);
-  font-size: 13px;
-  font-weight: 500;
-  padding: 9px 18px;
-  letter-spacing: 0.01em;
-  transition: background .2s;
-  white-space: nowrap;
-}
+.nav-btn { display: none; background: var(--red); color: var(--white); font-size: 13px; font-weight: 500; padding: 9px 18px; letter-spacing: 0.01em; transition: background .2s; white-space: nowrap; }
 .nav-btn:hover { background: var(--red-dk); }
 
+/* ─── HAMBURGER ─── */
+.nav-hamburger { display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 5px; width: 40px; height: 40px; background: none; border: none; cursor: pointer; padding: 8px; flex-shrink: 0; z-index: 210; }
+.nav-hamburger span { display: block; width: 22px; height: 1.5px; background: var(--ink); transition: transform 0.35s cubic-bezier(0.16,1,0.3,1), opacity 0.25s ease; transform-origin: center; }
+.nav-hamburger.open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+.nav-hamburger.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+.nav-hamburger.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+
+/* ─── MOBILE NAV — centered, premium ─── */
+.mobile-nav { position: fixed; inset: 0; z-index: 205; background: var(--white); transform: translateX(100%); transition: transform 0.45s cubic-bezier(0.16,1,0.3,1); overflow-y: auto; -webkit-overflow-scrolling: touch; }
+.mobile-nav.open { transform: translateX(0); }
+.mobile-nav-inner { display: flex; flex-direction: column; align-items: center; min-height: 100%; padding: 0 24px 52px; text-align: center; }
+.mobile-nav-top { width: 100%; height: 60px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--rule); flex-shrink: 0; margin-bottom: auto; }
+.mobile-nav-logo-wrap { display: flex; align-items: center; height: 34px; }
+.mobile-nav-logo-wrap .logo-img { height: 34px; width: auto; }
+.mobile-nav-close { width: 40px; height: 40px; background: none; border: none; cursor: pointer; font-size: 20px; color: var(--mid); display: flex; align-items: center; justify-content: center; transition: color .2s; }
+.mobile-nav-close:hover { color: var(--ink); }
+
+/* centered nav links */
+.mobile-nav-links { list-style: none; display: flex; flex-direction: column; align-items: center; gap: 0; width: 100%; padding-top: 0; flex: 1; justify-content: center; }
+.mobile-nav-links li { width: 100%; text-align: center; border-bottom: 1px solid var(--rule); }
+.mobile-nav-links li:first-child { border-top: 1px solid var(--rule); }
+.mobile-nav-links li a { display: block; font-family: var(--ff-serif); font-size: clamp(32px, 9vw, 48px); font-weight: 600; letter-spacing: -.02em; color: var(--ink); padding: 18px 0; line-height: 1.15; transition: color .2s; }
+.mobile-nav-links li a:hover, .mobile-nav-links li a.m-active { color: var(--red); }
+
+/* centered bottom section */
+.mobile-nav-bottom { padding-top: 36px; width: 100%; display: flex; flex-direction: column; align-items: center; }
+.mobile-nav-tel { font-family: var(--ff-sans); font-size: clamp(22px, 6vw, 28px); font-weight: 700; color: var(--red); letter-spacing: -.01em; display: block; margin-bottom: 6px; line-height: 1.1; }
+.mobile-nav-hours { font-size: 12px; color: var(--mid); margin-bottom: 22px; }
+.mobile-nav-cta { display: block; background: var(--red); color: var(--white); font-size: 14px; font-weight: 500; padding: 15px 40px; text-align: center; transition: background .2s; }
+.mobile-nav-cta:hover { background: var(--red-dk); }
+
 /* ─── HERO ─── */
-.hero {
-  position: relative;
-  margin-top: 60px;
-  min-height: calc(100svh - 60px);
-  min-height: calc(100vh - 60px);
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  overflow: hidden;
-  background: var(--ink);
-}
-.hero-photo {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: 65% 20%;
-  opacity: .88;
-}
-.hero-wash {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    to top,
-    rgba(255,255,255,1) 0%,
-    rgba(255,255,255,.97) 18%,
-    rgba(255,255,255,.75) 40%,
-    rgba(255,255,255,.25) 65%,
-    transparent 100%
-  );
-}
-.hero-body {
-  position: relative;
-  z-index: 2;
-  padding: 48px 20px 52px;
-}
-.eyebrow {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: .14em;
-  text-transform: uppercase;
-  color: var(--red);
-  margin-bottom: 18px;
-}
-.eyebrow::before {
-  content: '';
-  display: block;
-  width: 22px;
-  height: 1.5px;
-  background: var(--red);
-  flex-shrink: 0;
-}
-.hero-h1 {
-  font-family: var(--ff-serif);
-  font-size: clamp(42px, 11vw, 88px);
-  font-weight: 600;
-  line-height: 1.03;
-  letter-spacing: -.02em;
-  color: var(--ink);
-  margin-bottom: 22px;
-  max-width: 640px;
-}
+.hero { position: relative; margin-top: 60px; min-height: calc(100svh - 60px); min-height: calc(100vh - 60px); display: flex; flex-direction: column; justify-content: flex-end; overflow: hidden; background: var(--ink); }
+.hero-photo { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 65% 20%; opacity: .88; }
+.hero-wash { position: absolute; inset: 0; background: linear-gradient(to top, rgba(255,255,255,1) 0%, rgba(255,255,255,.97) 18%, rgba(255,255,255,.75) 40%, rgba(255,255,255,.25) 65%, transparent 100%); }
+.hero-body { position: relative; z-index: 2; padding: 48px 20px 52px; }
+.eyebrow { display: inline-flex; align-items: center; gap: 10px; font-size: 11px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--red); margin-bottom: 18px; }
+.eyebrow::before { content: ''; display: block; width: 22px; height: 1.5px; background: var(--red); flex-shrink: 0; }
+.hero-h1 { font-family: var(--ff-serif); font-size: clamp(42px, 11vw, 88px); font-weight: 600; line-height: 1.03; letter-spacing: -.02em; color: var(--ink); margin-bottom: 22px; max-width: 640px; }
 .hero-h1 em { font-style: italic; color: var(--red); }
-.hero-desc {
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 1.75;
-  color: var(--mid);
-  max-width: 460px;
-  margin-bottom: 36px;
-}
+.hero-desc { font-size: 16px; font-weight: 300; line-height: 1.75; color: var(--mid); max-width: 460px; margin-bottom: 36px; }
 .hero-actions { display: flex; flex-direction: column; gap: 14px; align-items: flex-start; }
-.btn-solid {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  background: var(--red);
-  color: var(--white);
-  font-size: 15px;
-  font-weight: 500;
-  padding: 15px 28px;
-  letter-spacing: .01em;
-  transition: background .2s;
-}
+.btn-solid { display: inline-flex; align-items: center; gap: 8px; background: var(--red); color: var(--white); font-size: 15px; font-weight: 500; padding: 15px 28px; letter-spacing: .01em; transition: background .2s; }
 .btn-solid:hover { background: var(--red-dk); }
-.btn-text {
-  font-size: 14px;
-  font-weight: 500;
-  color: var(--ink);
-  border-bottom: 1.5px solid var(--rule);
-  padding-bottom: 2px;
-  transition: color .2s, border-color .2s;
-}
+.btn-text { font-size: 14px; font-weight: 500; color: var(--ink); border-bottom: 1.5px solid var(--rule); padding-bottom: 2px; transition: color .2s, border-color .2s; }
 .btn-text:hover { color: var(--red); border-color: var(--red); }
 
 /* ─── TRUST BAR ─── */
-.trust {
-  border-top: 1px solid var(--rule);
-  border-bottom: 1px solid var(--rule);
-  background: var(--snow);
-  padding: 16px 20px;
-  overflow: hidden;
-}
+.trust { border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); background: var(--snow); padding: 16px 20px; overflow: hidden; }
 .trust-row { display: flex; flex-wrap: wrap; gap: 12px 20px; align-items: center; }
-.trust-item {
-  display: flex;
-  align-items: center;
-  gap: 7px;
-  font-size: 12px;
-  font-weight: 500;
-  color: var(--mid);
-  letter-spacing: .02em;
-  white-space: nowrap;
-}
-.trust-item .dot {
-  width: 5px; height: 5px;
-  border-radius: 50%;
-  background: var(--red);
-  flex-shrink: 0;
-}
+.trust-item { display: flex; align-items: center; gap: 7px; font-size: 12px; font-weight: 500; color: var(--mid); letter-spacing: .02em; white-space: nowrap; }
+.trust-item .dot { width: 5px; height: 5px; border-radius: 50%; background: var(--red); flex-shrink: 0; }
 
-/* ─── SECTION SHARED ─── */
+/* ─── SECTIONS ─── */
 .section { padding: 72px 20px; }
-.section-label {
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: .14em;
-  text-transform: uppercase;
-  color: var(--red);
-  margin-bottom: 14px;
-}
-.section-h2 {
-  font-family: var(--ff-serif);
-  font-size: clamp(30px, 7vw, 58px);
-  font-weight: 600;
-  line-height: 1.08;
-  letter-spacing: -.02em;
-  color: var(--ink);
-  margin-bottom: 18px;
-}
-.section-body {
-  font-size: 15px;
-  font-weight: 300;
-  line-height: 1.8;
-  color: var(--mid);
-  margin-bottom: 32px;
-  max-width: 520px;
-}
+.section-label { font-size: 11px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--red); margin-bottom: 14px; }
+.section-h2 { font-family: var(--ff-serif); font-size: clamp(30px, 7vw, 58px); font-weight: 600; line-height: 1.08; letter-spacing: -.02em; color: var(--ink); margin-bottom: 18px; }
+.section-body { font-size: 15px; font-weight: 300; line-height: 1.8; color: var(--mid); margin-bottom: 32px; max-width: 520px; }
 
-/* ─── COMMERCIAL SECTION ─── */
+/* ─── COMMERCIAL ─── */
 .commercial { background: var(--white); }
-.commercial-photo {
-  width: 100%;
-  aspect-ratio: 16/10;
-  object-fit: cover;
-  object-position: center;
-  margin-top: 36px;
-}
+.commercial-photo { width: 100%; aspect-ratio: 16/10; object-fit: cover; object-position: center; margin-top: 36px; }
 .pm-cards { display: flex; flex-direction: column; gap: 0; border: 1px solid var(--rule); margin-top: 36px; }
 .pm-card { padding: 22px 20px; border-bottom: 1px solid var(--rule); }
 .pm-card:last-child { border-bottom: none; }
 .pm-card-title { font-size: 15px; font-weight: 600; color: var(--ink); margin-bottom: 6px; }
 .pm-card-body { font-size: 13px; font-weight: 300; line-height: 1.7; color: var(--mid); }
 
-/* ─── STATS BAND ─── */
+/* ─── STATS ─── */
 .stats { background: var(--red); padding: 52px 20px; }
 .stats-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px 20px; }
-.stat-num {
-  font-family: var(--ff-serif);
-  font-size: 52px;
-  font-weight: 700;
-  color: var(--white);
-  line-height: 1;
-  margin-bottom: 6px;
-}
+.stat-num { font-family: var(--ff-serif); font-size: 52px; font-weight: 700; color: var(--white); line-height: 1; margin-bottom: 6px; }
 .stat-label { font-size: 13px; font-weight: 400; line-height: 1.5; color: rgba(255,255,255,.65); }
 
 /* ─── SERVICES ─── */
@@ -369,7 +185,7 @@ a { text-decoration: none; color: inherit; }
 .svc-list li { display: flex; align-items: flex-start; gap: 12px; font-size: 14px; color: var(--ink); line-height: 1.5; }
 .svc-list li::before { content: ''; width: 14px; height: 1.5px; background: var(--red); flex-shrink: 0; margin-top: 9px; }
 
-/* ─── WORK PHOTO GRID ─── */
+/* ─── WORK GRID ─── */
 .work { background: var(--white); }
 .work-grid { display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: auto auto; gap: 4px; margin-top: 36px; }
 .wg-item { overflow: hidden; background: var(--snow); }
@@ -378,33 +194,13 @@ a { text-decoration: none; color: inherit; }
 .wg-item.tall { grid-row: span 2; }
 .wg-item.tall img { aspect-ratio: auto; height: 100%; }
 
-/* ─── PROCESS CALLOUT ─── */
+/* ─── PROCESS STRIP ─── */
 .process-strip { background: var(--ink); padding: 52px 20px; }
-.process-quote {
-  font-family: var(--ff-serif);
-  font-size: clamp(22px, 5.5vw, 40px);
-  font-weight: 500;
-  font-style: italic;
-  color: var(--white);
-  line-height: 1.45;
-  margin-bottom: 28px;
-}
-.process-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 13px;
-  font-weight: 500;
-  letter-spacing: .08em;
-  text-transform: uppercase;
-  color: var(--red);
-  border-bottom: 1px solid rgba(190,30,45,.35);
-  padding-bottom: 3px;
-  transition: gap .25s;
-}
+.process-quote { font-family: var(--ff-serif); font-size: clamp(22px, 5.5vw, 40px); font-weight: 500; font-style: italic; color: var(--white); line-height: 1.45; margin-bottom: 28px; }
+.process-link { display: inline-flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 500; letter-spacing: .08em; text-transform: uppercase; color: var(--red); border-bottom: 1px solid rgba(190,30,45,.35); padding-bottom: 3px; transition: gap .25s; }
 .process-link:hover { gap: 14px; }
 
-/* ─── REVIEWS ─── */
+/* ─── REVIEWS — 3 max ─── */
 .reviews { background: var(--snow); }
 .review-grid { display: flex; flex-direction: column; gap: 16px; margin-top: 36px; }
 .review { background: var(--white); border: 1px solid var(--rule); padding: 28px 24px; }
@@ -415,54 +211,23 @@ a { text-decoration: none; color: inherit; }
 .review-name { font-size: 12px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--ink); }
 .review-source { font-size: 11px; color: var(--mid); }
 
-/* ─── FINAL CTA ─── */
+/* ─── CTA ─── */
 .cta-block { background: var(--red); padding: 72px 20px; text-align: center; }
 .cta-eyebrow { font-size: 11px; font-weight: 500; letter-spacing: .14em; text-transform: uppercase; color: rgba(255,255,255,.55); margin-bottom: 16px; }
-.cta-h2 {
-  font-family: var(--ff-serif);
-  font-size: clamp(30px, 7vw, 56px);
-  font-weight: 600;
-  color: var(--white);
-  letter-spacing: -.02em;
-  line-height: 1.1;
-  margin-bottom: 10px;
-}
-
-/* CTA phone — Inter for clarity, still large */
-.cta-phone {
-  display: block;
-  font-family: var(--ff-sans);
-  font-size: clamp(28px, 7vw, 58px);
-  font-weight: 700;
-  color: var(--white);
-  letter-spacing: -.01em;
-  margin-bottom: 10px;
-  line-height: 1.1;
-}
+.cta-h2 { font-family: var(--ff-serif); font-size: clamp(30px, 7vw, 56px); font-weight: 600; color: var(--white); letter-spacing: -.02em; line-height: 1.1; margin-bottom: 10px; }
+/* CTA phone — Inter, no serif */
+.cta-phone { display: block; font-family: var(--ff-sans); font-size: clamp(28px, 7vw, 58px); font-weight: 700; color: var(--white); letter-spacing: -.01em; margin-bottom: 10px; line-height: 1.1; }
 .cta-hours { font-size: 13px; color: rgba(255,255,255,.6); margin-bottom: 32px; }
 .cta-divider { width: 40px; height: 1px; background: rgba(255,255,255,.3); margin: 32px auto; }
 .cta-email-label { font-size: 11px; font-weight: 500; letter-spacing: .12em; text-transform: uppercase; color: rgba(255,255,255,.45); margin-bottom: 8px; }
-.cta-email {
-  font-size: 15px;
-  font-weight: 400;
-  color: rgba(255,255,255,.85);
-  border-bottom: 1px solid rgba(255,255,255,.3);
-  padding-bottom: 2px;
-  display: inline-block;
-  transition: color .2s;
-}
+.cta-email { font-size: 15px; font-weight: 400; color: rgba(255,255,255,.85); border-bottom: 1px solid rgba(255,255,255,.3); padding-bottom: 2px; display: inline-block; transition: color .2s; }
 .cta-email:hover { color: var(--white); }
 .cta-address { font-size: 12px; color: rgba(255,255,255,.4); margin-top: 20px; line-height: 1.6; }
 
 /* ─── FOOTER ─── */
 footer { background: var(--ink); padding: 52px 20px 36px; }
 .footer-logo-wrap { height: 36px; margin-bottom: 32px; display: flex; align-items: center; }
-.footer-logo-wrap svg { height: 36px; width: auto; }
-/* Footer logo keeps original brand colors — NOT reversed to white */
-.footer-logo-wrap .st0 { fill: #BE1E2D; }
-.footer-logo-wrap .st1 { fill: #726658; }
-.footer-logo-wrap .st2 { fill: #939598; }
-
+.footer-logo-wrap .logo-img { height: 36px; width: auto; }
 .footer-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 32px 20px; margin-bottom: 40px; }
 .footer-col-title { font-size: 10px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: rgba(255,255,255,.3); margin-bottom: 14px; }
 .footer-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
@@ -473,16 +238,8 @@ footer { background: var(--ink); padding: 52px 20px 36px; }
 .footer-copy { font-size: 11px; color: rgba(255,255,255,.25); }
 .footer-seo { font-size: 11px; line-height: 1.7; color: rgba(255,255,255,.18); }
 
-/* ─── MOBILE STICKY BAR ─── */
-.sticky-bar {
-  position: fixed;
-  bottom: 0; left: 0; right: 0;
-  z-index: 300;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  height: 60px;
-  box-shadow: 0 -2px 16px rgba(0,0,0,.12);
-}
+/* ─── STICKY BAR ─── */
+.sticky-bar { position: fixed; bottom: 0; left: 0; right: 0; z-index: 300; display: grid; grid-template-columns: 1fr 1fr; height: 60px; box-shadow: 0 -2px 16px rgba(0,0,0,.12); }
 .sticky-bar a { display: flex; align-items: center; justify-content: center; gap: 7px; font-size: 14px; font-weight: 600; letter-spacing: .01em; }
 .sticky-bar .sb-call { background: var(--red); color: var(--white); border-right: 1px solid rgba(255,255,255,.25); }
 .sticky-bar .sb-email { background: var(--ink); color: var(--white); }
@@ -491,35 +248,19 @@ footer { background: var(--ink); padding: 52px 20px 36px; }
 /* ─── REVEAL ─── */
 .reveal { opacity: 0; transform: translateY(22px); transition: opacity .75s cubic-bezier(.25,.46,.45,.94), transform .75s cubic-bezier(.25,.46,.45,.94); }
 .reveal.in { opacity: 1; transform: translateY(0); }
-.reveal-d1 { transition-delay: .1s; }
-.reveal-d2 { transition-delay: .2s; }
-.reveal-d3 { transition-delay: .3s; }
+.reveal-d1 { transition-delay: .1s; } .reveal-d2 { transition-delay: .2s; } .reveal-d3 { transition-delay: .3s; }
 
 /* ─── DESKTOP ─── */
 @media (min-width: 768px) {
   body { padding-bottom: 0; }
   .sticky-bar { display: none; }
   .nav { height: 72px; padding: 0 48px; }
-  .nav-logo-wrap { height: 48px; }
-  .nav-logo-wrap svg { height: 48px; }
+  .nav-logo-wrap { height: 48px; } .logo-img { height: 48px; }
   .nav-links { display: flex; }
   .nav-btn { display: block; }
   .hero { margin-top: 72px; min-height: calc(100svh - 72px); min-height: calc(100vh - 72px); }
   .hero-photo { object-position: 70% 15%; }
-  .hero-wash {
-    background: linear-gradient(
-      to right,
-      rgba(255,255,255,1) 0%,
-      rgba(255,255,255,.97) 40%,
-      rgba(255,255,255,.7) 60%,
-      rgba(255,255,255,.15) 100%
-    ),
-    linear-gradient(
-      to top,
-      rgba(255,255,255,.6) 0%,
-      transparent 30%
-    );
-  }
+  .hero-wash { background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,.97) 40%, rgba(255,255,255,.7) 60%, rgba(255,255,255,.15) 100%), linear-gradient(to top, rgba(255,255,255,.6) 0%, transparent 30%); }
   .hero-body { padding: 80px 48px 100px; max-width: 620px; }
   .hero-actions { flex-direction: row; gap: 20px; }
   .trust { padding: 18px 48px; }
@@ -539,249 +280,110 @@ footer { background: var(--ink); padding: 52px 20px 36px; }
   .wg-item.tall img { height: 100%; }
   .process-strip { padding: 80px 48px; display: flex; align-items: center; justify-content: space-between; gap: 60px; }
   .process-quote { margin-bottom: 0; max-width: 540px; }
-  .review-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; flex-direction: unset; }
+  /* 3 reviews in a row on desktop */
+  .review-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; flex-direction: unset; }
   .cta-block { padding: 100px 48px; }
   footer { padding: 72px 48px 40px; }
+  .footer-logo-wrap .logo-img { height: 36px; }
   .footer-cols { grid-template-columns: 2fr 1fr 1fr 1fr; gap: 0 60px; margin-bottom: 48px; }
   .footer-bottom { flex-direction: row; justify-content: space-between; align-items: flex-end; }
-}
-
-@media (min-width: 1200px) {
-  .nav { padding: 0 80px; }
-  .section { padding: 120px 80px; }
-  .trust { padding: 18px 80px; }
-  .stats { padding: 72px 80px; }
-  .process-strip { padding: 100px 80px; }
-  .cta-block { padding: 120px 80px; }
-  footer { padding: 80px 80px 48px; }
-  .hero-body { padding: 100px 80px 120px; }
-}
-
-/* ── HAMBURGER & MOBILE NAV ── */
-.nav-hamburger {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 5px;
-  width: 40px;
-  height: 40px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 8px;
-  flex-shrink: 0;
-  z-index: 210;
-}
-.nav-hamburger span {
-  display: block;
-  width: 22px;
-  height: 1.5px;
-  background: var(--ink);
-  transition: transform 0.35s cubic-bezier(0.16,1,0.3,1), opacity 0.25s ease;
-  transform-origin: center;
-}
-.nav-hamburger.open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
-.nav-hamburger.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
-.nav-hamburger.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
-
-.mobile-nav {
-  position: fixed;
-  inset: 0;
-  z-index: 205;
-  background: var(--white);
-  transform: translateX(100%);
-  transition: transform 0.45s cubic-bezier(0.16,1,0.3,1);
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
-}
-.mobile-nav.open { transform: translateX(0); }
-.mobile-nav-inner { display: flex; flex-direction: column; min-height: 100%; padding: 0 24px 52px; }
-.mobile-nav-top {
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-bottom: 1px solid var(--rule);
-  flex-shrink: 0;
-}
-.mobile-nav-logo-wrap { display: flex; align-items: center; height: 34px; }
-.mobile-nav-logo-wrap svg { height: 34px; width: auto; }
-.mobile-nav-close {
-  width: 40px; height: 40px;
-  background: none; border: none;
-  cursor: pointer; font-size: 20px;
-  color: var(--mid);
-  display: flex; align-items: center; justify-content: center;
-  transition: color .2s;
-}
-.mobile-nav-close:hover { color: var(--ink); }
-.mobile-nav-links { list-style: none; display: flex; flex-direction: column; gap: 0; flex: 1; padding-top: 4px; }
-.mobile-nav-links li { border-bottom: 1px solid var(--rule); }
-
-/* Mobile nav links — keeping serif for the big display links is intentional brand style */
-.mobile-nav-links li a {
-  display: block;
-  font-family: var(--ff-serif);
-  font-size: clamp(30px, 9vw, 42px);
-  font-weight: 600;
-  letter-spacing: -.02em;
-  color: var(--ink);
-  padding: 16px 0;
-  line-height: 1.15;
-  transition: color .2s;
-}
-.mobile-nav-links li a:hover,
-.mobile-nav-links li a.m-active { color: var(--red); }
-
-.mobile-nav-bottom { padding-top: 32px; margin-top: auto; }
-
-/* Mobile nav phone — Inter, clear and legible, with +1 */
-.mobile-nav-tel {
-  font-family: var(--ff-sans);
-  font-size: clamp(22px, 6vw, 30px);
-  font-weight: 700;
-  color: var(--red);
-  letter-spacing: -.01em;
-  display: block;
-  margin-bottom: 6px;
-  line-height: 1.1;
-}
-.mobile-nav-hours { font-size: 12px; color: var(--mid); margin-bottom: 22px; }
-.mobile-nav-cta {
-  display: block;
-  background: var(--red);
-  color: var(--white);
-  font-size: 14px;
-  font-weight: 500;
-  padding: 15px 24px;
-  text-align: center;
-  transition: background .2s;
-}
-.mobile-nav-cta:hover { background: var(--red-dk); }
-
-@media (min-width: 768px) {
   .nav-hamburger { display: none; }
   .mobile-nav { display: none !important; }
+}
+@media (min-width: 1200px) {
+  .nav { padding: 0 80px; } .section { padding: 120px 80px; }
+  .trust { padding: 18px 80px; } .stats { padding: 72px 80px; }
+  .process-strip { padding: 100px 80px; } .cta-block { padding: 120px 80px; }
+  footer { padding: 80px 80px 48px; } .hero-body { padding: 100px 80px 120px; }
 }
 </style>
 </head>
 
 <body>
 
-<!-- ══════════════════════════════════
-     NAV
-══════════════════════════════════ -->
 <nav class="nav" id="nav" role="navigation" aria-label="Main">
-  <a href="/" class="nav-logo-wrap" aria-label="Lunar Painting Home">
-    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 800 600" xml:space="preserve" aria-hidden="true" focusable="false">
-      <style>.st0{fill:#BE1E2D;}.st1{fill:#726658;}.st2{fill:#939598;}</style>
-      <polygon class="st0" points="132.3,402.6 236.6,315.4 343.3,335.5 508.8,262.8 659.3,411.5 643.8,411.5 508.8,284.4 349.5,391.1 236.2,335.1"/>
-      <path class="st1" d="M367.9,284.9h11.2v7.5h-11.2V284.9z M367.9,260.1h11.2v7.5h-11.2V260.1z M367.9,235.4h11.2v7.5h-11.2V235.4z M367.9,210.7h11.2v7.5h-11.2V210.7z M367.9,186.8h11.2v7.5h-11.2V186.8z M367.9,162.1h11.2v7.5h-11.2V162.1z M390,300.4V147.1l-76.7-48v217.2l28.4,5.4L390,300.4z M500.6,165.2h47.2v5.5h-47.2V165.2z M500.6,146.4h47.2v5.5h-47.2V146.4z M500.6,127.5h47.2v5.5h-47.2V127.5z M558.8,293.6V67.9l-69.1,48v140.7l21.9-9.6L558.8,293.6z M465.7,246.7l-5.9,2.4V49.6l5.9-2.4V246.7z M449.4,253.2l-5.9,2.4V56.1l5.9-2.4V253.2z M478.3,15.1l-76.7,30.7v249.6l76.7-33.7V15.1z M265.1,174.6h23.7v7.5h-23.7V174.6z M265.1,149.9h23.7v7.5h-23.7V149.9z M265.1,125.2h23.7v7.5h-23.7V125.2z M265.1,100.5h23.7v7.5h-23.7V100.5z M299.9,313.8V13.2l-67.1,90.2v198l0.2-0.1L299.9,313.8z M399.9,410.2c-139.2,0-260.3,15.2-322.6,37.7c82.8-14.7,196.8-23.9,322.6-23.9s239.8,9.1,322.6,23.9C660.3,425.5,539.1,410.2,399.9,410.2z"/>
-      <path class="st2" d="M510.8,397.1h21.7v-30.1h-21.7V397.1z M482.6,355.2v5.2h21.7v-29.9C492.1,332.1,482.6,342.5,482.6,355.2z M510.8,330.5v29.9h21.7v-5.2C532.5,342.5,523,332.1,510.8,330.5z M482.6,397.1h21.7v-30.1h-21.7V397.1z M217,403.9h14.9v-20.7H217V403.9z M217,375.1v3.6h14.9v-20.5C223.5,359.3,217,366.4,217,375.1z M236.3,403.9h14.9v-20.7h-14.9V403.9z M236.3,358.2v20.5h14.9v-3.6C251.2,366.4,244.8,359.3,236.3,358.2z"/>
-      <path class="st0" d="M149.9,478.5c0-8.4,0-9.9,0.1-11.6c0.1-1.9,0.4-2.7,2.1-3c0.6-0.1,1.5-0.1,1.8-0.1c0.2,0,0.4-0.2,0.4-0.4c0-0.3-0.3-0.4-0.9-0.4c-1.7,0-5.9,0.1-6.2,0.1c-0.3,0-3.8-0.1-6.3-0.1c-0.6,0-0.9,0.1-0.9,0.4c0,0.2,0.3,0.4,0.4,0.4c0.5,0,1.5,0.1,1.9,0.1c1.8,0.3,2.2,1.1,2.3,3c0.1,1.7,0.1,3.2,0.1,11.6v9.5c0,5.2,0,9.4-0.3,11.7c-0.3,1.6-0.4,2.6-1.5,2.9c-0.5,0.1-1.2,0.3-1.7,0.3c-0.3,0-0.4,0.3-0.4,0.4c0,0.3,0.3,0.4,0.9,0.4c0.9,0,2.1-0.1,3.2-0.1c1.1-0.1,2-0.1,2.3-0.1c1.6,0,3.6,0.1,6.1,0.1c2.6,0.1,5.7,0.2,9.7,0.2c3,0,3.2-0.2,3.6-1.5c0.4-1.6,0.8-4.8,0.8-5.4c0-0.6-0.1-0.8-0.4-0.8c-0.3,0-0.5,0.3-0.6,0.7c-0.2,1.1-0.6,2.2-1.3,3c-1.3,1.6-3.8,1.6-6.7,1.6c-4.4,0-6.5-0.4-7.4-1.3c-1-1-1.1-4.2-1.1-12.1V478.5"/>
-      <path class="st0" d="M543,465.4l7,0.1c5.3,0.1,6.5,1.3,6.7,3l0.1,0.6c0.1,0.8,0.2,1,0.4,1s0.5-0.3,0.5-0.7c0-0.6,0.2-4.5,0.2-6.2c0-0.3,0-0.6-0.3-0.6c-0.3,0-0.8,0.1-1.6,0.3c-0.9,0.1-2.2,0.3-4,0.3H531c-0.6,0-2.8-0.1-4.4-0.3c-1.5-0.2-2.1-0.6-2.5-0.6c-0.2,0-0.5,0.7-0.6,1c-0.1,0.4-1.2,5.3-1.2,5.8c0,0.3,0.3,0.4,0.4,0.4c0.3,0,0.4-0.1,0.6-0.5c0.2-0.4,0.3-0.8,0.9-1.7c0.8-1.3,2.2-1.6,5.6-1.7l8.1-0.1V488c0,5.2,0,9.4-0.3,11.7c-0.2,1.6-0.5,2.7-1.6,2.9c-0.5,0.1-1.1,0.3-1.6,0.3c-0.3,0-0.4,0.2-0.4,0.4c0,0.3,0.3,0.4,0.9,0.4c1.6,0,5.5-0.2,5.8-0.2c0.3,0,3.9,0.2,6.9,0.2c0.6,0,0.9-0.2,0.9-0.4c0-0.2-0.1-0.4-0.4-0.4c-0.5,0-1.8-0.1-2.5-0.3c-1.7-0.3-2-1.3-2.2-2.9c-0.3-2.2-0.3-6.5-0.3-11.7V465.4"/>
-      <polygon points="542.3,536.7 542.3,544.2 212.6,561.9 542.3,579.7 542.3,587.2 592.7,561.9"/>
-    </svg>
+  <a href="index.html" class="nav-logo-wrap" aria-label="Lunar Painting Home">
+    <img src="https://raw.githubusercontent.com/39056mezas-prog/MG39056/main/lunarpaintinglogo.svg" alt="Lunar Painting" class="logo-img" />
   </a>
-
   <div class="nav-right">
     <ul class="nav-links" role="list">
-      <li><a href="/commercial">Commercial</a></li>
-      <li><a href="/residential">Residential</a></li>
+      <li><a href="commercial.html">Commercial</a></li>
+      <li><a href="residential.html">Residential</a></li>
       <li><a href="javascript:void(0)" onclick="scrollToWork()">Our Work</a></li>
-      <li><a href="/contact">Contact</a></li>
+      <li><a href="contact.html">Contact</a></li>
     </ul>
-
     <button class="nav-hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-nav">
       <span></span><span></span><span></span>
     </button>
-
-    <a href="tel:+19494468578" class="nav-tel">+1 (949) 446-8578</a>
-    <a href="/contact" class="nav-btn">Get a Quote</a>
+    <!-- Phone displayed without +1 visually; tel: href adds +1 for correct dialing -->
+    <a href="tel:+19494468578" class="nav-tel">(949) 446-8578</a>
+    <a href="contact.html" class="nav-btn">Get a Quote</a>
   </div>
 </nav>
 
-<!-- MOBILE NAV -->
+<!-- MOBILE NAV — centered layout -->
 <div class="mobile-nav" id="mobile-nav" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Site navigation">
   <div class="mobile-nav-inner">
     <div class="mobile-nav-top">
-      <a href="/" class="mobile-nav-logo-wrap" aria-label="Lunar Painting — Home">
-        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" xml:space="preserve" aria-hidden="true">
-          <polygon style="fill:#BE1E2D" points="132.3,402.6 236.6,315.4 343.3,335.5 508.8,262.8 659.3,411.5 643.8,411.5 508.8,284.4 349.5,391.1 236.2,335.1"/>
-          <path style="fill:#726658" d="M390,300.4V147.1l-76.7-48v217.2l28.4,5.4L390,300.4z M478.3,15.1l-76.7,30.7v249.6l76.7-33.7V15.1z M299.9,313.8V13.2l-67.1,90.2v198l0.2-0.1L299.9,313.8z M399.9,410.2c-139.2,0-260.3,15.2-322.6,37.7c82.8-14.7,196.8-23.9,322.6-23.9s239.8,9.1,322.6,23.9C660.3,425.5,539.1,410.2,399.9,410.2z"/>
-        </svg>
+      <a href="index.html" class="mobile-nav-logo-wrap" aria-label="Lunar Painting — Home">
+        <img src="https://raw.githubusercontent.com/39056mezas-prog/MG39056/main/lunarpaintinglogo.svg" alt="Lunar Painting" class="logo-img" />
       </a>
       <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Close navigation">&#10005;</button>
     </div>
-
     <ul class="mobile-nav-links">
-      <li><a href="/" onclick="closeMobileNav()">Home</a></li>
-      <li><a href="/commercial" onclick="closeMobileNav()">Commercial</a></li>
-      <li><a href="/residential" onclick="closeMobileNav()">Residential</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="commercial.html">Commercial</a></li>
+      <li><a href="residential.html">Residential</a></li>
       <li><a href="javascript:void(0)" onclick="closeMobileNav(); scrollToWork();">Our Work</a></li>
-      <li><a href="/contact" onclick="closeMobileNav()">Contact</a></li>
+      <li><a href="contact.html">Contact</a></li>
     </ul>
-
     <div class="mobile-nav-bottom">
-      <a href="tel:+19494468578" class="mobile-nav-tel">+1 (949) 446-8578</a>
+      <a href="tel:+19494468578" class="mobile-nav-tel">(949) 446-8578</a>
       <p class="mobile-nav-hours">Mon – Fri &nbsp;&middot;&nbsp; 8:00 AM – 5:00 PM</p>
-      <a href="/contact" class="mobile-nav-cta" onclick="closeMobileNav()">Request a Free Estimate &rarr;</a>
+      <a href="contact.html" class="mobile-nav-cta">Request a Free Estimate &rarr;</a>
     </div>
   </div>
 </div>
 
-<!-- ══════════════════════════════════
-     HERO
-══════════════════════════════════ -->
+<!-- HERO -->
 <section class="hero">
   <img class="hero-photo"
     src="https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=1600&q=80"
     alt="Professional painter at work — Lunar Painting commercial painting in Orange County CA"
-    width="1600" height="900"
-  />
+    width="1600" height="900" />
   <div class="hero-wash"></div>
   <div class="hero-body">
     <p class="eyebrow">Orange County's Commercial Painting Contractor</p>
-    <h1 class="hero-h1">
-      The crew<br>
-      property managers<br>
-      <em>call back.</em>
-    </h1>
+    <h1 class="hero-h1">The crew<br>property managers<br><em>call back.</em></h1>
     <p class="hero-desc">Apartment complexes, HOAs, and commercial properties across Orange County and LA County. Licensed, insured, Sherwin Williams on every job.</p>
     <div class="hero-actions">
-      <a href="tel:+19494468578" class="btn-solid">Call +1 (949) 446-8578</a>
-      <a href="/commercial" class="btn-text">See commercial services →</a>
+      <a href="tel:+19494468578" class="btn-solid">Call (949) 446-8578</a>
+      <a href="commercial.html" class="btn-text">See commercial services →</a>
     </div>
   </div>
 </section>
 
-<!-- ══════════════════════════════════
-     TRUST BAR
-══════════════════════════════════ -->
+<!-- TRUST BAR — 3 key credentials -->
 <div class="trust">
   <div class="trust-row">
     <div class="trust-item"><span class="dot"></span>Licensed &amp; Insured</div>
     <div class="trust-item"><span class="dot"></span>HomeAdvisor Top Rated</div>
     <div class="trust-item"><span class="dot"></span>20+ Verified 5-Star Reviews</div>
     <div class="trust-item"><span class="dot"></span>Sherwin Williams Products</div>
-    <div class="trust-item"><span class="dot"></span>Serving Orange &amp; LA County</div>
+    <div class="trust-item"><span class="dot"></span>Serving OC &amp; LA County</div>
     <div class="trust-item"><span class="dot"></span>In Business Since 2017</div>
     <div class="trust-item"><span class="dot"></span>BBB A+ Rated</div>
   </div>
 </div>
 
-<!-- ══════════════════════════════════
-     COMMERCIAL
-══════════════════════════════════ -->
+<!-- COMMERCIAL -->
 <section class="section commercial" id="commercial">
   <div class="commercial-inner">
     <div class="commercial-text">
       <p class="section-label reveal">Commercial &amp; Property Management</p>
       <h2 class="section-h2 reveal reveal-d1">Built for<br><em>big projects.</em></h2>
-      <p class="section-body reveal reveal-d2">We work around occupied units, coordinate with your management timeline, and deliver a finish that holds up. We've painted apartment complexes, HOA common areas, and commercial buildings across Orange County since 2017.</p>
-      <a href="/contact" class="btn-solid reveal reveal-d2">Request a Commercial Estimate</a>
-
+      <p class="section-body reveal reveal-d2">We work around occupied units, coordinate with your management timeline, and deliver a finish that holds up. Apartment complexes, HOA common areas, and commercial buildings across Orange County since 2017.</p>
+      <a href="contact.html" class="btn-solid reveal reveal-d2">Request a Commercial Estimate</a>
       <div class="pm-cards reveal reveal-d3">
         <div class="pm-card">
           <div class="pm-card-title">Minimal disruption to residents</div>
@@ -795,53 +397,30 @@ footer { background: var(--ink); padding: 52px 20px 36px; }
           <div class="pm-card-title">Board-ready documentation</div>
           <div class="pm-card-body">Prep reports, timelines, and completion records you can present to an HOA board or ownership group.</div>
         </div>
-        <div class="pm-card">
-          <div class="pm-card-title">Within HOA color guidelines</div>
-          <div class="pm-card-body">We've worked with enough communities to know how to keep approvals clean and specs accurate.</div>
-        </div>
       </div>
     </div>
-
     <div class="commercial-visual">
       <img class="commercial-photo"
         src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80"
-        alt="Exterior painting on apartment complex — Lunar Painting commercial contractor Orange County CA"
-      />
+        alt="Exterior painting on apartment complex — Lunar Painting commercial contractor Orange County CA" />
     </div>
   </div>
 </section>
 
-<!-- ══════════════════════════════════
-     STATS BAND
-══════════════════════════════════ -->
+<!-- STATS — rule of 3: quality, scale, trust -->
 <div class="stats">
   <div class="stats-grid">
-    <div class="stat reveal">
-      <div class="stat-num">7+</div>
-      <div class="stat-label">Years in business<br>Since 2017</div>
-    </div>
-    <div class="stat reveal reveal-d1">
-      <div class="stat-num">20+</div>
-      <div class="stat-label">Verified 5-star<br>HomeAdvisor reviews</div>
-    </div>
-    <div class="stat reveal reveal-d2">
-      <div class="stat-num">2</div>
-      <div class="stat-label">Counties served<br>OC &amp; LA</div>
-    </div>
-    <div class="stat reveal reveal-d3">
-      <div class="stat-num">100%</div>
-      <div class="stat-label">Sherwin Williams<br>on every job</div>
-    </div>
+    <div class="stat reveal"><div class="stat-num">7+</div><div class="stat-label">Years in business<br>Since 2017</div></div>
+    <div class="stat reveal reveal-d1"><div class="stat-num">20+</div><div class="stat-label">Verified 5-star<br>reviews</div></div>
+    <div class="stat reveal reveal-d2"><div class="stat-num">2</div><div class="stat-label">Counties served<br>OC &amp; LA</div></div>
+    <div class="stat reveal reveal-d3"><div class="stat-num">100%</div><div class="stat-label">Sherwin Williams<br>on every job</div></div>
   </div>
 </div>
 
-<!-- ══════════════════════════════════
-     SERVICES
-══════════════════════════════════ -->
+<!-- SERVICES — 2 core services, no clutter -->
 <section class="section services" id="services">
   <p class="section-label">What We Do</p>
   <h2 class="section-h2 reveal">Every surface.<br><em>Done properly.</em></h2>
-
   <div class="services-stack">
     <div class="svc reveal">
       <div class="svc-head">
@@ -849,7 +428,7 @@ footer { background: var(--ink); padding: 52px 20px 36px; }
         <div class="svc-title">Commercial Painting</div>
       </div>
       <div class="svc-body">
-        <p class="svc-desc">Apartment complexes, HOAs, offices, retail spaces, and mixed-use buildings. We've done it all. Property managers and building owners trust us because we show up, communicate, and deliver.</p>
+        <p class="svc-desc">Apartment complexes, HOAs, offices, retail spaces, and mixed-use buildings. Property managers and building owners trust us because we show up, communicate, and deliver.</p>
         <ul class="svc-list">
           <li>Apartment complex exterior repaints</li>
           <li>HOA &amp; community property painting</li>
@@ -857,11 +436,9 @@ footer { background: var(--ink); padding: 52px 20px 36px; }
           <li>Unit turn painting</li>
           <li>Interior commercial painting</li>
           <li>Drywall repair &amp; prep</li>
-          <li>Wood &amp; window restoration</li>
         </ul>
       </div>
     </div>
-
     <div class="svc reveal reveal-d1">
       <div class="svc-head">
         <div class="svc-flag">Residential</div>
@@ -882,146 +459,99 @@ footer { background: var(--ink); padding: 52px 20px 36px; }
   </div>
 </section>
 
-<!-- ══════════════════════════════════
-     WORK PHOTO GRID
-══════════════════════════════════ -->
+<!-- WORK PHOTO GRID -->
 <section class="section work" id="work">
   <p class="section-label">Our Work</p>
   <h2 class="section-h2 reveal">The proof is<br><em>in the finish.</em></h2>
-  <p class="section-body reveal reveal-d1">A sample of completed projects across Orange County — apartment complexes, HOA repaints, and residential homes. Sherwin Williams products on every job.</p>
-
+  <p class="section-body reveal reveal-d1">Completed projects across Orange County — apartment complexes, HOA repaints, and residential homes. Sherwin Williams on every job.</p>
   <div class="work-grid">
     <div class="wg-item tall reveal">
-      <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&q=80"
-           alt="Full exterior repaint of apartment complex — Lunar Painting commercial painting Laguna Hills CA" />
+      <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&q=80" alt="Full exterior repaint of apartment complex — Lunar Painting commercial painting Laguna Hills CA" />
     </div>
     <div class="wg-item reveal reveal-d1">
-      <img src="https://images.unsplash.com/photo-1558618047-f3a5c65b3b77?w=600&q=80"
-           alt="Interior painting of residential home — Lunar Painting residential painting Orange County CA" />
+      <img src="https://images.unsplash.com/photo-1558618047-f3a5c65b3b77?w=600&q=80" alt="Interior painting of residential home — Lunar Painting residential painting Orange County CA" />
     </div>
     <div class="wg-item reveal reveal-d2">
-      <img src="https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=600&q=80"
-           alt="Painter applying exterior coat — Lunar Painting exterior painting Laguna Hills CA" />
+      <img src="https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=600&q=80" alt="Painter applying exterior coat — Lunar Painting exterior painting Laguna Hills CA" />
     </div>
     <div class="wg-item reveal reveal-d1">
-      <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&q=80"
-           alt="Commercial painting crew at work — Lunar Painting property management painting Orange County" />
+      <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&q=80" alt="Commercial painting crew at work — Lunar Painting property management painting Orange County" />
     </div>
     <div class="wg-item reveal reveal-d2">
-      <img src="https://images.unsplash.com/photo-1571781926291-c477ebfd024b?w=600&q=80"
-           alt="Completed HOA common area repaint — Lunar Painting HOA painting Orange County CA" />
+      <img src="https://images.unsplash.com/photo-1571781926291-c477ebfd024b?w=600&q=80" alt="Completed HOA common area repaint — Lunar Painting HOA painting Orange County CA" />
     </div>
   </div>
 </section>
 
-<!-- ══════════════════════════════════
-     PROCESS STRIP
-══════════════════════════════════ -->
+<!-- PROCESS STRIP -->
 <div class="process-strip">
-  <p class="process-quote reveal">
-    "Get in, get the job done,<br>clean up, and get out —<br>without sacrificing quality."
-  </p>
-  <a href="/contact" class="process-link reveal reveal-d1">
-    Get a free estimate <span class="process-link-arrow">→</span>
-  </a>
+  <p class="process-quote reveal">"Get in, get the job done,<br>clean up, and get out —<br>without sacrificing quality."</p>
+  <a href="contact.html" class="process-link reveal reveal-d1">Get a free estimate <span>→</span></a>
 </div>
 
-<!-- ══════════════════════════════════
-     REVIEWS
-══════════════════════════════════ -->
+<!-- REVIEWS — exactly 3 -->
 <section class="section reviews" id="reviews">
   <p class="section-label">What Clients Say</p>
   <h2 class="section-h2 reveal">20+ five-star reviews<br>on HomeAdvisor.</h2>
-
   <div class="review-grid">
     <div class="review reveal">
       <div class="review-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
       <p class="review-text">We manage six properties in Irvine and have used Lunar Painting on three of them. They work around our residents, don't leave a mess, and the quality holds up. That's really all we need from a contractor.</p>
-      <div class="review-meta">
-        <span class="review-name">M. Torres</span>
-        <span class="review-source">Property Manager, Irvine CA — HomeAdvisor</span>
-      </div>
+      <div class="review-meta"><span class="review-name">M. Torres</span><span class="review-source">Property Manager, Irvine CA — HomeAdvisor</span></div>
     </div>
     <div class="review reveal reveal-d1">
       <div class="review-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
       <p class="review-text">Our board approved a full exterior repaint for our 48-unit complex. Lunar Painting handled the whole project without a single tenant complaint. They stayed on schedule and came back immediately for touch-ups.</p>
-      <div class="review-meta">
-        <span class="review-name">D. Ramirez</span>
-        <span class="review-source">HOA Board President, Mission Viejo CA — HomeAdvisor</span>
-      </div>
+      <div class="review-meta"><span class="review-name">D. Ramirez</span><span class="review-source">HOA Board President, Mission Viejo CA — HomeAdvisor</span></div>
     </div>
     <div class="review reveal reveal-d2">
       <div class="review-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
-      <p class="review-text">Hired them for our home exterior in Laguna Hills. They were on time every day, protected the landscaping, and did a proper walk-through with me at the end. Nothing was left for me to chase down.</p>
-      <div class="review-meta">
-        <span class="review-name">K. Nguyen</span>
-        <span class="review-source">Homeowner, Laguna Hills CA — HomeAdvisor</span>
-      </div>
-    </div>
-    <div class="review reveal reveal-d3">
-      <div class="review-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
-      <p class="review-text">They painted three of our unit turns in one week. Fast, clean, no callbacks from new tenants. Exactly what we needed.</p>
-      <div class="review-meta">
-        <span class="review-name">R. Chen</span>
-        <span class="review-source">Property Owner, Lake Forest CA — HomeAdvisor</span>
-      </div>
+      <p class="review-text">Hired them for our home exterior in Laguna Hills. They were on time every day, protected the landscaping, and did a proper walk-through with me at the end. Nothing left to chase down.</p>
+      <div class="review-meta"><span class="review-name">K. Nguyen</span><span class="review-source">Homeowner, Laguna Hills CA — HomeAdvisor</span></div>
     </div>
   </div>
 </section>
 
-<!-- ══════════════════════════════════
-     CTA BLOCK
-══════════════════════════════════ -->
+<!-- CTA -->
 <section class="cta-block" id="contact-cta">
   <p class="cta-eyebrow">Ready to Get Started</p>
   <h2 class="cta-h2">We paint the right way.</h2>
-  <a href="tel:+19494468578" class="cta-phone">+1 (949) 446-8578</a>
+  <a href="tel:+19494468578" class="cta-phone">(949) 446-8578</a>
   <p class="cta-hours">Monday – Friday &nbsp;&middot;&nbsp; 8:00 AM – 5:00 PM</p>
-
   <div class="cta-divider"></div>
-
   <p class="cta-email-label">Email</p>
   <a href="mailto:lunarpainting1@gmail.com" class="cta-email">lunarpainting1@gmail.com</a>
   <p class="cta-address">25255 Cabot Rd, Suite #224 &nbsp;&middot;&nbsp; Laguna Hills, CA 92653</p>
 </section>
 
-<!-- ══════════════════════════════════
-     FOOTER
-══════════════════════════════════ -->
+<!-- FOOTER -->
 <footer>
   <div class="footer-logo-wrap">
-    <!-- Original brand colors preserved in footer — same as nav -->
-    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" xml:space="preserve" aria-label="Lunar Painting">
-      <style>.fst0{fill:#BE1E2D;}.fst1{fill:#726658;}.fst2{fill:#939598;}</style>
-      <polygon class="fst0" points="132.3,402.6 236.6,315.4 343.3,335.5 508.8,262.8 659.3,411.5 643.8,411.5 508.8,284.4 349.5,391.1 236.2,335.1"/>
-      <path class="fst1" d="M390,300.4V147.1l-76.7-48v217.2l28.4,5.4L390,300.4z M478.3,15.1l-76.7,30.7v249.6l76.7-33.7V15.1z M299.9,313.8V13.2l-67.1,90.2v198l0.2-0.1L299.9,313.8z M399.9,410.2c-139.2,0-260.3,15.2-322.6,37.7c82.8-14.7,196.8-23.9,322.6-23.9s239.8,9.1,322.6,23.9C660.3,425.5,539.1,410.2,399.9,410.2z"/>
-      <path class="fst0" d="M149.9,478.5c0-8.4,0-9.9,0.1-11.6c0.1-1.9,0.4-2.7,2.1-3c0.6-0.1,1.5-0.1,1.8-0.1c0.2,0,0.4-0.2,0.4-0.4c0-0.3-0.3-0.4-0.9-0.4c-1.7,0-5.9,0.1-6.2,0.1c-0.3,0-3.8-0.1-6.3-0.1c-0.6,0-0.9,0.1-0.9,0.4c0,0.2,0.3,0.4,0.4,0.4c0.5,0,1.5,0.1,1.9,0.1c1.8,0.3,2.2,1.1,2.3,3c0.1,1.7,0.1,3.2,0.1,11.6v9.5c0,5.2,0,9.4-0.3,11.7c-0.3,1.6-0.4,2.6-1.5,2.9c-0.5,0.1-1.2,0.3-1.7,0.3c-0.3,0-0.4,0.3-0.4,0.4c0,0.3,0.3,0.4,0.9,0.4c0.9,0,2.1-0.1,3.2-0.1c1.1-0.1,2-0.1,2.3-0.1c1.6,0,3.6,0.1,6.1,0.1c2.6,0.1,5.7,0.2,9.7,0.2c3,0,3.2-0.2,3.6-1.5c0.4-1.6,0.8-4.8,0.8-5.4c0-0.6-0.1-0.8-0.4-0.8c-0.3,0-0.5,0.3-0.6,0.7c-0.2,1.1-0.6,2.2-1.3,3c-1.3,1.6-3.8,1.6-6.7,1.6c-4.4,0-6.5-0.4-7.4-1.3c-1-1-1.1-4.2-1.1-12.1V478.5"/>
-    </svg>
+    <img src="https://raw.githubusercontent.com/39056mezas-prog/MG39056/main/lunarpaintinglogo.svg" alt="Lunar Painting" class="logo-img" />
   </div>
-
   <div class="footer-cols">
     <div>
       <div class="footer-col-title">Lunar Painting</div>
       <address class="footer-addr">
         25255 Cabot Rd, Suite #224<br>Laguna Hills, CA 92653<br><br>
-        <a href="tel:+19494468578" style="color:inherit;font-family:var(--ff-sans)">+1 (949) 446-8578</a><br>
-        <a href="tel:+19496525024" style="color:inherit;font-family:var(--ff-sans)">+1 (949) 652-5024</a><br>
+        <a href="tel:+19494468578" style="color:inherit;font-family:var(--ff-sans)">(949) 446-8578</a><br>
+        <a href="tel:+19496525024" style="color:inherit;font-family:var(--ff-sans)">(949) 652-5024</a><br>
         <a href="mailto:lunarpainting1@gmail.com" style="color:inherit">lunarpainting1@gmail.com</a>
       </address>
     </div>
     <div>
       <div class="footer-col-title">Services</div>
       <ul class="footer-list">
-        <li><a href="/commercial">Commercial</a></li>
-        <li><a href="/residential">Residential</a></li>
+        <li><a href="commercial.html">Commercial</a></li>
+        <li><a href="residential.html">Residential</a></li>
       </ul>
     </div>
     <div>
       <div class="footer-col-title">Navigate</div>
       <ul class="footer-list">
-        <li><a href="/">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="javascript:void(0)" onclick="scrollToWork()">Our Work</a></li>
-        <li><a href="/contact">Contact</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </div>
     <div>
@@ -1034,99 +564,50 @@ footer { background: var(--ink); padding: 52px 20px 36px; }
       </ul>
     </div>
   </div>
-
   <div class="footer-bottom">
     <p class="footer-copy">© 2017–2026 Lunar Painting &nbsp;&middot;&nbsp; Laguna Hills, CA</p>
-    <p class="footer-seo">Commercial painting contractor Orange County CA · Apartment complex painting Laguna Hills · HOA painting services Orange County · Residential painting contractor Los Angeles County · Sherwin Williams painting contractor Orange County</p>
+    <p class="footer-seo">Commercial painting contractor Orange County CA · Apartment complex painting Laguna Hills · HOA painting services Orange County · Residential painting contractor Los Angeles County</p>
   </div>
 </footer>
 
-<!-- ══════════════════════════════════
-     MOBILE STICKY BAR
-══════════════════════════════════ -->
+<!-- STICKY BAR -->
 <div class="sticky-bar" role="complementary" aria-label="Quick contact">
-  <a href="tel:+19494468578" class="sb-call">
-    <span class="sb-icon">📞</span> Call Now
-  </a>
-  <a href="/contact" class="sb-email">
-    <span class="sb-icon">✉</span> Get a Quote
-  </a>
+  <a href="tel:+19494468578" class="sb-call"><span class="sb-icon">📞</span> Call Now</a>
+  <a href="contact.html" class="sb-email"><span class="sb-icon">✉</span> Get a Quote</a>
 </div>
 
 <script>
-// ── Clean URL: remove .html from address bar on load ──
-(function() {
-  var path = window.location.pathname;
-  if (path.endsWith('.html')) {
-    history.replaceState(null, '', path.replace('.html', ''));
-  }
+// Clean URL on load
+(function(){
+  var p = window.location.pathname;
+  if(p.endsWith('.html')) history.replaceState(null,'',p.replace('.html',''));
 })();
 
-// ── Intercept internal .html links and push clean URLs ──
-document.addEventListener('click', function(e) {
-  var a = e.target.closest('a[href]');
-  if (!a) return;
-  var href = a.getAttribute('href');
-  if (href && href.endsWith('.html') && !href.startsWith('http') && !href.startsWith('//')) {
-    e.preventDefault();
-    var clean = href.replace('.html', '');
-    history.pushState(null, '', clean);
-    window.location.href = href; // still navigate to the actual file
-  }
-});
-
-// ── Scroll to work section, keeping URL clean (no #hash) ──
+// Scroll to work section without adding hash
 function scrollToWork() {
   var el = document.getElementById('work');
-  if (el) {
-    el.scrollIntoView({ behavior: 'smooth' });
-    // Don't update URL — keeps it clean
-  }
+  if(el) el.scrollIntoView({ behavior:'smooth' });
 }
 
-// ── Nav shadow on scroll ──
+// Nav shadow
 var nav = document.getElementById('nav');
-window.addEventListener('scroll', function() {
-  nav.classList.toggle('shadow', window.scrollY > 10);
-}, { passive: true });
+window.addEventListener('scroll', function(){ nav.classList.toggle('shadow', window.scrollY > 10); }, { passive:true });
 
-// ── Scroll reveal ──
-var observer = new IntersectionObserver(function(entries) {
-  entries.forEach(function(x) {
-    if (x.isIntersecting) { x.target.classList.add('in'); observer.unobserve(x.target); }
-  });
-}, { threshold: 0.1, rootMargin: '0px 0px -32px 0px' });
-document.querySelectorAll('.reveal').forEach(function(el) { observer.observe(el); });
+// Reveal
+var obs = new IntersectionObserver(function(e){ e.forEach(function(x){ if(x.isIntersecting){ x.target.classList.add('in'); obs.unobserve(x.target); } }); }, { threshold:0.1, rootMargin:'0px 0px -32px 0px' });
+document.querySelectorAll('.reveal').forEach(function(el){ obs.observe(el); });
 
-// ── Hamburger menu ──
-(function() {
+// Hamburger
+(function(){
   var btn = document.getElementById('hamburger');
-  var mobileNav = document.getElementById('mobile-nav');
+  var mn = document.getElementById('mobile-nav');
   var cls = document.getElementById('mobile-nav-close');
-
-  function openMenu() {
-    btn.classList.add('open');
-    mobileNav.classList.add('open');
-    btn.setAttribute('aria-expanded', 'true');
-    mobileNav.setAttribute('aria-hidden', 'false');
-    document.body.style.overflow = 'hidden';
-  }
-
-  window.closeMobileNav = function() {
-    btn.classList.remove('open');
-    mobileNav.classList.remove('open');
-    btn.setAttribute('aria-expanded', 'false');
-    mobileNav.setAttribute('aria-hidden', 'true');
-    document.body.style.overflow = '';
-  };
-
-  if (btn) btn.addEventListener('click', function() {
-    btn.classList.contains('open') ? closeMobileNav() : openMenu();
-  });
-  if (cls) cls.addEventListener('click', closeMobileNav);
-  document.addEventListener('keydown', function(e) { if (e.key === 'Escape') closeMobileNav(); });
+  function openMenu(){ btn.classList.add('open'); mn.classList.add('open'); btn.setAttribute('aria-expanded','true'); mn.setAttribute('aria-hidden','false'); document.body.style.overflow='hidden'; }
+  window.closeMobileNav = function(){ btn.classList.remove('open'); mn.classList.remove('open'); btn.setAttribute('aria-expanded','false'); mn.setAttribute('aria-hidden','true'); document.body.style.overflow=''; };
+  if(btn) btn.addEventListener('click', function(){ btn.classList.contains('open') ? closeMobileNav() : openMenu(); });
+  if(cls) cls.addEventListener('click', closeMobileNav);
+  document.addEventListener('keydown', function(e){ if(e.key==='Escape') closeMobileNav(); });
 })();
 </script>
-
 </body>
 </html>
