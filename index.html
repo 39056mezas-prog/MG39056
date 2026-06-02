@@ -911,10 +911,10 @@ a { text-decoration: none; color: inherit; }
 
     <!-- Desktop centered links -->
     <ul class="nav-links" role="list">
-      <li><a href="commercial.html">Commercial</a></li>
-      <li><a href="residential.html">Residential</a></li>
+      <li><a href="/commercial">Commercial</a></li>
+      <li><a href="/residential">Residential</a></li>
       <li><a href="#work">Our Work</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li><a href="/contact">Contact</a></li>
     </ul>
 
 
@@ -940,25 +940,25 @@ a { text-decoration: none; color: inherit; }
       <img src="https://raw.githubusercontent.com/39056mezas-prog/MG39056/main/lunarpaintinglogo.svg" alt="Lunar Painting" />
     </a>
     <ul class="hero-nav-links" role="list">
-      <li><a href="commercial.html">Commercial</a></li>
-      <li><a href="residential.html">Residential</a></li>
+      <li><a href="/commercial">Commercial</a></li>
+      <li><a href="/residential">Residential</a></li>
       <li><a href="#work">Our Work</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li><a href="/contact">Contact</a></li>
     </ul>
   </div>
 
   <div class="hero-content">
-    <p class="hero-eyebrow">Orange County &nbsp;&middot;&nbsp; Commercial &amp; Residential Painting</p>
+    <p class="hero-eyebrow">Laguna Hills &nbsp;&middot;&nbsp; Orange County &amp; LA County</p>
 
     <h1 class="hero-h1">
-      The crew property<br>managers <em>call back.</em>
+      OC's apartments don't<br>repaint <em>themselves.</em>
     </h1>
 
     <p class="hero-sub">
-      Apartment complexes, HOAs, and commercial properties across Orange County and LA County. Licensed, insured. Sherwin Williams on every job.
+      Sun-faded stucco, HOA deadlines, occupied units — we know this market. Lunar Painting has been handling Orange County commercial and residential repaints since 2017.
     </p>
 
-    <a href="contact.html" class="hero-cta">
+    <a href="/contact" class="hero-cta">
       Get a Free Estimate &rarr;
     </a>
   </div>
@@ -1158,7 +1158,7 @@ a { text-decoration: none; color: inherit; }
   <h2 class="cta-h2">We paint the right way.</h2>
   <a href="tel:+19494468578" class="cta-phone">(949) 446-8578</a>
   <p class="cta-hours">Monday &ndash; Friday &nbsp;&middot;&nbsp; 8:00 AM &ndash; 5:00 PM</p>
-  <a href="contact.html" class="cta-btn">Request a Free Estimate &rarr;</a>
+  <a href="/contact" class="cta-btn">Request a Free Estimate &rarr;</a>
 </section>
 
 <div class="gap-md"></div>
@@ -1182,16 +1182,16 @@ a { text-decoration: none; color: inherit; }
       <div>
         <div class="footer-col-title">Services</div>
         <ul class="footer-list">
-          <li><a href="commercial.html">Commercial</a></li>
-          <li><a href="residential.html">Residential</a></li>
+          <li><a href="/commercial">Commercial</a></li>
+          <li><a href="/residential">Residential</a></li>
         </ul>
       </div>
       <div>
         <div class="footer-col-title">Navigate</div>
         <ul class="footer-list">
-          <li><a href="index.html">Home</a></li>
+          <li><a href="/">Home</a></li>
           <li><a href="#work">Our Work</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="/contact">Contact</a></li>
         </ul>
       </div>
       <div>
@@ -1221,7 +1221,7 @@ a { text-decoration: none; color: inherit; }
 
 <script>
 // ── Clean URL ──
-(function(){ var p=window.location.pathname; if(p.endsWith('.html')) history.replaceState(null,'',p.replace('.html','')); })();
+(function(){ var p=window.location.pathname; if(p==='/index'||p==='/index.html'){history.replaceState(null,'','/');}else if(p.endsWith('.html')){history.replaceState(null,'',p.replace(/\.html$/,''));} })();
 
 // ── Nav visibility — slides in after user scrolls past hero ──
 var siteNav = document.getElementById('site-nav');
