@@ -210,7 +210,7 @@ a { text-decoration: none; color: inherit; }
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 24px 24px 0;
+  padding: 24px 24px 80px;
 }
 
 /* ═══════════════════════════════════════════
@@ -412,6 +412,22 @@ a { text-decoration: none; color: inherit; }
 }
 .card-inner {
   padding: clamp(40px, 6vw, 80px) clamp(28px, 5vw, 72px);
+}
+
+/* ── Services heading — subtle drywall wall texture ── */
+#services .card-inner {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+#services .card-inner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url('https://images.unsplash.com/photo-1533628635777-112b2239b1c7?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8d2hpdGUlMjB3YWxsJTIwdGV4dHVyZXxlbnwwfHwwfHx8MA%3D%3D') center / cover no-repeat;
+  opacity: 0.30;
+  pointer-events: none;
+  z-index: -1;
 }
 
 .section-label {
@@ -1235,6 +1251,81 @@ var obs = new IntersectionObserver(function(entries){
 }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
 document.querySelectorAll('.reveal').forEach(function(el){ obs.observe(el); });
 
+// ── Red Bar — touch-drag with seamless animation resume ──
+(function () {
+  var inner = document.querySelector('.red-bar-inner');
+  if (!inner) return;
+
+  var DURATION = 28; // seconds — must match CSS animation duration
+  var dragging = false;
+  var directionLocked = false;
+  var isHorizontal = false;
+  var touchStartX = 0, touchStartY = 0;
+  var animStartPx = 0, currentPx = 0;
+
+  function getTranslateX(el) {
+    var t = window.getComputedStyle(el).transform;
+    if (!t || t === 'none') return 0;
+    return new DOMMatrix(t).m41;
+  }
+
+  inner.addEventListener('touchstart', function (e) {
+    dragging = true;
+    directionLocked = false;
+    isHorizontal = false;
+    touchStartX = e.touches[0].clientX;
+    touchStartY = e.touches[0].clientY;
+    // Snapshot the live animated translateX so drag feels continuous
+    animStartPx = getTranslateX(inner);
+    currentPx = animStartPx;
+  }, { passive: true });
+
+  inner.addEventListener('touchmove', function (e) {
+    if (!dragging) return;
+    var dx = e.touches[0].clientX - touchStartX;
+    var dy = e.touches[0].clientY - touchStartY;
+
+    // Lock direction once the finger moves enough to tell
+    if (!directionLocked && (Math.abs(dx) > 5 || Math.abs(dy) > 5)) {
+      isHorizontal = Math.abs(dx) > Math.abs(dy);
+      directionLocked = true;
+      if (isHorizontal) {
+        // Freeze the CSS animation at its current pixel position
+        inner.style.animation = 'none';
+        inner.style.transform = 'translateX(' + animStartPx + 'px)';
+      }
+    }
+
+    if (!isHorizontal) return; // let vertical swipes scroll the page
+    e.preventDefault();
+    currentPx = animStartPx + dx;
+    inner.style.transform = 'translateX(' + currentPx + 'px)';
+  }, { passive: false });
+
+  function resumeAnimation() {
+    if (!dragging) return;
+    dragging = false;
+    if (!isHorizontal) return; // nothing was frozen, nothing to resume
+
+    var halfWidth = inner.scrollWidth / 2;
+    if (halfWidth <= 0) return;
+
+    // Find where in the cycle the finger stopped (normalise to 0 → halfWidth)
+    var pxInCycle = ((-currentPx) % halfWidth + halfWidth) % halfWidth;
+    var progress  = pxInCycle / halfWidth;
+    var delay     = -(progress * DURATION); // negative delay fast-forwards to that point
+
+    // Remove inline overrides, force a reflow, then re-attach the animation at offset
+    inner.style.transform = '';
+    inner.style.animation  = 'none';
+    void inner.offsetWidth; // flush so the browser sees the reset
+    inner.style.animation      = 'marqueeScroll ' + DURATION + 's linear infinite';
+    inner.style.animationDelay = delay + 's';
+  }
+
+  inner.addEventListener('touchend',    resumeAnimation, { passive: true });
+  inner.addEventListener('touchcancel', resumeAnimation, { passive: true });
+})();
 
 </script>
 
