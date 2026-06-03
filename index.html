@@ -1,1468 +1,1361 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Master Graphics 646 | Creative Agency · Ensenada, Baja California</title>
-<meta name="description" content="Full-service creative agency in Ensenada, Baja California. Logo design, branding, video production, Instagram reels, website design, and print coordination for US clients.">
-<meta name="keywords" content="master graphics ensenada, graphic design baja california, creative agency mexico, design studio ensenada 646, video production baja california, website design ensenada, branding agency mexico usa">
-<meta property="og:title" content="Master Graphics 646 | Creative Agency · Ensenada, Baja California">
-<meta property="og:description" content="Brand-aligned creative studio serving US businesses from Ensenada, Baja California.">
-<meta property="og:type" content="website">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-<style>
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-
-:root{
-  --bg:#070707;
-  --s1:#0d0d0d;
-  --s2:#141414;
-  --s3:#1a1a1a;
-  --accent:#FF3D00;
-  --accent2:#FF6B35;
-  --gold:#F5A623;
-  --text:#F2EDE8;
-  --text2:#C8C2BC;
-  --muted:#6E6A66;
-  --border:rgba(255,255,255,0.06);
-  --border2:rgba(255,255,255,0.10);
-  --poppins:'Poppins',sans-serif;
-  --inter:'Inter',sans-serif;
-}
-
-html{scroll-behavior:smooth}
-
-body{
-  background:var(--bg);
-  color:var(--text);
-  font-family:var(--inter);
-  font-size:16px;
-  line-height:1.7;
-  overflow-x:hidden;
-  -webkit-font-smoothing:antialiased;
-}
-
-::-webkit-scrollbar{width:3px}
-::-webkit-scrollbar-track{background:var(--bg)}
-::-webkit-scrollbar-thumb{background:var(--accent)}
-::selection{background:var(--accent);color:#fff}
-
-/* ── NAV ── */
-nav{
-  position:fixed;top:0;left:0;right:0;z-index:100;
-  display:flex;align-items:center;justify-content:space-between;
-  padding:1.4rem 5rem;
-  background:rgba(7,7,7,0.85);
-  backdrop-filter:blur(24px);
-  -webkit-backdrop-filter:blur(24px);
-  border-bottom:1px solid var(--border);
-  transition:padding .3s,background .3s;
-}
-
-.logo{
-  font-family:var(--poppins);font-weight:800;font-size:1.05rem;
-  letter-spacing:-.01em;color:var(--text);text-decoration:none;
-  display:flex;align-items:center;gap:.6rem;
-}
-
-.logo-mark{
-  width:32px;height:32px;background:var(--accent);border-radius:6px;
-  display:flex;align-items:center;justify-content:center;
-  font-size:.7rem;font-weight:900;color:#fff;letter-spacing:-.02em;
-  flex-shrink:0;
-}
-
-.logo-text span{
-  font-size:.65rem;font-weight:500;color:var(--muted);
-  display:block;letter-spacing:.05em;text-transform:uppercase;margin-top:-2px;
-}
-
-.nav-links{display:flex;align-items:center;gap:2.75rem;list-style:none}
-
-.nav-links a{
-  color:var(--text2);text-decoration:none;font-size:.82rem;
-  font-family:var(--poppins);font-weight:500;
-  letter-spacing:.01em;
-  transition:color .2s;
-}
-
-.nav-links a:hover{color:var(--text)}
-
-.nav-cta{
-  background:var(--accent)!important;color:#fff!important;
-  padding:.55rem 1.4rem!important;border-radius:6px!important;
-  font-weight:600!important;
-}
-
-.nav-cta:hover{opacity:.9!important;transform:translateY(-1px)}
-
-.hamburger{
-  display:none;flex-direction:column;gap:5px;cursor:pointer;
-  background:none;border:none;padding:4px;
-}
-
-.hamburger span{
-  display:block;width:22px;height:1.5px;
-  background:var(--text);transition:all .3s;
-}
-
-.mobile-menu{
-  display:none;position:fixed;inset:0;z-index:99;
-  background:rgba(7,7,7,.98);flex-direction:column;
-  align-items:center;justify-content:center;gap:2.25rem;
-}
-
-.mobile-menu.open{display:flex}
-
-.mobile-menu a{
-  font-family:var(--poppins);font-size:1.6rem;font-weight:700;
-  color:var(--text);text-decoration:none;
-  transition:color .2s;
-}
-
-.mobile-menu a:hover{color:var(--accent)}
-
-/* ── HERO ── */
-#hero{
-  min-height:100vh;display:flex;flex-direction:column;
-  justify-content:flex-end;padding:0 5rem 7rem;
-  position:relative;overflow:hidden;
-}
-
-.hero-noise{
-  position:absolute;inset:0;pointer-events:none;
-  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");
-  opacity:.5;
-}
-
-.hbg{position:absolute;inset:0;pointer-events:none;overflow:hidden}
-
-.hero-grid{
-  position:absolute;inset:0;
-  background-image:
-    linear-gradient(rgba(255,255,255,.022) 1px,transparent 1px),
-    linear-gradient(90deg,rgba(255,255,255,.022) 1px,transparent 1px);
-  background-size:80px 80px;
-  mask-image:radial-gradient(ellipse 80% 80% at 50% 50%,black 40%,transparent 100%);
-}
-
-.hero-orb1{
-  position:absolute;width:800px;height:800px;
-  right:-200px;top:-200px;
-  background:radial-gradient(circle,rgba(255,61,0,.09) 0%,transparent 65%);
-  pointer-events:none;
-}
-
-.hero-orb2{
-  position:absolute;width:500px;height:500px;
-  left:-100px;bottom:-100px;
-  background:radial-gradient(circle,rgba(255,107,53,.05) 0%,transparent 65%);
-  pointer-events:none;
-}
-
-.hero-line{
-  position:absolute;background:rgba(255,61,0,.15);
-}
-.hero-line.v{width:1px;height:100%;left:50%}
-.hero-line.h{height:1px;width:100%;top:60%}
-
-.h-dot{
-  position:absolute;width:6px;height:6px;border-radius:50%;
-  background:var(--accent);left:50%;top:60%;transform:translate(-50%,-50%);
-  box-shadow:0 0 20px rgba(255,61,0,.6);
-}
-
-.hero-badge{
-  display:inline-flex;align-items:center;gap:.7rem;
-  font-family:var(--poppins);font-size:.7rem;font-weight:600;
-  text-transform:uppercase;letter-spacing:.18em;
-  color:var(--accent);margin-bottom:2rem;
-  opacity:0;animation:fadeUp .7s ease forwards .3s;
-}
-
-.hero-badge::before{
-  content:'';display:block;width:32px;height:1.5px;
-  background:var(--accent);
-}
-
-.hero-badge::after{
-  content:'';display:block;width:6px;height:6px;
-  border-radius:50%;background:var(--accent);
-}
-
-h1.hero-h{
-  font-family:var(--poppins);font-weight:800;
-  font-size:clamp(3rem,7.5vw,7rem);
-  line-height:.96;letter-spacing:-.04em;max-width:820px;
-  opacity:0;animation:fadeUp .8s ease forwards .5s;
-}
-
-h1.hero-h em{
-  font-style:normal;
-  -webkit-text-stroke:1.5px var(--text);
-  color:transparent;
-  display:block;
-}
-
-.hero-sub{
-  margin-top:2.25rem;
-  font-family:var(--inter);
-  font-size:1.05rem;font-weight:300;
-  color:var(--text2);
-  max-width:480px;line-height:1.85;
-  opacity:0;animation:fadeUp .8s ease forwards .7s;
-}
-
-.hero-acts{
-  display:flex;gap:1rem;margin-top:3rem;align-items:center;
-  opacity:0;animation:fadeUp .8s ease forwards .9s;
-}
-
-.btn{
-  display:inline-flex;align-items:center;gap:.5rem;
-  text-decoration:none;font-family:var(--poppins);font-weight:600;
-  font-size:.82rem;letter-spacing:.04em;
-  transition:all .22s;cursor:pointer;border:none;
-  -webkit-font-smoothing:antialiased;
-  border-radius:7px;
-}
-.btn-p{background:var(--accent);color:#fff;padding:.9rem 2rem}
-.btn-p:hover{background:#e03500;transform:translateY(-2px);box-shadow:0 8px 28px rgba(255,61,0,.35)}
-.btn-g{background:transparent;color:var(--text);padding:.9rem 2rem;border:1px solid var(--border2)}
-.btn-g:hover{border-color:rgba(255,255,255,.25);background:rgba(255,255,255,.04)}
-
-.hero-stats{
-  display:flex;gap:3rem;margin-top:4rem;padding-top:2.5rem;
-  border-top:1px solid var(--border);
-  opacity:0;animation:fadeUp .8s ease forwards 1.1s;
-}
-
-.hstat{}
-.hstat-val{
-  font-family:var(--poppins);font-weight:800;font-size:2rem;
-  line-height:1;color:var(--text);letter-spacing:-.03em;
-}
-.hstat-val sup{font-size:1rem;color:var(--accent)}
-.hstat-lbl{
-  font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;
-  color:var(--muted);margin-top:.2rem;font-weight:500;
-}
-
-/* ── TICKER ── */
-.ticker-wrap{
-  overflow:hidden;
-  border-top:1px solid var(--border);
-  border-bottom:1px solid var(--border);
-  padding:.8rem 0;background:var(--s1);
-}
-
-.ticker-track{
-  display:flex;white-space:nowrap;
-  animation:ticker 28s linear infinite;
-}
-
-.ti{
-  font-family:var(--poppins);font-size:.7rem;font-weight:600;
-  text-transform:uppercase;letter-spacing:.18em;color:var(--muted);
-  padding:0 2.25rem;display:flex;align-items:center;gap:2.25rem;
-}
-
-.ti::after{
-  content:'✦';font-size:.55rem;color:var(--accent);
-}
-
-/* ── SECTIONS ── */
-.section{padding:8rem 5rem;max-width:1320px;margin:0 auto}
-.section.wide{max-width:100%;padding:8rem 5rem}
-.section-divider{border-top:1px solid var(--border)}
-
-.section-tag{
-  font-family:var(--poppins);font-size:.68rem;font-weight:700;
-  text-transform:uppercase;letter-spacing:.22em;
-  color:var(--accent);margin-bottom:1rem;display:flex;
-  align-items:center;gap:.65rem;
-}
-.section-tag::before{content:'';display:block;width:20px;height:1.5px;background:var(--accent)}
-
-h2.section-h{
-  font-family:var(--poppins);font-weight:800;
-  font-size:clamp(2rem,3.5vw,3.2rem);
-  letter-spacing:-.035em;line-height:1.08;
-}
-
-.section-desc{
-  color:var(--text2);font-size:.975rem;
-  line-height:1.85;max-width:560px;margin-top:.9rem;
-  font-weight:300;
-}
-
-.sec-hd{margin-bottom:4rem}
-.sec-hd-row{display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:4rem;gap:2rem}
-
-/* ── SERVICES ── */
-#services{border-top:1px solid var(--border)}
-
-.svc-wrap{max-width:1320px;margin:0 auto;padding:8rem 5rem}
-
-.svc-grid{
-  display:grid;grid-template-columns:repeat(3,1fr);
-  gap:1px;background:var(--border);
-  border:1px solid var(--border);border-radius:12px;overflow:hidden;
-}
-
-.svc{
-  background:var(--bg);padding:2.5rem 2.25rem;
-  position:relative;overflow:hidden;transition:background .3s;
-}
-
-.svc:hover{background:var(--s1)}
-
-.svc-num{
-  font-family:var(--poppins);font-size:.6rem;font-weight:700;
-  color:var(--accent);letter-spacing:.15em;
-  text-transform:uppercase;margin-bottom:2rem;
-}
-
-.svc-ic{
-  width:44px;height:44px;border-radius:10px;
-  border:1px solid var(--border2);
-  display:flex;align-items:center;justify-content:center;
-  margin-bottom:1.5rem;font-size:1.2rem;
-  transition:border-color .3s,background .3s;
-}
-
-.svc:hover .svc-ic{border-color:var(--accent);background:rgba(255,61,0,.08)}
-
-.svc h3{
-  font-family:var(--poppins);font-weight:700;font-size:1.05rem;
-  letter-spacing:-.02em;margin-bottom:.65rem;line-height:1.3;
-}
-
-.svc p{color:var(--text2);font-size:.87rem;line-height:1.78;font-weight:300}
-
-.tags{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:1.75rem}
-.tag{
-  font-family:var(--poppins);font-size:.6rem;font-weight:600;
-  text-transform:uppercase;letter-spacing:.07em;
-  background:var(--s2);color:var(--muted);
-  padding:.22rem .6rem;border-radius:4px;
-  border:1px solid var(--border);
-}
-
-/* ── WHY ── */
-#advantage{background:var(--s1);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
-
-.adv-inner{max-width:1320px;margin:0 auto;padding:8rem 5rem;
-  display:grid;grid-template-columns:1fr 1fr;gap:7rem;align-items:start}
-
-.big-stat-row{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-top:3rem}
-
-.big-stat{
-  background:var(--s2);border:1px solid var(--border);
-  border-radius:10px;padding:1.75rem;
-}
-
-.big-stat-val{
-  font-family:var(--poppins);font-weight:800;
-  font-size:2.5rem;line-height:1;letter-spacing:-.04em;
-}
-
-.big-stat-val sup{font-size:1.1rem;color:var(--accent);font-weight:700}
-.big-stat-val small{font-size:1.1rem;font-weight:600}
-
-.big-stat-lbl{
-  font-family:var(--poppins);font-size:.68rem;font-weight:600;
-  text-transform:uppercase;letter-spacing:.1em;
-  color:var(--muted);margin-top:.5rem;
-}
-
-.adv-list{list-style:none;display:flex;flex-direction:column;gap:0}
-
-.adv-item{
-  display:flex;gap:1.25rem;align-items:flex-start;
-  padding:1.75rem 0;
-  border-bottom:1px solid var(--border);
-}
-
-.adv-item:first-child{border-top:1px solid var(--border)}
-
-.adv-num{
-  font-family:var(--poppins);font-weight:700;font-size:.65rem;
-  color:var(--accent);letter-spacing:.1em;padding-top:.25rem;
-  flex-shrink:0;width:28px;
-}
-
-.adv-txt h4{
-  font-family:var(--poppins);font-weight:700;
-  font-size:.95rem;margin-bottom:.35rem;letter-spacing:-.01em;
-}
-
-.adv-txt p{font-size:.87rem;color:var(--text2);line-height:1.72;font-weight:300}
-
-/* ── CASE STUDIES ── */
-#work{border-top:1px solid var(--border)}
-
-.work-wrap{max-width:1320px;margin:0 auto;padding:8rem 5rem}
-
-/* FEATURED CASE STUDY */
-.case-featured{
-  background:var(--s1);border:1px solid var(--border);
-  border-radius:16px;overflow:hidden;margin-bottom:2rem;
-  display:grid;grid-template-columns:1fr 1fr;
-  transition:border-color .3s;
-}
-
-.case-featured:hover{border-color:var(--border2)}
-
-.case-visual{
-  position:relative;min-height:440px;overflow:hidden;
-}
-
-.cv-lunar{
-  background:linear-gradient(135deg,#0a0600 0%,#1a0e00 40%,#2d1800 100%);
-  width:100%;height:100%;display:flex;align-items:center;justify-content:center;
-  position:relative;
-}
-
-.cv-el{position:absolute;border-radius:50%}
-
-.cv-badge{
-  position:absolute;top:1.5rem;left:1.5rem;
-  background:rgba(245,166,35,.12);border:1px solid rgba(245,166,35,.35);
-  color:var(--gold);
-  font-family:var(--poppins);font-size:.6rem;font-weight:700;
-  text-transform:uppercase;letter-spacing:.14em;
-  padding:.3rem .75rem;border-radius:100px;
-}
-
-.case-info{padding:3rem}
-
-.case-client{
-  font-family:var(--poppins);font-size:.65rem;font-weight:700;
-  text-transform:uppercase;letter-spacing:.18em;color:var(--accent);
-  margin-bottom:.5rem;
-}
-
-.case-title{
-  font-family:var(--poppins);font-weight:800;
-  font-size:1.75rem;letter-spacing:-.035em;line-height:1.15;
-  margin-bottom:1.25rem;
-}
-
-.case-desc{
-  font-size:.9rem;color:var(--text2);line-height:1.82;
-  font-weight:300;margin-bottom:2rem;
-}
-
-.case-results{
-  display:grid;grid-template-columns:repeat(3,1fr);
-  gap:1rem;margin-bottom:2.25rem;
-  padding:1.5rem;background:var(--s2);border-radius:10px;
-  border:1px solid var(--border);
-}
-
-.cr-item{}
-.cr-val{
-  font-family:var(--poppins);font-weight:800;font-size:1.4rem;
-  letter-spacing:-.03em;color:var(--text);
-}
-.cr-lbl{
-  font-family:var(--poppins);font-size:.6rem;font-weight:600;
-  text-transform:uppercase;letter-spacing:.08em;
-  color:var(--muted);margin-top:.15rem;
-}
-
-.case-tags{display:flex;flex-wrap:wrap;gap:.4rem;margin-bottom:2rem}
-
-.case-link{
-  display:inline-flex;align-items:center;gap:.5rem;
-  font-family:var(--poppins);font-size:.78rem;font-weight:600;
-  color:var(--accent);text-decoration:none;letter-spacing:.02em;
-  transition:gap .2s;
-}
-.case-link:hover{gap:.75rem}
-
-/* CASE STUDY GRID */
-.case-grid{
-  display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;
-  margin-top:1.25rem;
-}
-
-.case-card{
-  background:var(--s1);border:1px solid var(--border);border-radius:12px;
-  overflow:hidden;transition:border-color .3s,transform .3s;
-  cursor:pointer;
-}
-
-.case-card:hover{border-color:var(--border2);transform:translateY(-4px)}
-
-.cc-visual{height:200px;position:relative;overflow:hidden}
-
-.ccv-placeholder{
-  width:100%;height:100%;display:flex;align-items:center;justify-content:center;
-}
-
-.ccv-beatus{background:linear-gradient(135deg,#06000d 0%,#120020 100%)}
-.ccv-maritime{background:linear-gradient(135deg,#00060d 0%,#001428 100%)}
-.ccv-realestate{background:linear-gradient(135deg,#040b04 0%,#0a1e0a 100%)}
-
-.cc-placeholder-text{
-  font-family:var(--poppins);font-size:.6rem;font-weight:700;
-  text-transform:uppercase;letter-spacing:.2em;
-  color:rgba(255,255,255,.12);text-align:center;padding:1rem;
-}
-
-.cc-badge-wrap{position:absolute;top:1rem;left:1rem}
-
-.cc-badge{
-  font-family:var(--poppins);font-size:.58rem;font-weight:700;
-  text-transform:uppercase;letter-spacing:.12em;
-  padding:.25rem .65rem;border-radius:100px;
-}
-
-.badge-done{background:rgba(0,200,100,.1);border:1px solid rgba(0,200,100,.3);color:#4ade80}
-.badge-coming{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.15);color:var(--muted)}
-
-.cc-info{padding:1.5rem}
-
-.cc-client{
-  font-family:var(--poppins);font-size:.6rem;font-weight:700;
-  text-transform:uppercase;letter-spacing:.14em;color:var(--accent);
-  margin-bottom:.35rem;
-}
-
-.cc-title{
-  font-family:var(--poppins);font-weight:700;font-size:1.05rem;
-  letter-spacing:-.02em;line-height:1.25;margin-bottom:.6rem;
-}
-
-.cc-desc{
-  font-size:.83rem;color:var(--text2);line-height:1.72;
-  font-weight:300;
-}
-
-/* ── PROCESS ── */
-#process{border-top:1px solid var(--border);background:var(--s1)}
-
-.process-inner{max-width:1320px;margin:0 auto;padding:8rem 5rem}
-
-.process-steps{
-  display:grid;grid-template-columns:repeat(4,1fr);
-  gap:1.5rem;margin-top:4rem;position:relative;
-}
-
-.process-steps::before{
-  content:'';position:absolute;top:2.25rem;left:2.25rem;right:2.25rem;
-  height:1px;background:linear-gradient(to right,var(--accent),transparent);
-  z-index:0;
-}
-
-.ps{
-  background:var(--bg);border:1px solid var(--border);border-radius:12px;
-  padding:2rem 1.75rem;position:relative;z-index:1;
-  transition:border-color .3s;
-}
-
-.ps:hover{border-color:var(--border2)}
-
-.ps-num{
-  width:44px;height:44px;background:var(--accent);border-radius:10px;
-  display:flex;align-items:center;justify-content:center;
-  font-family:var(--poppins);font-weight:800;font-size:.85rem;color:#fff;
-  margin-bottom:1.5rem;
-}
-
-.ps h4{
-  font-family:var(--poppins);font-weight:700;font-size:1rem;
-  letter-spacing:-.02em;margin-bottom:.65rem;
-}
-
-.ps p{font-size:.85rem;color:var(--text2);line-height:1.72;font-weight:300}
-
-/* ── PRICING ── */
-#pricing{border-top:1px solid var(--border)}
-
-.pricing-inner{max-width:1320px;margin:0 auto;padding:8rem 5rem}
-
-.pricing-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:2rem;margin-top:4rem}
-
-.pkg{
-  background:var(--s1);border:1px solid var(--border);border-radius:16px;
-  padding:2.75rem;position:relative;overflow:hidden;
-  transition:border-color .3s;
-}
-
-.pkg:hover{border-color:var(--border2)}
-
-.pkg.featured{
-  background:var(--accent);border-color:var(--accent);
-  color:#fff;
-}
-
-.pkg-popular{
-  position:absolute;top:1.5rem;right:1.5rem;
-  font-family:var(--poppins);font-size:.58rem;font-weight:700;
-  text-transform:uppercase;letter-spacing:.12em;
-  background:rgba(255,255,255,.2);color:#fff;
-  padding:.25rem .65rem;border-radius:100px;
-}
-
-.pkg-name{
-  font-family:var(--poppins);font-weight:800;font-size:1.5rem;
-  letter-spacing:-.03em;margin-bottom:.4rem;
-}
-
-.pkg-tagline{
-  font-size:.87rem;opacity:.75;margin-bottom:2rem;font-weight:300;
-}
-
-.pkg-price{
-  font-family:var(--poppins);font-weight:800;
-  font-size:3.5rem;letter-spacing:-.05em;line-height:1;
-  margin-bottom:.25rem;
-}
-
-.pkg-price sup{font-size:1.5rem;font-weight:700}
-.pkg-period{font-size:.8rem;opacity:.65;margin-bottom:2rem;font-weight:400}
-
-.pkg-features{list-style:none;display:flex;flex-direction:column;gap:.75rem;margin-bottom:2.5rem}
-
-.pkg-features li{
-  display:flex;align-items:flex-start;gap:.65rem;
-  font-size:.87rem;line-height:1.6;font-weight:300;
-}
-
-.pkg-features li::before{
-  content:'✓';font-weight:700;font-size:.8rem;flex-shrink:0;
-  margin-top:.1rem;
-}
-
-.pkg.featured .pkg-features li::before{color:#fff}
-.pkg:not(.featured) .pkg-features li::before{color:var(--accent)}
-
-.pkg-btn{
-  display:block;text-align:center;text-decoration:none;
-  font-family:var(--poppins);font-weight:700;font-size:.85rem;
-  letter-spacing:.04em;padding:1rem;border-radius:8px;
-  transition:all .22s;
-}
-
-.pkg.featured .pkg-btn{
-  background:#fff;color:var(--accent);
-}
-
-.pkg.featured .pkg-btn:hover{
-  background:rgba(255,255,255,.9);transform:translateY(-2px);
-}
-
-.pkg:not(.featured) .pkg-btn{
-  background:var(--accent);color:#fff;
-}
-
-.pkg:not(.featured) .pkg-btn:hover{
-  background:#e03500;transform:translateY(-2px);
-}
-
-.pkg-note{
-  font-size:.75rem;opacity:.55;margin-top:1rem;line-height:1.6;
-  text-align:center;font-style:italic;
-}
-
-/* ── CONTACT ── */
-#contact{border-top:1px solid var(--border)}
-
-.contact-inner{max-width:1320px;margin:0 auto;padding:8rem 5rem}
-
-.contact-grid{display:grid;grid-template-columns:1fr 1.4fr;gap:6rem;margin-top:4rem;align-items:start}
-
-.ci-tag{
-  font-family:var(--poppins);font-size:.68rem;font-weight:700;
-  text-transform:uppercase;letter-spacing:.18em;color:var(--accent);
-  margin-bottom:1.25rem;display:flex;align-items:center;gap:.5rem;
-}
-
-.ci-tag::before{content:'';display:block;width:16px;height:1.5px;background:var(--accent)}
-
-.ci h3{
-  font-family:var(--poppins);font-weight:800;font-size:2rem;
-  letter-spacing:-.035em;line-height:1.1;margin-bottom:1rem;
-}
-
-.ci-desc{color:var(--text2);font-size:.9rem;margin-bottom:2.5rem;line-height:1.8;font-weight:300}
-
-.contact-rows{display:flex;flex-direction:column;gap:.85rem;margin-bottom:2rem}
-
-.crow{
-  display:flex;align-items:center;gap:1rem;
-  padding:1rem 1.25rem;background:var(--s1);
-  border:1px solid var(--border);border-radius:10px;
-  transition:border-color .3s;
-}
-
-.crow:hover{border-color:var(--border2)}
-
-.crow-ic{
-  width:36px;height:36px;background:rgba(255,61,0,.1);border-radius:8px;
-  display:flex;align-items:center;justify-content:center;font-size:.95rem;flex-shrink:0;
-}
-
-.crow-info{}
-
-.crow-lbl{
-  font-family:var(--poppins);font-size:.6rem;font-weight:700;
-  text-transform:uppercase;letter-spacing:.1em;color:var(--muted);
-  margin-bottom:.15rem;
-}
-
-.crow-val{font-size:.88rem;color:var(--text);font-weight:500}
-.crow-val a{color:var(--text);text-decoration:none;transition:color .2s}
-.crow-val a:hover{color:var(--accent)}
-
-.cta-buttons{display:flex;flex-direction:column;gap:.75rem;margin-top:1.5rem}
-
-.wa-btn{
-  display:flex;align-items:center;gap:.75rem;
-  background:#25D366;color:#fff;text-decoration:none;
-  padding:.95rem 1.5rem;border-radius:10px;
-  font-family:var(--poppins);font-weight:700;font-size:.85rem;
-  transition:all .22s;
-}
-
-.wa-btn:hover{background:#1ebe5a;transform:translateY(-2px);box-shadow:0 8px 24px rgba(37,211,102,.3)}
-
-.fb-btn{
-  display:flex;align-items:center;gap:.75rem;
-  background:#1877F2;color:#fff;text-decoration:none;
-  padding:.95rem 1.5rem;border-radius:10px;
-  font-family:var(--poppins);font-weight:700;font-size:.85rem;
-  transition:all .22s;
-}
-
-.fb-btn:hover{background:#0d6de0;transform:translateY(-2px);box-shadow:0 8px 24px rgba(24,119,242,.3)}
-
-/* FORM */
-.cf{display:flex;flex-direction:column;gap:1.1rem}
-
-.frow{display:grid;grid-template-columns:1fr 1fr;gap:1.1rem}
-
-.fg{display:flex;flex-direction:column;gap:.45rem}
-
-.fg label{
-  font-family:var(--poppins);font-size:.65rem;font-weight:700;
-  text-transform:uppercase;letter-spacing:.12em;color:var(--muted);
-}
-
-.fg input,.fg select,.fg textarea{
-  background:var(--s1);border:1px solid var(--border2);
-  color:var(--text);padding:.85rem 1.1rem;
-  font-family:var(--inter);font-size:.9rem;font-weight:400;
-  border-radius:8px;transition:border-color .2s,background .2s;
-  outline:none;width:100%;
-  -webkit-appearance:none;appearance:none;
-}
-
-.fg input::placeholder,.fg textarea::placeholder{color:var(--muted);opacity:.6}
-
-.fg input:focus,.fg select:focus,.fg textarea:focus{
-  border-color:var(--accent);background:rgba(255,61,0,.03);
-}
-
-.fg textarea{resize:vertical;min-height:120px}
-.fg select option{background:#0d0d0d}
-
-.sub-btn{
-  background:var(--accent);color:#fff;border:none;
-  padding:1rem 2.25rem;
-  font-family:var(--poppins);font-weight:700;
-  font-size:.85rem;letter-spacing:.05em;
-  border-radius:8px;cursor:pointer;transition:all .22s;
-  align-self:flex-start;
-}
-
-.sub-btn:hover{background:#e03500;transform:translateY(-2px);box-shadow:0 8px 28px rgba(255,61,0,.35)}
-
-/* ── FOOTER ── */
-.footer-wrap{
-  background:var(--s1);border-top:1px solid var(--border);
-  padding:2.5rem 5rem;
-}
-
-.footer-inner{
-  max-width:1320px;margin:0 auto;
-  display:flex;align-items:center;justify-content:space-between;
-  gap:1rem;
-}
-
-footer p{
-  font-family:var(--inter);font-size:.78rem;
-  color:var(--muted);font-weight:400;
-}
-
-footer a{color:var(--muted);text-decoration:none;transition:color .2s}
-footer a:hover{color:var(--accent)}
-
-/* ── FLOAT WA ── */
-.wa-float{
-  position:fixed;bottom:2rem;right:2rem;z-index:50;
-  background:#25D366;width:56px;height:56px;border-radius:50%;
-  display:flex;align-items:center;justify-content:center;
-  text-decoration:none;font-size:1.4rem;
-  box-shadow:0 4px 28px rgba(37,211,102,.45);
-  transition:all .25s;
-}
-
-.wa-float:hover{transform:scale(1.1)}
-
-.wa-pulse{
-  position:absolute;inset:0;border-radius:50%;
-  background:#25D366;animation:pulse 2.5s ease-out infinite;z-index:-1;
-}
-
-/* ── ANIMATIONS ── */
-@keyframes fadeUp{
-  from{opacity:0;transform:translateY(28px)}
-  to{opacity:1;transform:translateY(0)}
-}
-
-@keyframes ticker{
-  from{transform:translateX(0)}
-  to{transform:translateX(-50%)}
-}
-
-@keyframes pulse{
-  0%{transform:scale(1);opacity:.5}
-  100%{transform:scale(1.9);opacity:0}
-}
-
-/* ── RESPONSIVE ── */
-@media(max-width:960px){
-  nav{padding:1.1rem 1.75rem}
-  .nav-links{display:none}
-  .hamburger{display:flex}
-
-  #hero{padding:0 1.75rem 5rem}
-  .hero-stats{gap:2rem}
-
-  .section,.svc-wrap,.adv-inner,.work-wrap,.process-inner,.pricing-inner,.contact-inner{
-    padding:5rem 1.75rem;
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Commercial Painting Contractor Orange County | Lunar Painting | Laguna Hills, CA</title>
+<meta name="description" content="Lunar Painting is Orange County's trusted commercial painting contractor — apartment complexes, HOAs, and property managers. Licensed, insured, Sherwin Williams. Call (949) 592-7099." />
+<meta name="robots" content="index, follow" />
+<link rel="canonical" href="https://lunarpainting.com/" />
+<link rel="icon" type="image/webp" href="https://raw.githubusercontent.com/39056mezas-prog/MG39056/main/favicon.webp" />
+<link rel="shortcut icon" href="https://raw.githubusercontent.com/39056mezas-prog/MG39056/main/favicon.webp" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Lunar Painting — Orange County Commercial Painting Contractor" />
+<meta property="og:description" content="Trusted by property managers across Orange County. Apartment complexes, HOAs, commercial properties." />
+<meta property="og:image" content="https://raw.githubusercontent.com/39056mezas-prog/MG39056/main/heropainterstruckinfrontofapartmentbuilding.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "https://lunarpainting.com",
+  "name": "Lunar Painting",
+  "telephone": "+19495927099",
+  "email": "lunarpainting1@gmail.com",
+  "url": "https://lunarpainting.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "25255 Cabot Rd, Suite #224",
+    "addressLocality": "Laguna Hills",
+    "addressRegion": "CA",
+    "postalCode": "92653",
+    "addressCountry": "US"
   }
+}
+</script>
 
-  .svc-grid{grid-template-columns:1fr}
-  .adv-inner{grid-template-columns:1fr;gap:3rem}
-  .big-stat-row{grid-template-columns:1fr 1fr}
+<!-- Playfair Display — highly legible bold serif, wide glyphs, excellent at display sizes -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700;1,800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
 
-  .case-featured{grid-template-columns:1fr}
-  .case-visual{min-height:260px}
-  .case-grid{grid-template-columns:1fr}
-  .case-results{grid-template-columns:repeat(3,1fr)}
-
-  .process-steps{grid-template-columns:1fr 1fr}
-  .process-steps::before{display:none}
-
-  .pricing-grid{grid-template-columns:1fr}
-  .contact-grid{grid-template-columns:1fr;gap:3rem}
-  .frow{grid-template-columns:1fr}
-
-  .footer-inner{flex-direction:column;text-align:center;gap:.5rem}
-  .footer-wrap{padding:2rem 1.75rem}
-
-  .sec-hd-row{flex-direction:column;align-items:flex-start}
+<style>
+/* ═══════════════════════════════════════════
+   TOKENS
+═══════════════════════════════════════════ */
+:root {
+  --red:        #BE1E2D;
+  --red-dk:     #8a1220;
+  --red-glow:   #6b0d18;
+  --white:      #FFFFFF;
+  --snow:       #F7F6F3;
+  --ink:        #141210;
+  --ink-soft:   #1e1b18;
+  --mid:        #6B6A67;
+  --rule:       #E2E0DC;
+  --rule-dark:  rgba(255,255,255,0.10);
+  --ff-serif:   'Playfair Display', 'Times New Roman', Georgia, serif;
+  --ff-sans:    'Inter', system-ui, sans-serif;
+  --nav-h:      68px;
 }
 
-@media(min-width:961px) and (max-width:1200px){
-  .svc-grid{grid-template-columns:repeat(3,1fr)}
-  .process-steps{grid-template-columns:repeat(2,1fr)}
-  .process-steps::before{display:none}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--ff-sans);
+  background: var(--ink);
+  color: var(--white);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
+img { display: block; max-width: 100%; }
+a { text-decoration: none; color: inherit; }
+
+/* ═══════════════════════════════════════════
+   STICKY NAV — hidden in hero, slides in on scroll
+═══════════════════════════════════════════ */
+#site-nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 300;
+  height: var(--nav-h);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transform: translateY(-8px);
+  pointer-events: none;
+  transition: opacity 0.4s ease, transform 0.4s ease, background 0.4s ease, backdrop-filter 0.4s ease;
+}
+#site-nav.visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+  background: rgba(14, 11, 9, 0.92);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1280px;
+  padding: 0 28px;
+  position: relative;
+}
+
+/* Logo — left on desktop, centered gesture */
+.nav-logo {
+  display: flex;
+  align-items: center;
+  height: 38px;
+  flex-shrink: 0;
+  cursor: pointer;
+  transition: opacity .2s;
+}
+.nav-logo:hover { opacity: 0.75; }
+.nav-logo img { height: 38px; width: auto; filter: brightness(0) invert(1); }
+
+/* Desktop links — centered in the available space */
+.nav-links {
+  display: none;
+  list-style: none;
+  gap: 40px;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.nav-links a {
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.65);
+  transition: color .2s;
+}
+.nav-links a:hover { color: var(--white); }
+.nav-phone {
+  display: none;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--red);
+  letter-spacing: .01em;
+  white-space: nowrap;
+  margin-left: auto;
+  transition: color .2s;
+}
+.nav-phone:hover { opacity: .8; }
+
+
+
+
+
+
+
+/* ═══════════════════════════════════════════
+   HERO — full viewport, centered, dark red overlay
+═══════════════════════════════════════════ */
+.hero {
+  position: relative;
+  width: 100%;
+  min-height: 100svh;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  overflow: hidden;
+  padding: 0 0 80px;
+}
+
+/* Real photo background */
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 30%;
+  z-index: 0;
+}
+
+/* Dark crimson gradient over the photo — brand red feels */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background:
+    linear-gradient(
+      165deg,
+      rgba(90, 8, 16, 0.82) 0%,
+      rgba(50, 4, 10, 0.75) 35%,
+      rgba(20, 2, 5, 0.70) 60%,
+      rgba(10, 1, 3, 0.88) 100%
+    );
+}
+
+/* Subtle grain texture for depth */
+.hero-overlay::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+  background-size: 256px 256px;
+  opacity: 0.35;
+  pointer-events: none;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 860px;
+  width: 100%;
+  margin: 0 auto;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 24px 24px 80px;
+}
+
+/* ═══════════════════════════════════════════
+   HERO NAV — logo + links embedded at top of hero
+═══════════════════════════════════════════ */
+.hero-nav {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: clamp(28px, 6vw, 48px) clamp(24px, 4vw, 48px) 0;
+  position: relative;
+  z-index: 2;
+  flex-shrink: 0;
+}
+.hero-nav-logo {
+  display: flex;
+  align-items: center;
+  height: clamp(44px, 11vw, 68px);
+  margin-bottom: clamp(16px, 3vw, 22px);
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+.hero-nav-logo:hover { opacity: 0.75; }
+.hero-nav-logo img {
+  height: clamp(44px, 11vw, 68px);
+  width: auto;
+  filter: brightness(0) invert(1);
+}
+.hero-nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: clamp(18px, 5vw, 48px);
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.hero-nav-links a {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.45);
+  transition: color 0.2s;
+  white-space: nowrap;
+}
+.hero-nav-links a:hover { color: rgba(255,255,255,0.9); }
+
+.hero-eyebrow {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,.45);
+  margin-bottom: 20px;
+  animation: fadeDown .9s .1s cubic-bezier(.16,1,.3,1) both;
+}
+
+.hero-h1 {
+  font-family: var(--ff-serif);
+  font-size: clamp(46px, 9vw, 96px);
+  font-weight: 800;
+  line-height: 1.02;
+  letter-spacing: -.02em;
+  color: var(--white);
+  margin-bottom: 24px;
+  animation: fadeDown .9s .18s cubic-bezier(.16,1,.3,1) both;
+}
+.hero-h1 em {
+  font-style: italic;
+  font-weight: 700;
+  color: rgba(255,255,255,.65);
+}
+
+.hero-sub {
+  font-size: clamp(15px, 2vw, 17px);
+  font-weight: 300;
+  line-height: 1.75;
+  color: rgba(255,255,255,.55);
+  max-width: 500px;
+  margin: 0 auto 44px;
+  animation: fadeDown .9s .26s cubic-bezier(.16,1,.3,1) both;
+}
+
+.hero-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--red);
+  color: var(--white);
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: .02em;
+  padding: 17px 38px;
+  border-radius: 2px;
+  transition: background .2s, transform .15s, box-shadow .2s;
+  animation: fadeDown .9s .34s cubic-bezier(.16,1,.3,1) both;
+}
+.hero-cta:hover {
+  background: var(--red-dk);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 40px rgba(190,30,45,0.4);
+}
+.hero-phone {
+  font-size: 13px;
+  color: rgba(255,255,255,.4);
+  margin-top: 16px;
+  animation: fadeDown .9s .46s cubic-bezier(.16,1,.3,1) both;
+}
+.hero-phone a {
+  color: rgba(255,255,255,.65);
+  border-bottom: 1px solid rgba(255,255,255,.25);
+  padding-bottom: 1px;
+  transition: color .2s, border-color .2s;
+}
+.hero-phone a:hover { color: var(--white); border-color: rgba(255,255,255,.6); }
+
+/* Scroll indicator */
+.hero-scroll {
+  position: absolute;
+  bottom: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  opacity: .4;
+  animation: fadeDown 1.2s .6s both;
+}
+.hero-scroll span {
+  font-size: 10px;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,.6);
+}
+.hero-scroll-line {
+  width: 1px;
+  height: 40px;
+  background: linear-gradient(to bottom, rgba(255,255,255,0.5), transparent);
+  animation: scrollPulse 2s ease-in-out infinite;
+}
+@keyframes scrollPulse { 0%,100%{opacity:.4;transform:scaleY(1)} 50%{opacity:.9;transform:scaleY(1.15)} }
+
+/* ═══════════════════════════════════════════
+   RED DIVIDER BAR — separates hero from body
+═══════════════════════════════════════════ */
+.red-bar {
+  width: 100%;
+  background: var(--red);
+  padding: 0;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+.red-bar-inner {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  padding: 18px 0;
+  white-space: nowrap;
+  animation: marqueeScroll 28s linear infinite;
+  will-change: transform;
+}
+.red-bar-inner:hover { animation-play-state: paused; }
+.red-bar-item {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,.85);
+  padding: 0 32px;
+  flex-shrink: 0;
+}
+.red-bar-dot {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: rgba(255,255,255,.4);
+  flex-shrink: 0;
+}
+@keyframes marqueeScroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+/* ═══════════════════════════════════════════
+   SHARED CARD / SECTION STYLES
+═══════════════════════════════════════════ */
+/* All sections sit on off-white — clear "cards" on dark body */
+.page-body {
+  background: var(--ink);
+}
+
+/* card = a floating white/off-white card on dark background */
+.card-section {
+  background: var(--snow);
+  color: var(--ink);
+  border-radius: 3px;
+  margin: 24px;
+  overflow: hidden;
+}
+.card-section-dark {
+  background: var(--ink-soft);
+  color: var(--white);
+  border-radius: 3px;
+  margin: 24px;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,.06);
+}
+.card-inner {
+  padding: clamp(40px, 6vw, 80px) clamp(28px, 5vw, 72px);
+}
+
+/* ── Services heading — subtle drywall wall texture ── */
+#services .card-inner {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+#services .card-inner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url('https://images.unsplash.com/photo-1533628635777-112b2239b1c7?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8d2hpdGUlMjB3YWxsJTIwdGV4dHVyZXxlbnwwfHwwfHx8MA%3D%3D') center / cover no-repeat;
+  opacity: 0.30;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.section-label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--red);
+  margin-bottom: 14px;
+  display: block;
+}
+.section-h2 {
+  font-family: var(--ff-serif);
+  font-size: clamp(32px, 5vw, 56px);
+  font-weight: 800;
+  line-height: 1.06;
+  letter-spacing: -.02em;
+  color: inherit;
+  margin-bottom: 18px;
+}
+.section-h2 em { font-style: italic; font-weight: 700; color: var(--red); }
+.section-body {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.8;
+  color: var(--mid);
+  max-width: 540px;
+  margin-bottom: 36px;
+}
+
+/* ═══════════════════════════════════════════
+   ABOUT / COMMERCIAL CARD
+═══════════════════════════════════════════ */
+.about-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.about-photo {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  object-position: center 40%;
+  display: block;
+}
+.about-text { padding: clamp(36px, 5vw, 64px) clamp(28px, 5vw, 64px); }
+
+.pillars {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-top: 32px;
+  border-top: 1px solid var(--rule);
+}
+.pillar {
+  padding: 20px 0;
+  border-bottom: 1px solid var(--rule);
+  display: grid;
+  grid-template-columns: 28px 1fr;
+  gap: 0 16px;
+  align-items: start;
+}
+.pillar-num {
+  font-family: var(--ff-serif);
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--rule);
+  line-height: 1.4;
+}
+.pillar-title { font-size: 14px; font-weight: 600; color: var(--ink); margin-bottom: 4px; }
+.pillar-desc { font-size: 13px; font-weight: 300; line-height: 1.7; color: var(--mid); }
+
+/* ═══════════════════════════════════════════
+   STATS CARD — dark card
+═══════════════════════════════════════════ */
+.stats-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: rgba(255,255,255,.07);
+}
+.stat-cell {
+  background: var(--ink-soft);
+  padding: clamp(28px, 4vw, 48px) clamp(24px, 3.5vw, 40px);
+}
+.stat-num {
+  font-family: var(--ff-serif);
+  font-size: clamp(48px, 8vw, 80px);
+  font-weight: 900;
+  color: var(--white);
+  line-height: 1;
+  margin-bottom: 8px;
+}
+.stat-label {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.55;
+  color: rgba(255,255,255,.4);
+}
+
+/* ═══════════════════════════════════════════
+   SERVICES CARD
+═══════════════════════════════════════════ */
+.svc-pair {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2px;
+}
+.svc-card {
+  background: var(--white);
+  padding: clamp(28px, 4vw, 48px);
+}
+.svc-card:first-child { border-bottom: 2px solid var(--snow); }
+.svc-flag {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--red);
+  margin-bottom: 10px;
+}
+.svc-title {
+  font-family: var(--ff-serif);
+  font-size: clamp(22px, 3.5vw, 30px);
+  font-weight: 800;
+  letter-spacing: -.01em;
+  color: var(--ink);
+  margin-bottom: 12px;
+  line-height: 1.1;
+}
+.svc-desc {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.75;
+  color: var(--mid);
+  margin-bottom: 20px;
+}
+.svc-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+.svc-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 13px;
+  color: var(--ink);
+  line-height: 1.5;
+}
+.svc-list li::before {
+  content: '';
+  width: 12px;
+  height: 1.5px;
+  background: var(--red);
+  flex-shrink: 0;
+  margin-top: 8px;
+}
+
+/* ═══════════════════════════════════════════
+   WORK PHOTO GRID CARD
+═══════════════════════════════════════════ */
+.work-header { padding: clamp(36px, 5vw, 56px) clamp(28px, 5vw, 64px) 28px; }
+.photo-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3px;
+  padding: 0 3px 3px;
+}
+.pg-item {
+  overflow: hidden;
+  background: var(--ink);
+  cursor: pointer;
+}
+.pg-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 1;
+  display: block;
+  transition: transform .7s cubic-bezier(.25,.46,.45,.94), filter .4s;
+  filter: brightness(.92) saturate(.9);
+}
+.pg-item:hover img {
+  transform: scale(1.05);
+  filter: brightness(1) saturate(1);
+}
+.pg-tall { grid-row: span 2; }
+.pg-tall img { aspect-ratio: auto; height: 100%; }
+
+/* ═══════════════════════════════════════════
+   PULL QUOTE CARD — dark
+═══════════════════════════════════════════ */
+.quote-card {
+  background: var(--red-glow);
+  border-radius: 3px;
+  margin: 0 24px;
+  padding: clamp(48px, 7vw, 88px) clamp(28px, 5vw, 80px);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.quote-card::before {
+  content: '\201C';
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: var(--ff-serif);
+  font-size: 260px;
+  font-weight: 900;
+  color: rgba(255,255,255,.04);
+  line-height: 1;
+  pointer-events: none;
+  user-select: none;
+}
+.quote-text {
+  font-family: var(--ff-serif);
+  font-size: clamp(24px, 4.5vw, 44px);
+  font-weight: 700;
+  font-style: italic;
+  color: rgba(255,255,255,.9);
+  line-height: 1.4;
+  max-width: 720px;
+  margin: 0 auto 24px;
+  position: relative;
+  z-index: 1;
+}
+.quote-attr {
+  font-size: 12px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,.35);
+  position: relative;
+  z-index: 1;
+}
+
+/* ═══════════════════════════════════════════
+   REVIEWS — 3 cards in a row card
+═══════════════════════════════════════════ */
+.reviews-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2px;
+  margin-top: 28px;
+}
+.review-card {
+  background: var(--white);
+  padding: clamp(24px, 3.5vw, 36px);
+}
+.review-stars {
+  color: var(--red);
+  font-size: 13px;
+  letter-spacing: 2px;
+  margin-bottom: 14px;
+}
+.review-text {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.8;
+  color: var(--ink);
+  margin-bottom: 18px;
+}
+.review-name {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--ink);
+  margin-bottom: 3px;
+}
+.review-source { font-size: 11px; color: var(--mid); }
+
+/* ═══════════════════════════════════════════
+   CTA CARD — full red
+═══════════════════════════════════════════ */
+.cta-card {
+  background: var(--red);
+  border-radius: 3px;
+  margin: 0 24px;
+  padding: clamp(56px, 8vw, 100px) clamp(28px, 5vw, 80px);
+  text-align: center;
+}
+.cta-eyebrow {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,.45);
+  margin-bottom: 16px;
+}
+.cta-h2 {
+  font-family: var(--ff-serif);
+  font-size: clamp(32px, 6vw, 60px);
+  font-weight: 800;
+  letter-spacing: -.02em;
+  color: var(--white);
+  line-height: 1.05;
+  margin-bottom: 12px;
+}
+.cta-phone {
+  display: block;
+  font-family: var(--ff-sans);
+  font-size: clamp(28px, 5.5vw, 52px);
+  font-weight: 700;
+  color: var(--white);
+  letter-spacing: -.01em;
+  line-height: 1.1;
+  margin-bottom: 8px;
+}
+.cta-hours {
+  font-size: 13px;
+  color: rgba(255,255,255,.5);
+  margin-bottom: 36px;
+}
+.cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255,255,255,.12);
+  border: 1px solid rgba(255,255,255,.25);
+  color: var(--white);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: .02em;
+  padding: 14px 32px;
+  border-radius: 2px;
+  transition: background .2s, border-color .2s;
+}
+.cta-btn:hover { background: rgba(255,255,255,.2); border-color: rgba(255,255,255,.45); }
+
+/* ═══════════════════════════════════════════
+   FOOTER
+═══════════════════════════════════════════ */
+.site-footer {
+  background: var(--ink);
+  border-top: 1px solid rgba(255,255,255,.06);
+  padding: clamp(48px, 6vw, 80px) clamp(24px, 4vw, 64px) 32px;
+  color: rgba(255,255,255,.45);
+}
+.footer-top {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-bottom: 48px;
+}
+.footer-logo {
+  height: 32px;
+  width: auto;
+  filter: brightness(0) invert(1);
+  opacity: .6;
+}
+.footer-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px 20px;
+}
+.footer-col-title {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,.25);
+  margin-bottom: 14px;
+}
+.footer-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+.footer-list a {
+  font-size: 13px;
+  color: rgba(255,255,255,.45);
+  transition: color .2s;
+}
+.footer-list a:hover { color: var(--white); }
+.footer-addr {
+  font-style: normal;
+  font-size: 13px;
+  line-height: 1.8;
+  color: rgba(255,255,255,.35);
+}
+.footer-addr a { color: rgba(255,255,255,.45); transition: color .2s; }
+.footer-addr a:hover { color: var(--white); }
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,.06);
+  padding-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer-copy { font-size: 11px; color: rgba(255,255,255,.2); }
+.footer-seo { font-size: 11px; line-height: 1.7; color: rgba(255,255,255,.1); }
+
+/* ═══════════════════════════════════════════
+   MOBILE STICKY CALL BAR
+═══════════════════════════════════════════ */
+.sticky-call {
+  display: flex;
+  position: fixed;
+  bottom: 0; left: 0; right: 0;
+  z-index: 290;
+  height: 58px;
+  background: var(--red);
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--white);
+  letter-spacing: .01em;
+  box-shadow: 0 -4px 24px rgba(190,30,45,.35);
+  transition: background .2s;
+}
+.sticky-call:hover { background: var(--red-dk); }
+.sticky-call svg { flex-shrink: 0; }
+
+/* ═══════════════════════════════════════════
+   REVEAL ANIMATIONS
+═══════════════════════════════════════════ */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity .8s cubic-bezier(.25,.46,.45,.94), transform .8s cubic-bezier(.25,.46,.45,.94);
+}
+.reveal.in { opacity: 1; transform: translateY(0); }
+.reveal-d1 { transition-delay: .1s; }
+.reveal-d2 { transition-delay: .2s; }
+.reveal-d3 { transition-delay: .3s; }
+
+@keyframes fadeDown {
+  from { opacity: 0; transform: translateY(-16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ═══════════════════════════════════════════
+   DESKTOP
+═══════════════════════════════════════════ */
+@media (min-width: 768px) {
+  body { padding-bottom: 0; }
+  .sticky-call { display: none; }
+  .nav-links { display: flex; }
+  .nav-inner { justify-content: flex-start; }
+  .nav-phone { display: block; }
+
+  /* Cards get breathing room */
+  .card-section, .card-section-dark { margin: 32px; }
+  .quote-card, .cta-card { margin: 0 32px; }
+
+  /* About grid side-by-side */
+  .about-grid { display: grid; grid-template-columns: 1fr 1fr; }
+  .about-photo { aspect-ratio: auto; height: 100%; min-height: 480px; }
+
+  /* Stats 4-col */
+  .stats-grid { grid-template-columns: repeat(4, 1fr); }
+
+  /* Services side-by-side */
+  .svc-pair { grid-template-columns: 1fr 1fr; }
+  .svc-card:first-child { border-bottom: none; border-right: 2px solid var(--snow); }
+
+  /* Photo grid 3-col */
+  .photo-grid { grid-template-columns: 2fr 1fr 1fr; grid-template-rows: 300px 200px; }
+  .pg-item img { aspect-ratio: auto; }
+  .pg-tall img { height: 100%; }
+
+  /* Reviews 3-col */
+  .reviews-grid { grid-template-columns: 1fr 1fr 1fr; }
+
+  /* Footer */
+  .footer-top { flex-direction: row; align-items: flex-start; justify-content: space-between; }
+  .footer-cols { grid-template-columns: repeat(4, auto); gap: 0 60px; }
+  .footer-bottom { flex-direction: row; justify-content: space-between; align-items: flex-end; }
+}
+
+@media (min-width: 1200px) {
+  .card-section, .card-section-dark { margin: 40px; border-radius: 4px; }
+  .quote-card, .cta-card { margin: 0 40px; border-radius: 4px; }
+  .photo-grid { grid-template-rows: 360px 240px; }
+}
+
+/* ═══════════════════════════════════════════
+   SPACER between card groups
+═══════════════════════════════════════════ */
+.gap-sm { height: 24px; }
+.gap-md { height: 40px; }
 </style>
 </head>
-<body>
 
-<!-- Floating WhatsApp -->
-<a href="https://wa.me/526463443435" target="_blank" rel="noopener" class="wa-float" title="Chat on WhatsApp">
-  <div class="wa-pulse"></div>💬
-</a>
+<body id="top">
 
-<!-- Mobile Menu -->
-<div class="mobile-menu" id="mobileMenu">
-  <a href="#services" onclick="closeMobile()">Services</a>
-  <a href="#work" onclick="closeMobile()">Work</a>
-  <a href="#process" onclick="closeMobile()">Process</a>
-  <a href="#pricing" onclick="closeMobile()">Pricing</a>
-  <a href="#contact" class="btn btn-p" style="margin-top:.5rem" onclick="closeMobile()">Get a Quote →</a>
-</div>
+<!-- ════════════════════════════════════════
+     STICKY NAV
+════════════════════════════════════════ -->
+<nav id="site-nav" role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
 
-<!-- NAV -->
-<nav id="mainnav">
-  <a href="#" class="logo">
-    <div class="logo-mark">MG</div>
-    <div class="logo-text">
-      MASTER GRAPHICS
-      <span>646 · Ensenada, B.C.</span>
-    </div>
-  </a>
-  <ul class="nav-links">
-    <li><a href="#services">Services</a></li>
-    <li><a href="#work">Work</a></li>
-    <li><a href="#process">Process</a></li>
-    <li><a href="#pricing">Pricing</a></li>
-    <li><a href="#contact" class="nav-cta">Get a Quote</a></li>
-  </ul>
-  <button class="hamburger" id="burger" aria-label="Open menu">
-    <span></span><span></span><span></span>
-  </button>
+    <!-- Logo — click scrolls to top -->
+    <a class="nav-logo" href="#top" aria-label="Lunar Painting — scroll to top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">
+      <img src="https://raw.githubusercontent.com/39056mezas-prog/MG39056/main/lunarpaintinglogo.svg" alt="Lunar Painting" />
+    </a>
+
+    <!-- Desktop centered links -->
+    <ul class="nav-links" role="list">
+      <li><a href="/commercial">Commercial</a></li>
+      <li><a href="/residential">Residential</a></li>
+      <li><a href="#work">Our Work</a></li>
+      <li><a href="/contact">Contact</a></li>
+      <li><a href="/faq">FAQ</a></li>
+    </ul>
+    <a class="nav-phone" href="tel:+19495927099">(949) 592-7099</a>
+  </div>
 </nav>
 
-<!-- HERO -->
-<section id="hero">
-  <div class="hbg" aria-hidden="true">
-    <div class="hero-grid"></div>
-    <div class="hero-orb1"></div>
-    <div class="hero-orb2"></div>
-    <div class="hero-line v"></div>
-    <div class="hero-line h"></div>
-    <div class="h-dot"></div>
+
+
+<!-- ════════════════════════════════════════
+     HERO — full viewport
+════════════════════════════════════════ -->
+<section class="hero" id="hero">
+  <img class="hero-bg"
+    src="https://raw.githubusercontent.com/39056mezas-prog/MG39056/main/heropainterstruckinfrontofapartmentbuilding.png"
+    alt="Lunar Painting crew truck in front of apartment complex — Orange County commercial painting"
+    fetchpriority="high" loading="eager" />
+  <div class="hero-overlay" aria-hidden="true"></div>
+
+  <!-- ── Hero-embedded navigation — logo on top, minimal links, no phone ── -->
+  <div class="hero-nav">
+    <a class="hero-nav-logo" href="#top" aria-label="Lunar Painting home" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">
+      <img src="https://raw.githubusercontent.com/39056mezas-prog/MG39056/main/lunarpaintinglogo.svg" alt="Lunar Painting" />
+    </a>
+    <ul class="hero-nav-links" role="list">
+      <li><a href="/commercial">Commercial</a></li>
+      <li><a href="/residential">Residential</a></li>
+      <li><a href="#work">Our Work</a></li>
+      <li><a href="/contact">Contact</a></li>
+      <li><a href="/faq">FAQ</a></li>
+    </ul>
   </div>
-  <div class="hero-noise" aria-hidden="true"></div>
 
-  <div class="hero-badge">Creative Agency · Ensenada, Baja California</div>
+  <div class="hero-content">
+    <p class="hero-eyebrow">Laguna Hills &nbsp;&middot;&nbsp; Orange County &amp; LA County</p>
 
-  <h1 class="hero-h">If They Can't Find You,<br><em>They Can't Hire You.</em></h1>
+    <h1 class="hero-h1">
+      OC's apartments don't<br>repaint <em>themselves.</em>
+    </h1>
 
-  <p class="hero-sub">
-    We build websites, brand identities, and video content for small businesses that are tired of being invisible. Done for you. No files to send. No back-and-forth. Just results.
-  </p>
+    <p class="hero-sub">
+      Sun-faded stucco, HOA deadlines, occupied units — we know this market. Lunar Painting has been handling Orange County commercial and residential repaints since 2017.
+    </p>
 
-  <div class="hero-acts">
-    <a href="#contact" class="btn btn-p">Get a Free Quote →</a>
-    <a href="#work" class="btn btn-g">See Our Work</a>
+    <a href="/contact" class="hero-cta">
+      Get a Free Estimate &rarr;
+    </a>
+    <p class="hero-phone">or call <a href="tel:+19495927099">(949) 592-7099</a></p>
   </div>
 
-  <div class="hero-stats">
-    <div class="hstat">
-      <div class="hstat-val">$500</div>
-      <div class="hstat-lbl">Full website, all-in</div>
-    </div>
-    <div class="hstat">
-      <div class="hstat-val">0</div>
-      <div class="hstat-lbl">Files you need to send</div>
-    </div>
-    <div class="hstat">
-      <div class="hstat-val">50<sup>%</sup></div>
-      <div class="hstat-lbl">Less than US agency rates</div>
-    </div>
-    <div class="hstat">
-      <div class="hstat-val">1<sup>src</sup></div>
-      <div class="hstat-lbl">Studio for everything</div>
-    </div>
+  <div class="hero-scroll" aria-hidden="true">
+    <div class="hero-scroll-line"></div>
+    <span>Scroll</span>
   </div>
 </section>
 
-<!-- TICKER -->
-<div class="ticker-wrap" aria-hidden="true">
-  <div class="ticker-track">
-    <span class="ti">Graphic Design</span>
-    <span class="ti">Video Production</span>
-    <span class="ti">Brand Identity</span>
-    <span class="ti">Print Coordination</span>
-    <span class="ti">Website Design</span>
-    <span class="ti">Social Media Content</span>
-    <span class="ti">Instagram Reels</span>
-    <span class="ti">Event Promotion</span>
-    <span class="ti">Graphic Design</span>
-    <span class="ti">Video Production</span>
-    <span class="ti">Brand Identity</span>
-    <span class="ti">Print Coordination</span>
-    <span class="ti">Website Design</span>
-    <span class="ti">Social Media Content</span>
-    <span class="ti">Instagram Reels</span>
-    <span class="ti">Event Promotion</span>
+<!-- ════════════════════════════════════════
+     RED DIVIDER BAR — trust credentials
+════════════════════════════════════════ -->
+<div class="red-bar" role="marquee" aria-label="Credentials">
+  <div class="red-bar-inner">
+    <!-- Duplicated for seamless loop -->
+    <span class="red-bar-item">Licensed &amp; Insured</span><span class="red-bar-dot"></span>
+    <span class="red-bar-item">HomeAdvisor Top Rated</span><span class="red-bar-dot"></span>
+    <span class="red-bar-item">20+ Five-Star Reviews</span><span class="red-bar-dot"></span>
+    <span class="red-bar-item">Sherwin Williams</span><span class="red-bar-dot"></span>
+    <span class="red-bar-item">BBB A+ Rated</span><span class="red-bar-dot"></span>
+    <span class="red-bar-item">Serving OC Since 2017</span><span class="red-bar-dot"></span>
+    <span class="red-bar-item">Orange &amp; LA County</span><span class="red-bar-dot"></span>
+    <span class="red-bar-item">Licensed &amp; Insured</span><span class="red-bar-dot"></span>
+    <span class="red-bar-item">HomeAdvisor Top Rated</span><span class="red-bar-dot"></span>
+    <span class="red-bar-item">20+ Five-Star Reviews</span><span class="red-bar-dot"></span>
+    <span class="red-bar-item">Sherwin Williams</span><span class="red-bar-dot"></span>
+    <span class="red-bar-item">BBB A+ Rated</span><span class="red-bar-dot"></span>
+    <span class="red-bar-item">Serving OC Since 2017</span><span class="red-bar-dot"></span>
+    <span class="red-bar-item">Orange &amp; LA County</span><span class="red-bar-dot"></span>
   </div>
 </div>
 
-<!-- SERVICES -->
-<div id="services" class="section-divider">
-  <div class="svc-wrap">
-    <div class="sec-hd">
-      <div class="section-tag">What We Do</div>
-      <h2 class="section-h">One Studio.<br>Everything Your Business Needs Online.</h2>
-      <p class="section-desc">Websites. Brand design. Video. Marketing setup. We handle all of it — so you stop piecing together five different vendors and start looking like the real business you already are.</p>
-    </div>
-    <div class="svc-grid" style="grid-template-columns:repeat(3,1fr)">
+<!-- ════════════════════════════════════════
+     PAGE BODY — cards on dark background
+════════════════════════════════════════ -->
+<div class="page-body">
+<div class="gap-md"></div>
 
-      <div class="svc">
-        <p class="svc-num">01 · Most Requested</p>
-        <div class="svc-ic">◎</div>
-        <h3>Websites & Online Presence</h3>
-        <p>When a potential customer Googles your business and finds nothing — they call your competitor. It happens dozens of times a day and you never see it. A professional website stops that leak. We design it, host it, maintain it, and set up Google Business and Ads so you're showing up where it counts — before they even consider anyone else.</p>
-        <div class="tags">
-          <span class="tag">Website Design</span>
-          <span class="tag">Custom Pages</span>
-          <span class="tag">Domain & Hosting</span>
-          <span class="tag">SEO</span>
-          <span class="tag">Google Business Setup</span>
-          <span class="tag">Google Ads</span>
-          <span class="tag">Monthly Maintenance</span>
-        </div>
-      </div>
-
-      <div class="svc">
-        <p class="svc-num">02 · Brand Authority</p>
-        <div class="svc-ic">✦</div>
-        <h3>Brand Design & Graphics</h3>
-        <p>Right now, what does your logo say about you? What does your Instagram look like compared to your competitor's? If there's a gap between how good you actually are and how good you look — that gap is losing you business every day. We close it. Logos, social posts, flyers, banners, business cards — every visual asset, built to match.</p>
-        <div class="tags">
-          <span class="tag">Logo Design</span>
-          <span class="tag">Brand Identity</span>
-          <span class="tag">Social Media Posts</span>
-          <span class="tag">Instagram Content</span>
-          <span class="tag">Flyers</span>
-          <span class="tag">Business Cards</span>
-          <span class="tag">Banners & Signage</span>
-          <span class="tag">Print Coordination</span>
-        </div>
-      </div>
-
-      <div class="svc">
-        <p class="svc-num">03 · Content & Video</p>
-        <div class="svc-ic">▶</div>
-        <h3>Video Production</h3>
-        <p>People scroll past text. They stop for video. A 30-second clip of your crew doing what they do builds more trust than any sales pitch ever could. We shoot, edit, and deliver content that shows your work the way it deserves to be seen — the kind of content customers save, share, and reach out after watching.</p>
-        <div class="tags">
-          <span class="tag">Intro Reels</span>
-          <span class="tag">Instagram Reels</span>
-          <span class="tag">Event Videos</span>
-          <span class="tag">Promo Content</span>
-          <span class="tag">Highlight Edits</span>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</div>
-
-<!-- WHY US -->
-<div id="advantage">
-  <div class="adv-inner">
-    <div>
-      <div class="section-tag">Why Master Graphics</div>
-      <h2 class="section-h">You're Too Busy<br>to Be Your Own Designer.</h2>
-      <p class="section-desc" style="margin-top:.85rem">Most business owners know they need better branding — they just don't have time to chase down a designer, send files, do revisions, and still run their actual business. That's exactly what we built this studio around. You keep working. We handle everything else.</p>
-      <div class="big-stat-row">
-        <div class="big-stat">
-          <div class="big-stat-val">2<small>hr</small></div>
-          <div class="big-stat-lbl">From San Diego</div>
-        </div>
-        <div class="big-stat">
-          <div class="big-stat-val">EN</div>
-          <div class="big-stat-lbl">English-first, Pacific time</div>
-        </div>
-        <div class="big-stat">
-          <div class="big-stat-val">3<sup>+</sup></div>
-          <div class="big-stat-lbl">Industries served</div>
-        </div>
-        <div class="big-stat">
-          <div class="big-stat-val">1<sup>wk</sup></div>
-          <div class="big-stat-lbl">Avg. delivery time</div>
-        </div>
-      </div>
-    </div>
-
-    <ul class="adv-list">
-      <li class="adv-item">
-        <div class="adv-num">01</div>
-        <div class="adv-txt">
-          <h4>We Do the Legwork — You Do Nothing</h4>
-          <p>Tell us your business name and what you need. We find your existing photos, study your industry, research your competitors, and build from there. Our clients don't send us a single file. We've done it that way since day one.</p>
-        </div>
-      </li>
-      <li class="adv-item">
-        <div class="adv-num">02</div>
-        <div class="adv-txt">
-          <h4>Everything Matches — On Purpose</h4>
-          <p>Your logo, your website, your Instagram post, your flyer — they should all feel like one business. Most clients come to us with a patchwork of mismatched assets made by different people at different times. We clean that up and make it cohesive.</p>
-        </div>
-      </li>
-      <li class="adv-item">
-        <div class="adv-num">03</div>
-        <div class="adv-txt">
-          <h4>US Clients, Baja Prices</h4>
-          <p>We're based in Ensenada — two hours from San Diego, same time zone. You get agency-level creative for a fraction of what a US studio charges, and you're not sacrificing quality or speed to get it.</p>
-        </div>
-      </li>
-      <li class="adv-item">
-        <div class="adv-num">04</div>
-        <div class="adv-txt">
-          <h4>One Call. One Studio. All of It.</h4>
-          <p>Website, logo, flyer, reel, Google setup — it all comes from us. You're not coordinating three freelancers and a printer. You talk to one person and it gets done right.</p>
-        </div>
-      </li>
-    </ul>
-  </div>
-</div>
-
-<!-- CASE STUDIES -->
-<div id="work" class="section-divider">
-  <div class="work-wrap">
-    <div class="sec-hd-row">
-      <div>
-        <div class="section-tag">Our Work</div>
-        <h2 class="section-h">We Let the Work<br>Do the Talking.</h2>
-      </div>
-      <a href="#contact" class="btn btn-g" style="flex-shrink:0">Start Your Project →</a>
-    </div>
-
-    <!-- FEATURED: LUNAR PAINTING -->
-    <div class="case-featured">
-      <div class="case-visual">
-        <div class="cv-lunar">
-          <div class="cv-el" style="width:380px;height:380px;border:1px solid rgba(245,166,35,.18);top:-100px;right:-100px"></div>
-          <div class="cv-el" style="width:220px;height:220px;border:1px solid rgba(245,166,35,.28);top:-30px;right:-30px"></div>
-          <div class="cv-el" style="width:100px;height:100px;background:rgba(245,166,35,.06);top:50px;right:70px"></div>
-          <div class="cv-el" style="width:280px;height:280px;border:1px solid rgba(255,61,0,.15);bottom:-100px;left:-60px"></div>
-          <div class="cv-el" style="width:60px;height:60px;background:rgba(245,166,35,.12);bottom:80px;left:80px;border-radius:4px;transform:rotate(30deg)"></div>
-          <div style="position:relative;z-index:1;text-align:center;padding:2rem">
-            <div style="font-family:'Poppins',sans-serif;font-weight:900;font-size:clamp(2.5rem,5vw,4rem);letter-spacing:-.05em;color:#F5A623;line-height:.95;text-shadow:0 0 60px rgba(245,166,35,.3)">LUNAR<br><span style="color:#fff;-webkit-text-stroke:1px rgba(245,166,35,.5)">PAINTING</span></div>
-            <div style="font-family:'Poppins',sans-serif;font-size:.65rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:rgba(245,166,35,.5);margin-top:.75rem">Commercial Painting · Baja California</div>
-          </div>
-          <div class="cv-badge">Featured Project</div>
-        </div>
-      </div>
-      <div class="case-info">
-        <div class="case-client">Lunar Painting</div>
-        <h3 class="case-title">He Said "I Want a Website." We Handled Everything Else.</h3>
-        <p class="case-desc">
-          This client is on the field six days a week. No time to sit with a designer, dig up photos, write copy, or approve round after round of revisions. So we didn't ask him to. He told us what he needed. We found his existing work photos, wrote the copy, built the full site, and delivered it without him sending us a single file.
-        </p>
-        <div class="case-results">
-          <div class="cr-item">
-            <div class="cr-val">7days</div>
-            <div class="cr-lbl">Concept to delivered</div>
-          </div>
-          <div class="cr-item">
-            <div class="cr-val">$0</div>
-            <div class="cr-lbl">Assets from client</div>
-          </div>
-          <div class="cr-item">
-            <div class="cr-val">↑SEO</div>
-            <div class="cr-lbl">Found organically</div>
-          </div>
-        </div>
-        <div class="case-tags">
-          <span class="tag">Website Design</span>
-          <span class="tag">Brand Identity</span>
-          <span class="tag">SEO</span>
-          <span class="tag">Asset Research</span>
-        </div>
-        <p style="font-size:.85rem;color:var(--text2);line-height:1.82;font-weight:300;margin-bottom:1.5rem">
-          Before us, searching for Lunar Painting online returned a dead page. Now he has a fully branded site, real Google visibility, and a presence that positions him alongside — and ahead of — established competitors. His craft didn't change. How the market sees him did.
-        </p>
-        <a href="#contact" class="case-link">Get the Same Treatment <span>→</span></a>
-      </div>
-    </div>
-
-    <!-- CASE STUDY GRID -->
-    <div class="case-grid">
-
-      <!-- Beatus Cattus -->
-      <div class="case-card">
-        <div class="cc-visual">
-          <div class="ccv-placeholder ccv-beatus">
-            <div style="position:absolute;width:200px;height:200px;border:1px solid rgba(150,80,255,.2);border-radius:50%;top:-60px;right:-60px"></div>
-            <div style="position:absolute;width:80px;height:80px;background:rgba(120,0,220,.1);border-radius:50%;bottom:30px;left:30px"></div>
-            <span class="cc-placeholder-text">Beatus Cattus</span>
-          </div>
-          <div class="cc-badge-wrap">
-            <span class="cc-badge badge-done">Completed</span>
-          </div>
-        </div>
-        <div class="cc-info">
-          <div class="cc-client">Beatus Cattus</div>
-          <h4 class="cc-title">Full Brand Build from Scratch</h4>
-          <p class="cc-desc">Zero brand assets to a complete visual identity — logo, color system, and design language built to grow with the business. The project that set our standard.</p>
-        </div>
-      </div>
-
-      <!-- Keylime Maritime (placeholder) -->
-      <div class="case-card">
-        <div class="cc-visual">
-          <div class="ccv-placeholder ccv-maritime">
-            <div style="position:absolute;width:260px;height:260px;border:1px solid rgba(0,160,255,.15);border-radius:50%;top:-80px;left:-80px"></div>
-            <div style="position:absolute;width:100px;height:100px;background:rgba(0,100,200,.08);bottom:20px;right:20px;border-radius:50%"></div>
-            <span class="cc-placeholder-text">Keylime Maritime</span>
-          </div>
-          <div class="cc-badge-wrap">
-            <span class="cc-badge badge-coming">Coming Soon</span>
-          </div>
-        </div>
-        <div class="cc-info">
-          <div class="cc-client">Keylime Maritime</div>
-          <h4 class="cc-title">Website Design & Brand Build</h4>
-          <p class="cc-desc">A maritime business that needed to look the part online. Same process — we handled research, assets, and design. They stayed on the water. Case study dropping soon.</p>
-        </div>
-      </div>
-
-      <!-- Real Estate Agency (placeholder) -->
-      <div class="case-card">
-        <div class="cc-visual">
-          <div class="ccv-placeholder ccv-realestate">
-            <div style="position:absolute;width:220px;height:220px;border:1px solid rgba(0,200,100,.15);top:-60px;right:-60px;border-radius:4px;transform:rotate(15deg)"></div>
-            <div style="position:absolute;width:90px;height:90px;background:rgba(0,180,80,.07);bottom:25px;left:25px;border-radius:4px"></div>
-            <span class="cc-placeholder-text">Real Estate Agency</span>
-          </div>
-          <div class="cc-badge-wrap">
-            <span class="cc-badge badge-coming">Coming Soon</span>
-          </div>
-        </div>
-        <div class="cc-info">
-          <div class="cc-client">Real Estate Agency</div>
-          <h4 class="cc-title">Flyers & Print Campaign</h4>
-          <p class="cc-desc">Listings don't sell themselves. We designed a print campaign that made properties stand out in a crowded market — polished collateral that got picked up and kept. Case study dropping soon.</p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</div>
-
-<!-- PROCESS -->
-<div id="process" class="section-divider">
-  <div id="process" style="background:var(--s1);border-top:1px solid var(--border)">
-    <div class="process-inner">
-      <div class="sec-hd">
-        <div class="section-tag">How It Works</div>
-        <h2 class="section-h">Four Steps.<br>You're Involved in One.</h2>
-        <p class="section-desc">Most design processes drain the client — briefs, revision rounds, file requests, constant follow-ups. Ours doesn't. You make one move. Everything after that is on us.</p>
-      </div>
-      <div class="process-steps">
-        <div class="ps">
-          <div class="ps-num">01</div>
-          <h4>You Tell Us What You Need</h4>
-          <p>One conversation — call, text, or WhatsApp. Tell us what your business does and what problem you're trying to solve. That's the only thing we need from you to get started.</p>
-        </div>
-        <div class="ps">
-          <div class="ps-num">02</div>
-          <h4>We Research Everything</h4>
-          <p>We study your business, find existing photos and assets, look at what your competitors are doing, and figure out exactly what your customers are actually responding to. You don't lift a finger.</p>
-        </div>
-        <div class="ps">
-          <div class="ps-num">03</div>
-          <h4>We Build It Right</h4>
-          <p>Design, copy, layout, SEO — all handled. You get a finished product, not a rough draft that needs ten rounds of changes. We build it to ship, not to stall.</p>
-        </div>
-        <div class="ps">
-          <div class="ps-num">04</div>
-          <h4>Your Business Goes Live</h4>
-          <p>Fast turnaround. No invoice surprises. You go back to your field, your crew, your customers — and your business now looks the way it deserves to.</p>
-        </div>
+<!-- ABOUT / COMMERCIAL CARD -->
+<article class="card-section reveal" id="commercial">
+  <div class="about-grid">
+    <img class="about-photo"
+      src="https://raw.githubusercontent.com/39056mezas-prog/MG39056/main/exteriordepartmentcomplexcommercialpaiting.jpg"
+      alt="Exterior apartment complex repaint — Lunar Painting commercial contractor Orange County"
+      loading="lazy" />
+    <div class="about-text">
+      <span class="section-label">Commercial &amp; Property Management</span>
+      <h2 class="section-h2">Built for<br><em>big projects.</em></h2>
+      <p class="section-body">We work around occupied units, coordinate with your management timeline, and deliver a finish your board will sign off on. Property managers across OC trust us because we show up, communicate, and deliver.</p>
+      <div class="pillars">
+        <div class="pillar"><div class="pillar-num">01</div><div><div class="pillar-title">Minimal disruption to residents</div><p class="pillar-desc">We sequence work around occupied schedules — no surprises for tenants.</p></div></div>
+        <div class="pillar"><div class="pillar-num">02</div><div><div class="pillar-title">Board-ready documentation</div><p class="pillar-desc">Prep reports, timelines, and completion records formatted for HOA board presentations.</p></div></div>
+        <div class="pillar"><div class="pillar-num">03</div><div><div class="pillar-title">Within HOA color guidelines</div><p class="pillar-desc">We've handled enough communities to keep approvals clean and specs accurate.</p></div></div>
       </div>
     </div>
   </div>
-</div>
+</article>
 
-<!-- PRICING -->
-<div id="pricing" class="section-divider">
-  <div class="pricing-inner">
-    <div class="sec-hd">
-      <div class="section-tag">Pricing</div>
-      <h2 class="section-h">Know What You're<br>Paying Before You Start.</h2>
-      <p class="section-desc">No surprise invoices. No monthly subscriptions that never end. Just a clear price for a real deliverable — and you know exactly what you're getting.</p>
+<div class="gap-sm"></div>
+
+<!-- STATS CARD -->
+<article class="card-section-dark reveal reveal-d1">
+  <div class="stats-grid">
+    <div class="stat-cell">
+      <div class="stat-num">7+</div>
+      <div class="stat-label">Years in Orange County<br>Since 2017</div>
     </div>
-
-    <div class="pricing-grid">
-      <div class="pkg featured">
-        <div class="pkg-popular">Most Popular</div>
-        <div class="pkg-name">Website Package</div>
-        <div class="pkg-tagline">Everything included. Nothing hidden.</div>
-        <div class="pkg-price"><sup>$</sup>500</div>
-        <div class="pkg-period">One-time payment · No monthly fees · No contracts</div>
-        <ul class="pkg-features">
-          <li>Custom 3-page website — designed around your business, not a template</li>
-          <li>Domain name + 1 full year of hosting included</li>
-          <li>Mobile-first and SEO-ready from day one</li>
-          <li>We source your photos and assets — you send us nothing</li>
-          <li>Google Business profile setup so customers can find you on Maps</li>
-          <li>Monthly maintenance so the site keeps running without you touching it</li>
-          <li>Minor copy updates whenever your info changes</li>
-        </ul>
-        <a href="#contact" class="pkg-btn">Get Started — $500 →</a>
-        <p class="pkg-note">Additional pages and major redesigns quoted separately. What you see is what you pay.</p>
-      </div>
-
-      <div class="pkg">
-        <div class="pkg-name">Custom Project</div>
-        <div class="pkg-tagline">Bigger scope? Let's scope it right.</div>
-        <div class="pkg-price" style="font-size:2rem;padding-top:.5rem">Let's Talk</div>
-        <div class="pkg-period">Quoted per project · No fluff</div>
-        <ul class="pkg-features">
-          <li>Full brand identity — logo, colors, fonts, the whole system</li>
-          <li>Video production, editing, and social-ready exports</li>
-          <li>Social media content packages for Instagram and beyond</li>
-          <li>Large-format print — banners, signage, trade show materials</li>
-          <li>Multi-page websites and landing pages</li>
-          <li>Google Ads setup and campaign management</li>
-          <li>Ongoing creative retainers for consistent output</li>
-        </ul>
-        <a href="#contact" class="pkg-btn">Request a Quote →</a>
-        <p class="pkg-note">Most quotes turn around quickly. If you're not sure what you need yet, just reach out — we'll scope it together.</p>
-      </div>
+    <div class="stat-cell">
+      <div class="stat-num">20+</div>
+      <div class="stat-label">Verified 5-star<br>reviews</div>
+    </div>
+    <div class="stat-cell">
+      <div class="stat-num">2</div>
+      <div class="stat-label">Counties served<br>OC &amp; LA</div>
+    </div>
+    <div class="stat-cell">
+      <div class="stat-num">100%</div>
+      <div class="stat-label">Sherwin Williams<br>on every job</div>
     </div>
   </div>
-</div>
+</article>
 
-<!-- CONTACT -->
-<div id="contact" class="section-divider">
-  <div class="contact-inner">
-    <div class="sec-hd">
-      <div class="section-tag">Get In Touch</div>
-      <h2 class="section-h">What Would It Mean<br>to Have This Done?</h2>
+<div class="gap-md"></div>
+
+<!-- SERVICES CARD -->
+<article class="card-section reveal" id="services">
+  <div class="card-inner" style="padding-bottom:28px">
+    <span class="section-label">What We Do</span>
+    <h2 class="section-h2" style="color:var(--ink)">Every surface.<br><em>Done properly.</em></h2>
+  </div>
+  <div class="svc-pair">
+    <div class="svc-card">
+      <div class="svc-flag">Commercial — Lead Service</div>
+      <h3 class="svc-title">Commercial Painting</h3>
+      <p class="svc-desc">Apartment complexes, HOAs, offices, and mixed-use buildings. We show up, communicate, and deliver.</p>
+      <ul class="svc-list">
+        <li>Apartment complex exterior repaints</li>
+        <li>HOA &amp; community property painting</li>
+        <li>Common areas &amp; breezeways</li>
+        <li>Unit turn painting</li>
+        <li>Interior commercial painting</li>
+        <li>Drywall repair &amp; prep</li>
+      </ul>
     </div>
-    <div class="contact-grid">
-      <div>
-        <div class="ci-tag">Direct Contact</div>
-        <h3>No brief.<br>No back-and-forth.<br>Just tell us what you need.</h3>
-        <p class="ci-desc">Most people don't know exactly what they want when they reach out — and that's fine. Tell us what your business does, what's been frustrating you, or what you've been putting off. We ask the right questions and get moving fast.</p>
-        <div class="contact-rows">
-          <div class="crow">
-            <div class="crow-ic">📞</div>
-            <div class="crow-info">
-              <div class="crow-lbl">Phone / WhatsApp</div>
-              <div class="crow-val"><a href="tel:+526463443435">(646) 344-3435</a></div>
-            </div>
-          </div>
-          <div class="crow">
-            <div class="crow-ic">📍</div>
-            <div class="crow-info">
-              <div class="crow-lbl">Location</div>
-              <div class="crow-val">Ensenada, Baja California, México</div>
-            </div>
-          </div>
-          <div class="crow">
-            <div class="crow-ic">🕐</div>
-            <div class="crow-info">
-              <div class="crow-lbl">Hours</div>
-              <div class="crow-val">Mon – Fri, 9 AM – 6 PM Pacific</div>
-            </div>
-          </div>
-          <div class="crow">
-            <div class="crow-ic">🌎</div>
-            <div class="crow-info">
-              <div class="crow-lbl">We Serve</div>
-              <div class="crow-val">US businesses, English-first</div>
-            </div>
-          </div>
-        </div>
-        <div class="cta-buttons">
-          <a href="https://wa.me/526463443435" target="_blank" rel="noopener" class="wa-btn">
-            💬 Message Us on WhatsApp
-          </a>
-          <a href="https://www.facebook.com/mastergraphics646" target="_blank" rel="noopener" class="fb-btn">
-            📘 Find Us on Facebook
-          </a>
-        </div>
-      </div>
-
-      <form class="cf" onsubmit="doSubmit(event)">
-        <div class="frow">
-          <div class="fg">
-            <label>First Name</label>
-            <input type="text" placeholder="John" required>
-          </div>
-          <div class="fg">
-            <label>Last Name</label>
-            <input type="text" placeholder="Smith" required>
-          </div>
-        </div>
-        <div class="fg">
-          <label>Email Address</label>
-          <input type="email" placeholder="john@yourcompany.com" required>
-        </div>
-        <div class="fg">
-          <label>Phone (optional)</label>
-          <input type="tel" placeholder="+1 (555) 000-0000">
-        </div>
-        <div class="fg">
-          <label>What Do You Need?</label>
-          <select>
-            <option value="">Select a service…</option>
-            <option>Website Package ($500)</option>
-            <option>Logo & Brand Design</option>
-            <option>Social Media Content</option>
-            <option>Video Production</option>
-            <option>Flyers, Cards, or Print</option>
-            <option>Banners & Signage</option>
-            <option>Google Business or Ads Setup</option>
-            <option>Full Brand Package</option>
-            <option>Not sure yet — let's talk</option>
-          </select>
-        </div>
-        <div class="fg">
-          <label>Tell Us About Your Business</label>
-          <textarea placeholder="What do you do? What's been the problem? Even two sentences is enough — we'll ask the right questions from there."></textarea>
-        </div>
-        <button type="submit" class="sub-btn">Send Message →</button>
-      </form>
+    <div class="svc-card">
+      <div class="svc-flag">Residential</div>
+      <h3 class="svc-title">Residential Painting</h3>
+      <p class="svc-desc">Mid-to-high-end homes across Orange County. Careful protection and a final walk-through before we leave.</p>
+      <ul class="svc-list">
+        <li>Interior house painting</li>
+        <li>Exterior house painting</li>
+        <li>Drywall repair</li>
+        <li>Wood replacement &amp; staining</li>
+        <li>Baseboard installation</li>
+        <li>Pressure washing</li>
+      </ul>
     </div>
   </div>
+</article>
+
+<div class="gap-md"></div>
+
+<!-- WORK PHOTO GRID CARD -->
+<article class="card-section" id="work">
+  <div class="work-header reveal">
+    <span class="section-label">Our Work</span>
+    <h2 class="section-h2" style="color:var(--ink)">The proof is<br><em>in the finish.</em></h2>
+  </div>
+  <div class="photo-grid">
+    <div class="pg-item pg-tall reveal">
+      <img src="https://raw.githubusercontent.com/39056mezas-prog/MG39056/main/industrialcomplexcommercialpainting.jpg"
+           alt="Industrial complex commercial painting — Lunar Painting Orange County" loading="lazy" />
+    </div>
+    <div class="pg-item reveal reveal-d1">
+      <img src="https://raw.githubusercontent.com/39056mezas-prog/MG39056/main/livingroomresidentialpaint.jpg"
+           alt="Living room residential interior painting — Lunar Painting Orange County" loading="lazy" />
+    </div>
+    <div class="pg-item reveal reveal-d2">
+      <img src="https://raw.githubusercontent.com/39056mezas-prog/MG39056/main/officescommercialpainting.jpg"
+           alt="Office commercial painting — Lunar Painting Orange County" loading="lazy" />
+    </div>
+    <div class="pg-item reveal reveal-d1">
+      <img src="https://raw.githubusercontent.com/39056mezas-prog/MG39056/main/residentialexteriorpaint.jpg"
+           alt="Residential exterior painting — Lunar Painting Orange County" loading="lazy" />
+    </div>
+    <div class="pg-item reveal reveal-d2">
+      <img src="https://raw.githubusercontent.com/39056mezas-prog/MG39056/main/modernhouseoutdoorresidentialpainting.jpg"
+           alt="Modern house outdoor residential painting — Lunar Painting Orange County" loading="lazy" />
+    </div>
+  </div>
+</article>
+
+<div class="gap-md"></div>
+
+<!-- PULL QUOTE -->
+<div class="quote-card reveal">
+  <p class="quote-text">&ldquo;Get in, get the job done, clean up, and get out &mdash; without sacrificing quality.&rdquo;</p>
+  <p class="quote-attr">Lunar Painting &nbsp;&middot;&nbsp; Laguna Hills, CA</p>
 </div>
+
+<div class="gap-md"></div>
+
+<!-- REVIEWS CARD -->
+<article class="card-section reveal" id="reviews">
+  <div class="card-inner" style="padding-bottom:28px">
+    <span class="section-label">What Clients Say</span>
+    <h2 class="section-h2" style="color:var(--ink)">20+ five-star<br>reviews on HomeAdvisor.</h2>
+  </div>
+  <div class="reviews-grid">
+    <div class="review-card">
+      <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <p class="review-text">"We manage six properties in Irvine and have used Lunar on three of them. They work around residents, don't leave a mess, and the quality holds up. That's all we need from a contractor."</p>
+      <div class="review-name">M. Torres</div>
+      <div class="review-source">Property Manager, Irvine CA &mdash; HomeAdvisor</div>
+    </div>
+    <div class="review-card">
+      <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <p class="review-text">"Our board approved a full exterior repaint for our 48-unit complex. Lunar handled the whole project without a single tenant complaint. On schedule, and they came back immediately for touch-ups."</p>
+      <div class="review-name">D. Ramirez</div>
+      <div class="review-source">HOA Board President, Mission Viejo CA &mdash; HomeAdvisor</div>
+    </div>
+    <div class="review-card">
+      <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <p class="review-text">"Hired them for our home exterior in Laguna Hills. On time every day, protected the landscaping, and did a walk-through with me at the end. Nothing left to chase down."</p>
+      <div class="review-name">K. Nguyen</div>
+      <div class="review-source">Homeowner, Laguna Hills CA &mdash; HomeAdvisor</div>
+    </div>
+  </div>
+</article>
+
+<div class="gap-md"></div>
+
+<!-- CTA -->
+<section class="cta-card reveal">
+  <p class="cta-eyebrow">Ready to Get Started</p>
+  <h2 class="cta-h2">We paint the right way.</h2>
+  <a href="tel:+19495927099" class="cta-phone">(949) 592-7099</a>
+  <p class="cta-hours">Monday &ndash; Friday &nbsp;&middot;&nbsp; 8:00 AM &ndash; 5:00 PM</p>
+  <a href="/contact" class="cta-btn">Request a Free Estimate &rarr;</a>
+</section>
+
+<div class="gap-md"></div>
 
 <!-- FOOTER -->
-<div class="footer-wrap">
-  <div class="footer-inner">
-    <p>© 2026 <strong>Master Graphics 646</strong> · Ensenada, Baja California, México</p>
-    <p>Websites · Brand Design · Video · Marketing · <a href="tel:+526463443435">(646) 344-3435</a></p>
+<footer class="site-footer">
+  <div class="footer-top">
+    <img class="footer-logo"
+      src="https://raw.githubusercontent.com/39056mezas-prog/MG39056/main/lunarpaintinglogo.svg"
+      alt="Lunar Painting" />
+    <div class="footer-cols">
+      <div>
+        <div class="footer-col-title">Contact</div>
+        <address class="footer-addr">
+          25255 Cabot Rd, Suite #224<br>
+          Laguna Hills, CA 92653<br><br>
+          <a href="tel:+19495927099">(949) 592-7099</a><br>
+          <a href="mailto:lunarpainting1@gmail.com">lunarpainting1@gmail.com</a>
+        </address>
+      </div>
+      <div>
+        <div class="footer-col-title">Services</div>
+        <ul class="footer-list">
+          <li><a href="/commercial">Commercial</a></li>
+          <li><a href="/residential">Residential</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Navigate</div>
+        <ul class="footer-list">
+          <li><a href="/">Home</a></li>
+          <li><a href="#work">Our Work</a></li>
+          <li><a href="/contact">Contact</a></li>
+          <li><a href="/faq">FAQ</a></li>
+          <li><a href="/privacy">Privacy</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Find Us</div>
+        <ul class="footer-list">
+          <li><a href="https://www.instagram.com/lunarpainting/" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.yelp.com/biz/lunar-painting-laguna-hills" target="_blank" rel="noopener">Yelp</a></li>
+          <li><a href="https://www.bbb.org/us/ca/laguna-hills/profile/painting-contractors/lunar-painting-1126-1000063467" target="_blank" rel="noopener">BBB A+</a></li>
+          <li><a href="https://www.mapquest.com/us/california/lunar-painting-448956065" target="_blank" rel="noopener">MapQuest</a></li>
+        </ul>
+      </div>
+    </div>
   </div>
-</div>
+  <div class="footer-bottom">
+    <p class="footer-copy">&copy; 2017&ndash;2026 Lunar Painting &nbsp;&middot;&nbsp; Laguna Hills, CA</p>
+    <p class="footer-seo">Commercial painting contractor Orange County CA &middot; Apartment complex painting &middot; HOA painting &middot; Residential painting contractor Los Angeles County</p>
+  </div>
+</footer>
+
+</div><!-- /page-body -->
+
+<!-- MOBILE STICKY CALL BAR -->
+<a href="tel:+19495927099" class="sticky-call" aria-label="Call Lunar Painting">
+  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.63A2 2 0 012 .94h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+  Call (949) 592-7099
+</a>
 
 <script>
-function doSubmit(e){
-  e.preventDefault();
-  var btn=e.target.querySelector('.sub-btn');
-  btn.textContent='✓ Message Sent!';
-  btn.style.background='#25D366';
-  btn.disabled=true;
-  setTimeout(function(){
-    btn.textContent='Send Message →';
-    btn.style.background='';
-    btn.disabled=false;
-    e.target.reset();
-  },3500);
-}
+// ── Clean URL ──
+(function(){ var p=window.location.pathname; if(p==='/index'||p==='/index.html'){history.replaceState(null,'','/');}else if(p.endsWith('.html')){history.replaceState(null,'',p.replace(/\.html$/,''));} })();
 
-var nav=document.getElementById('mainnav');
-window.addEventListener('scroll',function(){
-  nav.style.padding=window.scrollY>60?'0.85rem 5rem':'1.4rem 5rem';
-  if(window.innerWidth<=960){
-    nav.style.padding=window.scrollY>60?'0.85rem 1.75rem':'1.1rem 1.75rem';
+// ── Nav visibility — slides in after user scrolls past hero ──
+var siteNav = document.getElementById('site-nav');
+window.addEventListener('scroll', function(){
+  siteNav.classList.toggle('visible', window.scrollY > window.innerHeight * 0.7);
+}, { passive: true });
+
+// ── Reveal on scroll ──
+var obs = new IntersectionObserver(function(entries){
+  entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); obs.unobserve(e.target); } });
+}, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+document.querySelectorAll('.reveal').forEach(function(el){ obs.observe(el); });
+
+// ── Red Bar — touch-drag with seamless animation resume ──
+(function () {
+  var inner = document.querySelector('.red-bar-inner');
+  if (!inner) return;
+
+  var DURATION = 28; // seconds — must match CSS animation duration
+  var dragging = false;
+  var directionLocked = false;
+  var isHorizontal = false;
+  var touchStartX = 0, touchStartY = 0;
+  var animStartPx = 0, currentPx = 0;
+
+  function getTranslateX(el) {
+    var t = window.getComputedStyle(el).transform;
+    if (!t || t === 'none') return 0;
+    return new DOMMatrix(t).m41;
   }
-});
 
-var burger=document.getElementById('burger');
-var menu=document.getElementById('mobileMenu');
-var open=false;
-burger.addEventListener('click',function(){
-  open=!open;
-  menu.classList.toggle('open',open);
-  document.body.style.overflow=open?'hidden':'';
-});
+  inner.addEventListener('touchstart', function (e) {
+    dragging = true;
+    directionLocked = false;
+    isHorizontal = false;
+    touchStartX = e.touches[0].clientX;
+    touchStartY = e.touches[0].clientY;
+    // Snapshot the live animated translateX so drag feels continuous
+    animStartPx = getTranslateX(inner);
+    currentPx = animStartPx;
+  }, { passive: true });
 
-function closeMobile(){
-  open=false;
-  menu.classList.remove('open');
-  document.body.style.overflow='';
-}
+  inner.addEventListener('touchmove', function (e) {
+    if (!dragging) return;
+    var dx = e.touches[0].clientX - touchStartX;
+    var dy = e.touches[0].clientY - touchStartY;
 
-document.querySelectorAll('a[href^="#"]').forEach(function(a){
-  a.addEventListener('click',function(e){
-    var t=document.querySelector(a.getAttribute('href'));
-    if(t){
-      e.preventDefault();
-      window.scrollTo({top:t.getBoundingClientRect().top+window.scrollY-76,behavior:'smooth'});
+    // Lock direction once the finger moves enough to tell
+    if (!directionLocked && (Math.abs(dx) > 5 || Math.abs(dy) > 5)) {
+      isHorizontal = Math.abs(dx) > Math.abs(dy);
+      directionLocked = true;
+      if (isHorizontal) {
+        // Freeze the CSS animation at its current pixel position
+        inner.style.animation = 'none';
+        inner.style.transform = 'translateX(' + animStartPx + 'px)';
+      }
     }
-  });
-});
+
+    if (!isHorizontal) return; // let vertical swipes scroll the page
+    e.preventDefault();
+    currentPx = animStartPx + dx;
+    inner.style.transform = 'translateX(' + currentPx + 'px)';
+  }, { passive: false });
+
+  function resumeAnimation() {
+    if (!dragging) return;
+    dragging = false;
+    if (!isHorizontal) return; // nothing was frozen, nothing to resume
+
+    var halfWidth = inner.scrollWidth / 2;
+    if (halfWidth <= 0) return;
+
+    // Find where in the cycle the finger stopped (normalise to 0 → halfWidth)
+    var pxInCycle = ((-currentPx) % halfWidth + halfWidth) % halfWidth;
+    var progress  = pxInCycle / halfWidth;
+    var delay     = -(progress * DURATION); // negative delay fast-forwards to that point
+
+    // Remove inline overrides, force a reflow, then re-attach the animation at offset
+    inner.style.transform = '';
+    inner.style.animation  = 'none';
+    void inner.offsetWidth; // flush so the browser sees the reset
+    inner.style.animation      = 'marqueeScroll ' + DURATION + 's linear infinite';
+    inner.style.animationDelay = delay + 's';
+  }
+
+  inner.addEventListener('touchend',    resumeAnimation, { passive: true });
+  inner.addEventListener('touchcancel', resumeAnimation, { passive: true });
+})();
+
 </script>
+
 </body>
 </html>

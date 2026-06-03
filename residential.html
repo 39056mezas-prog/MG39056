@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Residential Painting Orange County | Interior & Exterior | Lunar Painting Laguna Hills</title>
-<meta name="description" content="Lunar Painting is Orange County's trusted residential painting contractor — interior, exterior, and surface prep. Sherwin Williams on every job. Call (949) 446-8578." />
+<meta name="description" content="Lunar Painting is Orange County's trusted residential painting contractor — interior, exterior, and surface prep. Sherwin Williams on every job. Call (949) 592-7099." />
 <meta name="robots" content="index, follow" />
 <link rel="canonical" href="https://lunarpainting.com/residential" />
 <link rel="icon" type="image/webp" href="https://raw.githubusercontent.com/39056mezas-prog/MG39056/main/favicon.webp" />
@@ -12,7 +12,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:title" content="Residential Painting — Lunar Painting Orange County" />
 <meta property="og:description" content="Interior and exterior residential painting across Orange County. Sherwin Williams, licensed, insured." />
-<meta property="og:image" content="https://lunarpainting.com/og-preview.jpg" />
+<meta property="og:image" content="https://raw.githubusercontent.com/39056mezas-prog/MG39056/main/residentialexteriorpaint.jpg" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700;1,800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
@@ -59,6 +59,17 @@ a { text-decoration: none; color: inherit; }
 .nav-links { display: none; list-style: none; gap: 40px; align-items: center; position: absolute; left: 50%; transform: translateX(-50%); }
 .nav-links a { font-size: 12px; font-weight: 500; letter-spacing: .12em; text-transform: uppercase; color: rgba(255,255,255,.65); transition: color .2s; }
 .nav-links a:hover, .nav-links a.active { color: var(--white); }
+.nav-phone {
+  display: none;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--red);
+  letter-spacing: .01em;
+  white-space: nowrap;
+  margin-left: auto;
+  transition: color .2s;
+}
+.nav-phone:hover { opacity: .8; }
 
 /* ── HERO ── */
 .hero { position: relative; width: 100%; min-height: 100svh; min-height: 100vh; display: flex; flex-direction: column; align-items: stretch; overflow: hidden; padding: 0 0 80px; }
@@ -79,13 +90,26 @@ a { text-decoration: none; color: inherit; }
 .hero-nav-links { list-style: none; display: flex; align-items: center; gap: clamp(18px,5vw,48px); flex-wrap: wrap; justify-content: center; }
 .hero-nav-links a { font-size: 11px; font-weight: 500; letter-spacing: .15em; text-transform: uppercase; color: rgba(255,255,255,.45); transition: color .2s; white-space: nowrap; }
 .hero-nav-links a:hover, .hero-nav-links a.active { color: rgba(255,255,255,.9); }
-.hero-content { position: relative; z-index: 2; max-width: 860px; width: 100%; margin: 0 auto; flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 24px 24px 0; }
+.hero-content { position: relative; z-index: 2; max-width: 860px; width: 100%; margin: 0 auto; flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 24px 24px 80px; }
 .hero-eyebrow { font-size: 11px; font-weight: 500; letter-spacing: .2em; text-transform: uppercase; color: rgba(255,255,255,.45); margin-bottom: 20px; animation: fadeDown .9s .1s cubic-bezier(.16,1,.3,1) both; }
 .hero-h1 { font-family: var(--ff-serif); font-size: clamp(46px,9vw,96px); font-weight: 800; line-height: 1.02; letter-spacing: -.02em; color: var(--white); margin-bottom: 24px; animation: fadeDown .9s .18s cubic-bezier(.16,1,.3,1) both; }
 .hero-h1 em { font-style: italic; font-weight: 700; color: rgba(255,255,255,.65); }
 .hero-sub { font-size: clamp(15px,2vw,17px); font-weight: 300; line-height: 1.75; color: rgba(255,255,255,.55); max-width: 500px; margin: 0 auto 44px; animation: fadeDown .9s .26s cubic-bezier(.16,1,.3,1) both; }
 .hero-cta { display: inline-flex; align-items: center; gap: 12px; background: var(--red); color: var(--white); font-size: 15px; font-weight: 600; letter-spacing: .02em; padding: 17px 38px; border-radius: 2px; transition: background .2s, transform .15s, box-shadow .2s; animation: fadeDown .9s .34s cubic-bezier(.16,1,.3,1) both; }
 .hero-cta:hover { background: var(--red-dk); transform: translateY(-2px); box-shadow: 0 12px 40px rgba(190,30,45,.4); }
+.hero-phone {
+  font-size: 13px;
+  color: rgba(255,255,255,.4);
+  margin-top: 16px;
+  animation: fadeDown .9s .46s cubic-bezier(.16,1,.3,1) both;
+}
+.hero-phone a {
+  color: rgba(255,255,255,.65);
+  border-bottom: 1px solid rgba(255,255,255,.25);
+  padding-bottom: 1px;
+  transition: color .2s, border-color .2s;
+}
+.hero-phone a:hover { color: var(--white); border-color: rgba(255,255,255,.6); }
 .hero-scroll { position: absolute; bottom: 32px; left: 50%; transform: translateX(-50%); z-index: 2; display: flex; flex-direction: column; align-items: center; gap: 8px; opacity: .4; animation: fadeDown 1.2s .6s both; }
 .hero-scroll span { font-size: 10px; letter-spacing: .14em; text-transform: uppercase; color: rgba(255,255,255,.6); }
 .hero-scroll-line { width: 1px; height: 40px; background: linear-gradient(to bottom, rgba(255,255,255,.5), transparent); animation: scrollPulse 2s ease-in-out infinite; }
@@ -204,6 +228,8 @@ a { text-decoration: none; color: inherit; }
   .sticky-call { display: none; }
   .nav-links { display: flex; }
   .nav-inner { justify-content: flex-start; }
+  .nav-phone { display: block; }
+  .pricing-grid { grid-template-columns: 1fr 1fr 1fr; }
   .card-section, .card-section-dark { margin: 32px; }
   .quote-card, .cta-card { margin: 0 32px; }
   .about-grid { display: grid; grid-template-columns: 1fr 1fr; }
@@ -220,6 +246,29 @@ a { text-decoration: none; color: inherit; }
   .card-section, .card-section-dark { margin: 40px; border-radius: 4px; }
   .quote-card, .cta-card { margin: 0 40px; border-radius: 4px; }
 }
+
+/* ── Pricing section ── */
+.pricing-grid { display: grid; grid-template-columns: 1fr; gap: 2px; }
+.pricing-card { background: var(--white); padding: clamp(28px,4vw,44px); }
+.pricing-label {
+  font-size: 10px; font-weight: 600; letter-spacing: .16em;
+  text-transform: uppercase; color: var(--red); margin-bottom: 10px;
+}
+.pricing-range {
+  font-family: var(--ff-serif); font-size: clamp(24px,3.5vw,34px);
+  font-weight: 800; color: var(--ink); line-height: 1.1; margin-bottom: 12px;
+}
+.pricing-desc { font-size: 13px; font-weight: 300; line-height: 1.75; color: var(--mid); }
+.pricing-footer {
+  padding: clamp(20px,3vw,28px) clamp(28px,5vw,72px);
+  font-size: 13px; font-weight: 300; color: var(--mid);
+  line-height: 1.75; border-top: 1px solid var(--rule);
+}
+.pricing-footer a {
+  color: var(--red); border-bottom: 1px solid rgba(190,30,45,.3);
+  padding-bottom: 1px; transition: color .2s;
+}
+.pricing-footer a:hover { color: var(--red-dk); }
 </style>
 </head>
 
@@ -236,7 +285,9 @@ a { text-decoration: none; color: inherit; }
       <li><a href="/residential" class="active">Residential</a></li>
       <li><a href="/#work">Our Work</a></li>
       <li><a href="/contact">Contact</a></li>
+      <li><a href="/faq">FAQ</a></li>
     </ul>
+    <a class="nav-phone" href="tel:+19495927099">(949) 592-7099</a>
   </div>
 </nav>
 
@@ -257,6 +308,7 @@ a { text-decoration: none; color: inherit; }
       <li><a href="/residential" class="active">Residential</a></li>
       <li><a href="/#work">Our Work</a></li>
       <li><a href="/contact">Contact</a></li>
+      <li><a href="/faq">FAQ</a></li>
     </ul>
   </div>
 
@@ -271,6 +323,7 @@ a { text-decoration: none; color: inherit; }
     <a href="/contact" class="hero-cta">
       Get a Free Estimate &rarr;
     </a>
+    <p class="hero-phone">or call <a href="tel:+19495927099">(949) 592-7099</a></p>
   </div>
 
   <div class="hero-scroll" aria-hidden="true">
@@ -391,6 +444,33 @@ a { text-decoration: none; color: inherit; }
   </div>
 </article>
 
+<!-- PRICING CONTEXT -->
+<article class="card-section reveal" id="pricing">
+  <div class="card-inner" style="padding-bottom:28px">
+    <span class="section-label">What to Expect on Cost</span>
+    <h2 class="section-h2" style="color:var(--ink)">Honest pricing.<br><em>No surprises.</em></h2>
+    <p class="section-body" style="color:var(--mid)">Every home is different and we always walk the property before committing to a number. Here's a realistic range for typical OC residential projects using Sherwin Williams products.</p>
+  </div>
+  <div class="pricing-grid">
+    <div class="pricing-card">
+      <div class="pricing-label">Exterior</div>
+      <div class="pricing-range">$2,500&ndash;$7,500</div>
+      <p class="pricing-desc">Typical single-family home. Includes pressure washing, surface prep, primer where needed, and two finish coats. Final price depends on size, number of stories, and surface condition.</p>
+    </div>
+    <div class="pricing-card">
+      <div class="pricing-label">Interior &mdash; Full Home</div>
+      <div class="pricing-range">$2,000&ndash;$6,000</div>
+      <p class="pricing-desc">Walls, ceilings, and trim throughout. Varies by room count, ceiling height, and detail work on built-ins or cabinets. Single rooms typically start around $400&ndash;$800.</p>
+    </div>
+    <div class="pricing-card">
+      <div class="pricing-label">Repairs &amp; Prep</div>
+      <div class="pricing-range">Quoted per scope</div>
+      <p class="pricing-desc">From hairline cracks to full wall replacement. We assess the repair and fold it into your project quote &mdash; no separate contractor needed, no coordination headaches.</p>
+    </div>
+  </div>
+  <p class="pricing-footer">Ranges reflect typical OC projects. We provide a written scope-of-work before any project starts. <a href="/contact">Get your free estimate &rarr;</a></p>
+</article>
+
 <div class="gap-md"></div>
 
 <!-- PROCESS — dark card -->
@@ -453,7 +533,7 @@ a { text-decoration: none; color: inherit; }
 <section class="cta-card reveal">
   <p class="cta-eyebrow">Ready to Get Started</p>
   <h2 class="cta-h2">Let's talk about your home.</h2>
-  <a href="tel:+19494468578" class="cta-phone">(949) 446-8578</a>
+  <a href="tel:+19495927099" class="cta-phone">(949) 592-7099</a>
   <p class="cta-hours">Monday &ndash; Friday &nbsp;&middot;&nbsp; 8:00 AM &ndash; 5:00 PM</p>
   <a href="/contact" class="cta-btn">Request a Free Estimate &rarr;</a>
 </section>
@@ -469,7 +549,7 @@ a { text-decoration: none; color: inherit; }
         <div class="footer-col-title">Contact</div>
         <address class="footer-addr">
           25255 Cabot Rd, Suite #224<br>Laguna Hills, CA 92653<br><br>
-          <a href="tel:+19494468578">(949) 446-8578</a><br>
+          <a href="tel:+19495927099">(949) 592-7099</a><br>
           <a href="mailto:lunarpainting1@gmail.com">lunarpainting1@gmail.com</a>
         </address>
       </div>
@@ -486,6 +566,8 @@ a { text-decoration: none; color: inherit; }
           <li><a href="/">Home</a></li>
           <li><a href="/#work">Our Work</a></li>
           <li><a href="/contact">Contact</a></li>
+          <li><a href="/faq">FAQ</a></li>
+          <li><a href="/privacy">Privacy</a></li>
         </ul>
       </div>
       <div>
@@ -508,9 +590,9 @@ a { text-decoration: none; color: inherit; }
 </div><!-- /page-body -->
 
 <!-- MOBILE STICKY CALL BAR -->
-<a href="tel:+19494468578" class="sticky-call" aria-label="Call Lunar Painting">
+<a href="tel:+19495927099" class="sticky-call" aria-label="Call Lunar Painting">
   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.63A2 2 0 012 .94h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-  Call (949) 446-8578
+  Call (949) 592-7099
 </a>
 
 <script>
