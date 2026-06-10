@@ -42,9 +42,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700;1,800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
 
 <style>
-/* ═══════════════════════════════════════════
+/* ===========================================
    TOKENS
-═══════════════════════════════════════════ */
+=========================================== */
 :root {
   --red:        #BE1E2D;
   --red-dk:     #8a1220;
@@ -73,9 +73,9 @@ body {
 img { display: block; max-width: 100%; }
 a { text-decoration: none; color: inherit; }
 
-/* ═══════════════════════════════════════════
+/* ===========================================
    STICKY NAV — hidden in hero, slides in on scroll
-═══════════════════════════════════════════ */
+=========================================== */
 #site-nav {
   position: fixed;
   top: 0; left: 0; right: 0;
@@ -152,9 +152,9 @@ a { text-decoration: none; color: inherit; }
 }
 .nav-phone:hover { opacity: .8; }
 
-/* ═══════════════════════════════════════════
+/* ===========================================
    HERO — full viewport, centered, dark red overlay
-═══════════════════════════════════════════ */
+=========================================== */
 .hero {
   position: relative;
   width: 100%;
@@ -219,9 +219,9 @@ a { text-decoration: none; color: inherit; }
   padding: 24px 24px 80px;
 }
 
-/* ═══════════════════════════════════════════
+/* ===========================================
    HERO NAV — logo + links embedded at top of hero
-═══════════════════════════════════════════ */
+=========================================== */
 .hero-nav {
   width: 100%;
   display: flex;
@@ -362,9 +362,9 @@ a { text-decoration: none; color: inherit; }
 }
 @keyframes scrollPulse { 0%,100%{opacity:.4;transform:scaleY(1)} 50%{opacity:.9;transform:scaleY(1.15)} }
 
-/* ═══════════════════════════════════════════
+/* ===========================================
    RED DIVIDER BAR — separates hero from body
-═══════════════════════════════════════════ */
+=========================================== */
 .red-bar {
   width: 100%;
   background: var(--red);
@@ -405,9 +405,9 @@ a { text-decoration: none; color: inherit; }
   to   { transform: translateX(-50%); }
 }
 
-/* ═══════════════════════════════════════════
+/* ===========================================
    SHARED CARD / SECTION STYLES
-═══════════════════════════════════════════ */
+=========================================== */
 .page-body {
   background: var(--ink);
 }
@@ -474,9 +474,9 @@ a { text-decoration: none; color: inherit; }
   margin-bottom: 36px;
 }
 
-/* ═══════════════════════════════════════════
+/* ===========================================
    ABOUT / COMMERCIAL CARD
-═══════════════════════════════════════════ */
+=========================================== */
 .about-grid {
   display: flex;
   flex-direction: column;
@@ -516,9 +516,9 @@ a { text-decoration: none; color: inherit; }
 .pillar-title { font-size: 14px; font-weight: 600; color: var(--ink); margin-bottom: 4px; }
 .pillar-desc { font-size: 13px; font-weight: 300; line-height: 1.7; color: var(--mid); }
 
-/* ═══════════════════════════════════════════
+/* ===========================================
    STATS CARD — dark card
-═══════════════════════════════════════════ */
+=========================================== */
 .stats-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -544,9 +544,9 @@ a { text-decoration: none; color: inherit; }
   color: rgba(255,255,255,.4);
 }
 
-/* ═══════════════════════════════════════════
+/* ===========================================
    SERVICES CARD
-═══════════════════════════════════════════ */
+=========================================== */
 .svc-pair {
   display: grid;
   grid-template-columns: 1fr;
@@ -604,9 +604,9 @@ a { text-decoration: none; color: inherit; }
   margin-top: 8px;
 }
 
-/* ═══════════════════════════════════════════
+/* ===========================================
    WORK PHOTO GRID CARD
-═══════════════════════════════════════════ */
+=========================================== */
 .work-header { padding: clamp(36px, 5vw, 56px) clamp(28px, 5vw, 64px) 28px; }
 .photo-grid {
   display: grid;
@@ -635,9 +635,9 @@ a { text-decoration: none; color: inherit; }
 .pg-tall { grid-row: span 2; }
 .pg-tall img { aspect-ratio: auto; height: 100%; }
 
-/* ═══════════════════════════════════════════
+/* ===========================================
    PULL QUOTE CARD — dark
-═══════════════════════════════════════════ */
+=========================================== */
 .quote-card {
   background: var(--red-glow);
   border-radius: 3px;
@@ -682,9 +682,9 @@ a { text-decoration: none; color: inherit; }
   z-index: 1;
 }
 
-/* ═══════════════════════════════════════════
+/* ===========================================
    REVIEWS — 3 cards in a row card
-═══════════════════════════════════════════ */
+=========================================== */
 .reviews-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -718,9 +718,9 @@ a { text-decoration: none; color: inherit; }
 }
 .review-source { font-size: 11px; color: var(--mid); }
 
-/* ═══════════════════════════════════════════
+/* ===========================================
    CTA CARD — full red
-═══════════════════════════════════════════ */
+=========================================== */
 .cta-card {
   background: var(--red);
   border-radius: 3px;
@@ -776,9 +776,9 @@ a { text-decoration: none; color: inherit; }
 }
 .cta-btn:hover { background: rgba(255,255,255,.2); border-color: rgba(255,255,255,.45); }
 
-/* ═══════════════════════════════════════════
+/* ===========================================
    FOOTER
-═══════════════════════════════════════════ */
+=========================================== */
 .site-footer {
   background: var(--ink);
   border-top: 1px solid rgba(255,255,255,.06);
@@ -835,9 +835,9 @@ a { text-decoration: none; color: inherit; }
 .footer-copy { font-size: 11px; color: rgba(255,255,255,.2); }
 .footer-seo { font-size: 11px; line-height: 1.7; color: rgba(255,255,255,.1); }
 
-/* ═══════════════════════════════════════════
+/* ===========================================
    MOBILE STICKY CALL BAR
-═══════════════════════════════════════════ */
+=========================================== */
 .sticky-call {
   display: flex;
   position: fixed;
@@ -858,9 +858,9 @@ a { text-decoration: none; color: inherit; }
 .sticky-call:hover { background: var(--red-dk); }
 .sticky-call svg { flex-shrink: 0; }
 
-/* ═══════════════════════════════════════════
+/* ===========================================
    REVEAL ANIMATIONS
-═══════════════════════════════════════════ */
+=========================================== */
 .reveal {
   opacity: 0;
   transform: translateY(28px);
@@ -876,9 +876,9 @@ a { text-decoration: none; color: inherit; }
   to   { opacity: 1; transform: translateY(0); }
 }
 
-/* ═══════════════════════════════════════════
+/* ===========================================
    DESKTOP
-═══════════════════════════════════════════ */
+=========================================== */
 @media (min-width: 768px) {
   body { padding-bottom: 0; }
   .sticky-call { display: none; }
@@ -921,9 +921,9 @@ a { text-decoration: none; color: inherit; }
 
 <body id="top">
 
-<!-- ════════════════════════════════════════
+<!-- ========================================
      STICKY NAV
-════════════════════════════════════════ -->
+======================================== -->
 <nav id="site-nav" role="navigation" aria-label="Main navigation">
   <div class="nav-inner">
     <a class="nav-logo" href="#top" aria-label="Lunar Painting — scroll to top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">
@@ -940,9 +940,9 @@ a { text-decoration: none; color: inherit; }
   </div>
 </nav>
 
-<!-- ════════════════════════════════════════
+<!-- ========================================
      HERO — full viewport
-════════════════════════════════════════ -->
+======================================== -->
 <section class="hero" id="hero">
   <img class="hero-bg"
     src="https://raw.githubusercontent.com/39056mezas-prog/MG39056/main/heropainterstruckinfrontofapartmentbuilding.png"
@@ -986,9 +986,9 @@ a { text-decoration: none; color: inherit; }
   </div>
 </section>
 
-<!-- ════════════════════════════════════════
+<!-- ========================================
      RED DIVIDER BAR — trust credentials
-════════════════════════════════════════ -->
+======================================== -->
 <div class="red-bar" role="marquee" aria-label="Credentials">
   <div class="red-bar-inner">
     <span class="red-bar-item">Licensed &amp; Insured</span><span class="red-bar-dot"></span>
@@ -1008,9 +1008,9 @@ a { text-decoration: none; color: inherit; }
   </div>
 </div>
 
-<!-- ════════════════════════════════════════
+<!-- ========================================
      PAGE BODY — cards on dark background
-════════════════════════════════════════ -->
+======================================== -->
 <div class="page-body">
 <div class="gap-md"></div>
 
@@ -1328,5 +1328,3 @@ document.querySelectorAll('.reveal').forEach(function(el){ obs.observe(el); });
 
 </body>
 </html>
-HTMLEOF
-echo "Done, size: $(wc -c < /mnt/user-data/outputs/index.html)"
