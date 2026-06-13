@@ -12,7 +12,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:title" content="Contact Lunar Painting — Orange County" />
 <meta property="og:description" content="Request a free estimate or call us directly. Licensed, insured painting contractor serving OC and LA County since 2017." />
-<meta property="og:image" content="/heropainterstruckinfrontofapartmentbuilding.png" />
+<meta property="og:image" content="/heropainterstruckinfrontofapartmentbuilding.webp" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700;1,800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
@@ -236,6 +236,86 @@ a { text-decoration: none; color: inherit; }
   }
   .wa-float svg { width: 30px; height: 30px; }
 }
+
+.trusted-local{
+margin:0 24px;
+background:var(--snow);
+color:var(--ink);
+border-radius:3px;
+overflow:hidden;
+}
+.trusted-local-inner{
+padding:clamp(44px,6vw,72px);
+text-align:center;
+}
+.trusted-stars{color:var(--red);font-size:18px;margin:18px 0 10px}
+.trusted-btn{
+display:inline-flex;padding:16px 28px;background:var(--red);color:#fff;
+font-weight:600;border-radius:2px
+}
+
+
+/* ── TRUSTED LOCALLY ── */
+.trust-section{
+margin:0 24px;
+border-radius:3px;
+overflow:hidden;
+background:
+linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.01)),
+var(--ink-soft);
+border:1px solid rgba(255,255,255,.06);
+}
+.trust-inner{
+padding:clamp(44px,6vw,84px) clamp(28px,5vw,72px);
+display:grid;
+gap:28px;
+align-items:center;
+}
+.trust-copy{text-align:left}
+.trust-kicker{
+font-size:11px;font-weight:600;letter-spacing:.16em;
+text-transform:uppercase;color:var(--red);margin-bottom:16px;
+}
+.trust-title{
+font-family:var(--ff-serif);
+font-size:clamp(32px,5vw,54px);
+line-height:1.05;
+margin-bottom:14px;
+}
+.trust-body{
+max-width:520px;
+color:rgba(255,255,255,.55);
+line-height:1.8;
+}
+.trust-proof{
+background:rgba(255,255,255,.03);
+border:1px solid rgba(255,255,255,.08);
+padding:28px;border-radius:3px;
+text-align:center;
+}
+.trust-stars{
+font-size:20px;
+letter-spacing:4px;
+color:#E7C76A;
+margin-bottom:12px;
+}
+.trust-rating{
+font-size:28px;
+font-weight:700;
+margin-bottom:10px;
+}
+.trust-btn{
+display:inline-flex;
+padding:16px 24px;
+background:var(--red);
+color:white;
+font-weight:600;
+border-radius:2px;
+}
+@media(min-width:900px){
+.trust-inner{grid-template-columns:1.4fr .8fr;}
+}
+
 </style>
 </head>
 
@@ -323,7 +403,8 @@ a { text-decoration: none; color: inherit; }
         <p class="success-sub">We'll follow up within one business day. For faster service, call <a href="tel:+19495927099" style="color:var(--red)">(949) 592-7099</a>.</p>
       </div>
 
-      <form class="form reveal reveal-d1" id="contact-form" novalidate data-api-endpoint="REPLACE_WITH_YOUR_ENDPOINT">
+      <form class="form reveal reveal-d1" id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+<input type="hidden" name="access_key" value="3d43e684-c1ba-4d45-afbe-072cdde00198">
         <div class="form-row">
           <div class="field">
             <label for="fname">First Name</label>
@@ -428,6 +509,31 @@ a { text-decoration: none; color: inherit; }
 </article>
 
 <div class="gap-sm"></div>
+
+
+
+<section class="trust-section reveal">
+<div class="trust-inner">
+<div class="trust-copy">
+<div class="trust-kicker">Trusted Locally</div>
+<h2 class="trust-title">Trusted by homeowners throughout Orange County.</h2>
+<p class="trust-body">
+Built around referrals, repeat work, and homeowners that want painters who communicate and show up.
+</p>
+</div>
+
+<div class="trust-proof">
+<div class="trust-stars">★★★★★</div>
+<div class="trust-rating">Rated on Google</div>
+<a class="trust-btn" href="https://g.page/r/CYwZlA1vLunarPainting" target="_blank" rel="noopener">
+View Google Business Profile →
+</a>
+</div>
+</div>
+</section>
+
+<div class="gap-sm"></div>
+
 
 <!-- MAP -->
 <div style="margin: 0 24px; border-radius: 3px; overflow: hidden;">
