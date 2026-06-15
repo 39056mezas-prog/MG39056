@@ -47,7 +47,7 @@
 <!-- Playfair Display — highly legible bold serif, wide glyphs, excellent at display sizes -->
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700;1,800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700;1,800&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
 
 <style>
 /* ===========================================
@@ -434,6 +434,37 @@ a { text-decoration: none; color: inherit; }
   margin: 24px;
   overflow: hidden;
   border: 1px solid rgba(255,255,255,.06);
+  position: relative;
+}
+
+/* Dark card with a textured background photo: dark scrim for legibility
+   + a red glow rising from the bottom edge, plus subtle grain. Set the
+   photo via inline style="--bg-image:url('/your-image.webp')" */
+.card-section-dark.has-bg {
+  isolation: isolate;
+}
+.card-section-dark.has-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  background-image:
+    linear-gradient(to top, rgba(190,30,45,.55) 0%, rgba(190,30,45,0) 58%),
+    linear-gradient(180deg, rgba(8,6,5,.55) 0%, rgba(8,6,5,.85) 100%),
+    var(--bg-image);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.card-section-dark.has-bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.05'/%3E%3C/svg%3E");
+  background-size: 256px 256px;
+  opacity: 0.35;
 }
 .card-inner {
   padding: clamp(40px, 6vw, 80px) clamp(28px, 5vw, 72px);
@@ -464,7 +495,7 @@ a { text-decoration: none; color: inherit; }
   display: block;
 }
 .section-h2 {
-  font-family: var(--ff-serif);
+  font-family: var(--ff-sans);
   font-size: clamp(32px, 5vw, 56px);
   font-weight: 800;
   line-height: 1.06;
@@ -515,9 +546,9 @@ a { text-decoration: none; color: inherit; }
   align-items: start;
 }
 .pillar-num {
-  font-family: var(--ff-serif);
+  font-family: var(--ff-sans);
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 800;
   color: var(--rule);
   line-height: 1.4;
 }
@@ -534,11 +565,11 @@ a { text-decoration: none; color: inherit; }
   background: rgba(255,255,255,.07);
 }
 .stat-cell {
-  background: var(--ink-soft);
+  background: rgba(30,27,24,.55);
   padding: clamp(28px, 4vw, 48px) clamp(24px, 3.5vw, 40px);
 }
 .stat-num {
-  font-family: var(--ff-serif);
+  font-family: var(--ff-sans);
   font-size: clamp(48px, 8vw, 80px);
   font-weight: 900;
   color: var(--white);
@@ -574,7 +605,7 @@ a { text-decoration: none; color: inherit; }
   margin-bottom: 10px;
 }
 .svc-title {
-  font-family: var(--ff-serif);
+  font-family: var(--ff-sans);
   font-size: clamp(22px, 3.5vw, 30px);
   font-weight: 800;
   letter-spacing: -.01em;
@@ -661,7 +692,7 @@ a { text-decoration: none; color: inherit; }
   top: -20px;
   left: 50%;
   transform: translateX(-50%);
-  font-family: var(--ff-serif);
+  font-family: var(--ff-sans);
   font-size: 260px;
   font-weight: 900;
   color: rgba(255,255,255,.04);
@@ -670,10 +701,9 @@ a { text-decoration: none; color: inherit; }
   user-select: none;
 }
 .quote-text {
-  font-family: var(--ff-serif);
+  font-family: var(--ff-sans);
   font-size: clamp(24px, 4.5vw, 44px);
-  font-weight: 700;
-  font-style: italic;
+  font-weight: 800;
   color: rgba(255,255,255,.9);
   line-height: 1.4;
   max-width: 720px;
@@ -745,7 +775,7 @@ a { text-decoration: none; color: inherit; }
   margin-bottom: 16px;
 }
 .cta-h2 {
-  font-family: var(--ff-serif);
+  font-family: var(--ff-sans);
   font-size: clamp(32px, 6vw, 60px);
   font-weight: 800;
   letter-spacing: -.02em;
@@ -1047,7 +1077,7 @@ a { text-decoration: none; color: inherit; }
 <div class="gap-sm"></div>
 
 <!-- STATS CARD -->
-<article class="card-section-dark reveal reveal-d1">
+<article class="card-section-dark has-bg reveal reveal-d1" style="--bg-image:url('/commercialbkgimage.webp')">
   <div class="stats-grid">
     <div class="stat-cell">
       <div class="stat-num">7+</div>

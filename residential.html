@@ -97,7 +97,7 @@
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700;1,800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700;1,800&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
 
 <style>
 :root {
@@ -208,10 +208,13 @@ a { text-decoration: none; color: inherit; }
 /* ── SHARED CARD STYLES ── */
 .page-body { background: var(--ink); }
 .card-section { background: var(--snow); color: var(--ink); border-radius: 3px; margin: 24px; overflow: hidden; }
-.card-section-dark { background: var(--ink-soft); color: var(--white); border-radius: 3px; margin: 24px; overflow: hidden; border: 1px solid rgba(255,255,255,.06); }
+.card-section-dark { background: var(--ink-soft); color: var(--white); border-radius: 3px; margin: 24px; overflow: hidden; border: 1px solid rgba(255,255,255,.06); position: relative; }
+.card-section-dark.has-bg { isolation: isolate; }
+.card-section-dark.has-bg::before { content: ''; position: absolute; inset: 0; z-index: -2; background-image: linear-gradient(to top, rgba(190,30,45,.55) 0%, rgba(190,30,45,0) 58%), linear-gradient(180deg, rgba(8,6,5,.55) 0%, rgba(8,6,5,.85) 100%), var(--bg-image); background-size: cover; background-position: center; background-repeat: no-repeat; }
+.card-section-dark.has-bg::after { content: ''; position: absolute; inset: 0; z-index: -1; pointer-events: none; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.05'/%3E%3C/svg%3E"); background-size: 256px 256px; opacity: 0.35; }
 .card-inner { padding: clamp(40px,6vw,80px) clamp(28px,5vw,72px); }
 .section-label { font-size: 11px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: var(--red); margin-bottom: 14px; display: block; }
-.section-h2 { font-family: var(--ff-serif); font-size: clamp(32px,5vw,56px); font-weight: 800; line-height: 1.06; letter-spacing: -.02em; color: inherit; margin-bottom: 18px; }
+.section-h2 { font-family: var(--ff-sans); font-size: clamp(32px,5vw,56px); font-weight: 800; line-height: 1.06; letter-spacing: -.02em; color: inherit; margin-bottom: 18px; }
 .section-h2 em { font-style: italic; font-weight: 700; color: var(--red); }
 .section-body { font-size: 15px; font-weight: 300; line-height: 1.8; color: var(--mid); max-width: 540px; margin-bottom: 36px; }
 
@@ -221,14 +224,14 @@ a { text-decoration: none; color: inherit; }
 .about-text { padding: clamp(36px,5vw,64px) clamp(28px,5vw,64px); }
 .pillars { display: flex; flex-direction: column; gap: 0; margin-top: 32px; border-top: 1px solid var(--rule); }
 .pillar { padding: 20px 0; border-bottom: 1px solid var(--rule); display: grid; grid-template-columns: 28px 1fr; gap: 0 16px; align-items: start; }
-.pillar-num { font-family: var(--ff-serif); font-size: 20px; font-weight: 700; color: var(--rule); line-height: 1.4; }
+.pillar-num { font-family: var(--ff-sans); font-size: 20px; font-weight: 800; color: var(--rule); line-height: 1.4; }
 .pillar-title { font-size: 14px; font-weight: 600; color: var(--ink); margin-bottom: 4px; }
 .pillar-desc { font-size: 13px; font-weight: 300; line-height: 1.7; color: var(--mid); }
 
 /* ── STATS ── */
 .stats-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: rgba(255,255,255,.07); }
-.stat-cell { background: var(--ink-soft); padding: clamp(28px,4vw,48px) clamp(24px,3.5vw,40px); }
-.stat-num { font-family: var(--ff-serif); font-size: clamp(48px,8vw,80px); font-weight: 900; color: var(--white); line-height: 1; margin-bottom: 8px; }
+.stat-cell { background: rgba(30,27,24,.55); padding: clamp(28px,4vw,48px) clamp(24px,3.5vw,40px); }
+.stat-num { font-family: var(--ff-sans); font-size: clamp(48px,8vw,80px); font-weight: 900; color: var(--white); line-height: 1; margin-bottom: 8px; }
 .stat-label { font-size: 13px; font-weight: 400; line-height: 1.55; color: rgba(255,255,255,.4); }
 
 /* ── SERVICES ── */
@@ -236,7 +239,7 @@ a { text-decoration: none; color: inherit; }
 .svc-card { background: var(--white); padding: clamp(28px,4vw,48px); }
 .svc-card + .svc-card { border-top: 2px solid var(--snow); }
 .svc-flag { font-size: 10px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: var(--red); margin-bottom: 10px; }
-.svc-title { font-family: var(--ff-serif); font-size: clamp(22px,3.5vw,30px); font-weight: 800; letter-spacing: -.01em; color: var(--ink); margin-bottom: 12px; line-height: 1.1; }
+.svc-title { font-family: var(--ff-sans); font-size: clamp(22px,3.5vw,30px); font-weight: 800; letter-spacing: -.01em; color: var(--ink); margin-bottom: 12px; line-height: 1.1; }
 .svc-desc { font-size: 14px; font-weight: 300; line-height: 1.75; color: var(--mid); margin-bottom: 20px; }
 .svc-list { list-style: none; display: flex; flex-direction: column; gap: 9px; }
 .svc-list li { display: flex; align-items: flex-start; gap: 12px; font-size: 13px; color: var(--ink); line-height: 1.5; }
@@ -246,14 +249,14 @@ a { text-decoration: none; color: inherit; }
 .process-inner { padding: clamp(40px,6vw,80px) clamp(28px,5vw,72px); }
 .process-steps { display: flex; flex-direction: column; gap: 0; margin-top: 32px; border-top: 1px solid var(--rule-dark); }
 .process-step { padding: 22px 0; border-bottom: 1px solid var(--rule-dark); display: grid; grid-template-columns: 28px 1fr; gap: 0 16px; align-items: start; }
-.step-num { font-family: var(--ff-serif); font-size: 20px; font-weight: 700; color: rgba(255,255,255,.15); line-height: 1.4; }
+.step-num { font-family: var(--ff-sans); font-size: 20px; font-weight: 800; color: rgba(255,255,255,.15); line-height: 1.4; }
 .step-title { font-size: 14px; font-weight: 600; color: var(--white); margin-bottom: 4px; }
 .step-desc { font-size: 13px; font-weight: 300; line-height: 1.7; color: rgba(255,255,255,.45); }
 
 /* ── QUOTE CARD ── */
 .quote-card { background: var(--red-glow); border-radius: 3px; margin: 0 24px; padding: clamp(48px,7vw,88px) clamp(28px,5vw,80px); text-align: center; position: relative; overflow: hidden; }
-.quote-card::before { content: '\201C'; position: absolute; top: -20px; left: 50%; transform: translateX(-50%); font-family: var(--ff-serif); font-size: 260px; font-weight: 900; color: rgba(255,255,255,.04); line-height: 1; pointer-events: none; }
-.quote-text { font-family: var(--ff-serif); font-size: clamp(24px,4.5vw,44px); font-weight: 700; font-style: italic; color: rgba(255,255,255,.9); line-height: 1.4; max-width: 720px; margin: 0 auto 24px; position: relative; z-index: 1; }
+.quote-card::before { content: '\201C'; position: absolute; top: -20px; left: 50%; transform: translateX(-50%); font-family: var(--ff-sans); font-size: 260px; font-weight: 900; color: rgba(255,255,255,.04); line-height: 1; pointer-events: none; }
+.quote-text { font-family: var(--ff-sans); font-size: clamp(24px,4.5vw,44px); font-weight: 800; color: rgba(255,255,255,.9); line-height: 1.4; max-width: 720px; margin: 0 auto 24px; position: relative; z-index: 1; }
 .quote-attr { font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: rgba(255,255,255,.35); position: relative; z-index: 1; }
 
 /* ── REVIEWS ── */
@@ -275,7 +278,7 @@ a { text-decoration: none; color: inherit; }
 .locale-grid { display: flex; flex-direction: column; padding: 0 clamp(28px,5vw,72px) clamp(40px,6vw,72px); }
 .locale-col { padding: 28px 0; border-top: 1px solid rgba(255,255,255,.08); }
 .locale-flag { font-size: 10px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: var(--red); margin-bottom: 10px; }
-.locale-title { font-family: var(--ff-serif); font-size: clamp(20px,3vw,26px); font-weight: 800; color: var(--white); margin-bottom: 10px; line-height: 1.15; }
+.locale-title { font-family: var(--ff-sans); font-size: clamp(20px,3vw,26px); font-weight: 800; color: var(--white); margin-bottom: 10px; line-height: 1.15; }
 .area-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 6px 0 4px; }
 .area-tag { font-size: 12px; font-weight: 400; color: rgba(255,255,255,.55); border: 1px solid rgba(255,255,255,.12); border-radius: 2px; padding: 6px 12px; white-space: nowrap; transition: border-color .2s, color .2s; }
 .area-tag:hover { border-color: rgba(255,255,255,.3); color: rgba(255,255,255,.9); }
@@ -283,7 +286,7 @@ a { text-decoration: none; color: inherit; }
 /* ── CTA CARD ── */
 .cta-card { background: var(--red); border-radius: 3px; margin: 0 24px; padding: clamp(56px,8vw,100px) clamp(28px,5vw,80px); text-align: center; }
 .cta-eyebrow { font-size: 11px; font-weight: 500; letter-spacing: .18em; text-transform: uppercase; color: rgba(255,255,255,.45); margin-bottom: 16px; }
-.cta-h2 { font-family: var(--ff-serif); font-size: clamp(32px,6vw,60px); font-weight: 800; letter-spacing: -.02em; color: var(--white); line-height: 1.05; margin-bottom: 12px; }
+.cta-h2 { font-family: var(--ff-sans); font-size: clamp(32px,6vw,60px); font-weight: 800; letter-spacing: -.02em; color: var(--white); line-height: 1.05; margin-bottom: 12px; }
 .cta-phone { display: block; font-family: var(--ff-sans); font-size: clamp(28px,5.5vw,52px); font-weight: 700; color: var(--white); letter-spacing: -.01em; line-height: 1.1; margin-bottom: 8px; }
 .cta-hours { font-size: 13px; color: rgba(255,255,255,.5); margin-bottom: 36px; }
 .cta-btn { display: inline-flex; align-items: center; gap: 10px; background: rgba(255,255,255,.12); border: 1px solid rgba(255,255,255,.25); color: var(--white); font-size: 14px; font-weight: 500; letter-spacing: .02em; padding: 14px 32px; border-radius: 2px; transition: background .2s, border-color .2s; }
@@ -357,7 +360,7 @@ a { text-decoration: none; color: inherit; }
   text-transform: uppercase; color: var(--red); margin-bottom: 10px;
 }
 .pricing-range {
-  font-family: var(--ff-serif); font-size: clamp(24px,3.5vw,34px);
+  font-family: var(--ff-sans); font-size: clamp(24px,3.5vw,34px);
   font-weight: 800; color: var(--ink); line-height: 1.1; margin-bottom: 12px;
 }
 .pricing-desc { font-size: 13px; font-weight: 300; line-height: 1.75; color: var(--mid); }
@@ -481,7 +484,7 @@ a { text-decoration: none; color: inherit; }
 <div class="gap-sm"></div>
 
 <!-- STATS -->
-<article class="card-section-dark reveal reveal-d1">
+<article class="card-section-dark has-bg reveal reveal-d1" style="--bg-image:url('/redientialbkgimage.webp')">
   <div class="stats-grid">
     <div class="stat-cell">
       <div class="stat-num">7+</div>
@@ -577,7 +580,7 @@ a { text-decoration: none; color: inherit; }
 <div class="gap-md"></div>
 
 <!-- PROCESS — dark card -->
-<article class="card-section-dark reveal" id="process">
+<article class="card-section-dark has-bg reveal" id="process" style="--bg-image:url('/redientialbkgimage.webp')">
   <div class="process-inner">
     <span class="section-label">Our Process</span>
     <h2 class="section-h2">5 steps.<br><em>Every single job.</em></h2>
@@ -596,7 +599,7 @@ a { text-decoration: none; color: inherit; }
 <div class="gap-md"></div>
 
 <!-- SERVICE AREAS -->
-<article class="card-section-dark reveal" id="service-areas">
+<article class="card-section-dark has-bg reveal" id="service-areas" style="--bg-image:url('/redientialbkgimage.webp')">
   <div class="card-inner" style="padding-bottom:8px">
     <span class="section-label">Service Areas</span>
     <h2 class="section-h2">Based in Laguna Hills.<br><em>Serving OC &amp; LA County.</em></h2>
@@ -663,7 +666,7 @@ a { text-decoration: none; color: inherit; }
 <div class="gap-md"></div>
 
 <!-- REPUTATION -->
-<article class="card-section-dark reveal" id="reviews">
+<article class="card-section-dark has-bg reveal" id="reviews" style="--bg-image:url('/redientialbkgimage.webp')">
   <div class="card-inner" style="padding-bottom:clamp(40px,6vw,72px)">
     <div class="locale-trust">
       <span class="section-label">Reputation</span>
