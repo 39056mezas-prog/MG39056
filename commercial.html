@@ -21,6 +21,40 @@
 <meta property="og:title" content="Commercial Painting — Lunar Painting Orange County" />
 <meta property="og:description" content="Apartment complexes, HOAs, and commercial properties across Orange County. Licensed, insured, Sherwin Williams." />
 <meta property="og:image" content="/exteriordepartmentcomplexcommercialpaiting.jpg" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Commercial painting contractor",
+  "name": "Commercial Painting — Lunar Painting",
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "Lunar Painting",
+    "telephone": "+19495927099",
+    "url": "https://lunarpainting.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "25255 Cabot Rd, Suite #224",
+      "addressLocality": "Laguna Hills",
+      "addressRegion": "CA",
+      "postalCode": "92653",
+      "addressCountry": "US"
+    }
+  },
+  "areaServed": [
+    { "@type": "City", "name": "Irvine, CA" },
+    { "@type": "City", "name": "Lake Forest, CA" },
+    { "@type": "City", "name": "Mission Viejo, CA" },
+    { "@type": "City", "name": "Laguna Hills, CA" },
+    { "@type": "City", "name": "Aliso Viejo, CA" },
+    { "@type": "City", "name": "Laguna Niguel, CA" }
+  ],
+  "audience": {
+    "@type": "Audience",
+    "audienceType": "Property managers, HOA boards, commercial property owners"
+  }
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700;1,800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
@@ -183,6 +217,25 @@ a { text-decoration: none; color: inherit; }
 .svc-list li { display: flex; align-items: flex-start; gap: 12px; font-size: 13px; color: var(--ink); line-height: 1.5; }
 .svc-list li::before { content: ''; width: 12px; height: 1.5px; background: var(--red); flex-shrink: 0; margin-top: 8px; }
 
+/* ── WORK PHOTO GRID ── */
+.work-header { padding: clamp(36px,5vw,56px) clamp(28px,5vw,64px) 28px; }
+.photo-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3px; padding: 0 3px 3px; }
+.pg-item { overflow: hidden; background: var(--ink); cursor: pointer; }
+.pg-item img { width: 100%; height: 100%; object-fit: cover; aspect-ratio: 1; display: block; transition: transform .7s cubic-bezier(.25,.46,.45,.94), filter .4s; filter: brightness(.92) saturate(.9); }
+.pg-item:hover img { transform: scale(1.05); filter: brightness(1) saturate(1); }
+.pg-tall { grid-row: span 2; }
+.pg-tall img { aspect-ratio: auto; height: 100%; }
+.pg-caption { font-size: 11px; font-weight: 500; letter-spacing: .08em; text-transform: uppercase; color: rgba(255,255,255,.55); padding: 10px 2px 0; }
+
+/* ── WHERE WE WORK (locale columns) ── */
+.locale-grid { display: flex; flex-direction: column; padding: 0 clamp(28px,5vw,72px) clamp(40px,6vw,72px); }
+.locale-col { padding: 28px 0; border-top: 1px solid rgba(255,255,255,.08); }
+.locale-flag { font-size: 10px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: var(--red); margin-bottom: 10px; }
+.locale-title { font-family: var(--ff-serif); font-size: clamp(20px,3vw,26px); font-weight: 800; color: var(--white); margin-bottom: 10px; line-height: 1.15; }
+.locale-desc { font-size: 14px; font-weight: 300; line-height: 1.8; color: rgba(255,255,255,.5); margin-bottom: 14px; max-width: 480px; }
+.locale-link { font-size: 13px; font-weight: 600; color: var(--white); border-bottom: 1px solid rgba(255,255,255,.25); padding-bottom: 2px; transition: color .2s, border-color .2s; }
+.locale-link:hover { color: var(--red); border-color: var(--red); }
+
 /* ── QUOTE CARD ── */
 .quote-card { background: var(--red-glow); border-radius: 3px; margin: 0 24px; padding: clamp(48px,7vw,88px) clamp(28px,5vw,80px); text-align: center; position: relative; overflow: hidden; }
 .quote-card::before { content: '\201C'; position: absolute; top: -20px; left: 50%; transform: translateX(-50%); font-family: var(--ff-serif); font-size: 260px; font-weight: 900; color: rgba(255,255,255,.04); line-height: 1; pointer-events: none; }
@@ -252,6 +305,12 @@ a { text-decoration: none; color: inherit; }
   .svc-pair { grid-template-columns: 1fr 1fr 1fr; }
   .svc-card + .svc-card { border-top: none; border-left: 2px solid var(--snow); }
   .reviews-grid { grid-template-columns: 1fr 1fr 1fr; }
+  .photo-grid { grid-template-columns: 2fr 1fr 1fr; grid-template-rows: 300px 200px; }
+  .pg-item img { aspect-ratio: auto; }
+  .pg-tall img { height: 100%; }
+  .locale-grid { flex-direction: row; gap: 0; }
+  .locale-col { flex: 1; border-top: none; border-left: 1px solid rgba(255,255,255,.08); padding: 4px 32px 0; }
+  .locale-col:first-child { border-left: none; padding-left: 0; }
   .footer-top { flex-direction: row; align-items: flex-start; justify-content: space-between; }
   .footer-cols { grid-template-columns: repeat(4, auto); gap: 0 60px; }
   .footer-bottom { flex-direction: row; justify-content: space-between; align-items: flex-end; }
@@ -260,6 +319,7 @@ a { text-decoration: none; color: inherit; }
 @media (min-width: 1200px) {
   .card-section, .card-section-dark { margin: 40px; border-radius: 4px; }
   .quote-card, .cta-card { margin: 0 40px; border-radius: 4px; }
+  .photo-grid { grid-template-rows: 360px 240px; }
 }
 </style>
 </head>
@@ -286,8 +346,8 @@ a { text-decoration: none; color: inherit; }
 <!-- HERO -->
 <section class="hero" id="hero">
   <img class="hero-bg"
-    src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1600&q=88&auto=format&fit=crop&crop=center"
-    alt="Large apartment complex in Orange County — commercial exterior painting by Lunar Painting"
+    src="/industrialcomplexpaintingexterior.jpg"
+    alt="Industrial business park exterior repaint by Lunar Painting — Orange County commercial painting contractor"
     fetchpriority="high" loading="eager" />
   <div class="hero-overlay" aria-hidden="true"></div>
 
@@ -351,8 +411,8 @@ a { text-decoration: none; color: inherit; }
 <article class="card-section reveal" id="about">
   <div class="about-grid">
     <img class="about-photo"
-      src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=900&q=82&auto=format&fit=crop"
-      alt="Commercial apartment complex exterior — Lunar Painting Orange County"
+      src="/brewerycommercialpaint.jpg"
+      alt="Commercial brewery exterior tank and facade painted by Lunar Painting — Orange County"
       loading="lazy" />
     <div class="about-text">
       <span class="section-label">For Property Managers &amp; HOAs</span>
@@ -433,6 +493,69 @@ a { text-decoration: none; color: inherit; }
         <li>After-hours scheduling available</li>
         <li>Low-VOC options available</li>
       </ul>
+    </div>
+  </div>
+</article>
+
+<div class="gap-md"></div>
+
+<!-- RECENT COMMERCIAL WORK -->
+<article class="card-section" id="commercial-work">
+  <div class="work-header reveal">
+    <span class="section-label">Recent Commercial Work</span>
+    <h2 class="section-h2" style="color:var(--ink)">From breweries to<br><em>business parks.</em></h2>
+  </div>
+  <div class="photo-grid">
+    <div class="pg-item pg-tall reveal">
+      <img src="/restaurantcommercialpainting.jpg"
+           alt="Restaurant interior commercial painting — Lunar Painting Orange County" loading="lazy" />
+    </div>
+    <div class="pg-item reveal reveal-d1">
+      <img src="/industrialcomplexcommercialpainting.jpg"
+           alt="Industrial warehouse exterior commercial painting — Lunar Painting Orange County" loading="lazy" />
+    </div>
+    <div class="pg-item reveal reveal-d2">
+      <img src="/exteriordepartmentcomplexcommercialpaiting.jpg"
+           alt="Multi-story apartment complex exterior repaint — Lunar Painting Orange County" loading="lazy" />
+    </div>
+    <div class="pg-item reveal reveal-d1">
+      <img src="/officescommercialpainting.jpg"
+           alt="Commercial office interior painting — Lunar Painting Orange County" loading="lazy" />
+    </div>
+    <div class="pg-item reveal reveal-d2">
+      <img src="/heropainterstruckinfrontofapartmentbuilding.webp"
+           alt="Lunar Painting crew on site at an Orange County apartment complex" loading="lazy" />
+    </div>
+  </div>
+</article>
+
+<div class="gap-md"></div>
+
+<!-- WHERE WE WORK -->
+<article class="card-section-dark reveal" id="where-we-work">
+  <div class="card-inner" style="padding-bottom:8px">
+    <span class="section-label">Where We Work</span>
+    <h2 class="section-h2">Three different OC's.<br><em>One crew that knows all of them.</em></h2>
+    <p class="section-body" style="color:rgba(255,255,255,.5)">A repaint inside an Irvine business park looks nothing like a repaint inside a Lake Forest HOA. Same crew, same standards — different playbook for each.</p>
+  </div>
+  <div class="locale-grid">
+    <div class="locale-col">
+      <div class="locale-flag">Industrial &amp; Business Parks</div>
+      <h3 class="locale-title">Irvine &amp; the Irvine Business Complex</h3>
+      <p class="locale-desc">Tilt-up warehouses, multi-tenant industrial buildings, and office parks near the Spectrum and the 5/405/133 interchange — recoated on schedules built around tenants, loading docks, and business hours.</p>
+      <a href="/irvine" class="locale-link">Commercial painting in Irvine &rarr;</a>
+    </div>
+    <div class="locale-col">
+      <div class="locale-flag">HOA Communities</div>
+      <h3 class="locale-title">Lake Forest, Foothill Ranch &amp; Portola Hills</h3>
+      <p class="locale-desc">Master-planned communities with architectural committees and CC&amp;R color books, often run by management companies like FirstService Residential. We know the approval process and what a board needs to see.</p>
+      <a href="/lake-forest" class="locale-link">HOA painting in Lake Forest &rarr;</a>
+    </div>
+    <div class="locale-col">
+      <div class="locale-flag">Multi-Family &amp; Apartments</div>
+      <h3 class="locale-title">Mission Viejo, Laguna Hills &amp; South OC</h3>
+      <p class="locale-desc">Our home turf. Phased exterior repaints across occupied apartment complexes, breezeways, carports, and common areas — the work shown in the gallery above.</p>
+      <a href="/contact" class="locale-link">Get a property walk-through &rarr;</a>
     </div>
   </div>
 </article>
@@ -523,6 +646,7 @@ a { text-decoration: none; color: inherit; }
         <ul class="footer-list">
           <li><a href="https://www.instagram.com/lunarpainting/" target="_blank" rel="noopener">Instagram</a></li>
           <li><a href="https://www.yelp.com/biz/lunar-painting-laguna-hills" target="_blank" rel="noopener">Yelp</a></li>
+          <li><a href="https://nextdoor.com/pages/lunar-painting-laguna-hills-ca-1/" target="_blank" rel="noopener">Nextdoor</a></li>
           <li><a href="https://www.bbb.org/us/ca/mission-viejo/profile/painting-contractors/lunar-painting-1126-1000065687" target="_blank" rel="noopener">BBB A+</a></li>
           <li><a href="https://mapq.st/3Q88fNu" target="_blank" rel="noopener">MapQuest</a></li>
           <li><a href="https://www.thumbtack.com/ca/laguna-hills/interior-painting/lunar-painting/service/257471021948494995" target="_blank" rel="noopener">Thumbtack</a></li>
@@ -533,7 +657,7 @@ a { text-decoration: none; color: inherit; }
   </div>
   <div class="footer-bottom">
     <p class="footer-copy">&copy; 2017&ndash;2026 Lunar Painting &nbsp;&middot;&nbsp; Laguna Hills, CA</p>
-    <p class="footer-seo">Commercial painting contractor Orange County CA &middot; Apartment complex painting Laguna Hills &middot; HOA painting services Orange County &middot; Property manager painting contractor OC</p>
+    <p class="footer-seo">Commercial painting contractor Orange County CA &middot; Apartment complex painting Laguna Hills &middot; Industrial &amp; office painting Irvine &middot; HOA painting Lake Forest Foothill Ranch &middot; Property manager painting contractor OC</p>
   </div>
 </footer>
 
