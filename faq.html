@@ -216,8 +216,8 @@ a { text-decoration: none; color: inherit; }
 .reveal.in { opacity: 1; transform: translateY(0); }
 @keyframes fadeDown { from{opacity:0;transform:translateY(-16px)} to{opacity:1;transform:translateY(0)} }
 
-.gap-sm { height: 24px; }
-.gap-md { height: 40px; }
+.gap-sm { height: 8px; }
+.gap-md { height: 16px; }
 
 /* ─ MOBILE HAMBURGER + DRAWER ─ */
 .nav-hamburger {
@@ -276,6 +276,18 @@ a { text-decoration: none; color: inherit; }
   .faq-cta-row { flex-direction: row; align-items: center; justify-content: space-between; gap: 40px; }
   .faq-cta-link { margin-top: 0; }
 }
+.drawer-close {
+  position: absolute; top: 0; right: 28px;
+  width: 44px; height: var(--nav-h);
+  background: none; border: none; cursor: pointer;
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 5px;
+}
+.drawer-close span {
+  display: block; width: 22px; height: 1.5px;
+  background: rgba(255,255,255,.8); border-radius: 2px;
+}
+.drawer-close span:nth-child(1) { transform: translateY(3.25px) rotate(45deg); }
+.drawer-close span:nth-child(2) { transform: translateY(-3.25px) rotate(-45deg); }
 </style>
 </head>
 <body>
@@ -580,6 +592,7 @@ a { text-decoration: none; color: inherit; }
 
 <!-- MOBILE DRAWER -->
 <div id="mobile-drawer" class="mobile-drawer" role="dialog" aria-label="Navigation menu">
+  <button class="drawer-close" aria-label="Close navigation menu"><span></span><span></span></button>
   <ul class="mobile-drawer-links">
     <li><a href="/commercial">Commercial</a></li>
     <li><a href="/residential">Residential</a></li>
@@ -603,7 +616,7 @@ a { text-decoration: none; color: inherit; }
 (function(){ var p=window.location.pathname; if(p.endsWith('.html')){history.replaceState(null,'',p.replace(/\.html$/,''));} })();
 var obs = new IntersectionObserver(function(entries){ entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); obs.unobserve(e.target); } }); }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
 document.querySelectorAll('.reveal').forEach(function(el){ obs.observe(el); });
-(function(){var d=document.getElementById('mobile-drawer');if(!d)return;var hs=document.querySelectorAll('.nav-hamburger');function set(o){d.classList.toggle('open',o);hs.forEach(function(h){h.classList.toggle('open',o);h.setAttribute('aria-expanded',o?'true':'false');});document.body.style.overflow=o?'hidden':'';}hs.forEach(function(h){h.addEventListener('click',function(){set(!d.classList.contains('open'));});});d.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){set(false);});});document.addEventListener('keydown',function(e){if(e.key==='Escape'&&d.classList.contains('open'))set(false);});})();
+(function(){var d=document.getElementById('mobile-drawer');if(!d)return;var hs=document.querySelectorAll('.nav-hamburger');function set(o){d.classList.toggle('open',o);hs.forEach(function(h){h.classList.toggle('open',o);h.setAttribute('aria-expanded',o?'true':'false');});document.body.style.overflow=o?'hidden':'';}hs.forEach(function(h){h.addEventListener('click',function(){set(!d.classList.contains('open'));});});d.querySelectorAll('a, .drawer-close').forEach(function(el){el.addEventListener('click',function(){set(false);});});document.addEventListener('keydown',function(e){if(e.key==='Escape'&&d.classList.contains('open'))set(false);});})();
 </script>
 </body>
 </html>

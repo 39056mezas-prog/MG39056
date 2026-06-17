@@ -382,46 +382,23 @@ a { text-decoration: none; color: inherit; }
 }
 @keyframes scrollPulse { 0%,100%{opacity:.4;transform:scaleY(1)} 50%{opacity:.9;transform:scaleY(1.15)} }
 
-/* ===========================================
-   RED DIVIDER BAR — separates hero from body
-=========================================== */
-.red-bar {
-  width: 100%;
-  background: var(--red);
-  padding: 0;
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-  position: relative;
+/* ── CREDENTIAL STRIP ── */
+.cred-strip {
+  display: flex; align-items: center; justify-content: center;
+  flex-wrap: wrap; gap: 10px 20px;
+  padding: 18px 24px;
+  border-bottom: 1px solid rgba(255,255,255,.06);
 }
-.red-bar-inner {
-  display: flex;
-  align-items: center;
-  gap: 0;
-  padding: 18px 0;
-  white-space: nowrap;
-  animation: marqueeScroll 28s linear infinite;
-  will-change: transform;
+.cred-strip span {
+  font-size: 10px; font-weight: 500;
+  letter-spacing: .14em; text-transform: uppercase;
+  color: rgba(255,255,255,.28);
 }
-.red-bar-inner:hover { animation-play-state: paused; }
-.red-bar-item {
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: .16em;
-  text-transform: uppercase;
-  color: rgba(255,255,255,.85);
-  padding: 0 32px;
-  flex-shrink: 0;
+.cred-strip i {
+  display: inline-block; width: 2px; height: 2px;
+  border-radius: 50%; background: rgba(255,255,255,.15);
+  font-style: normal; flex-shrink: 0;
 }
-.red-bar-dot {
-  width: 3px;
-  height: 3px;
-  border-radius: 50%;
-  background: rgba(255,255,255,.4);
-  flex-shrink: 0;
-}
-@keyframes marqueeScroll {
-  from { transform: translateX(0); }
   to   { transform: translateX(-50%); }
 }
 
@@ -507,7 +484,7 @@ a { text-decoration: none; color: inherit; }
   display: block;
 }
 .section-h2 {
-  font-family: var(--ff-sans);
+  font-family: var(--ff-serif);
   font-size: clamp(32px, 5vw, 56px);
   font-weight: 800;
   line-height: 1.06;
@@ -617,7 +594,7 @@ a { text-decoration: none; color: inherit; }
   margin-bottom: 10px;
 }
 .svc-title {
-  font-family: var(--ff-sans);
+  font-family: var(--ff-serif);
   font-size: clamp(22px, 3.5vw, 30px);
   font-weight: 800;
   letter-spacing: -.01em;
@@ -690,7 +667,7 @@ a { text-decoration: none; color: inherit; }
    PULL QUOTE CARD — dark
 =========================================== */
 .quote-card {
-  background: var(--red-glow);
+  background: var(--ink-soft);
   border-radius: 3px;
   margin: 0 24px;
   padding: clamp(48px, 7vw, 88px) clamp(28px, 5vw, 80px);
@@ -698,22 +675,9 @@ a { text-decoration: none; color: inherit; }
   position: relative;
   overflow: hidden;
 }
-.quote-card::before {
-  content: '\201C';
-  position: absolute;
-  top: -20px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-family: var(--ff-sans);
-  font-size: 260px;
-  font-weight: 900;
-  color: rgba(255,255,255,.04);
-  line-height: 1;
-  pointer-events: none;
-  user-select: none;
-}
+.quote-card::before { display: none; }
 .quote-text {
-  font-family: var(--ff-sans);
+  font-family: var(--ff-serif);
   font-size: clamp(24px, 4.5vw, 44px);
   font-weight: 800;
   color: rgba(255,255,255,.9);
@@ -743,10 +707,10 @@ a { text-decoration: none; color: inherit; }
 }
 .review-card {
   background: var(--white);
-  padding: clamp(24px, 3.5vw, 36px);
+  padding: clamp(20px, 3vw, 30px);
 }
 .review-stars {
-  color: var(--red);
+  color: #C9A84C;
   font-size: 13px;
   letter-spacing: 2px;
   margin-bottom: 14px;
@@ -772,7 +736,8 @@ a { text-decoration: none; color: inherit; }
    CTA CARD — full red
 =========================================== */
 .cta-card {
-  background: var(--red);
+  background: var(--ink-soft);
+  border: 1px solid rgba(255,255,255,.06);
   border-radius: 3px;
   margin: 0 24px;
   padding: clamp(56px, 8vw, 100px) clamp(28px, 5vw, 80px);
@@ -787,7 +752,7 @@ a { text-decoration: none; color: inherit; }
   margin-bottom: 16px;
 }
 .cta-h2 {
-  font-family: var(--ff-sans);
+  font-family: var(--ff-serif);
   font-size: clamp(32px, 6vw, 60px);
   font-weight: 800;
   letter-spacing: -.02em;
@@ -824,7 +789,8 @@ a { text-decoration: none; color: inherit; }
   border-radius: 2px;
   transition: background .2s, border-color .2s;
 }
-.cta-btn:hover { background: rgba(255,255,255,.2); border-color: rgba(255,255,255,.45); }
+.cta-btn { background: var(--red); border: none; }
+.cta-btn:hover { background: var(--red-dk); }
 
 /* ===========================================
    FOOTER
@@ -965,8 +931,8 @@ a { text-decoration: none; color: inherit; }
   .photo-grid { grid-template-rows: 360px 240px; }
 }
 
-.gap-sm { height: 24px; }
-.gap-md { height: 40px; }
+.gap-sm { height: 8px; }
+.gap-md { height: 16px; }
 
 /* ═══════════════════════════════════════════
    MOBILE HAMBURGER + DRAWER
@@ -1087,6 +1053,18 @@ a { text-decoration: none; color: inherit; }
 }
 .mobile-drawer-cta:hover { background: var(--red-dk); }
 
+.drawer-close {
+  position: absolute; top: 0; right: 28px;
+  width: 44px; height: var(--nav-h);
+  background: none; border: none; cursor: pointer;
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 5px;
+}
+.drawer-close span {
+  display: block; width: 22px; height: 1.5px;
+  background: rgba(255,255,255,.8); border-radius: 2px;
+}
+.drawer-close span:nth-child(1) { transform: translateY(3.25px) rotate(45deg); }
+.drawer-close span:nth-child(2) { transform: translateY(-3.25px) rotate(-45deg); }
 @media (min-width: 768px) {
   .nav-hamburger { display: none !important; }
   .mobile-drawer { display: none !important; }
@@ -1164,26 +1142,14 @@ a { text-decoration: none; color: inherit; }
   </div>
 </section>
 
-<!-- ========================================
-     RED DIVIDER BAR — trust credentials
-======================================== -->
-<div class="red-bar" role="marquee" aria-label="Credentials">
-  <div class="red-bar-inner">
-    <span class="red-bar-item">Licensed &amp; Insured</span><span class="red-bar-dot"></span>
-    <span class="red-bar-item">HomeAdvisor Top Rated</span><span class="red-bar-dot"></span>
-    <span class="red-bar-item">20+ Five-Star Reviews</span><span class="red-bar-dot"></span>
-    <span class="red-bar-item">Sherwin Williams</span><span class="red-bar-dot"></span>
-    <span class="red-bar-item">BBB A+ Rated</span><span class="red-bar-dot"></span>
-    <span class="red-bar-item">Serving OC Since 2017</span><span class="red-bar-dot"></span>
-    <span class="red-bar-item">Orange &amp; LA County</span><span class="red-bar-dot"></span>
-    <span class="red-bar-item">Licensed &amp; Insured</span><span class="red-bar-dot"></span>
-    <span class="red-bar-item">HomeAdvisor Top Rated</span><span class="red-bar-dot"></span>
-    <span class="red-bar-item">20+ Five-Star Reviews</span><span class="red-bar-dot"></span>
-    <span class="red-bar-item">Sherwin Williams</span><span class="red-bar-dot"></span>
-    <span class="red-bar-item">BBB A+ Rated</span><span class="red-bar-dot"></span>
-    <span class="red-bar-item">Serving OC Since 2017</span><span class="red-bar-dot"></span>
-    <span class="red-bar-item">Orange &amp; LA County</span><span class="red-bar-dot"></span>
-  </div>
+<!-- CREDENTIAL STRIP -->
+<div class="cred-strip" aria-label="Credentials">
+  <span>Licensed &amp; Insured</span><i></i>
+  <span>BBB A+ Rated</span><i></i>
+  <span>Sherwin Williams</span><i></i>
+  <span>HomeAdvisor Top Rated</span><i></i>
+  <span>Serving OC Since 2017</span><i></i>
+  <span>CA Lic. #1011754</span>
 </div>
 
 <!-- ========================================
@@ -1200,7 +1166,6 @@ a { text-decoration: none; color: inherit; }
       alt="Exterior apartment complex repaint — Lunar Painting commercial contractor Orange County"
       loading="lazy" />
     <div class="about-text">
-      <span class="section-label">Commercial &amp; Property Management</span>
       <h2 class="section-h2">Built for<br><em>big projects.</em></h2>
       <p class="section-body">We work around occupied units, coordinate with your management timeline, and deliver a finish your board will sign off on. Property managers across OC trust us because we show up, communicate, and deliver.</p>
       <div class="pillars">
@@ -1242,7 +1207,6 @@ a { text-decoration: none; color: inherit; }
 <!-- SERVICES CARD -->
 <article class="card-section reveal" id="services">
   <div class="card-inner" style="padding-bottom:28px">
-    <span class="section-label">What We Do</span>
     <h2 class="section-h2" style="color:var(--ink)">Every surface.<br><em>Done properly.</em></h2>
   </div>
   <div class="svc-pair">
@@ -1320,7 +1284,6 @@ a { text-decoration: none; color: inherit; }
 <!-- REVIEWS CARD -->
 <article class="card-section reveal" id="reviews">
   <div class="card-inner" style="padding-bottom:28px">
-    <span class="section-label">What Clients Say</span>
     <h2 class="section-h2" style="color:var(--ink)">20+ five-star<br>reviews on HomeAdvisor.</h2>
   </div>
   <div class="reviews-grid">
@@ -1415,6 +1378,7 @@ a { text-decoration: none; color: inherit; }
 
 <!-- MOBILE DRAWER -->
 <div id="mobile-drawer" class="mobile-drawer" role="dialog" aria-label="Navigation menu">
+  <button class="drawer-close" aria-label="Close navigation menu"><span></span><span></span></button>
   <ul class="mobile-drawer-links">
     <li><a href="/commercial">Commercial</a></li>
     <li><a href="/residential">Residential</a></li>
@@ -1452,7 +1416,6 @@ document.querySelectorAll('.reveal').forEach(function(el){ obs.observe(el); });
 
 // ── Red Bar — touch-drag with seamless animation resume ──
 (function () {
-  var inner = document.querySelector('.red-bar-inner');
   if (!inner) return;
 
   var DURATION = 28;
@@ -1498,7 +1461,6 @@ document.querySelectorAll('.reveal').forEach(function(el){ obs.observe(el); });
     inner.style.transform = 'translateX(' + currentPx + 'px)';
   }, { passive: false });
 
-  function resumeAnimation() {
     if (!dragging) return;
     dragging = false;
     if (!isHorizontal) return;
@@ -1517,8 +1479,6 @@ document.querySelectorAll('.reveal').forEach(function(el){ obs.observe(el); });
     inner.style.animationDelay = delay + 's';
   }
 
-  inner.addEventListener('touchend',    resumeAnimation, { passive: true });
-  inner.addEventListener('touchcancel', resumeAnimation, { passive: true });
 })();
 
 // ── Mobile drawer ──
@@ -1537,8 +1497,8 @@ document.querySelectorAll('.reveal').forEach(function(el){ obs.observe(el); });
   hamburgers.forEach(function(h) {
     h.addEventListener('click', function() { setDrawer(!drawer.classList.contains('open')); });
   });
-  drawer.querySelectorAll('a').forEach(function(a) {
-    a.addEventListener('click', function() { setDrawer(false); });
+  drawer.querySelectorAll('a, .drawer-close').forEach(function(el) {
+    el.addEventListener('click', function() { setDrawer(false); });
   });
   document.addEventListener('keydown', function(e) {
     if (e.key === 'Escape' && drawer.classList.contains('open')) setDrawer(false);
