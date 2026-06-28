@@ -305,7 +305,7 @@ html.js .reveal { opacity: 0; transform: translateY(28px); transition: opacity .
 <!-- HERO -->
 <section class="hero" id="hero">
   <img class="hero-bg"
-    src="/fullhouseresidentialpaiting.jpg"
+    src="/fullhouseresidentialpainting.jpg"
     alt="Large Orange County estate after a full exterior repaint by Lunar Painting"
     fetchpriority="high" loading="eager" />
   <div class="hero-overlay" aria-hidden="true"></div>
@@ -611,7 +611,7 @@ html.js .reveal { opacity: 0; transform: translateY(28px); transition: opacity .
 </a>
 
 <script>
-(function(){ var p=window.location.pathname; if(p==='/index'||p==='/index.html'){history.replaceState(null,'','/');}else if(p.endsWith('.html')){history.replaceState(null,'',p.replace(/\.html$/,''));} })();
+try { var p=window.location.pathname; if(p==='/index'||p==='/index.html'){history.replaceState(null,'','/');}else if(p.endsWith('.html')){history.replaceState(null,'',p.replace(/\.html$/,''));} } catch(e) {}
 var siteNav = document.getElementById('site-nav');
 window.addEventListener('scroll', function(){ if(siteNav){ siteNav.classList.toggle('visible', window.scrollY > window.innerHeight * 0.7); } }, { passive: true });
 if('IntersectionObserver' in window){
